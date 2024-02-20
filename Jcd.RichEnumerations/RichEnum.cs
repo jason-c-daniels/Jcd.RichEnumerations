@@ -2,6 +2,8 @@
 
 namespace Jcd.RichEnumerations;
 
+#pragma warning disable SA1402 // FileMayOnlyContainASingleType
+
 /// <summary>
 /// A RichEnum with .Value as an int.
 /// </summary>

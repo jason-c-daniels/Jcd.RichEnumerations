@@ -5,6 +5,8 @@ using System.Reflection;
 
 namespace Jcd.RichEnumerations;
 
+#pragma warning disable SA1402 // FileMayOnlyContainASingleType
+
 /// <summary>
 /// Provides access to all instances on the enumeration container by way of the .All property.
 /// And allows lookup of items by value. This is used in <see cref="RichEnum{TValue,TEnum}"/> to provide conversion operators.

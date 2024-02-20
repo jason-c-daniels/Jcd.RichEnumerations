@@ -2,6 +2,8 @@
 
 namespace Jcd.RichEnumerations;
 
+#pragma warning disable SA1402 // FileMayOnlyContainASingleType
+
 /// <summary>
 /// A SortableRichEnum with Name and Description properties. The type of the Value property is int.
 /// </summary>

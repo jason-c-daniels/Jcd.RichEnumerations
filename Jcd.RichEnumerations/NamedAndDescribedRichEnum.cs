@@ -2,6 +2,8 @@
 
 namespace Jcd.RichEnumerations;
 
+#pragma warning disable SA1402 // FileMayOnlyContainASingleType
+
 /// <summary>
 /// A rich enumeration containing Description, Name and Value properties with int as the underlying Value data type. 
 /// </summary>

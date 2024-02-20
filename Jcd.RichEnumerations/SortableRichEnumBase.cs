@@ -4,6 +4,8 @@ using System.Linq;
 
 namespace Jcd.RichEnumerations;
 
+#pragma warning disable SA1402 // FileMayOnlyContainASingleType
+
 /// <summary>
 /// A base for sortable rich enumerations where the .Value property is present on the enumerated type.
 /// This type provides a hook to sort the .All collection. .Sort should be called only once and only once in the application startup. 

@@ -2,6 +2,8 @@
 
 namespace Jcd.RichEnumerations;
 
+#pragma warning disable SA1402 // FileMayOnlyContainASingleType
+
 /// <summary>
 /// A rich enum that can be sorted with a call to .Sort.
 /// </summary>
