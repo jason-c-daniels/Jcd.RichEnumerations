@@ -13,9 +13,6 @@
     </PackageReference>
     <PackageReference Include="Jcd.Validations" Version="1.1.7" />
   </ItemGroup>
-
-
-
       <PropertyGroup>
           <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
           <Title>Jcd.RichEnumerations</Title>

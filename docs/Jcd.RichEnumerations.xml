@@ -4,15 +4,545 @@
         <name>Jcd.RichEnumerations</name>
     </assembly>
     <members>
-        <member name="T:Jcd.RichEnumerations.Class1">
+        <member name="T:Jcd.RichEnumerations.DEnum`1">
             <summary>
-            TODO: Add some documentation as you write your code.
+            A rich Enum with a Description property.
+            </summary>
+            <param name="value">the value for this instance. These must be unique.</param>
+            <param name="description">The description for the instance. These should be unique.</param>
+            <typeparam name="TEnum">The type deriving from DEnum</typeparam>
+        </member>
+        <member name="M:Jcd.RichEnumerations.DEnum`1.#ctor(System.Int32,System.String)">
+            <summary>
+            A rich Enum with a Description property.
+            </summary>
+            <param name="value">the value for this instance. These must be unique.</param>
+            <param name="description">The description for the instance. These should be unique.</param>
+            <typeparam name="TEnum">The type deriving from DEnum</typeparam>
+        </member>
+        <member name="T:Jcd.RichEnumerations.DEnum`2">
+            <summary>
+            A rich Enum with a Description property.
+            </summary>
+            <param name="value">the value for this instance. These must be unique.</param>
+            <param name="description">The description for the instance. These should be unique.</param>
+        </member>
+        <member name="M:Jcd.RichEnumerations.DEnum`2.#ctor(`0,System.String)">
+            <summary>
+            A rich Enum with a Description property.
+            </summary>
+            <param name="value">the value for this instance. These must be unique.</param>
+            <param name="description">The description for the instance. These should be unique.</param>
+        </member>
+        <member name="P:Jcd.RichEnumerations.DEnum`2.Description">
+            <summary>
+            The description for the instance. These should be unique.
+            </summary>
+        </member>
+        <member name="M:Jcd.RichEnumerations.DEnum`2.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:Jcd.RichEnumerations.Enum`1">
+            <summary>
+            A rich Enum with .Value as an int.
+            </summary>
+            <typeparam name="TEnum">The enumeration type. This will contain both the structure definition and the enumeration entries as public static readonly fields.</typeparam>
+        </member>
+        <member name="M:Jcd.RichEnumerations.Enum`1.#ctor(System.Int32)">
+            <summary>
+            A rich Enum with .Value as an int.
+            </summary>
+            <typeparam name="TEnum">The enumeration type. This will contain both the structure definition and the enumeration entries as public static readonly fields.</typeparam>
+        </member>
+        <member name="T:Jcd.RichEnumerations.Enum`2">
+            <summary>
+            A rich Enum with .Value as a user provided type.
+            </summary>
+            <typeparam name="TEnum">The enumeration type. This will contain both the structure definition and the enumeration entries as public static readonly fields.</typeparam>
+            <typeparam name="TValue">The data type for .Value</typeparam>
+        </member>
+        <member name="M:Jcd.RichEnumerations.Enum`2.#ctor(`0)">
+            <summary>
+            A rich Enum with .Value as a user provided type.
+            </summary>
+            <typeparam name="TEnum">The enumeration type. This will contain both the structure definition and the enumeration entries as public static readonly fields.</typeparam>
+            <typeparam name="TValue">The data type for .Value</typeparam>
+        </member>
+        <member name="P:Jcd.RichEnumerations.Enum`2.Value">
+            <summary>
+            The underlying value.
+            </summary>
+        </member>
+        <member name="M:Jcd.RichEnumerations.Enum`2.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Enum`2.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Enum`2.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Enum`2.Equals(`1)">
+            <summary>
+            Compares the Value of the current Enum instance to the target instance for equality.
+            </summary>
+            <param name="other">The other instance to compare to</param>
+            <returns>True if equivalent.</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.Enum`2.op_Equality(Jcd.RichEnumerations.Enum{`0,`1},Jcd.RichEnumerations.Enum{`0,`1})">
+            <summary>
+            Compares two Enum instances for equality.
+            </summary>
+            <param name="l">the left hand side of the comparison.</param>
+            <param name="r">the right hand side of the comparison.</param>
+            <returns>True if equivalent.</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.Enum`2.op_Inequality(Jcd.RichEnumerations.Enum{`0,`1},Jcd.RichEnumerations.Enum{`0,`1})">
+            <summary>
+            Compares two Enum instances for inequality.
+            </summary>
+            <param name="l">the left hand side of the comparison.</param>
+            <param name="r">the right hand side of the comparison.</param>
+            <returns>True if not equivalent.</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.Enum`2.op_Explicit(Jcd.RichEnumerations.Enum{`0,`1})~`0">
+            <summary>
+            Explicit conversion to the underlying data type.
+            </summary>
+            <param name="e">The Enum instance.</param>
+            <returns>The .Value of the Enum instance</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.Enum`2.op_Explicit(`0)~Jcd.RichEnumerations.Enum{`0,`1}">
+            <summary>
+            Explicit conversion from the underlying data type to an Enum instance. This performs a lookup on the known values.
+            </summary>
+            <param name="value">The value to convert.</param>
+            <returns>The instance of the Enum, if it exists. Throws an exception, otherwise.</returns>
+            <exception cref="T:System.ArgumentException">If a value not present in the enum is provided.</exception>
+        </member>
+        <member name="T:Jcd.RichEnumerations.EnumBase`3">
+            <summary>
+            The base implementation of <see cref="T:System.Enum"/>. It provides
+            access to all instances on the enumeration container by way of the .All property.
+            And allows lookup of items by value. This is used in <see cref="T:System.Enum"/> to provide conversion operators.
+            </summary>
+            <remarks>
+            NOTE: This is intended as a supporting class. Consumers should prefer <see cref="T:System.Enum" /> instead.
+            </remarks>
+            <typeparam name="TValue">The type of the .Value property on the TEnumeratedItem instances. This is used in the conversion operators.</typeparam>
+            <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
+            <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
+        </member>
+        <member name="P:Jcd.RichEnumerations.EnumBase`3.ByValue">
+            <summary>
+            A lookup of enumerated elements by their Value property.
+            Useful for implementing conversion operators.
+            </summary>
+        </member>
+        <member name="T:Jcd.RichEnumerations.EnumBase`2">
+            <summary>
+            The base implementation of <see cref="T:System.Enum"/>. It provides
+            access to all instances on the enumeration container by way of the .All property.
+            </summary>
+            <remarks>
+            NOTE: This is intended as a supporting class. Consumers should prefer <see cref="T:System.Enum" /> instead.
+            </remarks>
+            <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
+            <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
+        </member>
+        <member name="P:Jcd.RichEnumerations.EnumBase`2.All">
+            <summary>
+            All enumerated elements. Populated in static constructor.
+            </summary>
+        </member>
+        <member name="T:Jcd.RichEnumerations.IEnumValueProvider`1">
+            <summary>
+            A helper interface to enable building auto casting into the data type aware Enum types. This helps minimize boilerplate code.
+            </summary>
+            <typeparam name="TValue">The type of the value</typeparam>
+        </member>
+        <member name="P:Jcd.RichEnumerations.IEnumValueProvider`1.Value">
+            <summary>
+            The underlying value
             </summary>
         </member>
         <member name="T:Jcd.RichEnumerations.NamespaceDoc">
             <summary>
             Provides TODO: A description of what this namespace provides.
             </summary>
+        </member>
+        <member name="T:Jcd.RichEnumerations.NdEnum`1">
+            <summary>
+            A rich enumeration containing Description, Name and Value properties with int as the underlying Value data type. 
+            </summary>
+            <param name="value">The value for the instance. This must be unique.</param>
+            <param name="name">The name for the instance. This should be unique.</param>
+            <param name="description">The description for the instance. This should be unique.</param>
+            <typeparam name="TEnum">The type deriving from NdEnum</typeparam>
+        </member>
+        <member name="M:Jcd.RichEnumerations.NdEnum`1.#ctor(System.Int32,System.String,System.String)">
+            <summary>
+            A rich enumeration containing Description, Name and Value properties with int as the underlying Value data type. 
+            </summary>
+            <param name="value">The value for the instance. This must be unique.</param>
+            <param name="name">The name for the instance. This should be unique.</param>
+            <param name="description">The description for the instance. This should be unique.</param>
+            <typeparam name="TEnum">The type deriving from NdEnum</typeparam>
+        </member>
+        <member name="T:Jcd.RichEnumerations.NdEnum`2">
+            <summary>
+            A rich enumeration containing Description, Name and Value properties. 
+            </summary>
+            <param name="value">The value for the instance. This must be unique.</param>
+            <param name="name">The name for the instance. This should be unique.</param>
+            <param name="description">The description for the instance. This should be unique.</param>
+            <typeparam name="TEnum">The type deriving from NdEnum</typeparam>
+            <typeparam name="TValue">The type of the .Value property.</typeparam>
+        </member>
+        <member name="M:Jcd.RichEnumerations.NdEnum`2.#ctor(`0,System.String,System.String)">
+            <summary>
+            A rich enumeration containing Description, Name and Value properties. 
+            </summary>
+            <param name="value">The value for the instance. This must be unique.</param>
+            <param name="name">The name for the instance. This should be unique.</param>
+            <param name="description">The description for the instance. This should be unique.</param>
+            <typeparam name="TEnum">The type deriving from NdEnum</typeparam>
+            <typeparam name="TValue">The type of the .Value property.</typeparam>
+        </member>
+        <member name="P:Jcd.RichEnumerations.NdEnum`2.Name">
+            <summary>
+            The name for the instance. This should be unique.
+            </summary>
+        </member>
+        <member name="P:Jcd.RichEnumerations.NdEnum`2.Description">
+            <summary>
+            The description for the instance. This should be unique.
+            </summary>
+        </member>
+        <member name="M:Jcd.RichEnumerations.NdEnum`2.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:Jcd.RichEnumerations.NEnum`1">
+            <summary>
+            A rich enumeration containing Name and Value properties with int as the underlying Value data type. 
+            </summary>
+            <param name="value">The value for the instance. This must be unique.</param>
+            <param name="name">The name for the instance. This should be unique.</param>
+            <typeparam name="TEnum">The type deriving from NdEnum</typeparam>
+        </member>
+        <member name="M:Jcd.RichEnumerations.NEnum`1.#ctor(System.Int32,System.String)">
+            <summary>
+            A rich enumeration containing Name and Value properties with int as the underlying Value data type. 
+            </summary>
+            <param name="value">The value for the instance. This must be unique.</param>
+            <param name="name">The name for the instance. This should be unique.</param>
+            <typeparam name="TEnum">The type deriving from NdEnum</typeparam>
+        </member>
+        <member name="T:Jcd.RichEnumerations.NEnum`2">
+            <summary>
+            A rich enumeration containing Name and Value properties. 
+            </summary>
+            <param name="value">The value for the instance. This must be unique.</param>
+            <param name="name">The name for the instance. This should be unique.</param>
+            <typeparam name="TEnum">The type deriving from NdEnum</typeparam>
+            <typeparam name="TValue">The type of the .Value property.</typeparam>
+        </member>
+        <member name="M:Jcd.RichEnumerations.NEnum`2.#ctor(`0,System.String)">
+            <summary>
+            A rich enumeration containing Name and Value properties. 
+            </summary>
+            <param name="value">The value for the instance. This must be unique.</param>
+            <param name="name">The name for the instance. This should be unique.</param>
+            <typeparam name="TEnum">The type deriving from NdEnum</typeparam>
+            <typeparam name="TValue">The type of the .Value property.</typeparam>
+        </member>
+        <member name="P:Jcd.RichEnumerations.NEnum`2.Name">
+            <summary>
+            The name for the instance. This should be unique.
+            </summary>
+        </member>
+        <member name="M:Jcd.RichEnumerations.NEnum`2.ToString">
+            <inheritdoc />
+        </member>
+        <member name="T:Jcd.RichEnumerations.SdEnum`1">
+            <summary>
+            A rich Enum with a Description property.
+            </summary>
+            <param description="value"></param>
+            <param description="description"></param>
+            <typeparam name="TEnum"></typeparam>
+        </member>
+        <member name="M:Jcd.RichEnumerations.SdEnum`1.#ctor(System.Int32,System.String)">
+            <summary>
+            A rich Enum with a Description property.
+            </summary>
+            <param description="value"></param>
+            <param description="description"></param>
+            <typeparam name="TEnum"></typeparam>
+        </member>
+        <member name="T:Jcd.RichEnumerations.SdEnum`2">
+            <summary>
+            A rich Enum with a Description property.
+            </summary>
+            <param description="value">The value of the instance. This must be unique.</param>
+            <param description="description">The description of the instance. This should be unique.</param>
+            <typeparam name="TEnum">The type being derived from SortableDEnum</typeparam>
+            <typeparam name="TValue">The type of the .Value property</typeparam>
+        </member>
+        <member name="M:Jcd.RichEnumerations.SdEnum`2.#ctor(`0,System.String)">
+            <summary>
+            A rich Enum with a Description property.
+            </summary>
+            <param description="value">The value of the instance. This must be unique.</param>
+            <param description="description">The description of the instance. This should be unique.</param>
+            <typeparam name="TEnum">The type being derived from SortableDEnum</typeparam>
+            <typeparam name="TValue">The type of the .Value property</typeparam>
+        </member>
+        <member name="P:Jcd.RichEnumerations.SdEnum`2.Description">
+            <summary>
+            The description of the instance.
+            </summary>
+        </member>
+        <member name="M:Jcd.RichEnumerations.SdEnum`2.ToString">
+            <inheritdoc />
+        </member>
+        <member name="T:Jcd.RichEnumerations.SEnum`1">
+            <summary>
+            A rich enum that can be sorted with a call to .Sort.
+            </summary>
+            <param name="value">The value of the instance. This must be unique.</param>
+            <typeparam name="TEnum">The type deriving from SortableEnum{TEnum}</typeparam>
+        </member>
+        <member name="M:Jcd.RichEnumerations.SEnum`1.#ctor(System.Int32)">
+            <summary>
+            A rich enum that can be sorted with a call to .Sort.
+            </summary>
+            <param name="value">The value of the instance. This must be unique.</param>
+            <typeparam name="TEnum">The type deriving from SortableEnum{TEnum}</typeparam>
+        </member>
+        <member name="T:Jcd.RichEnumerations.SEnum`2">
+            <summary>
+            A rich enum that can be sorted with a call to .Sort.
+            </summary>
+            <param name="value">The value of the instance. This must be unique.</param>
+            <typeparam name="TEnum">The type deriving from SortableEnum{TEnum}</typeparam>
+            <typeparam name="TValue">The type of the .Value property.</typeparam>
+        </member>
+        <member name="M:Jcd.RichEnumerations.SEnum`2.#ctor(`0)">
+            <summary>
+            A rich enum that can be sorted with a call to .Sort.
+            </summary>
+            <param name="value">The value of the instance. This must be unique.</param>
+            <typeparam name="TEnum">The type deriving from SortableEnum{TEnum}</typeparam>
+            <typeparam name="TValue">The type of the .Value property.</typeparam>
+        </member>
+        <member name="P:Jcd.RichEnumerations.SEnum`2.Value">
+            <summary>
+            The underlying value.
+            </summary>
+        </member>
+        <member name="M:Jcd.RichEnumerations.SEnum`2.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.SEnum`2.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.SEnum`2.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.SEnum`2.Equals(`1)">
+            <summary>
+            Compares the Value of the current Enum instance to the target instance for equality.
+            </summary>
+            <param name="other">The other instance to compare to</param>
+            <returns>True if equivalent.</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.SEnum`2.CompareTo(`1)">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.SEnum`2.CompareTo(Jcd.RichEnumerations.SEnum{`0,`1})">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.SEnum`2.op_Equality(Jcd.RichEnumerations.SEnum{`0,`1},Jcd.RichEnumerations.SEnum{`0,`1})">
+            <summary>
+            Compares two Enum instances for equality.
+            </summary>
+            <param name="l">the left hand side of the comparison.</param>
+            <param name="r">the right hand side of the comparison.</param>
+            <returns>True if equivalent.</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.SEnum`2.op_Inequality(Jcd.RichEnumerations.SEnum{`0,`1},Jcd.RichEnumerations.SEnum{`0,`1})">
+            <summary>
+            Compares two Enum instances for inequality.
+            </summary>
+            <param name="l">the left hand side of the comparison.</param>
+            <param name="r">the right hand side of the comparison.</param>
+            <returns>True if not equivalent.</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.SEnum`2.op_LessThan(Jcd.RichEnumerations.SEnum{`0,`1},Jcd.RichEnumerations.SEnum{`0,`1})">
+            <summary>
+            Compares two SEnum instances to determine if the left hand side is less than the right hand side.
+            </summary>
+            <param name="l">the left hand side of the comparison.</param>
+            <param name="r">the right hand side of the comparison.</param>
+            <returns>True if the left hand side is less than the right hand side.</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.SEnum`2.op_GreaterThan(Jcd.RichEnumerations.SEnum{`0,`1},Jcd.RichEnumerations.SEnum{`0,`1})">
+            <summary>
+            Compares two SEnum instances to determine if the left hand side is greater than the right hand side.
+            </summary>
+            <param name="l">the left hand side of the comparison.</param>
+            <param name="r">the right hand side of the comparison.</param>
+            <returns>True if the left hand side is greater than the right hand side.</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.SEnum`2.op_LessThanOrEqual(Jcd.RichEnumerations.SEnum{`0,`1},Jcd.RichEnumerations.SEnum{`0,`1})">
+            <summary>
+            Compares two SEnum instances to determine if the left hand side is less than or equal to the right hand side.
+            </summary>
+            <param name="l">the left hand side of the comparison.</param>
+            <param name="r">the right hand side of the comparison.</param>
+            <returns>True if the left hand side is less than or equal to the right hand side.</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.SEnum`2.op_GreaterThanOrEqual(Jcd.RichEnumerations.SEnum{`0,`1},Jcd.RichEnumerations.SEnum{`0,`1})">
+            <summary>
+            Compares two SEnum instances to determine if the left hand side is greater than or equal to the right hand side.
+            </summary>
+            <param name="l">the left hand side of the comparison.</param>
+            <param name="r">the right hand side of the comparison.</param>
+            <returns>True if the left hand side is greater than or equal to the right hand side.</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.SEnum`2.op_Explicit(Jcd.RichEnumerations.SEnum{`0,`1})~`0">
+            <summary>
+            Explicit conversion to the underlying data type.
+            </summary>
+            <param name="e">The Enum instance.</param>
+            <returns>The .Value of the Enum instance</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.SEnum`2.op_Explicit(`0)~Jcd.RichEnumerations.SEnum{`0,`1}">
+            <summary>
+            Explicit conversion from the underlying data type to an Enum instance. This performs a lookup on the known values.
+            </summary>
+            <param name="value">The value to convert.</param>
+            <returns>The instance of the Enum, if it exists. Throws an exception, otherwise.</returns>
+            <exception cref="T:System.ArgumentException">If a value not present in the enum is provided.</exception>
+        </member>
+        <member name="T:Jcd.RichEnumerations.SEnumBase`3">
+            <summary>
+            A base for sortable rich enumerations where the .Value property is present on the enumerated type.
+            This type provides a hook to sort the .All collection. .Sort should be called only once and only once in the application startup. 
+            </summary>
+            <typeparam name="TValue">The type of the .Value property on the TEnumeratedItem instances. This is used in the conversion operators.</typeparam>
+            <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
+            <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
+        </member>
+        <member name="P:Jcd.RichEnumerations.SEnumBase`3.ByValue">
+            <summary>
+            A lookup of enumerated elements by their Value property.
+            Useful for implementing conversion operators.
+            </summary>
+        </member>
+        <member name="T:Jcd.RichEnumerations.SEnumBase`2">
+            <summary>
+            A base for sortable rich enumerations. This type provides a hook to sort the .All collection.
+            .Sort should be called only once and only once in the application startup. 
+            </summary>
+            <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
+            <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
+        </member>
+        <member name="M:Jcd.RichEnumerations.SEnumBase`2.Sort(System.Collections.Generic.IComparer{`1})">
+            <summary>
+            Sorts the .All collection. This should be called only once and only once in the application startup.
+            </summary>
+            <param name="comparison">An optional custom comparer</param>
+        </member>
+        <member name="T:Jcd.RichEnumerations.SNdEnum`1">
+            <summary>
+            A rich Enum with Name and Description properties. The type of the Value property is int.
+            </summary>
+            <param name="value">the value for this instance. These must be unique.</param>
+            <param name="name">The name of this instance. These should be unique.</param>
+            <param name="description">The description of the instance. These should be unique.</param>
+            <typeparam name="TEnum">The type being derived from SortableNdEnum</typeparam>
+        </member>
+        <member name="M:Jcd.RichEnumerations.SNdEnum`1.#ctor(System.Int32,System.String,System.String)">
+            <summary>
+            A rich Enum with Name and Description properties. The type of the Value property is int.
+            </summary>
+            <param name="value">the value for this instance. These must be unique.</param>
+            <param name="name">The name of this instance. These should be unique.</param>
+            <param name="description">The description of the instance. These should be unique.</param>
+            <typeparam name="TEnum">The type being derived from SortableNdEnum</typeparam>
+        </member>
+        <member name="T:Jcd.RichEnumerations.SNdEnum`2">
+            <summary>
+            A base rich Enum with Name and Description properties.
+            </summary>
+            <param name="value">the value for this instance. These must be unique.</param>
+            <param name="name">The name of this instance. These should be unique.</param>
+            <param name="description">The description of the instance. These should be unique.</param>
+            <typeparam name="TEnum">The type being derived from SortableNdEnum</typeparam>
+            <typeparam name="TValue">The type of the value property.</typeparam>
+        </member>
+        <member name="M:Jcd.RichEnumerations.SNdEnum`2.#ctor(`0,System.String,System.String)">
+            <summary>
+            A base rich Enum with Name and Description properties.
+            </summary>
+            <param name="value">the value for this instance. These must be unique.</param>
+            <param name="name">The name of this instance. These should be unique.</param>
+            <param name="description">The description of the instance. These should be unique.</param>
+            <typeparam name="TEnum">The type being derived from SortableNdEnum</typeparam>
+            <typeparam name="TValue">The type of the value property.</typeparam>
+        </member>
+        <member name="P:Jcd.RichEnumerations.SNdEnum`2.Name">
+            <summary>
+            The name of the instance. This should be unique.
+            </summary>
+        </member>
+        <member name="P:Jcd.RichEnumerations.SNdEnum`2.Description">
+            <summary>
+            The description of the instance. This should be unique.
+            </summary>
+        </member>
+        <member name="M:Jcd.RichEnumerations.SNdEnum`2.ToString">
+            <inheritdoc />
+        </member>
+        <member name="T:Jcd.RichEnumerations.SnEnum`1">
+            <summary>
+            A rich Enum that's sortable with a Name property.
+            </summary>
+            <param name="value">The value for this instance. These must be unique.</param>
+            <param name="name">The name of this instance. These should be unique.</param>
+            <typeparam name="TEnum">The type being derived from SortableNEnum</typeparam>
+        </member>
+        <member name="M:Jcd.RichEnumerations.SnEnum`1.#ctor(System.Int32,System.String)">
+            <summary>
+            A rich Enum that's sortable with a Name property.
+            </summary>
+            <param name="value">The value for this instance. These must be unique.</param>
+            <param name="name">The name of this instance. These should be unique.</param>
+            <typeparam name="TEnum">The type being derived from SortableNEnum</typeparam>
+        </member>
+        <member name="T:Jcd.RichEnumerations.SnEnum`2">
+            <summary>
+            A rich Enum that's sortable with a Name property.
+            </summary>
+            <param name="value">the value for this instance. These must be unique.</param>
+            <param name="name">The name of this instance. These should be unique.</param>
+        </member>
+        <member name="M:Jcd.RichEnumerations.SnEnum`2.#ctor(`0,System.String)">
+            <summary>
+            A rich Enum that's sortable with a Name property.
+            </summary>
+            <param name="value">the value for this instance. These must be unique.</param>
+            <param name="name">The name of this instance. These should be unique.</param>
+        </member>
+        <member name="P:Jcd.RichEnumerations.SnEnum`2.Name">
+            <summary>
+            The name of the instance. This should be unique.
+            </summary>
+        </member>
+        <member name="M:Jcd.RichEnumerations.SnEnum`2.ToString">
+            <inheritdoc />
         </member>
     </members>
 </doc>
