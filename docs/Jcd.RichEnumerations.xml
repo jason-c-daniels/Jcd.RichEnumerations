@@ -122,12 +122,11 @@
         </member>
         <member name="T:Jcd.RichEnumerations.EnumBase`3">
             <summary>
-            The base implementation of <see cref="T:System.Enum"/>. It provides
-            access to all instances on the enumeration container by way of the .All property.
-            And allows lookup of items by value. This is used in <see cref="T:System.Enum"/> to provide conversion operators.
+            Provides access to all instances on the enumeration container by way of the .All property.
+            And allows lookup of items by value. This is used in <see cref="T:Jcd.RichEnumerations.Enum`2"/> to provide conversion operators.
             </summary>
             <remarks>
-            NOTE: This is intended as a supporting class. Consumers should prefer <see cref="T:System.Enum" /> instead.
+            NOTE: This is intended as a supporting class. Consumers should prefer <see cref="T:Jcd.RichEnumerations.Enum`2"/> or <see cref="T:Jcd.RichEnumerations.Enum`1"/> instead.
             </remarks>
             <typeparam name="TValue">The type of the .Value property on the TEnumeratedItem instances. This is used in the conversion operators.</typeparam>
             <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
@@ -141,11 +140,10 @@
         </member>
         <member name="T:Jcd.RichEnumerations.EnumBase`2">
             <summary>
-            The base implementation of <see cref="T:System.Enum"/>. It provides
-            access to all instances on the enumeration container by way of the .All property.
+            Provides access to all instances on the enumeration container by way of the .All property.
             </summary>
             <remarks>
-            NOTE: This is intended as a supporting class. Consumers should prefer <see cref="T:System.Enum" /> instead.
+            NOTE: This is intended as a supporting class. Consumers should prefer <see cref="T:Jcd.RichEnumerations.Enum`2"/> or <see cref="T:Jcd.RichEnumerations.Enum`1"/> instead.
             </remarks>
             <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
             <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
@@ -268,24 +266,24 @@
             <summary>
             A rich Enum with a Description property.
             </summary>
-            <param description="value"></param>
-            <param description="description"></param>
-            <typeparam name="TEnum"></typeparam>
+            <param name="value">The value of the instance. This must be unique.</param>
+            <param name="description">The description of the instance. This should be unique.</param>
+            <typeparam name="TEnum">The type being derived from SortableDEnum</typeparam>
         </member>
         <member name="M:Jcd.RichEnumerations.SdEnum`1.#ctor(System.Int32,System.String)">
             <summary>
             A rich Enum with a Description property.
             </summary>
-            <param description="value"></param>
-            <param description="description"></param>
-            <typeparam name="TEnum"></typeparam>
+            <param name="value">The value of the instance. This must be unique.</param>
+            <param name="description">The description of the instance. This should be unique.</param>
+            <typeparam name="TEnum">The type being derived from SortableDEnum</typeparam>
         </member>
         <member name="T:Jcd.RichEnumerations.SdEnum`2">
             <summary>
             A rich Enum with a Description property.
             </summary>
-            <param description="value">The value of the instance. This must be unique.</param>
-            <param description="description">The description of the instance. This should be unique.</param>
+            <param name="value">The value of the instance. This must be unique.</param>
+            <param name="description">The description of the instance. This should be unique.</param>
             <typeparam name="TEnum">The type being derived from SortableDEnum</typeparam>
             <typeparam name="TValue">The type of the .Value property</typeparam>
         </member>
@@ -293,8 +291,8 @@
             <summary>
             A rich Enum with a Description property.
             </summary>
-            <param description="value">The value of the instance. This must be unique.</param>
-            <param description="description">The description of the instance. This should be unique.</param>
+            <param name="value">The value of the instance. This must be unique.</param>
+            <param name="description">The description of the instance. This should be unique.</param>
             <typeparam name="TEnum">The type being derived from SortableDEnum</typeparam>
             <typeparam name="TValue">The type of the .Value property</typeparam>
         </member>

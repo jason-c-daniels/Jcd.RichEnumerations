@@ -6,12 +6,11 @@ using System.Reflection;
 namespace Jcd.RichEnumerations;
 
 /// <summary>
-/// The base implementation of <see cref="Enum"/>. It provides
-/// access to all instances on the enumeration container by way of the .All property.
-/// And allows lookup of items by value. This is used in <see cref="Enum"/> to provide conversion operators.
+/// Provides access to all instances on the enumeration container by way of the .All property.
+/// And allows lookup of items by value. This is used in <see cref="Enum{TValue,TEnum}"/> to provide conversion operators.
 /// </summary>
 /// <remarks>
-/// NOTE: This is intended as a supporting class. Consumers should prefer <see cref="Enum" /> instead.
+/// NOTE: This is intended as a supporting class. Consumers should prefer <see cref="Enum{TValue,TEnum}"/> or <see cref="Enum{TEnum}"/> instead.
 /// </remarks>
 /// <typeparam name="TValue">The type of the .Value property on the TEnumeratedItem instances. This is used in the conversion operators.</typeparam>
 /// <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
@@ -29,11 +28,10 @@ public abstract class EnumBase<TValue,TEnumeration,TEnumeratedItem> : EnumBase<T
 }
 
 /// <summary>
-/// The base implementation of <see cref="Enum"/>. It provides
-/// access to all instances on the enumeration container by way of the .All property.
+/// Provides access to all instances on the enumeration container by way of the .All property.
 /// </summary>
 /// <remarks>
-/// NOTE: This is intended as a supporting class. Consumers should prefer <see cref="Enum" /> instead.
+/// NOTE: This is intended as a supporting class. Consumers should prefer <see cref="Enum{TValue,TEnum}"/> or <see cref="Enum{TEnum}"/> instead.
 /// </remarks>
 /// <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
 /// <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>

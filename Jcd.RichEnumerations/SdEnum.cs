@@ -6,9 +6,9 @@ namespace Jcd.RichEnumerations;
 /// <summary>
 /// A rich Enum with a Description property.
 /// </summary>
-/// <param description="value"></param>
-/// <param description="description"></param>
-/// <typeparam name="TEnum"></typeparam>
+/// <param name="value">The value of the instance. This must be unique.</param>
+/// <param name="description">The description of the instance. This should be unique.</param>
+/// <typeparam name="TEnum">The type being derived from SortableDEnum</typeparam>
 public abstract class SdEnum<TEnum>(int value, string description)
     : SdEnum<int, TEnum>(value, description)
     where TEnum : SdEnum<TEnum>, IComparable<TEnum>;
@@ -16,8 +16,8 @@ public abstract class SdEnum<TEnum>(int value, string description)
 /// <summary>
 /// A rich Enum with a Description property.
 /// </summary>
-/// <param description="value">The value of the instance. This must be unique.</param>
-/// <param description="description">The description of the instance. This should be unique.</param>
+/// <param name="value">The value of the instance. This must be unique.</param>
+/// <param name="description">The description of the instance. This should be unique.</param>
 /// <typeparam name="TEnum">The type being derived from SortableDEnum</typeparam>
 /// <typeparam name="TValue">The type of the .Value property</typeparam>
 public abstract class SdEnum<TValue,TEnum>(TValue value, string description) :SEnum<TValue,TEnum>(value) where TValue : IEquatable<TValue>

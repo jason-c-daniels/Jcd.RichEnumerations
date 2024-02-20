@@ -2,8 +2,7 @@
 
 ## EnumBase<TEnumeration,TEnumeratedItem> Class
 
-The base implementation of [System.Enum](https://docs.microsoft.com/en-us/dotnet/api/System.Enum 'System.Enum'). It provides  
-access to all instances on the enumeration container by way of the .All property.
+Provides access to all instances on the enumeration container by way of the .All property.
 
 ```csharp
 public abstract class EnumBase<TEnumeration,TEnumeratedItem>
@@ -30,7 +29,7 @@ Derived
 &#8627; [SEnumBase&lt;TEnumeration,TEnumeratedItem&gt;](Jcd.RichEnumerations.SEnumBase_TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.SEnumBase<TEnumeration,TEnumeratedItem>')
 
 ### Remarks
-NOTE: This is intended as a supporting class. Consumers should prefer [System.Enum](https://docs.microsoft.com/en-us/dotnet/api/System.Enum 'System.Enum') instead.
+NOTE: This is intended as a supporting class. Consumers should prefer [Enum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Enum_TValue,TEnum_.md 'Jcd.RichEnumerations.Enum<TValue,TEnum>') or [Enum&lt;TEnum&gt;](Jcd.RichEnumerations.Enum_TEnum_.md 'Jcd.RichEnumerations.Enum<TEnum>') instead.
 
 | Properties | |
 | :--- | :--- |

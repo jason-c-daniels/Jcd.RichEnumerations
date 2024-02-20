@@ -2,9 +2,8 @@
 
 ## EnumBase<TValue,TEnumeration,TEnumeratedItem> Class
 
-The base implementation of [System.Enum](https://docs.microsoft.com/en-us/dotnet/api/System.Enum 'System.Enum'). It provides  
-access to all instances on the enumeration container by way of the .All property.  
-And allows lookup of items by value. This is used in [System.Enum](https://docs.microsoft.com/en-us/dotnet/api/System.Enum 'System.Enum') to provide conversion operators.
+Provides access to all instances on the enumeration container by way of the .All property.  
+And allows lookup of items by value. This is used in [Enum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Enum_TValue,TEnum_.md 'Jcd.RichEnumerations.Enum<TValue,TEnum>') to provide conversion operators.
 
 ```csharp
 public abstract class EnumBase<TValue,TEnumeration,TEnumeratedItem> : Jcd.RichEnumerations.EnumBase<TEnumeration, TEnumeratedItem>
@@ -37,7 +36,7 @@ Derived
 &#8627; [Enum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Enum_TValue,TEnum_.md 'Jcd.RichEnumerations.Enum<TValue,TEnum>')
 
 ### Remarks
-NOTE: This is intended as a supporting class. Consumers should prefer [System.Enum](https://docs.microsoft.com/en-us/dotnet/api/System.Enum 'System.Enum') instead.
+NOTE: This is intended as a supporting class. Consumers should prefer [Enum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Enum_TValue,TEnum_.md 'Jcd.RichEnumerations.Enum<TValue,TEnum>') or [Enum&lt;TEnum&gt;](Jcd.RichEnumerations.Enum_TEnum_.md 'Jcd.RichEnumerations.Enum<TEnum>') instead.
 
 | Properties | |
 | :--- | :--- |
