@@ -31,7 +31,6 @@ for (var i = 0; i < 3; i++)
     Console.WriteLine(e);
 }
 
-
 Console.WriteLine();
 Console.WriteLine("Less than operator");
 if (ExampleEnum2.Item1 < ExampleEnum2.Item2)

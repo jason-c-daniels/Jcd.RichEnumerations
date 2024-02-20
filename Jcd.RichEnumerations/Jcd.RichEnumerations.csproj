@@ -23,6 +23,7 @@
           <PackageLicenseUrl>https://github.com/jason-c-daniels/Jcd.RichEnumerations/blob/main/LICENSE</PackageLicenseUrl>
           <RepositoryUrl>https://github.com/jason-c-daniels/Jcd.RichEnumerations</RepositoryUrl>
           <RepositoryType>GitHub</RepositoryType>
+          <PackageTags>RichEnum;Rich Enumeration;RichEnums;Rich Enumerations</PackageTags>
           <PackageVersion>0.0.1</PackageVersion>
           <AssemblyVersion>0.0.1</AssemblyVersion>
           <FileVersion>0.0.1</FileVersion>

@@ -1,7 +1,7 @@
 ﻿namespace Jcd.RichEnumerations.Examples;
 
 public class ExampleEnum2(int value, string name, string description)
-    : SNdEnum<ExampleEnum2>(value, name, description)
+    : NamedAndDescribedSortableRichEnum<ExampleEnum2>(value, name, description)
 {
     #region Enumerated items
 
