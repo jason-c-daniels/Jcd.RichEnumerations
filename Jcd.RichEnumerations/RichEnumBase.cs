@@ -38,7 +38,6 @@ public abstract class RichEnumBase<TValue,TEnumeration,TEnumeratedItem> : RichEn
 public abstract class RichEnumBase<TEnumeration,TEnumeratedItem>
     where TEnumeratedItem : IEquatable<TEnumeratedItem>
 {
-
     private static List<TEnumeratedItem>? _all;
     
     /// <summary>

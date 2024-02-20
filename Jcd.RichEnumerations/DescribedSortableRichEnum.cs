@@ -2,7 +2,6 @@
 
 namespace Jcd.RichEnumerations;
 
-
 /// <summary>
 /// A SortableRichEnum with a Description property.
 /// </summary>

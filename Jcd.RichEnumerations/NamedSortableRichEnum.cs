@@ -24,7 +24,6 @@ public abstract class NamedSortableRichEnum<TValue,TEnum>(TValue value, string n
     /// </summary>
     public string Name { get; } = name;
 
-
     /// <inheritdoc />
     public override string ToString()
     {
