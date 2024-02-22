@@ -13,8 +13,8 @@ public static TValue explicit operator TValue(Jcd.RichEnumerations.SortableRichE
 
 `e` [Jcd.RichEnumerations.SortableRichEnum&lt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>')[TValue](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.TValue 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>.TValue')[,](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>')[TEnum](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.TEnum 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>.TEnum')[&gt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>')
 
-The Enum instance.
+The [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>') instance.
 
 #### Returns
 [TValue](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.TValue 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>.TValue')  
-The .Value of the Enum instance
+The .Value of the [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>') instance

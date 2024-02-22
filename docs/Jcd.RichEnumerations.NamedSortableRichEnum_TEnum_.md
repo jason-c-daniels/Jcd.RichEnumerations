@@ -2,11 +2,11 @@
 
 ## NamedSortableRichEnum<TEnum> Class
 
-A SortableRichEnum with a Name property.
+A [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>') with a Name property.
 
 ```csharp
 public abstract class NamedSortableRichEnum<TEnum> : Jcd.RichEnumerations.NamedSortableRichEnum<int, TEnum>
-    where TEnum : Jcd.RichEnumerations.NamedSortableRichEnum<TEnum>, System.IComparable<TEnum>
+    where TEnum : Jcd.RichEnumerations.NamedSortableRichEnum<TEnum>
 ```
 #### Type parameters
 
@@ -20,4 +20,4 @@ Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.O
 
 | Constructors | |
 | :--- | :--- |
-| [NamedSortableRichEnum(int, string)](Jcd.RichEnumerations.NamedSortableRichEnum_TEnum_.NamedSortableRichEnum(int,string).md 'Jcd.RichEnumerations.NamedSortableRichEnum<TEnum>.NamedSortableRichEnum(int, string)') | A SortableRichEnum with a Name property. |
+| [NamedSortableRichEnum(int, string)](Jcd.RichEnumerations.NamedSortableRichEnum_TEnum_.NamedSortableRichEnum(int,string).md 'Jcd.RichEnumerations.NamedSortableRichEnum<TEnum>.NamedSortableRichEnum(int, string)') | A [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>') with a Name property. |

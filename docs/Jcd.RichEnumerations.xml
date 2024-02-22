@@ -6,7 +6,7 @@
     <members>
         <member name="T:Jcd.RichEnumerations.DescribedRichEnum`1">
             <summary>
-            A RichEnum with a Description property.
+            A <see cref="T:Jcd.RichEnumerations.RichEnum`1"/> with a Description property.
             </summary>
             <param name="value">the value for this instance. These must be unique.</param>
             <param name="description">The description for the instance. These should be unique.</param>
@@ -14,7 +14,7 @@
         </member>
         <member name="M:Jcd.RichEnumerations.DescribedRichEnum`1.#ctor(System.Int32,System.String)">
             <summary>
-            A RichEnum with a Description property.
+            A <see cref="T:Jcd.RichEnumerations.RichEnum`1"/> with a Description property.
             </summary>
             <param name="value">the value for this instance. These must be unique.</param>
             <param name="description">The description for the instance. These should be unique.</param>
@@ -22,14 +22,14 @@
         </member>
         <member name="T:Jcd.RichEnumerations.DescribedRichEnum`2">
             <summary>
-            A RichEnum with a Description property.
+            A <see cref="T:Jcd.RichEnumerations.RichEnum`2"/> with a Description property.
             </summary>
             <param name="value">the value for this instance. These must be unique.</param>
             <param name="description">The description for the instance. These should be unique.</param>
         </member>
         <member name="M:Jcd.RichEnumerations.DescribedRichEnum`2.#ctor(`0,System.String)">
             <summary>
-            A RichEnum with a Description property.
+            A <see cref="T:Jcd.RichEnumerations.RichEnum`2"/> with a Description property.
             </summary>
             <param name="value">the value for this instance. These must be unique.</param>
             <param name="description">The description for the instance. These should be unique.</param>
@@ -44,23 +44,23 @@
         </member>
         <member name="T:Jcd.RichEnumerations.DescribedSortableRichEnum`1">
             <summary>
-            A SortableRichEnum with a Description property.
+            A <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/> with a Description property.
             </summary>
             <param name="value">The value of the instance. This must be unique.</param>
             <param name="description">The description of the instance. This should be unique.</param>
-            <typeparam name="TEnum">The type being derived from SortableDEnumeration</typeparam>
+            <typeparam name="TEnum">The type being derived from DescribedSortableRichEnum</typeparam>
         </member>
         <member name="M:Jcd.RichEnumerations.DescribedSortableRichEnum`1.#ctor(System.Int32,System.String)">
             <summary>
-            A SortableRichEnum with a Description property.
+            A <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/> with a Description property.
             </summary>
             <param name="value">The value of the instance. This must be unique.</param>
             <param name="description">The description of the instance. This should be unique.</param>
-            <typeparam name="TEnum">The type being derived from SortableDEnumeration</typeparam>
+            <typeparam name="TEnum">The type being derived from DescribedSortableRichEnum</typeparam>
         </member>
         <member name="T:Jcd.RichEnumerations.DescribedSortableRichEnum`2">
             <summary>
-            A SortableRichEnum with a Description property.
+            A <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/> with a Description property.
             </summary>
             <param name="value">The value of the instance. This must be unique.</param>
             <param name="description">The description of the instance. This should be unique.</param>
@@ -69,7 +69,7 @@
         </member>
         <member name="M:Jcd.RichEnumerations.DescribedSortableRichEnum`2.#ctor(`0,System.String)">
             <summary>
-            A SortableRichEnum with a Description property.
+            A <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/> with a Description property.
             </summary>
             <param name="value">The value of the instance. This must be unique.</param>
             <param name="description">The description of the instance. This should be unique.</param>
@@ -86,7 +86,7 @@
         </member>
         <member name="T:Jcd.RichEnumerations.IRichEnumValueProvider`1">
             <summary>
-            A helper interface to enable building auto casting into the data type aware Enum types. This helps minimize boilerplate code.
+            A helper interface to enable building auto casting into the data type aware <see cref="T:Jcd.RichEnumerations.RichEnum`2"/> types. This helps minimize boilerplate code.
             </summary>
             <typeparam name="TValue">The type of the value</typeparam>
         </member>
@@ -148,7 +148,7 @@
         </member>
         <member name="T:Jcd.RichEnumerations.NamedAndDescribedSortableRichEnum`1">
             <summary>
-            A SortableRichEnum with Name and Description properties. The type of the Value property is int.
+            A <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/>  with Name and Description properties. The type of the Value property is int.
             </summary>
             <param name="value">the value for this instance. These must be unique.</param>
             <param name="name">The name of this instance. These should be unique.</param>
@@ -157,7 +157,7 @@
         </member>
         <member name="M:Jcd.RichEnumerations.NamedAndDescribedSortableRichEnum`1.#ctor(System.Int32,System.String,System.String)">
             <summary>
-            A SortableRichEnum with Name and Description properties. The type of the Value property is int.
+            A <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/>  with Name and Description properties. The type of the Value property is int.
             </summary>
             <param name="value">the value for this instance. These must be unique.</param>
             <param name="name">The name of this instance. These should be unique.</param>
@@ -166,7 +166,7 @@
         </member>
         <member name="T:Jcd.RichEnumerations.NamedAndDescribedSortableRichEnum`2">
             <summary>
-            A SortableRichEnum with Name and Description properties.
+            A <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/>  with Name and Description properties.
             </summary>
             <param name="value">the value for this instance. These must be unique.</param>
             <param name="name">The name of this instance. These should be unique.</param>
@@ -176,7 +176,7 @@
         </member>
         <member name="M:Jcd.RichEnumerations.NamedAndDescribedSortableRichEnum`2.#ctor(`0,System.String,System.String)">
             <summary>
-            A SortableRichEnum with Name and Description properties.
+            A <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/>  with Name and Description properties.
             </summary>
             <param name="value">the value for this instance. These must be unique.</param>
             <param name="name">The name of this instance. These should be unique.</param>
@@ -199,7 +199,7 @@
         </member>
         <member name="T:Jcd.RichEnumerations.NamedRichEnum`1">
             <summary>
-            A RichEnum containing Name and Value properties with int as the underlying Value data type. 
+            A <see cref="T:Jcd.RichEnumerations.RichEnum`1"/> containing Name and Value properties with int as the underlying Value data type. 
             </summary>
             <param name="value">The value for the instance. This must be unique.</param>
             <param name="name">The name for the instance. This should be unique.</param>
@@ -207,7 +207,7 @@
         </member>
         <member name="M:Jcd.RichEnumerations.NamedRichEnum`1.#ctor(System.Int32,System.String)">
             <summary>
-            A RichEnum containing Name and Value properties with int as the underlying Value data type. 
+            A <see cref="T:Jcd.RichEnumerations.RichEnum`1"/> containing Name and Value properties with int as the underlying Value data type. 
             </summary>
             <param name="value">The value for the instance. This must be unique.</param>
             <param name="name">The name for the instance. This should be unique.</param>
@@ -215,7 +215,7 @@
         </member>
         <member name="T:Jcd.RichEnumerations.NamedRichEnum`2">
             <summary>
-            A RichEnum containing Name and Value properties. 
+            A <see cref="T:Jcd.RichEnumerations.RichEnum`2"/> containing Name and Value properties. 
             </summary>
             <param name="value">The value for the instance. This must be unique.</param>
             <param name="name">The name for the instance. This should be unique.</param>
@@ -224,7 +224,7 @@
         </member>
         <member name="M:Jcd.RichEnumerations.NamedRichEnum`2.#ctor(`0,System.String)">
             <summary>
-            A RichEnum containing Name and Value properties. 
+            A <see cref="T:Jcd.RichEnumerations.RichEnum`2"/> containing Name and Value properties. 
             </summary>
             <param name="value">The value for the instance. This must be unique.</param>
             <param name="name">The name for the instance. This should be unique.</param>
@@ -241,7 +241,7 @@
         </member>
         <member name="T:Jcd.RichEnumerations.NamedSortableRichEnum`1">
             <summary>
-            A SortableRichEnum with a Name property.
+            A <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/> with a Name property.
             </summary>
             <param name="value">The value for this instance. These must be unique.</param>
             <param name="name">The name of this instance. These should be unique.</param>
@@ -249,7 +249,7 @@
         </member>
         <member name="M:Jcd.RichEnumerations.NamedSortableRichEnum`1.#ctor(System.Int32,System.String)">
             <summary>
-            A SortableRichEnum with a Name property.
+            A <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/> with a Name property.
             </summary>
             <param name="value">The value for this instance. These must be unique.</param>
             <param name="name">The name of this instance. These should be unique.</param>
@@ -257,14 +257,14 @@
         </member>
         <member name="T:Jcd.RichEnumerations.NamedSortableRichEnum`2">
             <summary>
-            A SortableRichEnum with a Name property.
+            A <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/> with a Name property.
             </summary>
             <param name="value">the value for this instance. These must be unique.</param>
             <param name="name">The name of this instance. These should be unique.</param>
         </member>
         <member name="M:Jcd.RichEnumerations.NamedSortableRichEnum`2.#ctor(`0,System.String)">
             <summary>
-            A SortableRichEnum with a Name property.
+            A <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/> with a Name property.
             </summary>
             <param name="value">the value for this instance. These must be unique.</param>
             <param name="name">The name of this instance. These should be unique.</param>
@@ -284,26 +284,26 @@
         </member>
         <member name="T:Jcd.RichEnumerations.RichEnum`1">
             <summary>
-            A RichEnum with .Value as an int.
+            A <see cref="T:Jcd.RichEnumerations.RichEnum`2"/> with TValue set to int.
             </summary>
             <typeparam name="TEnum">The enumeration type. This will contain both the structure definition and the enumeration entries as public static readonly fields.</typeparam>
         </member>
         <member name="M:Jcd.RichEnumerations.RichEnum`1.#ctor(System.Int32)">
             <summary>
-            A RichEnum with .Value as an int.
+            A <see cref="T:Jcd.RichEnumerations.RichEnum`2"/> with TValue set to int.
             </summary>
             <typeparam name="TEnum">The enumeration type. This will contain both the structure definition and the enumeration entries as public static readonly fields.</typeparam>
         </member>
         <member name="T:Jcd.RichEnumerations.RichEnum`2">
             <summary>
-            A RichEnum with .Value as a user provided type.
+            A <see cref="T:Jcd.RichEnumerations.RichEnum`2"/> with .Value as a user provided type.
             </summary>
             <typeparam name="TEnum">The enumeration type. This will contain both the structure definition and the enumeration entries as public static readonly fields.</typeparam>
             <typeparam name="TValue">The data type for .Value</typeparam>
         </member>
         <member name="M:Jcd.RichEnumerations.RichEnum`2.#ctor(`0)">
             <summary>
-            A RichEnum with .Value as a user provided type.
+            A <see cref="T:Jcd.RichEnumerations.RichEnum`2"/> with .Value as a user provided type.
             </summary>
             <typeparam name="TEnum">The enumeration type. This will contain both the structure definition and the enumeration entries as public static readonly fields.</typeparam>
             <typeparam name="TValue">The data type for .Value</typeparam>
@@ -324,14 +324,14 @@
         </member>
         <member name="M:Jcd.RichEnumerations.RichEnum`2.Equals(`1)">
             <summary>
-            Compares the Value of the current Enum instance to the target instance for equality.
+            Compares the Value of the current <see cref="T:Jcd.RichEnumerations.RichEnum`2"/> instance to the target instance for equality.
             </summary>
             <param name="other">The other instance to compare to</param>
             <returns>True if equivalent.</returns>
         </member>
         <member name="M:Jcd.RichEnumerations.RichEnum`2.op_Equality(Jcd.RichEnumerations.RichEnum{`0,`1},Jcd.RichEnumerations.RichEnum{`0,`1})">
             <summary>
-            Compares two Enum instances for equality.
+            Compares two <see cref="T:Jcd.RichEnumerations.RichEnum`2"/> instances for equality.
             </summary>
             <param name="l">the left hand side of the comparison.</param>
             <param name="r">the right hand side of the comparison.</param>
@@ -339,7 +339,7 @@
         </member>
         <member name="M:Jcd.RichEnumerations.RichEnum`2.op_Inequality(Jcd.RichEnumerations.RichEnum{`0,`1},Jcd.RichEnumerations.RichEnum{`0,`1})">
             <summary>
-            Compares two Enum instances for inequality.
+            Compares two <see cref="T:Jcd.RichEnumerations.RichEnum`2"/> instances for inequality.
             </summary>
             <param name="l">the left hand side of the comparison.</param>
             <param name="r">the right hand side of the comparison.</param>
@@ -349,15 +349,15 @@
             <summary>
             Explicit conversion to the underlying data type.
             </summary>
-            <param name="e">The Enum instance.</param>
-            <returns>The .Value of the Enum instance</returns>
+            <param name="e">The <see cref="T:Jcd.RichEnumerations.RichEnum`2"/> instance.</param>
+            <returns>The .Value of the <see cref="T:Jcd.RichEnumerations.RichEnum`2"/> instance</returns>
         </member>
         <member name="M:Jcd.RichEnumerations.RichEnum`2.op_Explicit(`0)~Jcd.RichEnumerations.RichEnum{`0,`1}">
             <summary>
-            Explicit conversion from the underlying data type to an Enum instance. This performs a lookup on the known values.
+            Explicit conversion from the underlying data type to an <see cref="T:Jcd.RichEnumerations.RichEnum`2"/> instance. This performs a lookup on the known values.
             </summary>
             <param name="value">The value to convert.</param>
-            <returns>The instance of the Enum, if it exists. Throws an exception, otherwise.</returns>
+            <returns>The instance of the <see cref="T:Jcd.RichEnumerations.RichEnum`2"/>, if it exists. Throws an exception, otherwise.</returns>
             <exception cref="T:System.ArgumentException">If a value not present in the enum is provided.</exception>
         </member>
         <member name="T:Jcd.RichEnumerations.RichEnumBase`3">
@@ -439,7 +439,7 @@
         </member>
         <member name="M:Jcd.RichEnumerations.SortableRichEnum`2.Equals(`1)">
             <summary>
-            Compares the Value of the current Enum instance to the target instance for equality.
+            Compares the Value of the current <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/> instance to the target instance for equality.
             </summary>
             <param name="other">The other instance to compare to</param>
             <returns>True if equivalent.</returns>
@@ -452,7 +452,7 @@
         </member>
         <member name="M:Jcd.RichEnumerations.SortableRichEnum`2.op_Equality(Jcd.RichEnumerations.SortableRichEnum{`0,`1},Jcd.RichEnumerations.SortableRichEnum{`0,`1})">
             <summary>
-            Compares two Enum instances for equality.
+            Compares two <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/> instances for equality.
             </summary>
             <param name="l">the left hand side of the comparison.</param>
             <param name="r">the right hand side of the comparison.</param>
@@ -460,7 +460,7 @@
         </member>
         <member name="M:Jcd.RichEnumerations.SortableRichEnum`2.op_Inequality(Jcd.RichEnumerations.SortableRichEnum{`0,`1},Jcd.RichEnumerations.SortableRichEnum{`0,`1})">
             <summary>
-            Compares two Enum instances for inequality.
+            Compares two <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/> instances for inequality.
             </summary>
             <param name="l">the left hand side of the comparison.</param>
             <param name="r">the right hand side of the comparison.</param>
@@ -468,7 +468,7 @@
         </member>
         <member name="M:Jcd.RichEnumerations.SortableRichEnum`2.op_LessThan(Jcd.RichEnumerations.SortableRichEnum{`0,`1},Jcd.RichEnumerations.SortableRichEnum{`0,`1})">
             <summary>
-            Compares two SEnum instances to determine if the left hand side is less than the right hand side.
+            Compares two <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/> instances to determine if the left hand side is less than the right hand side.
             </summary>
             <param name="l">the left hand side of the comparison.</param>
             <param name="r">the right hand side of the comparison.</param>
@@ -476,7 +476,7 @@
         </member>
         <member name="M:Jcd.RichEnumerations.SortableRichEnum`2.op_GreaterThan(Jcd.RichEnumerations.SortableRichEnum{`0,`1},Jcd.RichEnumerations.SortableRichEnum{`0,`1})">
             <summary>
-            Compares two SEnum instances to determine if the left hand side is greater than the right hand side.
+            Compares two <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/> instances to determine if the left hand side is greater than the right hand side.
             </summary>
             <param name="l">the left hand side of the comparison.</param>
             <param name="r">the right hand side of the comparison.</param>
@@ -484,7 +484,7 @@
         </member>
         <member name="M:Jcd.RichEnumerations.SortableRichEnum`2.op_LessThanOrEqual(Jcd.RichEnumerations.SortableRichEnum{`0,`1},Jcd.RichEnumerations.SortableRichEnum{`0,`1})">
             <summary>
-            Compares two SEnum instances to determine if the left hand side is less than or equal to the right hand side.
+            Compares two <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/> instances to determine if the left hand side is less than or equal to the right hand side.
             </summary>
             <param name="l">the left hand side of the comparison.</param>
             <param name="r">the right hand side of the comparison.</param>
@@ -492,7 +492,7 @@
         </member>
         <member name="M:Jcd.RichEnumerations.SortableRichEnum`2.op_GreaterThanOrEqual(Jcd.RichEnumerations.SortableRichEnum{`0,`1},Jcd.RichEnumerations.SortableRichEnum{`0,`1})">
             <summary>
-            Compares two SEnum instances to determine if the left hand side is greater than or equal to the right hand side.
+            Compares two <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/> instances to determine if the left hand side is greater than or equal to the right hand side.
             </summary>
             <param name="l">the left hand side of the comparison.</param>
             <param name="r">the right hand side of the comparison.</param>
@@ -502,15 +502,15 @@
             <summary>
             Explicit conversion to the underlying data type.
             </summary>
-            <param name="e">The Enum instance.</param>
-            <returns>The .Value of the Enum instance</returns>
+            <param name="e">The <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/> instance.</param>
+            <returns>The .Value of the <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/> instance</returns>
         </member>
         <member name="M:Jcd.RichEnumerations.SortableRichEnum`2.op_Explicit(`0)~Jcd.RichEnumerations.SortableRichEnum{`0,`1}">
             <summary>
-            Explicit conversion from the underlying data type to an Enum instance. This performs a lookup on the known values.
+            Explicit conversion from the underlying data type to an <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/> instance. This performs a lookup on the known values.
             </summary>
             <param name="value">The value to convert.</param>
-            <returns>The instance of the Enum, if it exists. Throws an exception, otherwise.</returns>
+            <returns>The instance of the <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/>, if it exists. Throws an exception, otherwise.</returns>
             <exception cref="T:System.ArgumentException">If a value not present in the enum is provided.</exception>
         </member>
         <member name="T:Jcd.RichEnumerations.SortableRichEnumBase`3">
@@ -518,6 +518,9 @@
             A base for sortable rich enumerations where the .Value property is present on the enumerated type.
             This type provides a hook to sort the .All collection. .Sort should be called only once and only once in the application startup. 
             </summary>
+            <remarks>
+            NOTE: This is intended as a supporting class. Consumers should prefer <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/> or <see cref="T:Jcd.RichEnumerations.SortableRichEnum`1"/> instead.
+            </remarks>
             <typeparam name="TValue">The type of the .Value property on the TEnumeratedItem instances. This is used in the conversion operators.</typeparam>
             <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
             <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
@@ -533,6 +536,9 @@
             A base for sortable rich enumerations. This type provides a hook to sort the .All collection.
             .Sort should be called only once and only once in the application startup. 
             </summary>
+            <remarks>
+            NOTE: This is intended as a supporting class. Consumers should prefer <see cref="T:Jcd.RichEnumerations.SortableRichEnum`2"/> or <see cref="T:Jcd.RichEnumerations.SortableRichEnum`1"/> instead.
+            </remarks>
             <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
             <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
         </member>

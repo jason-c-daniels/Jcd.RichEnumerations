@@ -2,7 +2,7 @@
 
 ## NamedAndDescribedSortableRichEnum(TValue, string, string) Constructor
 
-A SortableRichEnum with Name and Description properties.
+A [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>')  with Name and Description properties.
 
 ```csharp
 protected NamedAndDescribedSortableRichEnum(TValue value, string name, string description);

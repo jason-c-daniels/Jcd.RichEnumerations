@@ -2,10 +2,10 @@
 
 ## SortableRichEnum<TValue,TEnum>.Equals(TEnum) Method
 
-Compares the Value of the current Enum instance to the target instance for equality.
+Compares the Value of the current [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>') instance to the target instance for equality.
 
 ```csharp
-public bool Equals(TEnum? other);
+public virtual bool Equals(TEnum? other);
 ```
 #### Parameters
 

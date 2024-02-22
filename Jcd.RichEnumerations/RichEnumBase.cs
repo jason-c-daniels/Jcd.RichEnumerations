@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
+// ReSharper disable MemberCanBeProtected.Global
+
 namespace Jcd.RichEnumerations;
 
 #pragma warning disable SA1402 // FileMayOnlyContainASingleType
@@ -17,16 +19,17 @@ namespace Jcd.RichEnumerations;
 /// <typeparam name="TValue">The type of the .Value property on the TEnumeratedItem instances. This is used in the conversion operators.</typeparam>
 /// <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
 /// <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
-public abstract class RichEnumBase<TValue,TEnumeration,TEnumeratedItem> : RichEnumBase<TEnumeration,TEnumeratedItem>
-    where TEnumeratedItem : IEquatable<TEnumeratedItem>, IRichEnumValueProvider<TValue>
-    where TValue : IEquatable<TValue>
+public abstract class RichEnumBase<TValue, TEnumeration, TEnumeratedItem> : RichEnumBase<TEnumeration, TEnumeratedItem>
+   where TEnumeratedItem : IEquatable<TEnumeratedItem>, IRichEnumValueProvider<TValue>
+   where TValue : IEquatable<TValue>
 {
-    private static Dictionary<TValue, TEnumeratedItem>? _byValue;
-    /// <summary>
-    /// A lookup of enumerated elements by their Value property.
-    /// Useful for implementing conversion operators.
-    /// </summary>
-    public static IReadOnlyDictionary<TValue, TEnumeratedItem> ByValue => _byValue ??= All.ToDictionary(e => e.Value);
+   private static Dictionary<TValue, TEnumeratedItem>? byValue;
+
+   /// <summary>
+   /// A lookup of enumerated elements by their Value property.
+   /// Useful for implementing conversion operators.
+   /// </summary>
+   public static IReadOnlyDictionary<TValue, TEnumeratedItem> ByValue => byValue ??= All.ToDictionary(e => e.Value);
 }
 
 /// <summary>
@@ -37,42 +40,30 @@ public abstract class RichEnumBase<TValue,TEnumeration,TEnumeratedItem> : RichEn
 /// </remarks>
 /// <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
 /// <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
-public abstract class RichEnumBase<TEnumeration,TEnumeratedItem>
-    where TEnumeratedItem : IEquatable<TEnumeratedItem>
+public abstract class RichEnumBase<TEnumeration, TEnumeratedItem>
+   where TEnumeratedItem : IEquatable<TEnumeratedItem>
 {
-    private static List<TEnumeratedItem>? _all;
-    
-    /// <summary>
-    /// All enumerated elements. Populated in static constructor.
-    /// </summary>
-    public static IReadOnlyList<TEnumeratedItem> All => _all ??= GetAll();
+   private static List<TEnumeratedItem>? all;
 
-    private static List<TEnumeratedItem> GetAll()
-    {
-        var fields = typeof(TEnumeration).GetFields(
-            BindingFlags.Public
-            | BindingFlags.Static
-            | BindingFlags.DeclaredOnly
-        );
+   /// <summary>
+   /// All enumerated elements. Populated in static constructor.
+   /// </summary>
+   public static IReadOnlyList<TEnumeratedItem> All => all ??= GetAll();
 
-        var props = typeof(TEnumeration).GetProperties(
-            BindingFlags.Public
-            | BindingFlags.Static
-            | BindingFlags.DeclaredOnly
-        );
+   private static List<TEnumeratedItem> GetAll()
+   {
+      var fields = typeof(TEnumeration).GetFields(BindingFlags.Public
+                                                | BindingFlags.Static
+                                                | BindingFlags.DeclaredOnly
+                                                 );
 
-        var all = fields
-                .Where(f => f.FieldType == typeof(TEnumeratedItem))
-                .Select(f => f.GetValue(null))
-                .Cast<TEnumeratedItem>()
-                .Concat(
-                    props
-                        .Where(p => p.PropertyType == typeof(TEnumeratedItem))
-                        .Select(p => p.GetValue(null))
-                        .Cast<TEnumeratedItem>()
-                )
-                .ToList()
-            ;
-        return all;
-    }
+      var allItems = fields
+                    .Where(f => f.FieldType == typeof(TEnumeratedItem))
+                    .Select(f => f.GetValue(null))
+                    .Cast<TEnumeratedItem>()
+                    .ToList()
+         ;
+
+      return allItems;
+   }
 }

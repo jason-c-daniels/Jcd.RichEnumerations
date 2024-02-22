@@ -2,11 +2,11 @@
 
 ## NamedRichEnum<TEnum> Class
 
-A RichEnum containing Name and Value properties with int as the underlying Value data type.
+A [RichEnum&lt;TEnum&gt;](Jcd.RichEnumerations.RichEnum_TEnum_.md 'Jcd.RichEnumerations.RichEnum<TEnum>') containing Name and Value properties with int as the underlying Value data type.
 
 ```csharp
 public abstract class NamedRichEnum<TEnum> : Jcd.RichEnumerations.NamedRichEnum<int, TEnum>
-    where TEnum : Jcd.RichEnumerations.NamedRichEnum<TEnum>, System.IComparable<TEnum>
+    where TEnum : Jcd.RichEnumerations.NamedRichEnum<TEnum>, System.IEquatable<TEnum>
 ```
 #### Type parameters
 
@@ -20,4 +20,4 @@ Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.O
 
 | Constructors | |
 | :--- | :--- |
-| [NamedRichEnum(int, string)](Jcd.RichEnumerations.NamedRichEnum_TEnum_.NamedRichEnum(int,string).md 'Jcd.RichEnumerations.NamedRichEnum<TEnum>.NamedRichEnum(int, string)') | A RichEnum containing Name and Value properties with int as the underlying Value data type. |
+| [NamedRichEnum(int, string)](Jcd.RichEnumerations.NamedRichEnum_TEnum_.NamedRichEnum(int,string).md 'Jcd.RichEnumerations.NamedRichEnum<TEnum>.NamedRichEnum(int, string)') | A [RichEnum&lt;TEnum&gt;](Jcd.RichEnumerations.RichEnum_TEnum_.md 'Jcd.RichEnumerations.RichEnum<TEnum>') containing Name and Value properties with int as the underlying Value data type. |

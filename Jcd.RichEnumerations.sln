@@ -7,7 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jcd.RichEnumerations", "Jcd
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jcd.RichEnumerations.Tests", "Jcd.RichEnumerations.Tests\Jcd.RichEnumerations.Tests.csproj", "{554141DD-970B-41B3-A294-28B43DE43380}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jcd.RichEnumerations.Examples", "Jcd.RichEnumerations.Examples\Jcd.RichEnumerations.Examples.csproj", "{28C1146F-A4AD-4BCA-A167-DCAD5E1D1192}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{16A3E016-F452-4757-B1EA-DC5D09E81330}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jcd.RichEnumerations.Examples.CardSelector", "Examples\Jcd.RichEnumerations.Examples.CardSelector\Jcd.RichEnumerations.Examples.CardSelector.csproj", "{F061E30D-597B-4918-92FE-4ACA3F23AA47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jcd.RichEnumerations.Examples", "Examples\Jcd.RichEnumerations.Examples\Jcd.RichEnumerations.Examples.csproj", "{7B273A40-DF47-48D1-B5C0-967E0FB29770}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,9 +30,17 @@ Global
 		{554141DD-970B-41B3-A294-28B43DE43380}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{554141DD-970B-41B3-A294-28B43DE43380}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{554141DD-970B-41B3-A294-28B43DE43380}.Release|Any CPU.Build.0 = Release|Any CPU
-		{28C1146F-A4AD-4BCA-A167-DCAD5E1D1192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{28C1146F-A4AD-4BCA-A167-DCAD5E1D1192}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{28C1146F-A4AD-4BCA-A167-DCAD5E1D1192}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{28C1146F-A4AD-4BCA-A167-DCAD5E1D1192}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F061E30D-597B-4918-92FE-4ACA3F23AA47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F061E30D-597B-4918-92FE-4ACA3F23AA47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F061E30D-597B-4918-92FE-4ACA3F23AA47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F061E30D-597B-4918-92FE-4ACA3F23AA47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B273A40-DF47-48D1-B5C0-967E0FB29770}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B273A40-DF47-48D1-B5C0-967E0FB29770}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B273A40-DF47-48D1-B5C0-967E0FB29770}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B273A40-DF47-48D1-B5C0-967E0FB29770}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F061E30D-597B-4918-92FE-4ACA3F23AA47} = {16A3E016-F452-4757-B1EA-DC5D09E81330}
+		{7B273A40-DF47-48D1-B5C0-967E0FB29770} = {16A3E016-F452-4757-B1EA-DC5D09E81330}
 	EndGlobalSection
 EndGlobal

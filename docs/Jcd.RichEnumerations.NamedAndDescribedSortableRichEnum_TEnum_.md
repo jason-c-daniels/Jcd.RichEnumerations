@@ -2,7 +2,7 @@
 
 ## NamedAndDescribedSortableRichEnum<TEnum> Class
 
-A SortableRichEnum with Name and Description properties. The type of the Value property is int.
+A [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>')  with Name and Description properties. The type of the Value property is int.
 
 ```csharp
 public abstract class NamedAndDescribedSortableRichEnum<TEnum> : Jcd.RichEnumerations.NamedAndDescribedSortableRichEnum<int, TEnum>
@@ -20,4 +20,4 @@ Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.O
 
 | Constructors | |
 | :--- | :--- |
-| [NamedAndDescribedSortableRichEnum(int, string, string)](Jcd.RichEnumerations.NamedAndDescribedSortableRichEnum_TEnum_.NamedAndDescribedSortableRichEnum(int,string,string).md 'Jcd.RichEnumerations.NamedAndDescribedSortableRichEnum<TEnum>.NamedAndDescribedSortableRichEnum(int, string, string)') | A SortableRichEnum with Name and Description properties. The type of the Value property is int. |
+| [NamedAndDescribedSortableRichEnum(int, string, string)](Jcd.RichEnumerations.NamedAndDescribedSortableRichEnum_TEnum_.NamedAndDescribedSortableRichEnum(int,string,string).md 'Jcd.RichEnumerations.NamedAndDescribedSortableRichEnum<TEnum>.NamedAndDescribedSortableRichEnum(int, string, string)') | A [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>')  with Name and Description properties. The type of the Value property is int. |

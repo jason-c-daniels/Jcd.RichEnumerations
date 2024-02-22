@@ -2,7 +2,7 @@
 
 ## DescribedRichEnum(TValue, string) Constructor
 
-A RichEnum with a Description property.
+A [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>') with a Description property.
 
 ```csharp
 protected DescribedRichEnum(TValue value, string description);

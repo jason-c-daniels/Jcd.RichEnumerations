@@ -2,7 +2,7 @@
 
 ## RichEnum<TValue,TEnum> Class
 
-A RichEnum with .Value as a user provided type.
+A [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>') with .Value as a user provided type.
 
 ```csharp
 public abstract class RichEnum<TValue,TEnum> : Jcd.RichEnumerations.RichEnumBase<TValue, TEnum, TEnum>,
@@ -37,7 +37,7 @@ Implements [System.IEquatable&lt;](https://docs.microsoft.com/en-us/dotnet/api/S
 
 | Constructors | |
 | :--- | :--- |
-| [RichEnum(TValue)](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.RichEnum(TValue).md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>.RichEnum(TValue)') | A RichEnum with .Value as a user provided type. |
+| [RichEnum(TValue)](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.RichEnum(TValue).md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>.RichEnum(TValue)') | A [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>') with .Value as a user provided type. |
 
 | Properties | |
 | :--- | :--- |
@@ -45,11 +45,11 @@ Implements [System.IEquatable&lt;](https://docs.microsoft.com/en-us/dotnet/api/S
 
 | Methods | |
 | :--- | :--- |
-| [Equals(TEnum)](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.Equals(TEnum).md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>.Equals(TEnum)') | Compares the Value of the current Enum instance to the target instance for equality. |
+| [Equals(TEnum)](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.Equals(TEnum).md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>.Equals(TEnum)') | Compares the Value of the current [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>') instance to the target instance for equality. |
 
 | Operators | |
 | :--- | :--- |
-| [operator ==(RichEnum&lt;TValue,TEnum&gt;, RichEnum&lt;TValue,TEnum&gt;)](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.op_Equality(Jcd.RichEnumerations.RichEnum_TValue,TEnum_,Jcd.RichEnumerations.RichEnum_TValue,TEnum_).md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>.op_Equality(Jcd.RichEnumerations.RichEnum<TValue,TEnum>, Jcd.RichEnumerations.RichEnum<TValue,TEnum>)') | Compares two Enum instances for equality. |
-| [explicit operator RichEnum&lt;TValue,TEnum&gt;(TValue)](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.op_ExplicitJcd.RichEnumerations.RichEnum_TValue,TEnum_(TValue).md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>.op_Explicit Jcd.RichEnumerations.RichEnum<TValue,TEnum>(TValue)') | Explicit conversion from the underlying data type to an Enum instance. This performs a lookup on the known values. |
+| [operator ==(RichEnum&lt;TValue,TEnum&gt;, RichEnum&lt;TValue,TEnum&gt;)](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.op_Equality(Jcd.RichEnumerations.RichEnum_TValue,TEnum_,Jcd.RichEnumerations.RichEnum_TValue,TEnum_).md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>.op_Equality(Jcd.RichEnumerations.RichEnum<TValue,TEnum>, Jcd.RichEnumerations.RichEnum<TValue,TEnum>)') | Compares two [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>') instances for equality. |
+| [explicit operator RichEnum&lt;TValue,TEnum&gt;(TValue)](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.op_ExplicitJcd.RichEnumerations.RichEnum_TValue,TEnum_(TValue).md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>.op_Explicit Jcd.RichEnumerations.RichEnum<TValue,TEnum>(TValue)') | Explicit conversion from the underlying data type to an [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>') instance. This performs a lookup on the known values. |
 | [explicit operator TValue(RichEnum&lt;TValue,TEnum&gt;)](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.op_ExplicitTValue(Jcd.RichEnumerations.RichEnum_TValue,TEnum_).md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>.op_Explicit TValue(Jcd.RichEnumerations.RichEnum<TValue,TEnum>)') | Explicit conversion to the underlying data type. |
-| [operator !=(RichEnum&lt;TValue,TEnum&gt;, RichEnum&lt;TValue,TEnum&gt;)](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.op_Inequality(Jcd.RichEnumerations.RichEnum_TValue,TEnum_,Jcd.RichEnumerations.RichEnum_TValue,TEnum_).md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>.op_Inequality(Jcd.RichEnumerations.RichEnum<TValue,TEnum>, Jcd.RichEnumerations.RichEnum<TValue,TEnum>)') | Compares two Enum instances for inequality. |
+| [operator !=(RichEnum&lt;TValue,TEnum&gt;, RichEnum&lt;TValue,TEnum&gt;)](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.op_Inequality(Jcd.RichEnumerations.RichEnum_TValue,TEnum_,Jcd.RichEnumerations.RichEnum_TValue,TEnum_).md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>.op_Inequality(Jcd.RichEnumerations.RichEnum<TValue,TEnum>, Jcd.RichEnumerations.RichEnum<TValue,TEnum>)') | Compares two [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>') instances for inequality. |

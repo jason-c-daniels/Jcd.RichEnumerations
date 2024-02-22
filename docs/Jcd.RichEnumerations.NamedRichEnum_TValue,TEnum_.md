@@ -2,12 +2,12 @@
 
 ## NamedRichEnum<TValue,TEnum> Class
 
-A RichEnum containing Name and Value properties.
+A [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>') containing Name and Value properties.
 
 ```csharp
 public abstract class NamedRichEnum<TValue,TEnum> : Jcd.RichEnumerations.RichEnum<TValue, TEnum>
     where TValue : System.IEquatable<TValue>
-    where TEnum : Jcd.RichEnumerations.NamedRichEnum<TValue, TEnum>, System.IComparable<TEnum>
+    where TEnum : Jcd.RichEnumerations.NamedRichEnum<TValue, TEnum>, System.IEquatable<TEnum>
 ```
 #### Type parameters
 
@@ -30,7 +30,7 @@ Derived
 
 | Constructors | |
 | :--- | :--- |
-| [NamedRichEnum(TValue, string)](Jcd.RichEnumerations.NamedRichEnum_TValue,TEnum_.NamedRichEnum(TValue,string).md 'Jcd.RichEnumerations.NamedRichEnum<TValue,TEnum>.NamedRichEnum(TValue, string)') | A RichEnum containing Name and Value properties. |
+| [NamedRichEnum(TValue, string)](Jcd.RichEnumerations.NamedRichEnum_TValue,TEnum_.NamedRichEnum(TValue,string).md 'Jcd.RichEnumerations.NamedRichEnum<TValue,TEnum>.NamedRichEnum(TValue, string)') | A [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>') containing Name and Value properties. |
 
 | Properties | |
 | :--- | :--- |

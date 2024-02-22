@@ -2,7 +2,7 @@
 
 ## IRichEnumValueProvider<TValue> Interface
 
-A helper interface to enable building auto casting into the data type aware Enum types. This helps minimize boilerplate code.
+A helper interface to enable building auto casting into the data type aware [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>') types. This helps minimize boilerplate code.
 
 ```csharp
 public interface IRichEnumValueProvider<out TValue>

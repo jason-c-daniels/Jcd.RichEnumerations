@@ -2,7 +2,7 @@
 
 ## DescribedRichEnum<TValue,TEnum> Class
 
-A RichEnum with a Description property.
+A [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>') with a Description property.
 
 ```csharp
 public abstract class DescribedRichEnum<TValue,TEnum> : Jcd.RichEnumerations.RichEnum<TValue, TEnum>
@@ -26,7 +26,7 @@ Derived
 
 | Constructors | |
 | :--- | :--- |
-| [DescribedRichEnum(TValue, string)](Jcd.RichEnumerations.DescribedRichEnum_TValue,TEnum_.DescribedRichEnum(TValue,string).md 'Jcd.RichEnumerations.DescribedRichEnum<TValue,TEnum>.DescribedRichEnum(TValue, string)') | A RichEnum with a Description property. |
+| [DescribedRichEnum(TValue, string)](Jcd.RichEnumerations.DescribedRichEnum_TValue,TEnum_.DescribedRichEnum(TValue,string).md 'Jcd.RichEnumerations.DescribedRichEnum<TValue,TEnum>.DescribedRichEnum(TValue, string)') | A [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>') with a Description property. |
 
 | Properties | |
 | :--- | :--- |

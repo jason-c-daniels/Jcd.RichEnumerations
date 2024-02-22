@@ -2,7 +2,7 @@
 
 ## RichEnum(TValue) Constructor
 
-A RichEnum with .Value as a user provided type.
+A [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>') with .Value as a user provided type.
 
 ```csharp
 protected RichEnum(TValue value);

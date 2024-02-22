@@ -28,6 +28,9 @@ Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.O
 Derived  
 &#8627; [SortableRichEnumBase&lt;TValue,TEnumeration,TEnumeratedItem&gt;](Jcd.RichEnumerations.SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>')
 
+### Remarks
+NOTE: This is intended as a supporting class. Consumers should prefer [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>') or [SortableRichEnum&lt;TEnum&gt;](Jcd.RichEnumerations.SortableRichEnum_TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TEnum>') instead.
+
 | Methods | |
 | :--- | :--- |
 | [Sort(IComparer&lt;TEnumeratedItem&gt;)](Jcd.RichEnumerations.SortableRichEnumBase_TEnumeration,TEnumeratedItem_.Sort(System.Collections.Generic.IComparer_TEnumeratedItem_).md 'Jcd.RichEnumerations.SortableRichEnumBase<TEnumeration,TEnumeratedItem>.Sort(System.Collections.Generic.IComparer<TEnumeratedItem>)') | Sorts the .All collection. This should be called only once and only once in the application startup. |

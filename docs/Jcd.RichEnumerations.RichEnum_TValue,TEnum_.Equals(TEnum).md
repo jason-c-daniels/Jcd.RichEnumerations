@@ -2,10 +2,10 @@
 
 ## RichEnum<TValue,TEnum>.Equals(TEnum) Method
 
-Compares the Value of the current Enum instance to the target instance for equality.
+Compares the Value of the current [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>') instance to the target instance for equality.
 
 ```csharp
-public bool Equals(TEnum? other);
+public virtual bool Equals(TEnum? other);
 ```
 #### Parameters
 

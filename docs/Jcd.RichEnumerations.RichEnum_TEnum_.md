@@ -2,7 +2,7 @@
 
 ## RichEnum<TEnum> Class
 
-A RichEnum with .Value as an int.
+A [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>') with TValue set to int.
 
 ```csharp
 public abstract class RichEnum<TEnum> : Jcd.RichEnumerations.RichEnum<int, TEnum>
@@ -20,4 +20,4 @@ Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.O
 
 | Constructors | |
 | :--- | :--- |
-| [RichEnum(int)](Jcd.RichEnumerations.RichEnum_TEnum_.RichEnum(int).md 'Jcd.RichEnumerations.RichEnum<TEnum>.RichEnum(int)') | A RichEnum with .Value as an int. |
+| [RichEnum(int)](Jcd.RichEnumerations.RichEnum_TEnum_.RichEnum(int).md 'Jcd.RichEnumerations.RichEnum<TEnum>.RichEnum(int)') | A [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>') with TValue set to int. |

@@ -2,7 +2,7 @@
 
 ## SortableRichEnum<TValue,TEnum>.operator >=(SortableRichEnum<TValue,TEnum>, SortableRichEnum<TValue,TEnum>) Operator
 
-Compares two SEnum instances to determine if the left hand side is greater than or equal to the right hand side.
+Compares two [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>') instances to determine if the left hand side is greater than or equal to the right hand side.
 
 ```csharp
 public static bool operator >=(Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>? l, Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>? r);

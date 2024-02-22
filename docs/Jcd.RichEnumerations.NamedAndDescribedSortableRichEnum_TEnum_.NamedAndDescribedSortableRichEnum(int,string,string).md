@@ -2,7 +2,7 @@
 
 ## NamedAndDescribedSortableRichEnum(int, string, string) Constructor
 
-A SortableRichEnum with Name and Description properties. The type of the Value property is int.
+A [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>')  with Name and Description properties. The type of the Value property is int.
 
 ```csharp
 protected NamedAndDescribedSortableRichEnum(int value, string name, string description);

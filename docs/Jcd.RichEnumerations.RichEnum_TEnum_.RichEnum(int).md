@@ -2,7 +2,7 @@
 
 ## RichEnum(int) Constructor
 
-A RichEnum with .Value as an int.
+A [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>') with TValue set to int.
 
 ```csharp
 protected RichEnum(int value);

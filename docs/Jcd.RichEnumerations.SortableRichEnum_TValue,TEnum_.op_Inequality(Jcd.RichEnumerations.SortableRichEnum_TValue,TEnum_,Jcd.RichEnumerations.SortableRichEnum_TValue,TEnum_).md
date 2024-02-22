@@ -2,7 +2,7 @@
 
 ## SortableRichEnum<TValue,TEnum>.operator !=(SortableRichEnum<TValue,TEnum>, SortableRichEnum<TValue,TEnum>) Operator
 
-Compares two Enum instances for inequality.
+Compares two [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>') instances for inequality.
 
 ```csharp
 public static bool operator !=(Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>? l, Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>? r);

@@ -2,7 +2,7 @@
 
 ## SortableRichEnum<TValue,TEnum>.explicit operator SortableRichEnum<TValue,TEnum>(TValue) Operator
 
-Explicit conversion from the underlying data type to an Enum instance. This performs a lookup on the known values.
+Explicit conversion from the underlying data type to an [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>') instance. This performs a lookup on the known values.
 
 ```csharp
 public static Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum> explicit operator SortableRichEnum<TValue,TEnum>(TValue value);
@@ -17,7 +17,7 @@ The value to convert.
 
 #### Returns
 [Jcd.RichEnumerations.SortableRichEnum&lt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>')[TValue](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.TValue 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>.TValue')[,](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>')[TEnum](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.TEnum 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>.TEnum')[&gt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>')  
-The instance of the Enum, if it exists. Throws an exception, otherwise.
+The instance of the [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>'), if it exists. Throws an exception, otherwise.
 
 #### Exceptions
 

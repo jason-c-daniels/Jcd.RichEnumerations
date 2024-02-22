@@ -2,7 +2,7 @@
 
 ## NamedRichEnum(TValue, string) Constructor
 
-A RichEnum containing Name and Value properties.
+A [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>') containing Name and Value properties.
 
 ```csharp
 protected NamedRichEnum(TValue value, string name);

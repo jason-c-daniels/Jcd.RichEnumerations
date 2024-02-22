@@ -2,7 +2,7 @@
 
 ## DescribedRichEnum<TEnum> Class
 
-A RichEnum with a Description property.
+A [RichEnum&lt;TEnum&gt;](Jcd.RichEnumerations.RichEnum_TEnum_.md 'Jcd.RichEnumerations.RichEnum<TEnum>') with a Description property.
 
 ```csharp
 public abstract class DescribedRichEnum<TEnum> : Jcd.RichEnumerations.DescribedRichEnum<int, TEnum>
@@ -20,4 +20,4 @@ Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.O
 
 | Constructors | |
 | :--- | :--- |
-| [DescribedRichEnum(int, string)](Jcd.RichEnumerations.DescribedRichEnum_TEnum_.DescribedRichEnum(int,string).md 'Jcd.RichEnumerations.DescribedRichEnum<TEnum>.DescribedRichEnum(int, string)') | A RichEnum with a Description property. |
+| [DescribedRichEnum(int, string)](Jcd.RichEnumerations.DescribedRichEnum_TEnum_.DescribedRichEnum(int,string).md 'Jcd.RichEnumerations.DescribedRichEnum<TEnum>.DescribedRichEnum(int, string)') | A [RichEnum&lt;TEnum&gt;](Jcd.RichEnumerations.RichEnum_TEnum_.md 'Jcd.RichEnumerations.RichEnum<TEnum>') with a Description property. |

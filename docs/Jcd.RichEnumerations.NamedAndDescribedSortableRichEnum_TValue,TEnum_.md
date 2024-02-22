@@ -2,7 +2,7 @@
 
 ## NamedAndDescribedSortableRichEnum<TValue,TEnum> Class
 
-A SortableRichEnum with Name and Description properties.
+A [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>')  with Name and Description properties.
 
 ```csharp
 public abstract class NamedAndDescribedSortableRichEnum<TValue,TEnum> : Jcd.RichEnumerations.SortableRichEnum<TValue, TEnum>
@@ -30,7 +30,7 @@ Derived
 
 | Constructors | |
 | :--- | :--- |
-| [NamedAndDescribedSortableRichEnum(TValue, string, string)](Jcd.RichEnumerations.NamedAndDescribedSortableRichEnum_TValue,TEnum_.NamedAndDescribedSortableRichEnum(TValue,string,string).md 'Jcd.RichEnumerations.NamedAndDescribedSortableRichEnum<TValue,TEnum>.NamedAndDescribedSortableRichEnum(TValue, string, string)') | A SortableRichEnum with Name and Description properties. |
+| [NamedAndDescribedSortableRichEnum(TValue, string, string)](Jcd.RichEnumerations.NamedAndDescribedSortableRichEnum_TValue,TEnum_.NamedAndDescribedSortableRichEnum(TValue,string,string).md 'Jcd.RichEnumerations.NamedAndDescribedSortableRichEnum<TValue,TEnum>.NamedAndDescribedSortableRichEnum(TValue, string, string)') | A [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>')  with Name and Description properties. |
 
 | Properties | |
 | :--- | :--- |

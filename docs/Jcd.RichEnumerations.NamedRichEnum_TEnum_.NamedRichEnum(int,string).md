@@ -2,7 +2,7 @@
 
 ## NamedRichEnum(int, string) Constructor
 
-A RichEnum containing Name and Value properties with int as the underlying Value data type.
+A [RichEnum&lt;TEnum&gt;](Jcd.RichEnumerations.RichEnum_TEnum_.md 'Jcd.RichEnumerations.RichEnum<TEnum>') containing Name and Value properties with int as the underlying Value data type.
 
 ```csharp
 protected NamedRichEnum(int value, string name);
