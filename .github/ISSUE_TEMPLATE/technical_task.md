@@ -6,7 +6,7 @@ about: Create a request to have some technical task performed or technical featu
 
 ### Task Description (REQUIRED)
 
-A clear and concise description of what to do. (e.g. Refactor Feature to eliminate all ShellCheck warnings and errors)
+A clear and concise description of what to do. (e.g. Refactor Feature to eliminate all ReSharper warnings and errors)
 
 ### Acceptance Criteria (OPTIONAL)
 
