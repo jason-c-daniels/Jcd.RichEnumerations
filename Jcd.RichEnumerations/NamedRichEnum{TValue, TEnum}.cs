@@ -1,21 +1,9 @@
 ﻿using System;
 
+// ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
 // ReSharper disable HeapView.ObjectAllocation
-// ReSharper disable MemberCanBePrivate.Global
-
 namespace Jcd.RichEnumerations;
-
-#pragma warning disable SA1402 // FileMayOnlyContainASingleType
-
-/// <summary>
-/// A <see cref="RichEnum{TEnum}"/> containing Name and Value properties with int as the underlying Value data type. 
-/// </summary>
-/// <param name="value">The value for the instance. This must be unique.</param>
-/// <param name="name">The name for the instance. This should be unique.</param>
-/// <typeparam name="TEnum">The type deriving from NdEnumeration</typeparam>
-public abstract class NamedRichEnum<TEnum>(int value, string name) : NamedRichEnum<int, TEnum>(value, name)
-   where TEnum : NamedRichEnum<TEnum>, IEquatable<TEnum>;
 
 /// <summary>
 /// A <see cref="RichEnum{TValue,TEnum}"/> containing Name and Value properties. 

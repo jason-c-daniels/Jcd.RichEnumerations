@@ -26,7 +26,7 @@ public class EditCardMenu : Menu<EditCardMenu, EditCardMenu.Item, EditCardMenu.R
       public        bool   IsFinal { get; } = isFinalResult;
    }
 
-   public class Item(string value, int order, string name) : MenuItemProvider<Item>(value, order, name)
+   public class Item(string value, int order, string name) : MenuItem<Item>(value, order, name)
    {
       public static readonly Item SetName     = new("NAME", 0, "Set Name");
       public static readonly Item SetBrand    = new("BRAND", 1, "Set Brand");

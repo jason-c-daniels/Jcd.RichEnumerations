@@ -3,16 +3,15 @@
 using Jcd.RichEnumerations.Examples;
 
 // ReSharper disable HeapView.ObjectAllocation
+// ReSharper disable HeapView.ObjectAllocation.Possible
 
 Console.WriteLine("ExampleEnum1 -- An unsortable enum. Listed in compiler order.");
 
-// ReSharper disable once HeapView.ObjectAllocation.Possible
 foreach (var e in ExampleEnum1.All) Console.WriteLine(e);
 
 Console.WriteLine();
 Console.WriteLine("ExampleEnum2 -- A sortable enum. Listed in compiler order.");
 
-// ReSharper disable once HeapView.ObjectAllocation.Possible
 foreach (var e in ExampleEnum2.All) Console.WriteLine(e);
 
 Console.WriteLine();
@@ -20,7 +19,6 @@ Console.WriteLine("ExampleEnum2 -- A sortable enum.  After calling ExampleEnum2.
                  );
 ExampleEnum2.Sort();
 
-// ReSharper disable once HeapView.ObjectAllocation.Possible
 foreach (var e in ExampleEnum2.All) Console.WriteLine(e);
 
 Console.WriteLine();

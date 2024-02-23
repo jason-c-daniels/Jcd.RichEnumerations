@@ -17,7 +17,7 @@ public class YesNoMenu : Menu<YesNoMenu, YesNoMenu.Item, YesNoMenu.Result>
       public        bool   IsFinal { get; } = isFinalResult;
    }
 
-   public class Item(string value, int order, string name) : MenuItemProvider<Item>(value, order, name)
+   public class Item(string value, int order, string name) : MenuItem<Item>(value, order, name)
    {
       public static readonly Item Yes = new("Y", 0, "Yes");
       public static readonly Item No  = new("N", 1, "No");

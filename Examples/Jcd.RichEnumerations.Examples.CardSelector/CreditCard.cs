@@ -1,4 +1,5 @@
 ﻿using System.Text;
+
 // ReSharper disable HeapView.DelegateAllocation
 
 // ReSharper disable StringLiteralTypo
@@ -190,7 +191,7 @@ public class CreditCard
       return true;
    }
 
-   public bool Equals(CreditCard? other) => other is not null && Id == other.Id;
+   public bool Equals(CreditCard? other) { return other is not null && Id == other.Id; }
 
    public CreditCard Clone()
    {
@@ -205,7 +206,7 @@ public class CreditCard
                            );
    }
 
-   public override bool Equals(object? obj) => Equals(obj as CreditCard);
+   public override bool Equals(object? obj) { return Equals(obj as CreditCard); }
 
-   public override int GetHashCode() => Id ^GetType().GetHashCode();
+   public override int GetHashCode() { return Id ^ GetType().GetHashCode(); }
 }

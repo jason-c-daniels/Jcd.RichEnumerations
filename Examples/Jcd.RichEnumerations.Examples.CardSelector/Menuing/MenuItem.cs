@@ -1,11 +1,12 @@
 ﻿// ReSharper disable HeapView.ObjectAllocation
+// ReSharper disable MemberCanBePrivate.Global
 
 namespace Jcd.RichEnumerations.Examples.CardSelector.Menuing;
 
-public abstract class MenuItemProvider<TMenuItem>(string value, int order, string name)
+public abstract class MenuItem<TMenuItem>(string value, int order, string name)
    : NamedSortableRichEnum<CaseInsensitiveString, TMenuItem>(value, name)
    , IMenuItemProvider<CaseInsensitiveString, TMenuItem>
-   where TMenuItem : MenuItemProvider<TMenuItem>
+   where TMenuItem : MenuItem<TMenuItem>
 {
    #region Properties and Overrides
 

@@ -19,5 +19,5 @@ public class ExampleEnum1(int value, string name, string description)
    /// An override of the default ToString implementation.
    /// </summary>
    /// <returns></returns>
-   public override string ToString() { return $"Name={Name}; Value = {Value}; Description={Description}"; }
+   public override string ToString() => $"Name={Name}; Value = {Value}; Description={Description}";
 }

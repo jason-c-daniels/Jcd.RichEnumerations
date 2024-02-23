@@ -1,23 +1,9 @@
 ﻿using System;
 
+// ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
 // ReSharper disable HeapView.ObjectAllocation
-// ReSharper disable MemberCanBePrivate.Global
-
 namespace Jcd.RichEnumerations;
-
-#pragma warning disable SA1402 // FileMayOnlyContainASingleType
-
-/// <summary>
-/// A <see cref="SortableRichEnum{TValue,TEnum}"/>  with Name and Description properties. The type of the Value property is int.
-/// </summary>
-/// <param name="value">the value for this instance. These must be unique.</param>
-/// <param name="name">The name of this instance. These should be unique.</param>
-/// <param name="description">The description of the instance. These should be unique.</param>
-/// <typeparam name="TEnum">The type being derived from SortableNdEnumeration</typeparam>
-public abstract class NamedAndDescribedSortableRichEnum<TEnum>(int value, string name, string description)
-   : NamedAndDescribedSortableRichEnum<int, TEnum>(value, name, description)
-   where TEnum : NamedAndDescribedSortableRichEnum<TEnum>, IComparable<TEnum>;
 
 /// <summary>
 /// A <see cref="SortableRichEnum{TValue,TEnum}"/>  with Name and Description properties.
@@ -31,7 +17,7 @@ public abstract class NamedAndDescribedSortableRichEnum<TValue, TEnum>
    (TValue value, string name, string description) : SortableRichEnum<TValue, TEnum>(value)
    where TValue : IEquatable<TValue>
    where TEnum : NamedAndDescribedSortableRichEnum<TValue, TEnum>,
-                 IComparable<TEnum>
+   IComparable<TEnum>
 {
    /// <summary>
    /// The name of the instance. This should be unique.

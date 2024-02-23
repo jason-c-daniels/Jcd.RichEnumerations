@@ -1,17 +1,9 @@
 ﻿using System;
 
+// ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
-
+// ReSharper disable HeapView.ObjectAllocation
 namespace Jcd.RichEnumerations;
-
-#pragma warning disable SA1402 // FileMayOnlyContainASingleType
-
-/// <summary>
-/// A <see cref="RichEnum{TValue,TEnum}"/> with TValue set to int.
-/// </summary>
-/// <typeparam name="TEnum">The enumeration type. This will contain both the structure definition and the enumeration entries as public static readonly fields.</typeparam>
-public abstract class RichEnum<TEnum>(int value) : RichEnum<int, TEnum>(value)
-   where TEnum : RichEnum<TEnum>;
 
 /// <summary>
 /// A <see cref="RichEnum{TValue,TEnum}"/> with .Value as a user provided type.

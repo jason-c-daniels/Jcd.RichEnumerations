@@ -20,7 +20,7 @@ public class MainMenu : Menu<MainMenu, MainMenu.Item, MainMenu.Result>
       public                 bool   IsFinal { get; } = isFinalResult;
    }
 
-   public class Item(string value, int order, string name) : MenuItemProvider<Item>(value, order, name)
+   public class Item(string value, int order, string name) : MenuItem<Item>(value, order, name)
    {
       public static readonly Item ViewCardSummary      = new("VCS", 1, "View Card Summary");
       public static readonly Item ViewCardDetails      = new("VCD", 2, "View Card Details");

@@ -4,6 +4,7 @@
 
 // ReSharper disable HeapView.ClosureAllocation
 // ReSharper disable HeapView.DelegateAllocation
+
 namespace Jcd.RichEnumerations.Examples.CardSelector;
 
 public class CreditCardBrand(int value, string name, string abbreviation, string description)
