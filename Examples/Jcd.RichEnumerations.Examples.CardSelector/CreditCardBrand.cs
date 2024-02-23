@@ -1,7 +1,6 @@
 ﻿// ReSharper disable HeapView.ObjectAllocation.Evident
 // ReSharper disable UnusedMember.Global
 // ReSharper disable MemberCanBePrivate.Global
-
 // ReSharper disable HeapView.ClosureAllocation
 // ReSharper disable HeapView.DelegateAllocation
 
@@ -16,21 +15,21 @@ public class CreditCardBrand(int value, string name, string abbreviation, string
    public static readonly CreditCardBrand Mastercard      = new(3, nameof(Mastercard), "MC", "Mastercard");
    public static readonly CreditCardBrand Visa            = new(4, nameof(Visa), "V", "Visa");
 
-   public static CreditCardBrand? FromNameOrAbbreviation(string nameOrAbbreviation)
-   {
-      return All.FirstOrDefault(b =>
-                                   string.Compare(b.Name
-                                                , nameOrAbbreviation
-                                                , StringComparison.InvariantCultureIgnoreCase
-                                                 )
-                                == 0
-                                || string.Compare(b.Abbreviation
-                                                , nameOrAbbreviation
-                                                , StringComparison.InvariantCultureIgnoreCase
-                                                 )
-                                == 0
-                               );
-   }
+   #region Instance Properties and Methods
 
    public string Abbreviation { get; } = abbreviation;
+
+   public static CreditCardBrand? FromNameOrAbbreviation(string key)
+   {
+      return All.FirstOrDefault(b => StringsMatch(key, b.Name) || StringsMatch(key, b.Abbreviation));
+   }
+
+   private const StringComparison StringMatchOptions = StringComparison.InvariantCultureIgnoreCase;
+
+   private static bool StringsMatch(string first, string second)
+   {
+      return string.Compare(first, second, StringMatchOptions) == 0;
+   }
+
+   #endregion
 }

@@ -19,5 +19,5 @@ public class ExampleEnum2(int value, string name, string description)
    /// </summary>
    /// <param name="other">The other instance to compare to.</param>
    /// <returns>-1 if this instance is less than the other, 1 if this instance is greater than the other. 0 if they are equal.</returns>
-   public override int CompareTo(ExampleEnum2 other) => Value.CompareTo(other.Value);
+   public override int CompareTo(ExampleEnum2 other) { return Value.CompareTo(other.Value); }
 }

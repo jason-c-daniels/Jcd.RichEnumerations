@@ -12,18 +12,18 @@ here.**
 
 * The project slug can be found in the URL of the project after creation or on the Settings/General tab.
 * On the Settings/General tab
-    - Set your build version (typically to 0.0.{build} for a new project.)
-    - Turn on AssemblyInfo patching.
-    - Turn on .NET Core project files patching.
+   - Set your build version (typically to 0.0.{build} for a new project.)
+   - Turn on AssemblyInfo patching.
+   - Turn on .NET Core project files patching.
 * On the Settings/Environment tab, select the Ubuntu build worker image to ensure unit tests run on Linux.
 * On the Settings/Build tab
-    - Set "Configuration" to "Release"
-    - Turn on "Package NuGet projects."
+   - Set "Configuration" to "Release"
+   - Turn on "Package NuGet projects."
 * On the Settings/Deployment tab
-    - Set up a NuGet provider pointed to MyGet: https://www.myget.org/F/jason-c-daniels/api/v2/package
-    - Set your API key/personal access token. You can get it from
-      your [MyGet Access Tokens](https://www.myget.org/profile/Me#!/AccessTokens)
-    - Turn on "Deploy from branch" with the branch set to "main"
+   - Set up a NuGet provider pointed to MyGet: https://www.myget.org/F/jason-c-daniels/api/v2/package
+   - Set your API key/personal access token. You can get it from
+     your [MyGet Access Tokens](https://www.myget.org/profile/Me#!/AccessTokens)
+   - Turn on "Deploy from branch" with the branch set to "main"
 
 3. Setup the [codefactor.io project](https://www.codefactor.io/dashboard).
 

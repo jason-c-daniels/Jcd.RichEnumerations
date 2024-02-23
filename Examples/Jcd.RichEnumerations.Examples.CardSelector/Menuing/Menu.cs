@@ -13,7 +13,7 @@ public abstract class Menu<TMenu, TMenuItem, TProcessingResult>
    private readonly Dictionary<TMenuItem, Func<string, TProcessingResult>> actions = new();
 
    // ReSharper disable once StaticMemberInGenericType
-   private static readonly string[] EmptyStringArray = [string.Empty];
+   protected static readonly string[] EmptyStringArray = [string.Empty];
 
    protected Menu() { TMenuItem.SortItems(); }
 

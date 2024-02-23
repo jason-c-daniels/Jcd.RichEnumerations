@@ -1,7 +1,6 @@
 ﻿using System.Text;
 
 // ReSharper disable HeapView.DelegateAllocation
-
 // ReSharper disable StringLiteralTypo
 // ReSharper disable MemberCanBePrivate.Global
 // ReSharper disable HeapView.ObjectAllocation
