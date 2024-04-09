@@ -2,6 +2,8 @@
 
 using System.Text;
 
+using Jcd.RichEnumerations.Classes;
+
 #endregion
 
 // ReSharper disable HeapView.DelegateAllocation

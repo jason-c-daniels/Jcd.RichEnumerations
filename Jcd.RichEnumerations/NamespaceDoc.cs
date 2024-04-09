@@ -4,6 +4,6 @@ namespace Jcd.RichEnumerations;
 
 // ReSharper disable once UnusedType.Global
 /// <summary>
-/// Provides classes to simplify creating and using DDD-style Rich Enumerations.
+/// Provides plain old classes and <c>record types</c> to simplify creating and using DDD-style Rich Enumerations.
 /// </summary>
 internal class NamespaceDoc;

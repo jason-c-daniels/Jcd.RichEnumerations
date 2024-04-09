@@ -1,6 +1,6 @@
 ﻿#region
 
-using Jcd.RichEnumerations.Wrappers;
+using Jcd.RichEnumerations.Classes.Wrappers;
 
 // ReSharper disable HeapView.ObjectAllocation
 // ReSharper disable MemberCanBePrivate.Global

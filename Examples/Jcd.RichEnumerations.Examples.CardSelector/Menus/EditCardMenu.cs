@@ -1,7 +1,7 @@
 ﻿#region
 
+using Jcd.RichEnumerations.Classes.Wrappers;
 using Jcd.RichEnumerations.Examples.CardSelector.Menuing;
-using Jcd.RichEnumerations.Wrappers;
 
 #endregion
 

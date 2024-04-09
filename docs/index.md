@@ -5,4 +5,8 @@
 | Namespaces | |
 | :--- | :--- |
 | [Jcd.RichEnumerations](Jcd.RichEnumerations.md 'Jcd.RichEnumerations') | Provides classes to simplify creating and using DDD-style Rich Enumerations. |
-| [Jcd.RichEnumerations.Wrappers](Jcd.RichEnumerations.Wrappers.md 'Jcd.RichEnumerations.Wrappers') | Provides simplifying wrappers for common Rich Enumeration use cases: Sorted, Named, Described...etc. |
+| [Jcd.RichEnumerations.Classes](Jcd.RichEnumerations.Classes.md 'Jcd.RichEnumerations.Classes') | |
+| [Jcd.RichEnumerations.Classes.Wrappers](Jcd.RichEnumerations.Classes.Wrappers.md 'Jcd.RichEnumerations.Classes.Wrappers') | Provides simplifying wrappers for common Rich Enumeration use cases: Sorted, Named, Described...etc. |
+| [Jcd.RichEnumerations.Records](Jcd.RichEnumerations.Records.md 'Jcd.RichEnumerations.Records') | |
+| [Jcd.RichEnumerations.Records.Wrappers](Jcd.RichEnumerations.Records.Wrappers.md 'Jcd.RichEnumerations.Records.Wrappers') | Provides simplifying wrappers for common Rich Enumeration use cases: Sorted, Named, Described...etc. |
+| [System.Runtime.CompilerServices](System.Runtime.CompilerServices.md 'System.Runtime.CompilerServices') | |

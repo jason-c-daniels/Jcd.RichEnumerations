@@ -50,6 +50,7 @@ fi
 git diff-index --check --cached $against --
 
 "$(git rev-parse --show-toplevel)/fix-markdown"
+"$(git rev-parse --show-toplevel)/trim-whitespace"
 git add "$(git rev-parse --show-toplevel)/docs"
 git add "$(git rev-parse --show-toplevel)/README.md"
 

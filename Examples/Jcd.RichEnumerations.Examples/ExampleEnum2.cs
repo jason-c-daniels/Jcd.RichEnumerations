@@ -3,7 +3,7 @@
 
 #region
 
-using Jcd.RichEnumerations.Wrappers;
+using Jcd.RichEnumerations.Classes.Wrappers;
 
 #endregion
 

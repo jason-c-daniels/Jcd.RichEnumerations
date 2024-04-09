@@ -4,13 +4,12 @@
 ## ISortableRichEnumValueProvider<TValue> Interface
 
 A helper interface to enable building auto casting into the data type aware
-[SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>')
+[SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>')
 types. This helps minimize boilerplate code.
 
 ```csharp
-public interface ISortableRichEnumValueProvider<out TValue> :
-Jcd.RichEnumerations.IRichEnumValueProvider<TValue>
-    where TValue : System.IEquatable<TValue>, System.IComparable<TValue>
+public interface ISortableRichEnumValueProvider<out TValue>
+    where TValue : System.IComparable<TValue>
 ```
 #### Type parameters
 
@@ -21,6 +20,9 @@ Jcd.RichEnumerations.IRichEnumValueProvider<TValue>
 The type of the value
 
 Derived
-&#8627; [SortableRichEnumBase&lt;TValue,TEnumeration,TEnumeratedItem&gt;](Jcd.RichEnumerations.SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>')
+&#8627; [SortableRichEnumBase&lt;TValue,TEnumeration,TEnumeratedItem&gt;](Jcd.RichEnumerations.Classes.SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.Classes.SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>')
+&#8627; [SortableRichEnumBase&lt;TValue,TEnumeration,TEnumeratedItem&gt;](Jcd.RichEnumerations.Records.SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.Records.SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>')
 
-Implements [Jcd.RichEnumerations.IRichEnumValueProvider&lt;](Jcd.RichEnumerations.IRichEnumValueProvider_TValue_.md 'Jcd.RichEnumerations.IRichEnumValueProvider<TValue>')[TValue](Jcd.RichEnumerations.ISortableRichEnumValueProvider_TValue_.md#Jcd.RichEnumerations.ISortableRichEnumValueProvider_TValue_.TValue 'Jcd.RichEnumerations.ISortableRichEnumValueProvider<TValue>.TValue')[&gt;](Jcd.RichEnumerations.IRichEnumValueProvider_TValue_.md 'Jcd.RichEnumerations.IRichEnumValueProvider<TValue>')
+| Properties | |
+| :--- | :--- |
+| [Value](Jcd.RichEnumerations.ISortableRichEnumValueProvider_TValue_.Value.md 'Jcd.RichEnumerations.ISortableRichEnumValueProvider<TValue>.Value') | The underlying value |
