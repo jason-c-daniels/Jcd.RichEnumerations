@@ -22,6 +22,7 @@
       <TargetFramework>netstandard2.0</TargetFramework>
       <PackageIcon>Jason.C.Daniels.jpg</PackageIcon>
       <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+      <PackageReadmeFile>README.md</PackageReadmeFile>
       <SymbolPackageFormat>snupkg</SymbolPackageFormat>
    </PropertyGroup>
 
