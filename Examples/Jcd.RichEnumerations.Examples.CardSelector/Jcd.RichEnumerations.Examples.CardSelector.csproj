@@ -11,4 +11,11 @@
       <ProjectReference Include="..\..\Jcd.RichEnumerations\Jcd.RichEnumerations.csproj"/>
    </ItemGroup>
 
+   <ItemGroup>
+      <PackageReference Include="SonarAnalyzer.CSharp" Version="9.23.1.88495">
+         <PrivateAssets>all</PrivateAssets>
+         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+   </ItemGroup>
+
 </Project>

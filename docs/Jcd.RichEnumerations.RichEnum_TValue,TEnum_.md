@@ -1,3 +1,4 @@
+#### [Jcd.RichEnumerations](index.md 'index')
 ### [Jcd.RichEnumerations](Jcd.RichEnumerations.md 'Jcd.RichEnumerations')
 
 ## RichEnum<TValue,TEnum> Class
@@ -23,15 +24,16 @@ The data type for .Value
 
 `TEnum`
 
-The enumeration type. This will contain both the structure definition and the enumeration entries as public static readonly fields.
+The enumeration type. This will contain both the structure definition and the enumeration
+entries as public static readonly fields.
 
 Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.Object 'System.Object') &#129106; [Jcd.RichEnumerations.RichEnumBase&lt;](Jcd.RichEnumerations.RichEnumBase_TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.RichEnumBase<TEnumeration,TEnumeratedItem>')[TEnum](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.RichEnum_TValue,TEnum_.TEnum 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>.TEnum')[,](Jcd.RichEnumerations.RichEnumBase_TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.RichEnumBase<TEnumeration,TEnumeratedItem>')[TEnum](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.RichEnum_TValue,TEnum_.TEnum 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>.TEnum')[&gt;](Jcd.RichEnumerations.RichEnumBase_TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.RichEnumBase<TEnumeration,TEnumeratedItem>') &#129106; [Jcd.RichEnumerations.RichEnumBase&lt;](Jcd.RichEnumerations.RichEnumBase_TValue,TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.RichEnumBase<TValue,TEnumeration,TEnumeratedItem>')[TValue](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.RichEnum_TValue,TEnum_.TValue 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>.TValue')[,](Jcd.RichEnumerations.RichEnumBase_TValue,TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.RichEnumBase<TValue,TEnumeration,TEnumeratedItem>')[TEnum](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.RichEnum_TValue,TEnum_.TEnum 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>.TEnum')[,](Jcd.RichEnumerations.RichEnumBase_TValue,TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.RichEnumBase<TValue,TEnumeration,TEnumeratedItem>')[TEnum](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.RichEnum_TValue,TEnum_.TEnum 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>.TEnum')[&gt;](Jcd.RichEnumerations.RichEnumBase_TValue,TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.RichEnumBase<TValue,TEnumeration,TEnumeratedItem>') &#129106; RichEnum<TValue,TEnum>
 
-Derived  
-&#8627; [DescribedRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.DescribedRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.DescribedRichEnum<TValue,TEnum>')  
-&#8627; [NamedAndDescribedRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.NamedAndDescribedRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.NamedAndDescribedRichEnum<TValue,TEnum>')  
-&#8627; [NamedRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.NamedRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.NamedRichEnum<TValue,TEnum>')  
+Derived
 &#8627; [RichEnum&lt;TEnum&gt;](Jcd.RichEnumerations.RichEnum_TEnum_.md 'Jcd.RichEnumerations.RichEnum<TEnum>')
+&#8627; [DescribedRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Wrappers.DescribedRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Wrappers.DescribedRichEnum<TValue,TEnum>')
+&#8627; [NamedAndDescribedRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Wrappers.NamedAndDescribedRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Wrappers.NamedAndDescribedRichEnum<TValue,TEnum>')
+&#8627; [NamedRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Wrappers.NamedRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Wrappers.NamedRichEnum<TValue,TEnum>')
 
 Implements [System.IEquatable&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1 'System.IEquatable`1')[TEnum](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.RichEnum_TValue,TEnum_.TEnum 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>.TEnum')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1 'System.IEquatable`1'), [Jcd.RichEnumerations.IRichEnumValueProvider&lt;](Jcd.RichEnumerations.IRichEnumValueProvider_TValue_.md 'Jcd.RichEnumerations.IRichEnumValueProvider<TValue>')[TValue](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.RichEnum_TValue,TEnum_.TValue 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>.TValue')[&gt;](Jcd.RichEnumerations.IRichEnumValueProvider_TValue_.md 'Jcd.RichEnumerations.IRichEnumValueProvider<TValue>')
 

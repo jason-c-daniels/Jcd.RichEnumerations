@@ -1,3 +1,4 @@
+#### [Jcd.RichEnumerations](index.md 'index')
 ### [Jcd.RichEnumerations](Jcd.RichEnumerations.md 'Jcd.RichEnumerations').[RichEnumBase&lt;TEnumeration,TEnumeratedItem&gt;](Jcd.RichEnumerations.RichEnumBase_TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.RichEnumBase<TEnumeration,TEnumeratedItem>')
 
 ## RichEnumBase<TEnumeration,TEnumeratedItem>.All Property

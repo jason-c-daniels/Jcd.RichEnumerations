@@ -1,4 +1,8 @@
-﻿using Jcd.RichEnumerations.Examples.CardSelector.Menus;
+﻿#region
+
+using Jcd.RichEnumerations.Examples.CardSelector.Menus;
+
+#endregion
 
 // ReSharper disable HeapView.ObjectAllocation.Evident
 // ReSharper disable HeapView.DelegateAllocation
@@ -7,12 +11,18 @@ namespace Jcd.RichEnumerations.Examples.CardSelector;
 
 internal class MainMenuActionProcessor
 {
-   private readonly MainMenu            mainMenu    = new();
    private readonly CardActionProcessor cardActions = new();
+   private readonly MainMenu mainMenu = new();
 
-   public void Run() { mainMenu.ProcessSelections(); }
+   public MainMenuActionProcessor()
+   {
+      RegisterActions();
+   }
 
-   public MainMenuActionProcessor() { RegisterActions(); }
+   public void Run()
+   {
+      mainMenu.ProcessSelections();
+   }
 
    private void RegisterActions()
    {
@@ -27,7 +37,10 @@ internal class MainMenuActionProcessor
               .RegisterAction(MainMenu.Item.RemoveCard,           RemoveCard);
    }
 
-   private static MainMenu.Result Exit(string _) { return MainMenu.Result.Exit; }
+   private static MainMenu.Result Exit(string _)
+   {
+      return MainMenu.Result.Exit;
+   }
 
    private MainMenu.Result ShowMenu(string _)
    {

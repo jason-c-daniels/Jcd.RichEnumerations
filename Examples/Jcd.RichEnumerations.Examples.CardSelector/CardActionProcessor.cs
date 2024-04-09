@@ -1,4 +1,8 @@
-﻿using Jcd.RichEnumerations.Examples.CardSelector.Menus;
+﻿#region
+
+using Jcd.RichEnumerations.Examples.CardSelector.Menus;
+
+#endregion
 
 // ReSharper disable MemberCanBeMadeStatic.Global
 // ReSharper disable HeapView.ObjectAllocation.Evident
@@ -10,34 +14,43 @@ namespace Jcd.RichEnumerations.Examples.CardSelector;
 public class CardActionProcessor
 {
    private readonly EditCardMenu editCardMenu = new();
-   private          CreditCard   activeCard   = new();
-   private readonly YesNoMenu    yesNoMenu    = new();
+   private readonly YesNoMenu yesNoMenu = new();
+   private CreditCard activeCard = new();
 
-   public CardActionProcessor() { RegisterActions(); }
+   public CardActionProcessor()
+   {
+      RegisterActions();
+   }
 
    private void RegisterActions()
    {
-      editCardMenu
-        .RegisterAction(EditCardMenu.Item.SetNumber,   SetNumber)
-        .RegisterAction(EditCardMenu.Item.SetCcv,      SetCcv)
-        .RegisterAction(EditCardMenu.Item.SetName,     SetName)
-        .RegisterAction(EditCardMenu.Item.SetBrand,    SetBrand)
-        .RegisterAction(EditCardMenu.Item.SetBank,     SetBank)
-        .RegisterAction(EditCardMenu.Item.SetExp,      SetExp)
-        .RegisterAction(EditCardMenu.Item.ViewDetails, ViewDetails)
-        .RegisterAction(EditCardMenu.Item.ShowMenu,    ShowMenu)
-        .RegisterAction(EditCardMenu.Item.Save,        Save)
-        .RegisterAction(EditCardMenu.Item.Discard,     Discard);
+      editCardMenu.RegisterAction(EditCardMenu.Item.SetNumber, SetNumber)
+                  .RegisterAction(EditCardMenu.Item.SetCcv,      SetCcv)
+                  .RegisterAction(EditCardMenu.Item.SetName,     SetName)
+                  .RegisterAction(EditCardMenu.Item.SetBrand,    SetBrand)
+                  .RegisterAction(EditCardMenu.Item.SetBank,     SetBank)
+                  .RegisterAction(EditCardMenu.Item.SetExp,      SetExp)
+                  .RegisterAction(EditCardMenu.Item.ViewDetails, ViewDetails)
+                  .RegisterAction(EditCardMenu.Item.ShowMenu,    ShowMenu)
+                  .RegisterAction(EditCardMenu.Item.Save,        Save)
+                  .RegisterAction(EditCardMenu.Item.Discard,     Discard);
    }
 
-   private static EditCardMenu.Result Discard(string _) { return EditCardMenu.Result.Discarded; }
+   private static EditCardMenu.Result Discard(string _)
+   {
+      return EditCardMenu.Result.Discarded;
+   }
 
    private EditCardMenu.Result Save(string _)
    {
-      Func<CreditCard, bool> saveMethod = activeCard.IsNew ? CreditCard.AddCard : CreditCard.UpdateCard;
+      Func<CreditCard, bool> saveMethod = activeCard.IsNew
+                                             ? CreditCard.AddCard
+                                             : CreditCard.UpdateCard;
 
       if (saveMethod(activeCard))
+      {
          return EditCardMenu.Result.Saved;
+      }
 
       Console.WriteLine("Save failed.");
 
@@ -60,7 +73,6 @@ public class CardActionProcessor
 
    private EditCardMenu.Result SetExp(string expDate)
    {
-      // TODO: Validate format
       activeCard.ExpirationDate = expDate;
       Console.WriteLine($"EXP set to: {expDate}");
 
@@ -77,7 +89,6 @@ public class CardActionProcessor
 
    private static EditCardMenu.Result SetBrand(string brandKey)
    {
-      // TODO: lookup the brand and set it. 
       Console.WriteLine("set BRAND not implemented.");
 
       return EditCardMenu.Result.Failed;
@@ -109,8 +120,13 @@ public class CardActionProcessor
 
    public void AddNewCard(string? name)
    {
-      var card                                           = new CreditCard { IsNew = true };
-      if (!string.IsNullOrEmpty(name?.Trim())) card.Name = name;
+      var card = new CreditCard { IsNew = true };
+
+      if (!string.IsNullOrEmpty(name?.Trim()))
+      {
+         card.Name = name;
+      }
+
       EditCard(card);
    }
 
@@ -124,18 +140,26 @@ public class CardActionProcessor
 
    public void RemoveCard(CreditCard card)
    {
-      var result =
-         yesNoMenu.ProcessSelections($"You're about to remove card: \"{card.Name}\" which expires on {card.ExpirationDate}"
-                                    );
+      var result = yesNoMenu.ProcessSelections($"You're about to remove card: \"{card.Name}\" which expires on {card.ExpirationDate}");
 
-      if (result == YesNoMenu.Result.No) return;
+      if (result == YesNoMenu.Result.No)
+      {
+         return;
+      }
+
       CreditCard.RemoveCardById(card.Id);
       Console.WriteLine($"Credit Card Removed: {card.Name}; EXP: {card.ExpirationDate}");
    }
 
-   public static void ShowCardDetails(CreditCard card) { Console.WriteLine(card.GetCardDetails()); }
+   public static void ShowCardDetails(CreditCard card)
+   {
+      Console.WriteLine(card.GetCardDetails());
+   }
 
-   public static void ShowCardSummary(CreditCard card) { Console.WriteLine(card.GetCardSummary()); }
+   public static void ShowCardSummary(CreditCard card)
+   {
+      Console.WriteLine(card.GetCardSummary());
+   }
 
    public static void ForCard(string? cardIdentifier, Action<CreditCard> action)
    {
@@ -163,7 +187,10 @@ public class CardActionProcessor
    public static void ForAllCards(Action<CreditCard> action)
    {
       // ReSharper disable once HeapView.ObjectAllocation.Possible
-      foreach (var card in CreditCard.All) action?.Invoke(card);
+      foreach (var card in CreditCard.All)
+      {
+         action?.Invoke(card);
+      }
 
       Console.WriteLine();
    }

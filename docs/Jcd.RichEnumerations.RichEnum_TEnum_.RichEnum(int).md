@@ -1,3 +1,4 @@
+#### [Jcd.RichEnumerations](index.md 'index')
 ### [Jcd.RichEnumerations](Jcd.RichEnumerations.md 'Jcd.RichEnumerations').[RichEnum&lt;TEnum&gt;](Jcd.RichEnumerations.RichEnum_TEnum_.md 'Jcd.RichEnumerations.RichEnum<TEnum>')
 
 ## RichEnum(int) Constructor

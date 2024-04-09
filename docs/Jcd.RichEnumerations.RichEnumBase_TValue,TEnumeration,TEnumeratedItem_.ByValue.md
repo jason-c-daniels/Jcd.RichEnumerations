@@ -1,8 +1,9 @@
+#### [Jcd.RichEnumerations](index.md 'index')
 ### [Jcd.RichEnumerations](Jcd.RichEnumerations.md 'Jcd.RichEnumerations').[RichEnumBase&lt;TValue,TEnumeration,TEnumeratedItem&gt;](Jcd.RichEnumerations.RichEnumBase_TValue,TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.RichEnumBase<TValue,TEnumeration,TEnumeratedItem>')
 
 ## RichEnumBase<TValue,TEnumeration,TEnumeratedItem>.ByValue Property
 
-A lookup of enumerated elements by their Value property.  
+A lookup of enumerated elements by their Value property.
 Useful for implementing conversion operators.
 
 ```csharp

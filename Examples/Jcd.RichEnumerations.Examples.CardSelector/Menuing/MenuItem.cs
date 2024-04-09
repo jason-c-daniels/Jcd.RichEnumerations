@@ -1,13 +1,27 @@
-﻿// ReSharper disable HeapView.ObjectAllocation
+﻿#region
+
+using Jcd.RichEnumerations.Wrappers;
+
+// ReSharper disable HeapView.ObjectAllocation
 // ReSharper disable MemberCanBePrivate.Global
+
+#pragma warning disable S2743
+
+#endregion
 
 namespace Jcd.RichEnumerations.Examples.CardSelector.Menuing;
 
-public abstract class MenuItem<TMenuItem>(string value, int order, string name)
-   : NamedSortableRichEnum<CaseInsensitiveString, TMenuItem>(value, name)
-   , IMenuItemProvider<CaseInsensitiveString, TMenuItem>
+public abstract class MenuItem<TMenuItem>(string value, int order, string name) : NamedSortableRichEnum<CaseInsensitiveString, TMenuItem>(value, name)
+                                                                                , IMenuItemProvider<CaseInsensitiveString, TMenuItem>
    where TMenuItem : MenuItem<TMenuItem>
 {
+   #region IMenuItemProvider<CaseInsensitiveString,TMenuItem> Members
+
+   public static IReadOnlyList<TMenuItem> AllItems => All;
+   public static IReadOnlyDictionary<CaseInsensitiveString, TMenuItem> LookupByValue => ByValue;
+
+   #endregion
+
    #region Properties and Overrides
 
    /// <summary>
@@ -19,19 +33,26 @@ public abstract class MenuItem<TMenuItem>(string value, int order, string name)
 
    public int Order { get; } = order;
 
-   public override int CompareTo(TMenuItem other) { return Order.CompareTo(other.Order); }
+   public override int CompareTo(TMenuItem other)
+   {
+      return Order.CompareTo(other.Order);
+   }
 
-   public override string ToString() { return $"{Value} - {Name}"; }
+   public override string ToString()
+   {
+      return $"{Value} - {Name}";
+   }
 
    public static void SortItems()
    {
-      if (IsSorted) return;
+      if (IsSorted)
+      {
+         return;
+      }
+
       Sort();
       IsSorted = true;
    }
 
    #endregion
-
-   public static IReadOnlyList<TMenuItem>                              AllItems      => All;
-   public static IReadOnlyDictionary<CaseInsensitiveString, TMenuItem> LookupByValue => ByValue;
 }
