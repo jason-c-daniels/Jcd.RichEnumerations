@@ -1,54 +1,61 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
-        <LangVersion>latest</LangVersion>
-        <Nullable>enable</Nullable>
-    </PropertyGroup>
+   <PropertyGroup>
+      <TargetFramework>netstandard2.0</TargetFramework>
+      <LangVersion>latest</LangVersion>
+      <Nullable>enable</Nullable>
+   </PropertyGroup>
 
-    <ItemGroup>
-        <PackageReference Include="DefaultDocumentation" Version="0.8.2">
-            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-            <PrivateAssets>all</PrivateAssets>
-        </PackageReference>
-        <PackageReference Include="Jcd.Validations" Version="1.1.7"/>
-    </ItemGroup>
-    <PropertyGroup>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Title>Jcd.RichEnumerations</Title>
-        <Authors>Jason C. Daniels</Authors>
-        <Description>A short description goes here.</Description>
-        <Copyright>2024</Copyright>
-        <PackageProjectUrl>https://github.com/jason-c-daniels/Jcd.RichEnumerations</PackageProjectUrl>
-        <PackageLicenseUrl>https://github.com/jason-c-daniels/Jcd.RichEnumerations/blob/main/LICENSE</PackageLicenseUrl>
-        <RepositoryUrl>https://github.com/jason-c-daniels/Jcd.RichEnumerations</RepositoryUrl>
-        <RepositoryType>GitHub</RepositoryType>
-        <PackageTags>RichEnum;Rich Enumeration;RichEnums;Rich Enumerations</PackageTags>
-        <PackageVersion>0.0.1</PackageVersion>
-        <AssemblyVersion>0.0.1</AssemblyVersion>
-        <FileVersion>0.0.1</FileVersion>
-        <TargetFramework>netstandard2.0</TargetFramework>
-        <PackageIconUrl></PackageIconUrl>
-        <PackageReleaseNotes></PackageReleaseNotes>
-    </PropertyGroup>
+   <PropertyGroup>
+      <Title>Jcd.RichEnumerations</Title>
+      <Authors>Jason C. Daniels</Authors>
+      <Description>A netstandard2.0 library that provides DDD-style rich enumeration base classes.</Description>
+      <Copyright>2024</Copyright>
+      <PackageProjectUrl>https://github.com/jason-c-daniels/Jcd.RichEnumerations</PackageProjectUrl>
+      <RepositoryUrl>https://github.com/jason-c-daniels/Jcd.RichEnumerations</RepositoryUrl>
+      <PackageLicenseExpression>MIT</PackageLicenseExpression>
+      <RepositoryType>GitHub</RepositoryType>
+      <PackageTags>rich-enum;rich-enumeration;rich-enums;rich-enumerations;ddd ddd-enumeration</PackageTags>
+      <PackageVersion>0.0.1</PackageVersion>
+      <AssemblyVersion>0.0.1</AssemblyVersion>
+      <FileVersion>0.0.1</FileVersion>
+      <TargetFramework>netstandard2.0</TargetFramework>
+      <PackageIcon>Jason.C.Daniels.jpg</PackageIcon>
+      <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+      <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+   </PropertyGroup>
 
-    <PropertyGroup>
-        <PackageReadmeFile>README.md</PackageReadmeFile>
-    </PropertyGroup>
+   <ItemGroup>
+      <None Include="..\README.md" Pack="true" PackagePath="\"/>
+      <None Include="..\LICENSE" Pack="true" PackagePath="\"/>
+      <None Include="..\nuget.config" Pack="false" PackagePath="\"/>
+   </ItemGroup>
 
-    <ItemGroup>
-        <None Include="..\README.md" Pack="true" PackagePath="\"/>
-        <None Include="..\LICENSE" Pack="false" PackagePath="\"/>
-        <None Include="..\nuget.config" Pack="false" PackagePath="\"/>
-    </ItemGroup>
+   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <DocumentationFile>..\docs\Jcd.RichEnumerations.xml</DocumentationFile>
+   </PropertyGroup>
 
-    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-        <DocumentationFile>..\docs\Jcd.RichEnumerations.xml</DocumentationFile>
-    </PropertyGroup>
+   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <DocumentationFile>..\docs\Jcd.RichEnumerations.xml</DocumentationFile>
+   </PropertyGroup>
 
-    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-        <DocumentationFile>..\docs\Jcd.RichEnumerations.xml</DocumentationFile>
-    </PropertyGroup>
-
+   <ItemGroup>
+      <PackageReference Include="DefaultDocumentation" Version="0.8.2">
+         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+         <PrivateAssets>all</PrivateAssets>
+      </PackageReference>
+      <PackageReference Include="Jcd.Validations" Version="1.1.7"/>
+      <PackageReference Include="SonarAnalyzer.CSharp" Version="9.23.1.88495">
+         <PrivateAssets>all</PrivateAssets>
+         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+   </ItemGroup>
+   
+   <ItemGroup>
+      <None Remove="icon\Jason.C.Daniels.jpg"/>
+      <Content Include="icon\Jason.C.Daniels.jpg" Pack="true" PackagePath="\">
+         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+   </ItemGroup>
 </Project>
   

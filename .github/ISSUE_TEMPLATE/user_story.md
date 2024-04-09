@@ -30,6 +30,6 @@ Check off completed items as they're completed.
 2. - [ ] Team understands acceptance criteria
 3. - [ ] Team has defined solution / steps to satisfy acceptance criteria
 4. - [ ] Acceptance criteria is verifiable / testable
-5. - [ ] External / 3rd Party dependencies identified 
+5. - [ ] External / 3rd Party dependencies identified
 
 *template adapted from [mdn/sprints templates](https://raw.githubusercontent.com/mdn/sprints/master/.github/ISSUE_TEMPLATE/user-story-template.md)*

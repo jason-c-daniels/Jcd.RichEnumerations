@@ -1,3 +1,4 @@
+#### [Jcd.RichEnumerations](index.md 'index')
 ### [Jcd.RichEnumerations](Jcd.RichEnumerations.md 'Jcd.RichEnumerations').[SortableRichEnum&lt;TEnum&gt;](Jcd.RichEnumerations.SortableRichEnum_TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TEnum>')
 
 ## SortableRichEnum(int) Constructor
@@ -14,3 +15,30 @@ protected SortableRichEnum(int value);
 `value` [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32')
 
 The value of the instance. This must be unique.
+
+### Example
+
+```csharp
+public class MySortableRichEnum(int value, string customText) : SortableRichEnum<MySortableRichEnum>(value)
+{
+     public static readonly MySortableRichEnum Item1 = new (1, "First Item");
+     public static readonly MySortableRichEnum Item2 = new (-1, "Second Item");
+
+     public string CustomText => customText;
+}
+
+// ...
+class Program
+{
+   public void Main()
+   {
+      // Call .Sort during app startup.
+
+      // This sorts numerically, ascending.
+      MySortableRichEnum.Sort();
+
+      // This sorts numerically, descending.
+      MySortableRichEnum.Sort((x,y) => y.Value.CompareTo(x.Value));
+   }
+}
+```

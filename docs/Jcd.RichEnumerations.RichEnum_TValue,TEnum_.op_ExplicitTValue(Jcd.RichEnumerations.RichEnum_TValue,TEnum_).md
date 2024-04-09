@@ -1,3 +1,4 @@
+#### [Jcd.RichEnumerations](index.md 'index')
 ### [Jcd.RichEnumerations](Jcd.RichEnumerations.md 'Jcd.RichEnumerations').[RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>')
 
 ## RichEnum<TValue,TEnum>.explicit operator TValue(RichEnum<TValue,TEnum>) Operator
@@ -16,5 +17,5 @@ public static TValue explicit operator TValue(Jcd.RichEnumerations.RichEnum<TVal
 The [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>') instance.
 
 #### Returns
-[TValue](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.RichEnum_TValue,TEnum_.TValue 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>.TValue')  
+[TValue](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.RichEnum_TValue,TEnum_.TValue 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>.TValue')
 The .Value of the [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>') instance

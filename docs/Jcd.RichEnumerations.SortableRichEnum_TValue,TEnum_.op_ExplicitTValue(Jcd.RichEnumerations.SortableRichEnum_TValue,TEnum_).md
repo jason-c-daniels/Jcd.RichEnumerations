@@ -1,3 +1,4 @@
+#### [Jcd.RichEnumerations](index.md 'index')
 ### [Jcd.RichEnumerations](Jcd.RichEnumerations.md 'Jcd.RichEnumerations').[SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>')
 
 ## SortableRichEnum<TValue,TEnum>.explicit operator TValue(SortableRichEnum<TValue,TEnum>) Operator
@@ -16,5 +17,5 @@ public static TValue explicit operator TValue(Jcd.RichEnumerations.SortableRichE
 The [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>') instance.
 
 #### Returns
-[TValue](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.TValue 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>.TValue')  
+[TValue](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.TValue 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>.TValue')
 The .Value of the [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>') instance

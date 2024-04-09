@@ -1,8 +1,10 @@
+#### [Jcd.RichEnumerations](index.md 'index')
 ### [Jcd.RichEnumerations](Jcd.RichEnumerations.md 'Jcd.RichEnumerations')
 
 ## IRichEnumValueProvider<TValue> Interface
 
-A helper interface to enable building auto casting into the data type aware [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>') types. This helps minimize boilerplate code.
+A helper interface to enable building auto casting into the data type aware [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>')
+types. This helps minimize boilerplate code.
 
 ```csharp
 public interface IRichEnumValueProvider<out TValue>
@@ -16,9 +18,10 @@ public interface IRichEnumValueProvider<out TValue>
 
 The type of the value
 
-Derived  
-&#8627; [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>')  
-&#8627; [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.SortableRichEnum<TValue,TEnum>')
+Derived
+&#8627; [ISortableRichEnumValueProvider&lt;TValue&gt;](Jcd.RichEnumerations.ISortableRichEnumValueProvider_TValue_.md 'Jcd.RichEnumerations.ISortableRichEnumValueProvider<TValue>')
+&#8627; [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.RichEnum<TValue,TEnum>')
+&#8627; [SortableRichEnumBase&lt;TValue,TEnumeration,TEnumeratedItem&gt;](Jcd.RichEnumerations.SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>')
 
 | Properties | |
 | :--- | :--- |

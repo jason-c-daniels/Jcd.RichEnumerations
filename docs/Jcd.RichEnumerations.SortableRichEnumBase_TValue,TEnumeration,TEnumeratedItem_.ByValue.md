@@ -1,12 +1,13 @@
+#### [Jcd.RichEnumerations](index.md 'index')
 ### [Jcd.RichEnumerations](Jcd.RichEnumerations.md 'Jcd.RichEnumerations').[SortableRichEnumBase&lt;TValue,TEnumeration,TEnumeratedItem&gt;](Jcd.RichEnumerations.SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>')
 
 ## SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>.ByValue Property
 
-A lookup of enumerated elements by their Value property.  
+A lookup of enumerated elements by their Value property.
 Useful for implementing conversion operators.
 
 ```csharp
-protected static System.Collections.Generic.IReadOnlyDictionary<TValue,TEnumeratedItem> ByValue { get; }
+public static System.Collections.Generic.IReadOnlyDictionary<TValue,TEnumeratedItem> ByValue { get; }
 ```
 
 #### Property Value

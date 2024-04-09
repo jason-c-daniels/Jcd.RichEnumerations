@@ -3,24 +3,33 @@
 // ReSharper disable MemberCanBePrivate.Global
 // ReSharper disable VirtualMemberNeverOverridden.Global
 
+#pragma warning disable S2743
+
 namespace Jcd.RichEnumerations.Examples.CardSelector.Menuing;
 
 public abstract class Menu<TMenu, TMenuItem, TProcessingResult>
    where TMenu : Menu<TMenu, TMenuItem, TProcessingResult>
-   where TMenuItem : MenuItemProvider<TMenuItem>, IMenuItemProvider<CaseInsensitiveString, TMenuItem>
+   where TMenuItem : MenuItem<TMenuItem>, IMenuItemProvider<CaseInsensitiveString, TMenuItem>
    where TProcessingResult : IEquatable<TProcessingResult>, IMenuProcessingResult<TProcessingResult>
 {
+   // ReSharper disable once StaticMemberInGenericType
+   protected static readonly string[] EmptyStringArray = [string.Empty];
    private readonly Dictionary<TMenuItem, Func<string, TProcessingResult>> actions = new();
 
-   // ReSharper disable once StaticMemberInGenericType
-   private static readonly string[] EmptyStringArray = [string.Empty];
-
-   protected Menu() { TMenuItem.SortItems(); }
+   protected Menu()
+   {
+      TMenuItem.SortItems();
+   }
 
    public virtual void Show(string prompt = "")
    {
       Console.WriteLine();
-      if (!string.IsNullOrWhiteSpace(prompt)) Console.WriteLine(prompt);
+
+      if (!string.IsNullOrWhiteSpace(prompt))
+      {
+         Console.WriteLine(prompt);
+      }
+
       var separatorShown = false;
 
       // ReSharper disable once HeapView.ObjectAllocation.Possible
@@ -46,7 +55,11 @@ public abstract class Menu<TMenu, TMenuItem, TProcessingResult>
 
    protected (TMenuItem selection, string args) GetSelection(string prompt = "", bool showMenu = true)
    {
-      if (showMenu) Show(prompt);
+      if (showMenu)
+      {
+         Show(prompt);
+      }
+
       var (cmd, args, cmdText) = GetMenuSelection();
 
       while (cmd is null)
@@ -55,7 +68,11 @@ public abstract class Menu<TMenu, TMenuItem, TProcessingResult>
          {
             Console.WriteLine("");
             Console.WriteLine($"\"{cmdText}\" is not a valid option.");
-            if (showMenu) Show(prompt);
+
+            if (showMenu)
+            {
+               Show(prompt);
+            }
          }
 
          (cmd, args, cmdText) = GetMenuSelection();
@@ -74,12 +91,16 @@ public abstract class Menu<TMenu, TMenuItem, TProcessingResult>
 
    protected virtual TMenuItem? GetItem(string key)
    {
-      return TMenuItem.LookupByValue.ContainsKey(key) ? TMenuItem.LookupByValue[key] : null;
+      return TMenuItem.LookupByValue.ContainsKey(key)
+                ? TMenuItem.LookupByValue[key]
+                : null;
    }
 
    protected virtual TProcessingResult ProcessSelection(TMenuItem item, string args)
    {
-      return actions.TryGetValue(item, out var result) ? result.Invoke(args) : TProcessingResult.Default;
+      return actions.TryGetValue(item, out var result)
+                ? result.Invoke(args)
+                : TProcessingResult.Default;
    }
 
    public TMenu RegisterAction(TMenuItem item, Func<string, TProcessingResult> hook)
@@ -96,11 +117,14 @@ public abstract class Menu<TMenu, TMenuItem, TProcessingResult>
       do
       {
          var (selection, param) = GetSelection(prompt, init);
-         init                   = false;
+         init = false;
 
          var result = ProcessSelection(selection, param);
 
-         if (result.IsFinal) return result;
+         if (result.IsFinal)
+         {
+            return result;
+         }
       }
       while (true);
    }
