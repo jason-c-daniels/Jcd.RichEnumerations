@@ -10,7 +10,6 @@ using System.Linq;
 
 #endregion
 
-
 namespace Jcd.RichEnumerations.Classes;
 
 #pragma warning disable S2436

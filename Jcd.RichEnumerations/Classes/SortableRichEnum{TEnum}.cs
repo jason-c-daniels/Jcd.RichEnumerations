@@ -1,15 +1,8 @@
-﻿#region
-
-// ReSharper disable UnusedType.Global
-// ReSharper disable HeapView.PossibleBoxingAllocation
-// ReSharper disable HeapView.ObjectAllocation
-
-#endregion
-
-namespace Jcd.RichEnumerations.Classes;
+﻿namespace Jcd.RichEnumerations.Classes;
 
 /// <summary>
-/// A base for sortable rich enumerations. This type provides a hook to sort the <see cref="RichEnum{TValue,TEnum}"/><c>.All</c> collection.
+/// A base for sortable rich enumerations. This type provides a hook to sort the <see cref="RichEnum{TValue,TEnum}" />
+/// <c>.All</c> collection.
 /// <c>.Sort()</c> should be called once and only once during application startup.
 /// </summary>
 /// <param name="value">The value of the instance. This must be unique.</param>

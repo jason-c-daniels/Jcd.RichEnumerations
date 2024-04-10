@@ -14,7 +14,7 @@ using System.Reflection;
 namespace Jcd.RichEnumerations.Classes;
 
 /// <summary>
-/// Provides access to all instances on the enumeration container by way of the <see cref="All"/> property.
+/// Provides access to all instances on the enumeration container by way of the <see cref="All" /> property.
 /// </summary>
 /// <remarks>
 /// NOTE: This is intended as a supporting class. Consumers should prefer <see cref="RichEnum{TValue,TEnum}" /> or

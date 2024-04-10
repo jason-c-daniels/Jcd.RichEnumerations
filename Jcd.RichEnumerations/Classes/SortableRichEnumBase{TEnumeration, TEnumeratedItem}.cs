@@ -12,7 +12,8 @@ using System.Collections.Generic;
 namespace Jcd.RichEnumerations.Classes;
 
 /// <summary>
-/// A base for sortable rich enumerations. This type provides a hook to sort the <see cref="RichEnum{TValue,TEnum}"/><c>All</c> collection.
+/// A base for sortable rich enumerations. This type provides a hook to sort the <see cref="RichEnum{TValue,TEnum}" />
+/// <c>All</c> collection.
 /// <c>.Sort()</c> should be called once and only once during application startup.
 /// </summary>
 /// <remarks>

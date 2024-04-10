@@ -15,7 +15,8 @@ using System.Linq;
 namespace Jcd.RichEnumerations.Records;
 
 /// <summary>
-/// Provides access to all instances on the enumeration container by way of the <see cref="RichEnumBase{TEnumeration, TEnumeratedItem}.All"/> property.
+/// Provides access to all instances on the enumeration container by way of the
+/// <see cref="RichEnumBase{TEnumeration, TEnumeratedItem}.All" /> property.
 /// And allows lookup of items by value. This is used in <see cref="RichEnum{TValue,TEnum}" /> to provide conversion
 /// operators.
 /// </summary>

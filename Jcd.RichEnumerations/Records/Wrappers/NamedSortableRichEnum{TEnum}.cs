@@ -1,17 +1,9 @@
-﻿#region
-
-// ReSharper disable UnusedType.Global
-// ReSharper disable HeapView.PossibleBoxingAllocation
-// ReSharper disable HeapView.ObjectAllocation
-
-#endregion
-
-namespace Jcd.RichEnumerations.Records.Wrappers;
+﻿namespace Jcd.RichEnumerations.Records.Wrappers;
 
 /// <summary>
 /// A <see cref="SortableRichEnum{TValue,TEnum}" /> with a Name property.
 /// </summary>
-/// <typeparam name="TEnum">The type being derived from <see cref="NamedSortableRichEnum{TEnum}"/></typeparam>
+/// <typeparam name="TEnum">The type being derived from <see cref="NamedSortableRichEnum{TEnum}" /></typeparam>
 public abstract record NamedSortableRichEnum<TEnum> : NamedSortableRichEnum<int, TEnum>
    where TEnum : NamedSortableRichEnum<TEnum>, ISortableRichEnumValueProvider<int>
 {

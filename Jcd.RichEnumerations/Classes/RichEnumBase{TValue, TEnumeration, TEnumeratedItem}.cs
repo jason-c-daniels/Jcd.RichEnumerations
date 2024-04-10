@@ -10,13 +10,13 @@ using System.Linq;
 
 #endregion
 
-
 namespace Jcd.RichEnumerations.Classes;
 
 #pragma warning disable S2436
 
 /// <summary>
-/// Provides access to a lookup of all instances on the enumeration container by way of the <see cref="ByValue"/> property.
+/// Provides access to a lookup of all instances on the enumeration container by way of the <see cref="ByValue" />
+/// property.
 /// And allows lookup of items by value. This is used in <see cref="RichEnum{TValue,TEnum}" /> to provide conversion
 /// operators.
 /// </summary>

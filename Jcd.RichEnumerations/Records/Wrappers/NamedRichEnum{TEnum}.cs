@@ -18,7 +18,7 @@ public abstract record NamedRichEnum<TEnum> : NamedRichEnum<int, TEnum>
    where TEnum : NamedRichEnum<TEnum>, IEquatable<TEnum>
 {
    /// <summary>
-   /// Constructs a <see cref="NamedRichEnum{TEnum}"/>.
+   /// Constructs a <see cref="NamedRichEnum{TEnum}" />.
    /// </summary>
    /// <param name="value">The value for the instance. This must be unique.</param>
    /// <param name="name">The name for the instance. This should be unique.</param>

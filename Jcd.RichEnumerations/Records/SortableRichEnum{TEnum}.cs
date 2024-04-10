@@ -1,12 +1,4 @@
-﻿#region
-
-// ReSharper disable UnusedType.Global
-// ReSharper disable HeapView.PossibleBoxingAllocation
-// ReSharper disable HeapView.ObjectAllocation
-
-#endregion
-
-namespace Jcd.RichEnumerations.Records;
+﻿namespace Jcd.RichEnumerations.Records;
 
 /// <summary>
 /// A rich enum that can be sorted with a call to <c>.Sort()</c>.

@@ -1,13 +1,4 @@
-﻿#region
-
-// ReSharper disable UnusedType.Global
-// ReSharper disable HeapView.PossibleBoxingAllocation
-// ReSharper disable HeapView.ObjectAllocation
-
-#endregion
-
-
-namespace Jcd.RichEnumerations.Classes.Wrappers;
+﻿namespace Jcd.RichEnumerations.Classes.Wrappers;
 
 /// <summary>
 /// A rich enumeration containing Description, Name and Value properties with int as the underlying Value data type.

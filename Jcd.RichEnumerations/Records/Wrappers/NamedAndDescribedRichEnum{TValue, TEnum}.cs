@@ -20,7 +20,7 @@ public abstract record NamedAndDescribedRichEnum<TValue, TEnum> : RichEnum<TValu
    where TEnum : NamedAndDescribedRichEnum<TValue, TEnum>
 {
    /// <summary>
-   /// Constructs a <see cref="NamedAndDescribedRichEnum{TValue,TEnum}"/>
+   /// Constructs a <see cref="NamedAndDescribedRichEnum{TValue,TEnum}" />
    /// </summary>
    /// <param name="value">The value for the instance. This must be unique.</param>
    /// <param name="name">The name for the instance. This should be unique.</param>

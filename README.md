@@ -1,6 +1,7 @@
 # Jcd.RichEnumerations
 
-A *netstandard2.0* library that provides DDD-style rich enumeration base types for both _plain old classes_ and `record` types.
+A *netstandard2.0* library that provides DDD-style rich enumeration base types for both _plain old
+classes_ and `record` types.
 
 ## Examples
 

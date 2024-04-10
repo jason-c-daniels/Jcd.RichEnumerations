@@ -13,12 +13,12 @@ namespace Jcd.RichEnumerations.Records.Wrappers;
 /// <summary>
 /// A <see cref="SortableRichEnum{TValue,TEnum}" /> with a Description property.
 /// </summary>
-/// <typeparam name="TEnum">The type being derived from <see cref="DescribedSortableRichEnum{TEnum}"/></typeparam>
+/// <typeparam name="TEnum">The type being derived from <see cref="DescribedSortableRichEnum{TEnum}" /></typeparam>
 public abstract record DescribedSortableRichEnum<TEnum> : DescribedSortableRichEnum<int, TEnum>
    where TEnum : DescribedSortableRichEnum<TEnum>, IComparable<TEnum>, ISortableRichEnumValueProvider<int>
 {
    /// <summary>
-   /// Constructs a <see cref="DescribedSortableRichEnum{TEnum}"/>
+   /// Constructs a <see cref="DescribedSortableRichEnum{TEnum}" />
    /// </summary>
    /// <param name="value">The value of the instance. This must be unique.</param>
    /// <param name="description">The description of the instance. This should be unique.</param>

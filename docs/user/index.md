@@ -13,7 +13,7 @@ programmer doesn't have to perform a lookup. (Or call an extension
 method... etc.)
 
 They are useful when looking to move away from various code smells.
-(e.g. Enum for control flow. Adding attributes to enum entries...etc.)
+(e.g. Enum for control flow. Attaching metadata to enum entries via attributes...etc.)
 
 ### Benefits of Rich Enumerations
 
@@ -22,6 +22,7 @@ Rich enumerations have a couple of obvious benefits.
 1. You get all the power of an object-oriented language underlying the implementation.
 2. All of your data and constructs are colocated. You're keeping related concerns together.
 3. You can associate very descriptive information with the individual values, easing the debugging process.
+4. The values you initialize the instances with don't have to be constants! HOORAY! (sort of, read the next section.)
 
 A possibly non-obvious benefit is that you can strictly enforce which values are allowed.
 Indeed, this library takes that opinion. Attempting to cast a numeric value not represented
@@ -31,25 +32,34 @@ After all, enum values comprise a **closed set**. (i.e. no other values are allo
 Yet the underlying implementation of the integral `enum` in C# allows casting an integer
 to any `enum`. This is in violation of the concept of a _closed set._
 
+**NB: This behavior can be overridden by providing your own conversion operators on your `RichEnum` derived types.**
+
 ### Downsides to Rich Enumerations
 
 1. They are **not** constants and cannot be used where constants are required.
-   (e.g. switch expressions and case statements can't use them)
-2. If, for some reason, you need to reference one RichEnum instance when creating another you must define the referenced
-   one first. Doing this can prove tricky, depending on the relationships involved. This is not true of regular enums.
+   (e.g. switch expressions and case statements can't use them) It's this aspect that allows you
+   to use non-constant values when initializing the instances, powerful but at a cost.
+
+2. If, for some reason, you need to reference one `RichEnum` value when creating another you must define the referenced
+   one first. Depending on the relationships involved, this can prove tricky. This is not true of regular enums.
    However, you should reconsider your approach to try and eliminate such interdependencies, before going down this path.
-3. They're slower. While I've taken great pains to keep this library as performant as possible
-   comparing values will still require a property access, which adds nanoseconds to each comparison.
+
+3. They're slower than raw enums. While I've taken great pains to keep this library as performant as possible
+   comparing values will still require a property access, which adds at least one CPU cycle to each comparison.
    These add up over time, especially in tight loops. If your application is highly performance sensitive
    (e.g. near realtime and/or bulk data processing of millions of records per second) rich enumerations
-   **may** consume more CPU time than wanted.
+   **may** consume more CPU time than wanted. If you suspect using these has become a hot-path, run performance
+   profiling to be sure. Then adjust your code as necessary to your needs.
+
+4. Serialization and deserialization takes extra effort and code. Out of the box, these will not deserialize correctly.
+   You have to use your own hooks (or ones I'll provide later) to correctly serialize and deserialize these.
 
 ## When Should I Consider Using Rich Enumerations?
 
-The uselessly obvious "when the benefits outweigh the downsides."
+The unilluminatingly obvious answer is "when the benefits outweigh the downsides."
 But how do you know when that's the case? This section will guide you through
-some examples of times to seriously consider using _rich enumerations_ over the
-built-in C# `enum`.
+a couple examples of when to seriously consider using _rich enumerations_ over the
+built-in C# `enum`. These are based on coding practices I've encountered numerous times.
 
 ### Use Case 1: When you're attaching metadata to the individual values in an `enum`
 
@@ -87,7 +97,7 @@ public enum FeatureEndpointType
 // 2. Decode the enum to metadata.
 var featureAsInt = ...; // obtained somehow (user input?)
 var feature = (FeatureEndpointType) featureAsInt;
-FeatureApiMetadata metadata = SomeReflectionHelper.GetAttribute<FeatureApiMetadataAttribute>(feature);
+var metadata = SomeReflectionHelper.GetAttribute<FeatureApiMetadataAttribute>(feature);
 
 var uri = metadata.ApiUri;
 
@@ -123,8 +133,8 @@ public class FeatureEndpointType(int value, Version apiVer, Uri apiUri, string d
    // THESE MUST BE FIELDS!
    public static readonly FeatureEndpointType AppFeature1V1 = new (1,new Version(1,0), new Uri("https://localhost:9999/api/v1/feature1"), "feature1 api endpoint, for v1");
    public static readonly FeatureEndpointType AppFeature2V1 = new (2,new Version(1,1), new Uri("https://localhost:9999/api/v1/feature2"), "feature2 api endpoint, for v1");
-   public static readonly FeatureEndpointType AppFeature1V1 = new (3,new Version(2,0), new Uri("https://localhost:9999/api/v2/feature1"), "feature1 api endpoint, for v2");
-   public static readonly FeatureEndpointType AppFeature2V1 = new (4,new Version(2,0), new Uri("https://localhost:9999/api/v2/feature2"), "feature2 api endpoint, for v2");
+   public static readonly FeatureEndpointType AppFeature1V2 = new (3,new Version(2,0), new Uri("https://localhost:9999/api/v2/feature1"), "feature1 api endpoint, for v2");
+   public static readonly FeatureEndpointType AppFeature2V2 = new (4,new Version(2,0), new Uri("https://localhost:9999/api/v2/feature2"), "feature2 api endpoint, for v2");
 
    #endregion
 
@@ -193,6 +203,8 @@ In this example, the control-flow that's being governed by the `enum` is
 the selection of what to populate in the second list as well as what
 text to display.
 
+#### Example: Removing control flow based on enums
+
 ```csharp
 
 public enum Region {
@@ -224,7 +236,7 @@ public enum Country {
 
 Region region = GetRegion(); // get the selection from the UI, and if necessary translate to the enum.
 
-var countries = GetCountries(continent);
+var countries = GetCountries(region);
 var countryNames = countries.Select(c=>GetCountryName(c)).ToList();
 
 //... display the list to the user...
@@ -232,10 +244,10 @@ var countryNames = countries.Select(c=>GetCountryName(c)).ToList();
 List<Country> GetCountries(Region region) {
    return region switch
    {
-      Region.Europe => [Country.France, Country.Germany, Country.UnitedKigndom],
+      Region.Europe => [Country.France, Country.Germany, Country.UnitedKingdom],
       Region.Scandinavia => [Country.Denmark, Country.Norway, Country.Sweden],
       Region.NorthAmerica => [Country.Canada, Country.Mexico, Country.UnitedStates],
-      _ => throw new ArgumentException("Invalid Value",nameof(region));
+      _ => throw new ArgumentException("Invalid Value",nameof(region))
    };
 }
 
@@ -355,7 +367,7 @@ is onerous. Breaking them up into smaller, related groups, becomes desirable.
 Yet the default implementation of `RichEnum` forbids this. Enter `RichEnumBase<TEnumeration,TEnumeratedItem>`.
 The `TEnumeration` type parameter is the data type that will contain the individual entries. While
 `TEnumeratedItem`. As long as `TEnumeratedItem` abides by the following contract,
-you can enumerate values of that type, bound to any other type.
+you can enumerate values of that type, contained in any other type.
 
 ```csharp
 // the required contract for RichEnumBase
@@ -378,12 +390,13 @@ public interface ISortableRichEnumValueProvider<out TValue> : IRichEnumValueProv
 
 ```
 
-The biggest downside to using this type is it lacks any conversion operators,
-equality operators, and relational operators (in the case of `SortableRichEnum`).
+The biggest downsides to using this type is it lacks any conversion operators,
+equality operators, and relational operators (provided by `SortableRichEnum`).
 
-Your derived types will need to solve these problems, and they're non-trivial.
+Your derived types will need to provide these facilities and doing so across
+multiple containing types is non-trivial.
 
-Example:
+### Example: Attaching values of the same enumerated type to two containing/enumeration types.
 
 Assuming `MyItem` abides by the contract we could construct the following segregated enum:
 
@@ -408,7 +421,7 @@ public class MyItem(int value,string description) : IEquatable<MyItem>
    public int Value { get; } = value;
    public string Description { get; } = description;
 
-   /// ... Implement Equals and GetHashCode ...
+   /// ... Implement Equals, ==, != and GetHashCode ...
 }
 
 ```

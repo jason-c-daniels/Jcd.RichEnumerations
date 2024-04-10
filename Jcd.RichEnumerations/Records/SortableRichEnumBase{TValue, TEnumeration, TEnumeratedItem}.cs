@@ -11,9 +11,7 @@ using System.Linq;
 
 #endregion
 
-
 namespace Jcd.RichEnumerations.Records;
-
 
 /// <summary>
 /// A base for sortable rich enumerations where the .Value property is present on the enumerated type.

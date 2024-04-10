@@ -1,6 +1,7 @@
 ﻿#region
 
 using System;
+
 // ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
 // ReSharper disable HeapView.ObjectAllocation

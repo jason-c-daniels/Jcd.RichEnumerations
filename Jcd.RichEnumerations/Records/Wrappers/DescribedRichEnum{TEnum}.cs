@@ -1,12 +1,4 @@
-﻿#region
-
-// ReSharper disable UnusedType.Global
-// ReSharper disable HeapView.PossibleBoxingAllocation
-// ReSharper disable HeapView.ObjectAllocation
-
-#endregion
-
-namespace Jcd.RichEnumerations.Records.Wrappers;
+﻿namespace Jcd.RichEnumerations.Records.Wrappers;
 
 /// <summary>
 /// A <see cref="RichEnum{TEnum}" /> with a Description property.
