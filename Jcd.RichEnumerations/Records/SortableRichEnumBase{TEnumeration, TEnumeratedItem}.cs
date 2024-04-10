@@ -12,7 +12,7 @@ namespace Jcd.RichEnumerations.Records;
 
 /// <summary>
 /// A base for sortable rich enumerations. This type provides a hook to sort the .All collection.
-/// .Sort should be called only once and only once in the application startup.
+/// <c>.Sort()</c> should be called once and only once during application startup.
 /// </summary>
 /// <remarks>
 /// NOTE: This is intended as a supporting class. Consumers should prefer <see cref="SortableRichEnum{TValue,TEnum}" />
@@ -24,7 +24,7 @@ public abstract record SortableRichEnumBase<TEnumeration, TEnumeratedItem> : Ric
    where TEnumeratedItem : IComparable<TEnumeratedItem>
 {
    /// <summary>
-   /// Sorts the .All collection. This should be called only once and only once in the application startup.
+   /// Sorts the .All collection. This should be called once and only once during application startup.
    /// </summary>
    /// <param name="comparison">An optional custom comparer</param>
    public static void Sort(Comparison<TEnumeratedItem>? comparison = null)

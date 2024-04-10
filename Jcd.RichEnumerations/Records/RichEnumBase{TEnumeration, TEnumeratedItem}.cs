@@ -4,19 +4,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-#endregion
-
 // ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
 // ReSharper disable HeapView.ObjectAllocation
+
+#endregion
+
 namespace Jcd.RichEnumerations.Records;
 
 /// <summary>
-/// Provides access to all instances on the enumeration container by way of the .All property.
+/// Provides access to all instances on the enumeration container by way of the <see cref="All"/> property.
 /// </summary>
 /// <remarks>
-/// NOTE: This is intended as a supporting class. Consumers should prefer <see cref="Classes.RichEnum{TValue,TEnum}" /> or
-/// <see cref="Classes.RichEnum{TEnum}" /> instead.
+/// NOTE: This is intended as a supporting class. Consumers should prefer <see cref="RichEnum{TValue,TEnum}" /> or
+/// <see cref="RichEnum{TEnum}" /> instead.
 /// </remarks>
 /// <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
 /// <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>

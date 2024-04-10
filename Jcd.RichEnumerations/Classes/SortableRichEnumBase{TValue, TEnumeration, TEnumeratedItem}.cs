@@ -4,11 +4,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-#endregion
-
 // ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
 // ReSharper disable HeapView.ObjectAllocation
+
+#endregion
+
 
 namespace Jcd.RichEnumerations.Classes;
 
@@ -16,7 +17,7 @@ namespace Jcd.RichEnumerations.Classes;
 
 /// <summary>
 /// A base for sortable rich enumerations where the .Value property is present on the enumerated type.
-/// This type provides a hook to sort the .All collection. .Sort should be called only once and only once in the
+/// This type provides a hook to sort the .All collection. <c>.Sort()</c> should be called once and only once during
 /// application startup.
 /// </summary>
 /// <remarks>

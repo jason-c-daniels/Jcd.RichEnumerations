@@ -4,26 +4,26 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-#endregion
-
 // ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
 // ReSharper disable HeapView.ObjectAllocation
+#pragma warning disable S2436
+
+#endregion
+
 
 namespace Jcd.RichEnumerations.Records;
 
-#pragma warning disable S2436
 
 /// <summary>
 /// A base for sortable rich enumerations where the .Value property is present on the enumerated type.
-/// This type provides a hook to sort the .All collection. .Sort should be called only once and only once in the
+/// This type provides a hook to sort the .All collection. <c>.Sort()</c> should be called only once and only once in the
 /// application startup.
 /// </summary>
 /// <remarks>
 /// NOTE: This is intended as a supporting class. Consumers should prefer <see cref="SortableRichEnum{TEnum}" /> or
 /// <see cref="SortableRichEnum{TEnum}" /> instead.
 /// </remarks>
-/// <param name="Value">The underlying value</param>
 /// <typeparam name="TValue">
 /// The type of the .Value property on the TEnumeratedItem instances. This is used in the
 /// conversion operators.

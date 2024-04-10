@@ -3,16 +3,17 @@
 using System;
 using System.Collections.Generic;
 
-#endregion
-
 // ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
 // ReSharper disable HeapView.ObjectAllocation
+
+#endregion
+
 namespace Jcd.RichEnumerations.Classes;
 
 /// <summary>
-/// A base for sortable rich enumerations. This type provides a hook to sort the .All collection.
-/// .Sort should be called only once and only once in the application startup.
+/// A base for sortable rich enumerations. This type provides a hook to sort the <see cref="RichEnum{TValue,TEnum}"/><c>All</c> collection.
+/// <c>.Sort()</c> should be called once and only once during application startup.
 /// </summary>
 /// <remarks>
 /// NOTE: This is intended as a supporting class. Consumers should prefer <see cref="SortableRichEnum{TValue,TEnum}" />
@@ -24,7 +25,7 @@ public abstract class SortableRichEnumBase<TEnumeration, TEnumeratedItem> : Rich
    where TEnumeratedItem : IEquatable<TEnumeratedItem>, IComparable<TEnumeratedItem>
 {
    /// <summary>
-   /// Sorts the .All collection. This should be called only once and only once in the application startup.
+   /// Sorts the .All collection. This should be called once and only once during application startup.
    /// </summary>
    /// <param name="comparison">An optional custom comparer</param>
    public static void Sort(Comparison<TEnumeratedItem>? comparison = null)

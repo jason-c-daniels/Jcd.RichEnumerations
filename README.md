@@ -1,6 +1,6 @@
 # Jcd.RichEnumerations
 
-A *netstandard2.0* library that provides DDD-style rich enumeration base classes.
+A *netstandard2.0* library that provides DDD-style rich enumeration base types for both _plain old classes_ and `record` types.
 
 ## Examples
 
@@ -38,4 +38,4 @@ if (ev == MyRichEnum.Item1) {
 [![MyGet](https://img.shields.io/myget/jason-c-daniels/v/Jcd.RichEnumerations?logo=nuget)](https://www.myget.org/feed/jason-c-daniels/package/nuget/Jcd.RichEnumerations)
 [![Nuget](https://img.shields.io/nuget/v/Jcd.RichEnumerations?logo=nuget)](https://www.nuget.org/packages/Jcd.RichEnumerations)
 
-[![API Docs](https://img.shields.io/badge/Read-The%20API%20Documentation-blue?style=for-the-badge)](https://github.com/jason-c-daniels/Jcd.RichEnumerations/blob/main/docs/index.md)
+[![API Docs](https://img.shields.io/badge/Read-The%20API%20Documentation-blue?style=for-the-badge)](https://github.com/jason-c-daniels/Jcd.RichEnumerations/blob/main/docs/api/index.md)

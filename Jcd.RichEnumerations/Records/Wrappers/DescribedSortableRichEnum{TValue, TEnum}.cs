@@ -2,11 +2,12 @@
 
 using System;
 
-#endregion
-
 // ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
 // ReSharper disable HeapView.ObjectAllocation
+
+#endregion
+
 namespace Jcd.RichEnumerations.Records.Wrappers;
 
 /// <summary>
@@ -19,12 +20,10 @@ public abstract record DescribedSortableRichEnum<TValue, TEnum> : SortableRichEn
    where TEnum : DescribedSortableRichEnum<TValue, TEnum>, IComparable<TEnum>, ISortableRichEnumValueProvider<TValue>
 {
    /// <summary>
-   /// A <see cref="SortableRichEnum{TValue,TEnum}" /> with a Description property.
+   /// Constructs a <see cref="DescribedSortableRichEnum{TValue,TEnum}" />.
    /// </summary>
    /// <param name="value">The value of the instance. This must be unique.</param>
    /// <param name="description">The description of the instance. This should be unique.</param>
-   /// <typeparam name="TEnum">The type being derived from SortableDEnumeration</typeparam>
-   /// <typeparam name="TValue">The type of the .Value property</typeparam>
    protected DescribedSortableRichEnum(TValue value, string description)
       : base(value)
    {

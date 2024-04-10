@@ -2,21 +2,33 @@
 
 using System;
 
-#endregion
-
 // ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
 // ReSharper disable HeapView.ObjectAllocation
+
+#endregion
+
 namespace Jcd.RichEnumerations.Classes;
 
 /// <summary>
-/// A <see cref="RichEnum{TValue,TEnum}" /> with .Value as a user provided type.
+/// A <see cref="RichEnum{TValue,TEnum}" /> with Value as a user defined type.
 /// </summary>
 /// <typeparam name="TEnum">
 /// The enumeration type. This will contain both the structure definition and the enumeration
 /// entries as public static readonly fields.
 /// </typeparam>
 /// <typeparam name="TValue">The data type for .Value</typeparam>
+/// <example>
+/// <code>
+/// public class MyRichEnum(float value, string customText) : RichEnum&lt;float,MyRichEnum&gt;(value)
+/// {
+///      public static readonly MyRichEnum Item1 = new (1.0f, "First Item");
+///      public static readonly MyRichEnum Item2 = new (2.1f, "Second Item");
+///
+///      public string CustomText => customText;
+/// }
+/// </code>
+/// </example>
 public abstract class RichEnum<TValue, TEnum>(TValue value) : RichEnumBase<TValue, TEnum, TEnum>(value)
                                                             , IEquatable<TEnum>
                                                             , IRichEnumValueProvider<TValue>

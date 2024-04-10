@@ -1,7 +1,7 @@
 namespace Jcd.RichEnumerations.Records;
 
 /// <summary>
-/// A <see cref="Classes.RichEnum{TValue,TEnum}" /> with TValue set to int.
+/// A <see cref="RichEnum{TValue,TEnum}" /> with TValue set to int.
 /// </summary>
 /// <typeparam name="TEnum">
 /// The enumeration type. This will contain both the structure definition and the enumeration

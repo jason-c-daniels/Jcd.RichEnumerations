@@ -9,7 +9,7 @@
    <PropertyGroup>
       <Title>Jcd.RichEnumerations</Title>
       <Authors>Jason C. Daniels</Authors>
-      <Description>A netstandard2.0 library that provides DDD-style rich enumeration base classes.</Description>
+      <Description>A .netstandard 2.0 library that provides DDD-style rich enumeration base types for both _plain old classes_ and `record` types.</Description>
       <Copyright>2024</Copyright>
       <PackageProjectUrl>https://github.com/jason-c-daniels/Jcd.RichEnumerations</PackageProjectUrl>
       <RepositoryUrl>https://github.com/jason-c-daniels/Jcd.RichEnumerations</RepositoryUrl>
@@ -33,11 +33,11 @@
    </ItemGroup>
 
    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-      <DocumentationFile>..\docs\Jcd.RichEnumerations.xml</DocumentationFile>
+      <DocumentationFile>..\docs\api\Jcd.RichEnumerations.xml</DocumentationFile>
    </PropertyGroup>
 
    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-      <DocumentationFile>..\docs\Jcd.RichEnumerations.xml</DocumentationFile>
+      <DocumentationFile>..\docs\api\Jcd.RichEnumerations.xml</DocumentationFile>
    </PropertyGroup>
 
    <ItemGroup>

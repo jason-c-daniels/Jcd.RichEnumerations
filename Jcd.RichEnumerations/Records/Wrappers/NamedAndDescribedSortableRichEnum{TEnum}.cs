@@ -2,16 +2,17 @@
 
 using System;
 
-#endregion
-
 // ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
 // ReSharper disable HeapView.ObjectAllocation
+
+#endregion
+
 namespace Jcd.RichEnumerations.Records.Wrappers;
 
 /// <summary>
 /// A <see cref="SortableRichEnum{TValue,TEnum}" />  with Name and Description properties. The type of the Value
-/// property is int.
+/// property is <see cref="int" />.
 /// </summary>
 /// <typeparam name="TEnum">The type being derived from SortableNdEnumeration</typeparam>
 public abstract record NamedAndDescribedSortableRichEnum<TEnum> : NamedAndDescribedSortableRichEnum<int, TEnum>

@@ -2,15 +2,16 @@
 
 using System;
 
-#endregion
-
 // ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
 // ReSharper disable HeapView.ObjectAllocation
+
+#endregion
+
 namespace Jcd.RichEnumerations.Records;
 
 /// <summary>
-/// A rich enum that can be sorted with a call to .Sort.
+/// A rich enum that can be sorted with a call to <c>.Sort()</c>.
 /// </summary>
 /// <typeparam name="TEnum">The type deriving from SortableEnum{TEnum}</typeparam>
 /// <typeparam name="TValue">The type of the .Value property.</typeparam>

@@ -11,7 +11,7 @@ namespace Jcd.RichEnumerations.Classes.Wrappers;
 
 /// <summary>
 /// A <see cref="SortableRichEnum{TValue,TEnum}" />  with Name and Description properties. The type of the Value
-/// property is int.
+/// property is <see cref="int" />.
 /// </summary>
 /// <param name="value">the value for this instance. These must be unique.</param>
 /// <param name="name">The name of this instance. These should be unique.</param>

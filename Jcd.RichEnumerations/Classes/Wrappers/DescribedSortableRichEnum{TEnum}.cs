@@ -1,12 +1,12 @@
 ﻿#region
 
 using System;
-
-#endregion
-
 // ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
 // ReSharper disable HeapView.ObjectAllocation
+
+#endregion
+
 namespace Jcd.RichEnumerations.Classes.Wrappers;
 
 /// <summary>

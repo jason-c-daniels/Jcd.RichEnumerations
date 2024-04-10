@@ -1,6 +1,10 @@
-﻿// ReSharper disable UnusedType.Global
+﻿#region MyRegion
+
+// ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
 // ReSharper disable HeapView.ObjectAllocation
+
+#endregion
 
 namespace Jcd.RichEnumerations.Records.Wrappers;
 
@@ -12,12 +16,11 @@ public abstract record NamedAndDescribedRichEnum<TEnum> : NamedAndDescribedRichE
    where TEnum : NamedAndDescribedRichEnum<TEnum>
 {
    /// <summary>
-   /// A rich enumeration containing Description, Name and Value properties with int as the underlying Value data type.
+   /// Constructs a <see cref="NamedAndDescribedRichEnum{TEnum}"/>.
    /// </summary>
    /// <param name="value">The value for the instance. This must be unique.</param>
    /// <param name="name">The name for the instance. This should be unique.</param>
    /// <param name="description">The description for the instance. This should be unique.</param>
-   /// <typeparam name="TEnum">The type deriving from NdEnumeration</typeparam>
    protected NamedAndDescribedRichEnum(int value, string name, string description)
       : base(value, name, description)
    {
