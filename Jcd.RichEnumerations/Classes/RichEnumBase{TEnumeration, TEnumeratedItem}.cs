@@ -28,7 +28,7 @@ public abstract class RichEnumBase<TEnumeration, TEnumeratedItem>
    private static List<TEnumeratedItem>? all;
 
    /// <summary>
-   /// All enumerated elements. Populated in static constructor.
+   /// All enumerated elements. Populated on first call to <see cref="All"/>.
    /// </summary>
    public static IReadOnlyList<TEnumeratedItem> All => all ??= GetAll();
 
