@@ -1,4 +1,5 @@
 #### [Jcd.RichEnumerations](index.md 'index')
+
 ### [Jcd.RichEnumerations.Classes](Jcd.RichEnumerations.Classes.md 'Jcd.RichEnumerations.Classes').[RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>')
 
 ## RichEnum<TValue,TEnum>.operator ==(RichEnum<TValue,TEnum>, RichEnum<TValue,TEnum>) Operator
@@ -8,6 +9,7 @@ Compares two [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.RichEnu
 ```csharp
 public static bool operator ==(Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>? l, Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>? r);
 ```
+
 #### Parameters
 
 <a name='Jcd.RichEnumerations.Classes.RichEnum_TValue,TEnum_.op_Equality(Jcd.RichEnumerations.Classes.RichEnum_TValue,TEnum_,Jcd.RichEnumerations.Classes.RichEnum_TValue,TEnum_).l'></a>
@@ -23,5 +25,6 @@ the left hand side of the comparison.
 the right hand side of the comparison.
 
 #### Returns
+
 [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean')
 True if equivalent.

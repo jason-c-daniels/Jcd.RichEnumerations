@@ -1,4 +1,5 @@
 #### [Jcd.RichEnumerations](index.md 'index')
+
 ### [Jcd.RichEnumerations.Classes.Wrappers](Jcd.RichEnumerations.Classes.Wrappers.md 'Jcd.RichEnumerations.Classes.Wrappers')
 
 ## DescribedSortableRichEnum<TValue,TEnum> Class
@@ -10,6 +11,7 @@ public class DescribedSortableRichEnum<TValue,TEnum> : Jcd.RichEnumerations.Clas
     where TValue : System.IEquatable<TValue>, System.IComparable<TValue>
     where TEnum : Jcd.RichEnumerations.Classes.Wrappers.DescribedSortableRichEnum<TValue, TEnum>, System.IComparable<TEnum>, Jcd.RichEnumerations.Classes.ISortableRichEnumValueProvider<TValue>
 ```
+
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Classes.Wrappers.DescribedSortableRichEnum_TValue,TEnum_.TValue'></a>
@@ -29,10 +31,10 @@ Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.O
 Derived
 &#8627; [DescribedSortableRichEnum&lt;TEnum&gt;](Jcd.RichEnumerations.Classes.Wrappers.DescribedSortableRichEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.Wrappers.DescribedSortableRichEnum<TEnum>')
 
-| Constructors | |
-| :--- | :--- |
+| Constructors                                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                     |
+|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [DescribedSortableRichEnum(TValue, string)](Jcd.RichEnumerations.Classes.Wrappers.DescribedSortableRichEnum_TValue,TEnum_.DescribedSortableRichEnum(TValue,string).md 'Jcd.RichEnumerations.Classes.Wrappers.DescribedSortableRichEnum<TValue,TEnum>.DescribedSortableRichEnum(TValue, string)') | A [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>') with a Description property. |
 
-| Properties | |
-| :--- | :--- |
+| Properties                                                                                                                                                                                              |                                  |
+|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------|
 | [Description](Jcd.RichEnumerations.Classes.Wrappers.DescribedSortableRichEnum_TValue,TEnum_.Description.md 'Jcd.RichEnumerations.Classes.Wrappers.DescribedSortableRichEnum<TValue,TEnum>.Description') | The description of the instance. |

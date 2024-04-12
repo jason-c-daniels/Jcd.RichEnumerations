@@ -1,4 +1,5 @@
 #### [Jcd.RichEnumerations](index.md 'index')
+
 ### [Jcd.RichEnumerations.Classes](Jcd.RichEnumerations.Classes.md 'Jcd.RichEnumerations.Classes').[SortableRichEnumBase&lt;TEnumeration,TEnumeratedItem&gt;](Jcd.RichEnumerations.Classes.SortableRichEnumBase_TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.Classes.SortableRichEnumBase<TEnumeration,TEnumeratedItem>')
 
 ## SortableRichEnumBase<TEnumeration,TEnumeratedItem>.Sort(Comparison<TEnumeratedItem>) Method
@@ -8,6 +9,7 @@ Sorts the .All collection. This should be called once and only once during appli
 ```csharp
 public static void Sort(System.Comparison<TEnumeratedItem>? comparison=null);
 ```
+
 #### Parameters
 
 <a name='Jcd.RichEnumerations.Classes.SortableRichEnumBase_TEnumeration,TEnumeratedItem_.Sort(System.Comparison_TEnumeratedItem_).comparison'></a>

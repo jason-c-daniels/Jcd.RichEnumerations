@@ -1,4 +1,5 @@
 #### [Jcd.RichEnumerations](index.md 'index')
+
 ### [Jcd.RichEnumerations.Classes](Jcd.RichEnumerations.Classes.md 'Jcd.RichEnumerations.Classes')
 
 ## RichEnum<TEnum> Class
@@ -9,6 +10,7 @@ A [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.RichEnum_TValue,TE
 public class RichEnum<TEnum> : Jcd.RichEnumerations.Classes.RichEnum<int, TEnum>
     where TEnum : Jcd.RichEnumerations.Classes.RichEnum<TEnum>
 ```
+
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Classes.RichEnum_TEnum_.TEnum'></a>
@@ -32,6 +34,6 @@ public class MyRichEnum(int value, string customText) : RichEnum<MyRichEnum>(val
 }
 ```
 
-| Constructors | |
-| :--- | :--- |
+| Constructors                                                                                                                                |                                                                                                                                                                        |
+|:--------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [RichEnum(int)](Jcd.RichEnumerations.Classes.RichEnum_TEnum_.RichEnum(int).md 'Jcd.RichEnumerations.Classes.RichEnum<TEnum>.RichEnum(int)') | A [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') with TValue set to int. |

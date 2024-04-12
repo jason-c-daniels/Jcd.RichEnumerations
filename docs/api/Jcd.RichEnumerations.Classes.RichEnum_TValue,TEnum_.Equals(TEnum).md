@@ -1,4 +1,5 @@
 #### [Jcd.RichEnumerations](index.md 'index')
+
 ### [Jcd.RichEnumerations.Classes](Jcd.RichEnumerations.Classes.md 'Jcd.RichEnumerations.Classes').[RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>')
 
 ## RichEnum<TValue,TEnum>.Equals(TEnum) Method
@@ -9,6 +10,7 @@ equality.
 ```csharp
 public virtual bool Equals(TEnum? other);
 ```
+
 #### Parameters
 
 <a name='Jcd.RichEnumerations.Classes.RichEnum_TValue,TEnum_.Equals(TEnum).other'></a>
@@ -18,5 +20,6 @@ public virtual bool Equals(TEnum? other);
 The other instance to compare to
 
 #### Returns
+
 [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean')
 True if equivalent.

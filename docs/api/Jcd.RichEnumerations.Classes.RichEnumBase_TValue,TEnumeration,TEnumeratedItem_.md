@@ -1,4 +1,5 @@
 #### [Jcd.RichEnumerations](index.md 'index')
+
 ### [Jcd.RichEnumerations.Classes](Jcd.RichEnumerations.Classes.md 'Jcd.RichEnumerations.Classes')
 
 ## RichEnumBase<TValue,TEnumeration,TEnumeratedItem> Class
@@ -13,6 +14,7 @@ public class RichEnumBase<TValue,TEnumeration,TEnumeratedItem> : Jcd.RichEnumera
     where TValue : System.IEquatable<TValue>
     where TEnumeratedItem : System.IEquatable<TEnumeratedItem>, Jcd.RichEnumerations.Classes.IRichEnumValueProvider<TValue>
 ```
+
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Classes.RichEnumBase_TValue,TEnumeration,TEnumeratedItem_.TValue'></a>
@@ -40,9 +42,10 @@ Derived
 &#8627; [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>')
 
 ### Remarks
+
 NOTE: This is intended as a supporting class. Consumers should prefer [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') or
 [RichEnum&lt;TEnum&gt;](Jcd.RichEnumerations.Classes.RichEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TEnum>') instead.
 
-| Properties | |
-| :--- | :--- |
+| Properties                                                                                                                                                                                    |                                                                                                            |
+|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
 | [ByValue](Jcd.RichEnumerations.Classes.RichEnumBase_TValue,TEnumeration,TEnumeratedItem_.ByValue.md 'Jcd.RichEnumerations.Classes.RichEnumBase<TValue,TEnumeration,TEnumeratedItem>.ByValue') | A lookup of enumerated elements by their Value property. Useful for implementing conversion operators. |

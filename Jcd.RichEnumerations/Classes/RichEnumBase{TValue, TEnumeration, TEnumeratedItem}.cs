@@ -34,9 +34,11 @@ public class RichEnumBase<TValue, TEnumeration, TEnumeratedItem> : RichEnumBase<
    where TEnumeratedItem : IEquatable<TEnumeratedItem>, IRichEnumValueProvider<TValue>
    where TValue : IEquatable<TValue>
 {
-   protected RichEnumBase(){}
-
    private static Dictionary<TValue, TEnumeratedItem>? byValue;
+
+   protected RichEnumBase()
+   {
+   }
 
    /// <summary>
    /// A lookup of enumerated elements by their Value property.

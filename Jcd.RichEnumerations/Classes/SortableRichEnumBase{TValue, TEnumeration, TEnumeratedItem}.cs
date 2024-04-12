@@ -33,15 +33,15 @@ public class SortableRichEnumBase<TValue, TEnumeration, TEnumeratedItem> : Sorta
    where TValue : IEquatable<TValue>, IComparable<TValue>
    where TEnumeratedItem : IEquatable<TEnumeratedItem>, IComparable<TEnumeratedItem>, ISortableRichEnumValueProvider<TValue>
 {
-   protected SortableRichEnumBase(){}
-
    private static Dictionary<TValue, TEnumeratedItem>? byValue;
+
+   protected SortableRichEnumBase()
+   {
+   }
 
    /// <summary>
    /// A lookup of enumerated elements by their Value property.
    /// Useful for implementing conversion operators.
    /// </summary>
    public static IReadOnlyDictionary<TValue, TEnumeratedItem> ByValue => byValue ??= All.ToDictionary(e => e.Value);
-
-
 }

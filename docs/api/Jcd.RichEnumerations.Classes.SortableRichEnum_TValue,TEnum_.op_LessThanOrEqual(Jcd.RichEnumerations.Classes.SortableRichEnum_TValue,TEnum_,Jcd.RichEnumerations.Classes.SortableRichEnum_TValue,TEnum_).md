@@ -1,4 +1,5 @@
 #### [Jcd.RichEnumerations](index.md 'index')
+
 ### [Jcd.RichEnumerations.Classes](Jcd.RichEnumerations.Classes.md 'Jcd.RichEnumerations.Classes').[SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>')
 
 ## SortableRichEnum<TValue,TEnum>.operator <=(SortableRichEnum<TValue,TEnum>, SortableRichEnum<TValue,TEnum>) Operator
@@ -9,6 +10,7 @@ or equal to the right hand side.
 ```csharp
 public static bool operator <=(Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>? l, Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>? r);
 ```
+
 #### Parameters
 
 <a name='Jcd.RichEnumerations.Classes.SortableRichEnum_TValue,TEnum_.op_LessThanOrEqual(Jcd.RichEnumerations.Classes.SortableRichEnum_TValue,TEnum_,Jcd.RichEnumerations.Classes.SortableRichEnum_TValue,TEnum_).l'></a>
@@ -24,5 +26,6 @@ the left hand side of the comparison.
 the right hand side of the comparison.
 
 #### Returns
+
 [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean')
 True if the left hand side is less than or equal to the right hand side.

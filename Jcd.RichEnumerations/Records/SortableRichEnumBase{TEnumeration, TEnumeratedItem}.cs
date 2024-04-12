@@ -23,7 +23,9 @@ namespace Jcd.RichEnumerations.Records;
 public record SortableRichEnumBase<TEnumeration, TEnumeratedItem> : RichEnumBase<TEnumeration, TEnumeratedItem>
    where TEnumeratedItem : IComparable<TEnumeratedItem>
 {
-   protected SortableRichEnumBase(){}
+   protected SortableRichEnumBase()
+   {
+   }
 
    /// <summary>
    /// Sorts the .All collection. This should be called once and only once during application startup.

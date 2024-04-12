@@ -1,4 +1,5 @@
 #### [Jcd.RichEnumerations](index.md 'index')
+
 ### [Jcd.RichEnumerations.Classes](Jcd.RichEnumerations.Classes.md 'Jcd.RichEnumerations.Classes')
 
 ## ISortableRichEnumValueProvider<TValue> Interface
@@ -12,6 +13,7 @@ public interface ISortableRichEnumValueProvider<out TValue> :
 Jcd.RichEnumerations.Classes.IRichEnumValueProvider<TValue>
     where TValue : System.IEquatable<TValue>, System.IComparable<TValue>
 ```
+
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Classes.ISortableRichEnumValueProvider_TValue_.TValue'></a>

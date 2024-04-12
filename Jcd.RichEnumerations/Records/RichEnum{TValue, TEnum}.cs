@@ -30,10 +30,14 @@ public record RichEnum<TValue, TEnum>
       Value = value;
    }
 
+   #region IRichEnumValueProvider<TValue> Members
+
    /// <summary>
    /// The underlying value.
    /// </summary>
    public TValue Value { get; }
+
+   #endregion
 
    #region conversion operators
 

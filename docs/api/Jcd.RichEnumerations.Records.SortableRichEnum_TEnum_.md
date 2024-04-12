@@ -1,4 +1,5 @@
 #### [Jcd.RichEnumerations](index.md 'index')
+
 ### [Jcd.RichEnumerations.Records](Jcd.RichEnumerations.Records.md 'Jcd.RichEnumerations.Records')
 
 ## SortableRichEnum<TEnum> Class
@@ -10,6 +11,7 @@ public class SortableRichEnum<TEnum> : Jcd.RichEnumerations.Records.SortableRich
 System.IEquatable<Jcd.RichEnumerations.Records.SortableRichEnum<TEnum>>
     where TEnum : Jcd.RichEnumerations.Records.SortableRichEnum<TEnum>, Jcd.RichEnumerations.Records.ISortableRichEnumValueProvider<int>
 ```
+
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Records.SortableRichEnum_TEnum_.TEnum'></a>

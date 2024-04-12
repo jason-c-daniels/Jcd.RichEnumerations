@@ -1,4 +1,5 @@
 #### [Jcd.RichEnumerations](index.md 'index')
+
 ### [Jcd.RichEnumerations.Classes.Wrappers](Jcd.RichEnumerations.Classes.Wrappers.md 'Jcd.RichEnumerations.Classes.Wrappers')
 
 ## NamedAndDescribedSortableRichEnum<TValue,TEnum> Class
@@ -10,6 +11,7 @@ public class NamedAndDescribedSortableRichEnum<TValue,TEnum> : Jcd.RichEnumerati
     where TValue : System.IEquatable<TValue>, System.IComparable<TValue>
     where TEnum : Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedSortableRichEnum<TValue, TEnum>, System.IComparable<TEnum>, Jcd.RichEnumerations.Classes.ISortableRichEnumValueProvider<TValue>
 ```
+
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedSortableRichEnum_TValue,TEnum_.TValue'></a>
@@ -29,11 +31,11 @@ Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.O
 Derived
 &#8627; [NamedAndDescribedSortableRichEnum&lt;TEnum&gt;](Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedSortableRichEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedSortableRichEnum<TEnum>')
 
-| Constructors | |
-| :--- | :--- |
+| Constructors                                                                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                               |
+|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [NamedAndDescribedSortableRichEnum(TValue, string, string)](Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedSortableRichEnum_TValue,TEnum_.NamedAndDescribedSortableRichEnum(TValue,string,string).md 'Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedSortableRichEnum<TValue,TEnum>.NamedAndDescribedSortableRichEnum(TValue, string, string)') | A [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>')  with Name and Description properties. |
 
-| Properties | |
-| :--- | :--- |
+| Properties                                                                                                                                                                                                              |                                                         |
+|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------|
 | [Description](Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedSortableRichEnum_TValue,TEnum_.Description.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedSortableRichEnum<TValue,TEnum>.Description') | The description of the instance. This should be unique. |
-| [Name](Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedSortableRichEnum_TValue,TEnum_.Name.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedSortableRichEnum<TValue,TEnum>.Name') | The name of the instance. This should be unique. |
+| [Name](Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedSortableRichEnum_TValue,TEnum_.Name.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedSortableRichEnum<TValue,TEnum>.Name')                      | The name of the instance. This should be unique.        |

@@ -12,7 +12,7 @@ using Jcd.RichEnumerations.Classes.Wrappers;
 namespace Jcd.RichEnumerations.Examples.CardSelector.Menuing;
 
 public class MenuItem<TMenuItem>(string value, int order, string name) : NamedSortableRichEnum<CaseInsensitiveString, TMenuItem>(value, name)
-                                                                                , IMenuItemProvider<CaseInsensitiveString, TMenuItem>
+                                                                       , IMenuItemProvider<CaseInsensitiveString, TMenuItem>
    where TMenuItem : MenuItem<TMenuItem>
 {
    #region IMenuItemProvider<CaseInsensitiveString,TMenuItem> Members

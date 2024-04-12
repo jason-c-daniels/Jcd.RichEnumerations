@@ -26,16 +26,15 @@ public record RichEnumBase<TEnumeration, TEnumeratedItem>
    private static List<TEnumeratedItem>? all;
 
    /// <summary>
-   /// All enumerated elements. Populated in static constructor.
-   /// </summary>
-   public static IReadOnlyList<TEnumeratedItem> All => all ??= GetAll();
-
-   /// <summary>
-   ///
    /// </summary>
    protected RichEnumBase()
    {
    }
+
+   /// <summary>
+   /// All enumerated elements. Populated in static constructor.
+   /// </summary>
+   public static IReadOnlyList<TEnumeratedItem> All => all ??= GetAll();
 
    private static List<TEnumeratedItem> GetAll()
    {

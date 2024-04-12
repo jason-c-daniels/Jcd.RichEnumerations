@@ -1,4 +1,5 @@
 #### [Jcd.RichEnumerations](index.md 'index')
+
 ### [Jcd.RichEnumerations.Records.Wrappers](Jcd.RichEnumerations.Records.Wrappers.md 'Jcd.RichEnumerations.Records.Wrappers')
 
 ## DescribedSortableRichEnum<TValue,TEnum> Class
@@ -11,6 +12,7 @@ System.IEquatable<Jcd.RichEnumerations.Records.Wrappers.DescribedSortableRichEnu
     where TValue : System.IEquatable<TValue>, System.IComparable<TValue>
     where TEnum : Jcd.RichEnumerations.Records.Wrappers.DescribedSortableRichEnum<TValue, TEnum>, System.IComparable<TEnum>, Jcd.RichEnumerations.Records.ISortableRichEnumValueProvider<TValue>
 ```
+
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Records.Wrappers.DescribedSortableRichEnum_TValue,TEnum_.TValue'></a>
@@ -32,10 +34,10 @@ Derived
 
 Implements [System.IEquatable&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1 'System.IEquatable`1')[Jcd.RichEnumerations.Records.Wrappers.DescribedSortableRichEnum&lt;](Jcd.RichEnumerations.Records.Wrappers.DescribedSortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.Wrappers.DescribedSortableRichEnum<TValue,TEnum>')[TValue](Jcd.RichEnumerations.Records.Wrappers.DescribedSortableRichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.Records.Wrappers.DescribedSortableRichEnum_TValue,TEnum_.TValue 'Jcd.RichEnumerations.Records.Wrappers.DescribedSortableRichEnum<TValue,TEnum>.TValue')[,](Jcd.RichEnumerations.Records.Wrappers.DescribedSortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.Wrappers.DescribedSortableRichEnum<TValue,TEnum>')[TEnum](Jcd.RichEnumerations.Records.Wrappers.DescribedSortableRichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.Records.Wrappers.DescribedSortableRichEnum_TValue,TEnum_.TEnum 'Jcd.RichEnumerations.Records.Wrappers.DescribedSortableRichEnum<TValue,TEnum>.TEnum')[&gt;](Jcd.RichEnumerations.Records.Wrappers.DescribedSortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.Wrappers.DescribedSortableRichEnum<TValue,TEnum>')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1 'System.IEquatable`1')
 
-| Constructors | |
-| :--- | :--- |
+| Constructors                                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                 |
+|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [DescribedSortableRichEnum(TValue, string)](Jcd.RichEnumerations.Records.Wrappers.DescribedSortableRichEnum_TValue,TEnum_.DescribedSortableRichEnum(TValue,string).md 'Jcd.RichEnumerations.Records.Wrappers.DescribedSortableRichEnum<TValue,TEnum>.DescribedSortableRichEnum(TValue, string)') | Constructs a [DescribedSortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Records.Wrappers.DescribedSortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.Wrappers.DescribedSortableRichEnum<TValue,TEnum>'). |
 
-| Properties | |
-| :--- | :--- |
+| Properties                                                                                                                                                                                              |                                  |
+|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------|
 | [Description](Jcd.RichEnumerations.Records.Wrappers.DescribedSortableRichEnum_TValue,TEnum_.Description.md 'Jcd.RichEnumerations.Records.Wrappers.DescribedSortableRichEnum<TValue,TEnum>.Description') | The description of the instance. |

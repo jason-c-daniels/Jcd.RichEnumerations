@@ -1,4 +1,5 @@
 #### [Jcd.RichEnumerations](index.md 'index')
+
 ### [Jcd.RichEnumerations.Records.Wrappers](Jcd.RichEnumerations.Records.Wrappers.md 'Jcd.RichEnumerations.Records.Wrappers')
 
 ## NamedRichEnum<TValue,TEnum> Class
@@ -11,6 +12,7 @@ System.IEquatable<Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum<TValue, TE
     where TValue : System.IEquatable<TValue>
     where TEnum : Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum<TValue, TEnum>, System.IEquatable<TEnum>
 ```
+
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum_TValue,TEnum_.TValue'></a>
@@ -32,10 +34,10 @@ Derived
 
 Implements [System.IEquatable&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1 'System.IEquatable`1')[Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum&lt;](Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum<TValue,TEnum>')[TValue](Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum_TValue,TEnum_.TValue 'Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum<TValue,TEnum>.TValue')[,](Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum<TValue,TEnum>')[TEnum](Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum_TValue,TEnum_.TEnum 'Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum<TValue,TEnum>.TEnum')[&gt;](Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum<TValue,TEnum>')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1 'System.IEquatable`1')
 
-| Constructors | |
-| :--- | :--- |
+| Constructors                                                                                                                                                                                                                         |                                                                                                                                                                                             |
+|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [NamedRichEnum(TValue, string)](Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum_TValue,TEnum_.NamedRichEnum(TValue,string).md 'Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum<TValue,TEnum>.NamedRichEnum(TValue, string)') | Constructs a [NamedRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum<TValue,TEnum>'). |
 
-| Properties | |
-| :--- | :--- |
+| Properties                                                                                                                                                 |                                                   |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------|
 | [Name](Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum_TValue,TEnum_.Name.md 'Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum<TValue,TEnum>.Name') | The name for the instance. This should be unique. |

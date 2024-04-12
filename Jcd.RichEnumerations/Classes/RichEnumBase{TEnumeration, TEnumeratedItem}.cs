@@ -25,13 +25,14 @@ namespace Jcd.RichEnumerations.Classes;
 public class RichEnumBase<TEnumeration, TEnumeratedItem>
    where TEnumeratedItem : IEquatable<TEnumeratedItem>
 {
-
-   protected RichEnumBase(){}
-
    private static List<TEnumeratedItem>? all;
 
+   protected RichEnumBase()
+   {
+   }
+
    /// <summary>
-   /// All enumerated elements. Populated on first call to <see cref="All"/>.
+   /// All enumerated elements. Populated on first call to <see cref="All" />.
    /// </summary>
    public static IReadOnlyList<TEnumeratedItem> All => all ??= GetAll();
 
