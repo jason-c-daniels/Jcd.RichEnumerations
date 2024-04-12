@@ -7,7 +7,7 @@
 A [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Records.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.SortableRichEnum<TValue,TEnum>') with a Name property.
 
 ```csharp
-public abstract class NamedSortableRichEnum<TValue,TEnum> : Jcd.RichEnumerations.Records.SortableRichEnum<TValue, TEnum>,
+public class NamedSortableRichEnum<TValue,TEnum> : Jcd.RichEnumerations.Records.SortableRichEnum<TValue, TEnum>,
 System.IEquatable<Jcd.RichEnumerations.Records.Wrappers.NamedSortableRichEnum<TValue, TEnum>>
     where TValue : System.IEquatable<TValue>, System.IComparable<TValue>
     where TEnum : Jcd.RichEnumerations.Records.Wrappers.NamedSortableRichEnum<TValue, TEnum>, Jcd.RichEnumerations.Records.ISortableRichEnumValueProvider<TValue>

@@ -28,18 +28,14 @@ namespace Jcd.RichEnumerations.Records;
 /// </typeparam>
 /// <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
 /// <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
-public abstract record SortableRichEnumBase<TValue, TEnumeration, TEnumeratedItem>
-   : SortableRichEnumBase<TEnumeration, TEnumeratedItem>
-   , ISortableRichEnumValueProvider<TValue>
+public record SortableRichEnumBase<TValue, TEnumeration, TEnumeratedItem> : SortableRichEnumBase<TEnumeration, TEnumeratedItem>
    where TValue : IComparable<TValue>
    where TEnumeratedItem : IComparable<TEnumeratedItem>, ISortableRichEnumValueProvider<TValue>
 {
    private static Dictionary<TValue, TEnumeratedItem>? byValue;
 
-   /// <inheritdoc />
-   protected SortableRichEnumBase(TValue value)
+   protected SortableRichEnumBase()
    {
-      Value = value;
    }
 
    /// <summary>
@@ -47,11 +43,4 @@ public abstract record SortableRichEnumBase<TValue, TEnumeration, TEnumeratedIte
    /// Useful for implementing conversion operators.
    /// </summary>
    public static IReadOnlyDictionary<TValue, TEnumeratedItem> ByValue => byValue ??= All.ToDictionary(e => e.Value);
-
-   #region ISortableRichEnumValueProvider<TValue> Members
-
-   /// <inheritdoc />
-   public TValue Value { get; }
-
-   #endregion
 }

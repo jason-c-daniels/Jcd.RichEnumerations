@@ -34,5 +34,5 @@
 ///
 /// </code>
 /// </example>
-public abstract class SortableRichEnum<TEnum>(int value) : SortableRichEnum<int, TEnum>(value)
-   where TEnum : SortableRichEnum<TEnum>;
+public class SortableRichEnum<TEnum>(int value) : SortableRichEnum<int, TEnum>(value)
+   where TEnum : SortableRichEnum<TEnum>, ISortableRichEnumValueProvider<int>;

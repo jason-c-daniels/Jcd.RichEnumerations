@@ -4,12 +4,13 @@
 
 ## RichEnumBase<TValue,TEnumeration,TEnumeratedItem> Class
 
-Provides access to all instances on the enumeration container by way of the [All](Jcd.RichEnumerations.Records.RichEnumBase_TEnumeration,TEnumeratedItem_.All.md 'Jcd.RichEnumerations.Records.RichEnumBase<TEnumeration,TEnumeratedItem>.All') property.
+Provides access to all instances on the enumeration container by way of the
+[All](Jcd.RichEnumerations.Records.RichEnumBase_TEnumeration,TEnumeratedItem_.All.md 'Jcd.RichEnumerations.Records.RichEnumBase<TEnumeration,TEnumeratedItem>.All') property.
 And allows lookup of items by value. This is used in [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>') to provide conversion
 operators.
 
 ```csharp
-public abstract class RichEnumBase<TValue,TEnumeration,TEnumeratedItem> : Jcd.RichEnumerations.Records.RichEnumBase<TEnumeration, TEnumeratedItem>,
+public class RichEnumBase<TValue,TEnumeration,TEnumeratedItem> : Jcd.RichEnumerations.Records.RichEnumBase<TEnumeration, TEnumeratedItem>,
 System.IEquatable<Jcd.RichEnumerations.Records.RichEnumBase<TValue, TEnumeration, TEnumeratedItem>>
     where TValue : System.IEquatable<TValue>
     where TEnumeratedItem : Jcd.RichEnumerations.Records.IRichEnumValueProvider<TValue>
@@ -48,7 +49,10 @@ Implements [System.IEquatable&lt;](https://docs.microsoft.com/en-us/dotnet/api/S
 NOTE: This is intended as a supporting class. Consumers should prefer [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>') or
 [RichEnum&lt;TEnum&gt;](Jcd.RichEnumerations.Records.RichEnum_TEnum_.md 'Jcd.RichEnumerations.Records.RichEnum<TEnum>') instead.
 
+| Constructors                                                                                                                                                                                                       | |
+|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-|
+| [RichEnumBase()](Jcd.RichEnumerations.Records.RichEnumBase_TValue,TEnumeration,TEnumeratedItem_.RichEnumBase().md 'Jcd.RichEnumerations.Records.RichEnumBase<TValue,TEnumeration,TEnumeratedItem>.RichEnumBase()') | |
+
 | Properties                                                                                                                                                                                    |                                                                                                            |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
 | [ByValue](Jcd.RichEnumerations.Records.RichEnumBase_TValue,TEnumeration,TEnumeratedItem_.ByValue.md 'Jcd.RichEnumerations.Records.RichEnumBase<TValue,TEnumeration,TEnumeratedItem>.ByValue') | A lookup of enumerated elements by their Value property. Useful for implementing conversion operators. |
-| [Value](Jcd.RichEnumerations.Records.RichEnumBase_TValue,TEnumeration,TEnumeratedItem_.Value.md 'Jcd.RichEnumerations.Records.RichEnumBase<TValue,TEnumeration,TEnumeratedItem>.Value')       | The underlying value.                                                                                      |

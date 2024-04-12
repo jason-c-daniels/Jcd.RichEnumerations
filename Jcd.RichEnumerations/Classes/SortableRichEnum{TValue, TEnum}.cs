@@ -43,13 +43,21 @@ namespace Jcd.RichEnumerations.Classes;
 /// }
 /// </code>
 /// </example>
-public abstract class SortableRichEnum<TValue, TEnum>(TValue value) : SortableRichEnumBase<TValue, TEnum, TEnum>(value)
-                                                                    , IEquatable<TEnum>
-                                                                    , IComparable<TEnum>
-                                                                    , IComparable<SortableRichEnum<TValue, TEnum>>
+public class SortableRichEnum<TValue, TEnum>(TValue value) : SortableRichEnumBase<TValue, TEnum, TEnum>
+                                                           , IEquatable<TEnum>
+                                                           , IComparable<TEnum>
+                                                           , IComparable<SortableRichEnum<TValue, TEnum>>
+                                                           , ISortableRichEnumValueProvider<TValue>
    where TValue : IEquatable<TValue>, IComparable<TValue>
    where TEnum : SortableRichEnum<TValue, TEnum>, ISortableRichEnumValueProvider<TValue>
 {
+   #region ISortableRichEnumValueProvider<TValue> Members
+
+   /// <inheritdoc />
+   public TValue Value { get; } = value;
+
+   #endregion
+
    #region Equality, Relational, GetHashCode, and ToString
 
    /// <inheritdoc />

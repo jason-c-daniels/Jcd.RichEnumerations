@@ -7,7 +7,7 @@
 Provides access to all instances on the enumeration container by way of the [All](Jcd.RichEnumerations.Records.RichEnumBase_TEnumeration,TEnumeratedItem_.All.md 'Jcd.RichEnumerations.Records.RichEnumBase<TEnumeration,TEnumeratedItem>.All') property.
 
 ```csharp
-public abstract class RichEnumBase<TEnumeration,TEnumeratedItem> :
+public class RichEnumBase<TEnumeration,TEnumeratedItem> :
 System.IEquatable<Jcd.RichEnumerations.Records.RichEnumBase<TEnumeration, TEnumeratedItem>>
 ```
 
@@ -37,6 +37,10 @@ Implements [System.IEquatable&lt;](https://docs.microsoft.com/en-us/dotnet/api/S
 
 NOTE: This is intended as a supporting class. Consumers should prefer [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>') or
 [RichEnum&lt;TEnum&gt;](Jcd.RichEnumerations.Records.RichEnum_TEnum_.md 'Jcd.RichEnumerations.Records.RichEnum<TEnum>') instead.
+
+| Constructors                                                                                                                                                                                         | |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-|
+| [RichEnumBase()](Jcd.RichEnumerations.Records.RichEnumBase_TEnumeration,TEnumeratedItem_.RichEnumBase().md 'Jcd.RichEnumerations.Records.RichEnumBase<TEnumeration,TEnumeratedItem>.RichEnumBase()') | |
 
 | Properties                                                                                                                                                          |                                                           |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------|

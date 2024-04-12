@@ -8,7 +8,7 @@ A [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Records.SortableRi
 property is [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32').
 
 ```csharp
-public abstract class NamedAndDescribedSortableRichEnum<TEnum> : Jcd.RichEnumerations.Records.Wrappers.NamedAndDescribedSortableRichEnum<int, TEnum>,
+public class NamedAndDescribedSortableRichEnum<TEnum> : Jcd.RichEnumerations.Records.Wrappers.NamedAndDescribedSortableRichEnum<int, TEnum>,
 System.IEquatable<Jcd.RichEnumerations.Records.Wrappers.NamedAndDescribedSortableRichEnum<TEnum>>
     where TEnum : Jcd.RichEnumerations.Records.Wrappers.NamedAndDescribedSortableRichEnum<TEnum>, System.IComparable<TEnum>, Jcd.RichEnumerations.Records.ISortableRichEnumValueProvider<int>
 ```

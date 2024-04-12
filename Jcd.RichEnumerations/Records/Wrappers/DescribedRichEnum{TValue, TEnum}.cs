@@ -13,7 +13,7 @@ namespace Jcd.RichEnumerations.Records.Wrappers;
 /// <summary>
 /// A <see cref="RichEnum{TValue,TEnum}" /> with a Description property.
 /// </summary>
-public abstract record DescribedRichEnum<TValue, TEnum> : RichEnum<TValue, TEnum>
+public record DescribedRichEnum<TValue, TEnum> : RichEnum<TValue, TEnum>
    where TValue : IEquatable<TValue>
    where TEnum : DescribedRichEnum<TValue, TEnum>
 {

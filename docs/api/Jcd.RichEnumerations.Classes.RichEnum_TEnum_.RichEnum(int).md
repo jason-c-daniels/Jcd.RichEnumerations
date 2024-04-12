@@ -7,7 +7,7 @@
 A [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') with TValue set to int.
 
 ```csharp
-protected RichEnum(int value);
+public RichEnum(int value);
 ```
 
 #### Parameters

@@ -7,7 +7,7 @@
 A [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') with a Description property.
 
 ```csharp
-protected DescribedRichEnum(TValue value, string description);
+public DescribedRichEnum(TValue value, string description);
 ```
 
 #### Parameters

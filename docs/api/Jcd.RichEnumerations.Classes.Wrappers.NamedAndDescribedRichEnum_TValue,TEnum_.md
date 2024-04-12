@@ -7,7 +7,7 @@
 A rich enumeration containing Description, Name and Value properties.
 
 ```csharp
-public abstract class NamedAndDescribedRichEnum<TValue,TEnum> : Jcd.RichEnumerations.Classes.RichEnum<TValue, TEnum>
+public class NamedAndDescribedRichEnum<TValue,TEnum> : Jcd.RichEnumerations.Classes.RichEnum<TValue, TEnum>
     where TValue : System.IEquatable<TValue>
     where TEnum : Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedRichEnum<TValue, TEnum>
 ```

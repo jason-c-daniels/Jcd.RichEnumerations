@@ -7,7 +7,7 @@
 A [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') with Value as a user defined type.
 
 ```csharp
-public abstract class RichEnum<TValue,TEnum> : Jcd.RichEnumerations.Classes.RichEnumBase<TValue, TEnum, TEnum>,
+public class RichEnum<TValue,TEnum> : Jcd.RichEnumerations.Classes.RichEnumBase<TValue, TEnum, TEnum>,
 System.IEquatable<TEnum>,
 Jcd.RichEnumerations.Classes.IRichEnumValueProvider<TValue>
     where TValue : System.IEquatable<TValue>
@@ -54,6 +54,10 @@ public class MyRichEnum(float value, string customText) : RichEnum<float,MyRichE
 | Constructors                                                                                                                                                       |                                                                                                                                                                                   |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [RichEnum(TValue)](Jcd.RichEnumerations.Classes.RichEnum_TValue,TEnum_.RichEnum(TValue).md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>.RichEnum(TValue)') | A [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') with Value as a user defined type. |
+
+| Properties                                                                                                                        |                       |
+|:----------------------------------------------------------------------------------------------------------------------------------|:----------------------|
+| [Value](Jcd.RichEnumerations.Classes.RichEnum_TValue,TEnum_.Value.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>.Value') | The underlying value. |
 
 | Methods                                                                                                                                                   |                                                                                                                                                                                                                                  |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -9,9 +9,7 @@ This type provides a hook to sort the .All collection. `.Sort()` should be calle
 application startup.
 
 ```csharp
-public abstract class SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem> : Jcd.RichEnumerations.Classes.SortableRichEnumBase<TEnumeration, TEnumeratedItem>,
-Jcd.RichEnumerations.Classes.ISortableRichEnumValueProvider<TValue>,
-Jcd.RichEnumerations.Classes.IRichEnumValueProvider<TValue>
+public class SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem> : Jcd.RichEnumerations.Classes.SortableRichEnumBase<TEnumeration, TEnumeratedItem>
     where TValue : System.IEquatable<TValue>, System.IComparable<TValue>
     where TEnumeratedItem : System.IEquatable<TEnumeratedItem>, System.IComparable<TEnumeratedItem>, Jcd.RichEnumerations.Classes.ISortableRichEnumValueProvider<TValue>
 ```
@@ -42,18 +40,11 @@ Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.O
 Derived
 &#8627; [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>')
 
-Implements [Jcd.RichEnumerations.Classes.ISortableRichEnumValueProvider&lt;](Jcd.RichEnumerations.Classes.ISortableRichEnumValueProvider_TValue_.md 'Jcd.RichEnumerations.Classes.ISortableRichEnumValueProvider<TValue>')[TValue](Jcd.RichEnumerations.Classes.SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.md#Jcd.RichEnumerations.Classes.SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.TValue 'Jcd.RichEnumerations.Classes.SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>.TValue')[&gt;](Jcd.RichEnumerations.Classes.ISortableRichEnumValueProvider_TValue_.md 'Jcd.RichEnumerations.Classes.ISortableRichEnumValueProvider<TValue>'), [Jcd.RichEnumerations.Classes.IRichEnumValueProvider&lt;](Jcd.RichEnumerations.Classes.IRichEnumValueProvider_TValue_.md 'Jcd.RichEnumerations.Classes.IRichEnumValueProvider<TValue>')[TValue](Jcd.RichEnumerations.Classes.SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.md#Jcd.RichEnumerations.Classes.SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.TValue 'Jcd.RichEnumerations.Classes.SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>.TValue')[&gt;](Jcd.RichEnumerations.Classes.IRichEnumValueProvider_TValue_.md 'Jcd.RichEnumerations.Classes.IRichEnumValueProvider<TValue>')
-
 ### Remarks
 
 NOTE: This is intended as a supporting class. Consumers should prefer [SortableRichEnum&lt;TEnum&gt;](Jcd.RichEnumerations.Classes.SortableRichEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TEnum>') or
 [SortableRichEnum&lt;TEnum&gt;](Jcd.RichEnumerations.Classes.SortableRichEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TEnum>') instead.
 
-| Constructors                                                                                                                                                                                                                                                                 |                                                                                                                                                                                                                                             |
-|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [SortableRichEnumBase(TValue)](Jcd.RichEnumerations.Classes.SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.SortableRichEnumBase(TValue).md 'Jcd.RichEnumerations.Classes.SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>.SortableRichEnumBase(TValue)') | A base for sortable rich enumerations where the .Value property is present on the enumerated type. This type provides a hook to sort the .All collection. `.Sort()` should be called once and only once during application startup. |
-
 | Properties                                                                                                                                                                                                    |                                                                                                            |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
 | [ByValue](Jcd.RichEnumerations.Classes.SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.ByValue.md 'Jcd.RichEnumerations.Classes.SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>.ByValue') | A lookup of enumerated elements by their Value property. Useful for implementing conversion operators. |
-| [Value](Jcd.RichEnumerations.Classes.SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.Value.md 'Jcd.RichEnumerations.Classes.SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>.Value')       | The underlying value                                                                                       |

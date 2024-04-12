@@ -7,7 +7,7 @@
 A [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>') with a Description property.
 
 ```csharp
-protected DescribedSortableRichEnum(TValue value, string description);
+public DescribedSortableRichEnum(TValue value, string description);
 ```
 
 #### Parameters

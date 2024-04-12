@@ -22,13 +22,17 @@ namespace Jcd.RichEnumerations.Classes;
 /// </remarks>
 /// <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
 /// <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
-public abstract class RichEnumBase<TEnumeration, TEnumeratedItem>
+public class RichEnumBase<TEnumeration, TEnumeratedItem>
    where TEnumeratedItem : IEquatable<TEnumeratedItem>
 {
    private static List<TEnumeratedItem>? all;
 
+   protected RichEnumBase()
+   {
+   }
+
    /// <summary>
-   /// All enumerated elements. Populated on first call to <see cref="All"/>.
+   /// All enumerated elements. Populated on first call to <see cref="All" />.
    /// </summary>
    public static IReadOnlyList<TEnumeratedItem> All => all ??= GetAll();
 

@@ -29,12 +29,21 @@ namespace Jcd.RichEnumerations.Classes;
 /// }
 /// </code>
 /// </example>
-public abstract class RichEnum<TValue, TEnum>(TValue value) : RichEnumBase<TValue, TEnum, TEnum>(value)
-                                                            , IEquatable<TEnum>
-                                                            , IRichEnumValueProvider<TValue>
+public class RichEnum<TValue, TEnum>(TValue value) : RichEnumBase<TValue, TEnum, TEnum>
+                                                   , IEquatable<TEnum>
+                                                   , IRichEnumValueProvider<TValue>
    where TEnum : RichEnum<TValue, TEnum>
    where TValue : IEquatable<TValue>
 {
+   #region IRichEnumValueProvider<TValue> Members
+
+   /// <summary>
+   /// The underlying value.
+   /// </summary>
+   public TValue Value { get; } = value;
+
+   #endregion
+
    #region Equals,  GetHashCode, and ToString
 
    /// <inheritdoc />

@@ -7,7 +7,7 @@
 A [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>') with .Value as a user defined type.
 
 ```csharp
-public abstract class RichEnum<TValue,TEnum> : Jcd.RichEnumerations.Records.RichEnumBase<TValue, TEnum, TEnum>,
+public class RichEnum<TValue,TEnum> : Jcd.RichEnumerations.Records.RichEnumBase<TValue, TEnum, TEnum>,
 Jcd.RichEnumerations.Records.IRichEnumValueProvider<TValue>,
 System.IEquatable<Jcd.RichEnumerations.Records.RichEnum<TValue, TEnum>>
     where TValue : System.IEquatable<TValue>
@@ -38,6 +38,10 @@ Derived
 &#8627; [NamedRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.Wrappers.NamedRichEnum<TValue,TEnum>')
 
 Implements [Jcd.RichEnumerations.Records.IRichEnumValueProvider&lt;](Jcd.RichEnumerations.Records.IRichEnumValueProvider_TValue_.md 'Jcd.RichEnumerations.Records.IRichEnumValueProvider<TValue>')[TValue](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.TValue 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>.TValue')[&gt;](Jcd.RichEnumerations.Records.IRichEnumValueProvider_TValue_.md 'Jcd.RichEnumerations.Records.IRichEnumValueProvider<TValue>'), [System.IEquatable&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1 'System.IEquatable`1')[Jcd.RichEnumerations.Records.RichEnum&lt;](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>')[TValue](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.TValue 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>.TValue')[,](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>')[TEnum](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.TEnum 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>.TEnum')[&gt;](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1 'System.IEquatable`1')
+
+| Properties                                                                                                                        |                       |
+|:----------------------------------------------------------------------------------------------------------------------------------|:----------------------|
+| [Value](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.Value.md 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>.Value') | The underlying value. |
 
 | Operators                                                                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

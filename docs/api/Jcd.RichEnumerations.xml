@@ -70,7 +70,8 @@
       </member>
       <member name="P:Jcd.RichEnumerations.Classes.RichEnumBase`2.All">
          <summary>
-            All enumerated elements. Populated in static constructor.
+            All enumerated elements. Populated on first call to<see
+            cref="P:Jcd.RichEnumerations.Classes.RichEnumBase`2.All"/>.
          </summary>
       </member>
       <member name="T:Jcd.RichEnumerations.Classes.RichEnumBase`3">
@@ -96,35 +97,6 @@
          </typeparam>
          <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
          <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
-      </member>
-      <member name="M:Jcd.RichEnumerations.Classes.RichEnumBase`3.#ctor(`0)">
-         <summary>
-            Provides access to a lookup of all instances on the enumeration container by way of the
-            <see cref="P:Jcd.RichEnumerations.Classes.RichEnumBase`3.ByValue"/>
-            property.
-            And allows lookup of items by value. This is used in
-            <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2"/>
-            to provide conversion
-            operators.
-         </summary>
-         <remarks>
-            NOTE: This is intended as a supporting class. Consumers should prefer
-            <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2"/>
-            or
-            <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`1"/>
-            instead.
-         </remarks>
-         <typeparam name="TValue">
-            The type of the .Value property on the TEnumeratedItem instances. This is used in the
-            conversion operators.
-         </typeparam>
-         <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
-         <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
-      </member>
-      <member name="P:Jcd.RichEnumerations.Classes.RichEnumBase`3.Value">
-         <summary>
-            The underlying value.
-         </summary>
       </member>
       <member name="P:Jcd.RichEnumerations.Classes.RichEnumBase`3.ByValue">
          <summary>
@@ -221,6 +193,11 @@
                }
             </code>
          </example>
+      </member>
+      <member name="P:Jcd.RichEnumerations.Classes.RichEnum`2.Value">
+         <summary>
+            The underlying value.
+         </summary>
       </member>
       <member name="M:Jcd.RichEnumerations.Classes.RichEnum`2.ToString">
          <inheritdoc/>
@@ -337,35 +314,11 @@
          <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
          <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
       </member>
-      <member name="M:Jcd.RichEnumerations.Classes.SortableRichEnumBase`3.#ctor(`0)">
-         <summary>
-            A base for sortable rich enumerations where the .Value property is present on the enumerated type.
-            This type provides a hook to sort the .All collection. <c>.Sort()</c> should be called once and only once
-            during
-            application startup.
-         </summary>
-         <remarks>
-            NOTE: This is intended as a supporting class. Consumers should prefer
-            <see cref="T:Jcd.RichEnumerations.Classes.SortableRichEnum`1"/>
-            or
-            <see cref="T:Jcd.RichEnumerations.Classes.SortableRichEnum`1"/>
-            instead.
-         </remarks>
-         <typeparam name="TValue">
-            The type of the .Value property on the TEnumeratedItem instances. This is used in the
-            conversion operators.
-         </typeparam>
-         <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
-         <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
-      </member>
       <member name="P:Jcd.RichEnumerations.Classes.SortableRichEnumBase`3.ByValue">
          <summary>
             A lookup of enumerated elements by their Value property.
             Useful for implementing conversion operators.
          </summary>
-      </member>
-      <member name="P:Jcd.RichEnumerations.Classes.SortableRichEnumBase`3.Value">
-         <inheritdoc/>
       </member>
       <member name="T:Jcd.RichEnumerations.Classes.SortableRichEnum`1">
          <summary>
@@ -520,6 +473,9 @@
                }
             </code>
          </example>
+      </member>
+      <member name="P:Jcd.RichEnumerations.Classes.SortableRichEnum`2.Value">
+         <inheritdoc/>
       </member>
       <member name="M:Jcd.RichEnumerations.Classes.SortableRichEnum`2.ToString">
          <inheritdoc/>
@@ -1014,6 +970,10 @@
          <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
          <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
       </member>
+      <member name="M:Jcd.RichEnumerations.Records.RichEnumBase`2.#ctor">
+         <summary>
+         </summary>
+      </member>
       <member name="P:Jcd.RichEnumerations.Records.RichEnumBase`2.All">
          <summary>
             All enumerated elements. Populated in static constructor.
@@ -1043,13 +1003,8 @@
          <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
          <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
       </member>
-      <member name="M:Jcd.RichEnumerations.Records.RichEnumBase`3.#ctor(`0)">
+      <member name="M:Jcd.RichEnumerations.Records.RichEnumBase`3.#ctor">
          <inheritdoc/>
-      </member>
-      <member name="P:Jcd.RichEnumerations.Records.RichEnumBase`3.Value">
-         <summary>
-            The underlying value.
-         </summary>
       </member>
       <member name="P:Jcd.RichEnumerations.Records.RichEnumBase`3.ByValue">
          <summary>
@@ -1085,6 +1040,11 @@
       </member>
       <member name="M:Jcd.RichEnumerations.Records.RichEnum`2.#ctor(`0)">
          <inheritdoc/>
+      </member>
+      <member name="P:Jcd.RichEnumerations.Records.RichEnum`2.Value">
+         <summary>
+            The underlying value.
+         </summary>
       </member>
       <member
          name="M:Jcd.RichEnumerations.Records.RichEnum`2.op_Explicit(Jcd.RichEnumerations.Records.RichEnum{`0,`1})~`0">
@@ -1159,17 +1119,11 @@
          <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
          <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
       </member>
-      <member name="M:Jcd.RichEnumerations.Records.SortableRichEnumBase`3.#ctor(`0)">
-         <inheritdoc/>
-      </member>
       <member name="P:Jcd.RichEnumerations.Records.SortableRichEnumBase`3.ByValue">
          <summary>
             A lookup of enumerated elements by their Value property.
             Useful for implementing conversion operators.
          </summary>
-      </member>
-      <member name="P:Jcd.RichEnumerations.Records.SortableRichEnumBase`3.Value">
-         <inheritdoc/>
       </member>
       <member name="T:Jcd.RichEnumerations.Records.SortableRichEnum`1">
          <summary>
@@ -1220,6 +1174,9 @@
             <see cref="T:Jcd.RichEnumerations.Records.SortableRichEnum`2"/>
          </summary>
          <param name="value">The value of the instance. This must be unique.</param>
+      </member>
+      <member name="P:Jcd.RichEnumerations.Records.SortableRichEnum`2.Value">
+         <inheritdoc/>
       </member>
       <member name="M:Jcd.RichEnumerations.Records.SortableRichEnum`2.CompareTo(`1)">
          <inheritdoc/>

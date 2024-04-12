@@ -7,7 +7,7 @@
 A [RichEnum&lt;TEnum&gt;](Jcd.RichEnumerations.Records.RichEnum_TEnum_.md 'Jcd.RichEnumerations.Records.RichEnum<TEnum>') with a Description property.
 
 ```csharp
-public abstract class DescribedRichEnum<TEnum> : Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum<int, TEnum>,
+public class DescribedRichEnum<TEnum> : Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum<int, TEnum>,
 System.IEquatable<Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum<TEnum>>
     where TEnum : Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum<TEnum>
 ```

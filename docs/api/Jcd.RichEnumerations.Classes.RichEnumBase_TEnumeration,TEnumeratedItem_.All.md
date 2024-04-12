@@ -4,7 +4,7 @@
 
 ## RichEnumBase<TEnumeration,TEnumeratedItem>.All Property
 
-All enumerated elements. Populated in static constructor.
+All enumerated elements. Populated on first call to [All](Jcd.RichEnumerations.Classes.RichEnumBase_TEnumeration,TEnumeratedItem_.All.md 'Jcd.RichEnumerations.Classes.RichEnumBase<TEnumeration,TEnumeratedItem>.All').
 
 ```csharp
 public static System.Collections.Generic.IReadOnlyList<TEnumeratedItem> All { get; }

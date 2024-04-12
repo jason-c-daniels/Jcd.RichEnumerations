@@ -8,7 +8,7 @@ A base for sortable rich enumerations. This type provides a hook to sort the .Al
 `.Sort()` should be called once and only once during application startup.
 
 ```csharp
-public abstract class SortableRichEnumBase<TEnumeration,TEnumeratedItem> : Jcd.RichEnumerations.Records.RichEnumBase<TEnumeration, TEnumeratedItem>,
+public class SortableRichEnumBase<TEnumeration,TEnumeratedItem> : Jcd.RichEnumerations.Records.RichEnumBase<TEnumeration, TEnumeratedItem>,
 System.IEquatable<Jcd.RichEnumerations.Records.SortableRichEnumBase<TEnumeration, TEnumeratedItem>>
     where TEnumeratedItem : System.IComparable<TEnumeratedItem>
 ```

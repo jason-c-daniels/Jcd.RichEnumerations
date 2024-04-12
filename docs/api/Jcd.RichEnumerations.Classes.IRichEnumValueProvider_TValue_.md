@@ -23,7 +23,7 @@ The type of the value
 Derived
 &#8627; [ISortableRichEnumValueProvider&lt;TValue&gt;](Jcd.RichEnumerations.Classes.ISortableRichEnumValueProvider_TValue_.md 'Jcd.RichEnumerations.Classes.ISortableRichEnumValueProvider<TValue>')
 &#8627; [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>')
-&#8627; [SortableRichEnumBase&lt;TValue,TEnumeration,TEnumeratedItem&gt;](Jcd.RichEnumerations.Classes.SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.Classes.SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>')
+&#8627; [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>')
 
 | Properties                                                                                                                                        |                      |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------|

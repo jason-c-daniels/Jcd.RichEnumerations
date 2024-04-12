@@ -23,6 +23,6 @@ Jcd.RichEnumerations.Classes.IRichEnumValueProvider<TValue>
 The type of the value
 
 Derived
-&#8627; [SortableRichEnumBase&lt;TValue,TEnumeration,TEnumeratedItem&gt;](Jcd.RichEnumerations.Classes.SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.Classes.SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>')
+&#8627; [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>')
 
 Implements [Jcd.RichEnumerations.Classes.IRichEnumValueProvider&lt;](Jcd.RichEnumerations.Classes.IRichEnumValueProvider_TValue_.md 'Jcd.RichEnumerations.Classes.IRichEnumValueProvider<TValue>')[TValue](Jcd.RichEnumerations.Classes.ISortableRichEnumValueProvider_TValue_.md#Jcd.RichEnumerations.Classes.ISortableRichEnumValueProvider_TValue_.TValue 'Jcd.RichEnumerations.Classes.ISortableRichEnumValueProvider<TValue>.TValue')[&gt;](Jcd.RichEnumerations.Classes.IRichEnumValueProvider_TValue_.md 'Jcd.RichEnumerations.Classes.IRichEnumValueProvider<TValue>')

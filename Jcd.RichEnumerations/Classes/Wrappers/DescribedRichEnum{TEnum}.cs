@@ -6,5 +6,5 @@
 /// <param name="value">the value for this instance. These must be unique.</param>
 /// <param name="description">The description for the instance. These should be unique.</param>
 /// <typeparam name="TEnum">The type deriving from DEnumeration</typeparam>
-public abstract class DescribedRichEnum<TEnum>(int value, string description) : DescribedRichEnum<int, TEnum>(value, description)
+public class DescribedRichEnum<TEnum>(int value, string description) : DescribedRichEnum<int, TEnum>(value, description)
    where TEnum : DescribedRichEnum<TEnum>;

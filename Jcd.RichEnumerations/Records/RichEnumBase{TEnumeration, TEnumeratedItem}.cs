@@ -21,9 +21,15 @@ namespace Jcd.RichEnumerations.Records;
 /// </remarks>
 /// <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
 /// <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
-public abstract record RichEnumBase<TEnumeration, TEnumeratedItem>
+public record RichEnumBase<TEnumeration, TEnumeratedItem>
 {
    private static List<TEnumeratedItem>? all;
+
+   /// <summary>
+   /// </summary>
+   protected RichEnumBase()
+   {
+   }
 
    /// <summary>
    /// All enumerated elements. Populated in static constructor.
