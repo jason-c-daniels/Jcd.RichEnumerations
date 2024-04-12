@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Classes.Wrappers](Jcd.RichEnumerations.Classes.Wrappers.md 'Jcd.RichEnumerations.Classes.Wrappers')
 
 ## NamedSortableRichEnum<TValue,TEnum> Class
@@ -7,11 +6,10 @@
 A [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>') with a Name property.
 
 ```csharp
-public abstract class NamedSortableRichEnum<TValue,TEnum> : Jcd.RichEnumerations.Classes.SortableRichEnum<TValue, TEnum>
+public class NamedSortableRichEnum<TValue,TEnum> : Jcd.RichEnumerations.Classes.SortableRichEnum<TValue, TEnum>
     where TValue : System.IEquatable<TValue>, System.IComparable<TValue>
     where TEnum : Jcd.RichEnumerations.Classes.Wrappers.NamedSortableRichEnum<TValue, TEnum>, Jcd.RichEnumerations.Classes.ISortableRichEnumValueProvider<TValue>
 ```
-
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Classes.Wrappers.NamedSortableRichEnum_TValue,TEnum_.TValue'></a>
@@ -27,10 +25,10 @@ Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.O
 Derived
 &#8627; [NamedSortableRichEnum&lt;TEnum&gt;](Jcd.RichEnumerations.Classes.Wrappers.NamedSortableRichEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedSortableRichEnum<TEnum>')
 
-| Constructors                                                                                                                                                                                                                                                                 |                                                                                                                                                                                              |
-|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Constructors | |
+| :--- | :--- |
 | [NamedSortableRichEnum(TValue, string)](Jcd.RichEnumerations.Classes.Wrappers.NamedSortableRichEnum_TValue,TEnum_.NamedSortableRichEnum(TValue,string).md 'Jcd.RichEnumerations.Classes.Wrappers.NamedSortableRichEnum<TValue,TEnum>.NamedSortableRichEnum(TValue, string)') | A [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>') with a Name property. |
 
-| Properties                                                                                                                                                                 |                                                  |
-|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------|
+| Properties | |
+| :--- | :--- |
 | [Name](Jcd.RichEnumerations.Classes.Wrappers.NamedSortableRichEnum_TValue,TEnum_.Name.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedSortableRichEnum<TValue,TEnum>.Name') | The name of the instance. This should be unique. |

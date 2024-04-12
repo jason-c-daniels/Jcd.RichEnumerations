@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Classes](Jcd.RichEnumerations.Classes.md 'Jcd.RichEnumerations.Classes')
 
 ## SortableRichEnumBase<TEnumeration,TEnumeratedItem> Class
@@ -8,10 +7,9 @@ A base for sortable rich enumerations. This type provides a hook to sort the [Ri
 `.Sort()` should be called once and only once during application startup.
 
 ```csharp
-public abstract class SortableRichEnumBase<TEnumeration,TEnumeratedItem> : Jcd.RichEnumerations.Classes.RichEnumBase<TEnumeration, TEnumeratedItem>
+public class SortableRichEnumBase<TEnumeration,TEnumeratedItem> : Jcd.RichEnumerations.Classes.RichEnumBase<TEnumeration, TEnumeratedItem>
     where TEnumeratedItem : System.IEquatable<TEnumeratedItem>, System.IComparable<TEnumeratedItem>
 ```
-
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Classes.SortableRichEnumBase_TEnumeration,TEnumeratedItem_.TEnumeration'></a>
@@ -32,10 +30,9 @@ Derived
 &#8627; [SortableRichEnumBase&lt;TValue,TEnumeration,TEnumeratedItem&gt;](Jcd.RichEnumerations.Classes.SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.Classes.SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>')
 
 ### Remarks
-
 NOTE: This is intended as a supporting class. Consumers should prefer [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>')
 or [SortableRichEnum&lt;TEnum&gt;](Jcd.RichEnumerations.Classes.SortableRichEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TEnum>') instead.
 
-| Methods                                                                                                                                                                                                                                                                                           |                                                                                                 |
-|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------|
+| Methods | |
+| :--- | :--- |
 | [Sort(Comparison&lt;TEnumeratedItem&gt;)](Jcd.RichEnumerations.Classes.SortableRichEnumBase_TEnumeration,TEnumeratedItem_.Sort(System.Comparison_TEnumeratedItem_).md 'Jcd.RichEnumerations.Classes.SortableRichEnumBase<TEnumeration,TEnumeratedItem>.Sort(System.Comparison<TEnumeratedItem>)') | Sorts the .All collection. This should be called once and only once during application startup. |

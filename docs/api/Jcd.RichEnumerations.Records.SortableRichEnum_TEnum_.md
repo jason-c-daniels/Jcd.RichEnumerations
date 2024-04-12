@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Records](Jcd.RichEnumerations.Records.md 'Jcd.RichEnumerations.Records')
 
 ## SortableRichEnum<TEnum> Class
@@ -7,11 +6,10 @@
 A rich enum that can be sorted with a call to `.Sort()`.
 
 ```csharp
-public abstract class SortableRichEnum<TEnum> : Jcd.RichEnumerations.Records.SortableRichEnum<int, TEnum>,
+public class SortableRichEnum<TEnum> : Jcd.RichEnumerations.Records.SortableRichEnum<int, TEnum>,
 System.IEquatable<Jcd.RichEnumerations.Records.SortableRichEnum<TEnum>>
-    where TEnum : Jcd.RichEnumerations.Records.SortableRichEnum<TEnum>
+    where TEnum : Jcd.RichEnumerations.Records.SortableRichEnum<TEnum>, Jcd.RichEnumerations.Records.ISortableRichEnumValueProvider<int>
 ```
-
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Records.SortableRichEnum_TEnum_.TEnum'></a>

@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Classes.Wrappers](Jcd.RichEnumerations.Classes.Wrappers.md 'Jcd.RichEnumerations.Classes.Wrappers')
 
 ## NamedAndDescribedRichEnum<TValue,TEnum> Class
@@ -7,11 +6,10 @@
 A rich enumeration containing Description, Name and Value properties.
 
 ```csharp
-public abstract class NamedAndDescribedRichEnum<TValue,TEnum> : Jcd.RichEnumerations.Classes.RichEnum<TValue, TEnum>
+public class NamedAndDescribedRichEnum<TValue,TEnum> : Jcd.RichEnumerations.Classes.RichEnum<TValue, TEnum>
     where TValue : System.IEquatable<TValue>
     where TEnum : Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedRichEnum<TValue, TEnum>
 ```
-
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedRichEnum_TValue,TEnum_.TValue'></a>
@@ -31,11 +29,11 @@ Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.O
 Derived
 &#8627; [NamedAndDescribedRichEnum&lt;TEnum&gt;](Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedRichEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedRichEnum<TEnum>')
 
-| Constructors                                                                                                                                                                                                                                                                                                            |                                                                       |
-|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------|
+| Constructors | |
+| :--- | :--- |
 | [NamedAndDescribedRichEnum(TValue, string, string)](Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedRichEnum_TValue,TEnum_.NamedAndDescribedRichEnum(TValue,string,string).md 'Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedRichEnum<TValue,TEnum>.NamedAndDescribedRichEnum(TValue, string, string)') | A rich enumeration containing Description, Name and Value properties. |
 
-| Properties                                                                                                                                                                                              |                                                          |
-|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------|
+| Properties | |
+| :--- | :--- |
 | [Description](Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedRichEnum_TValue,TEnum_.Description.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedRichEnum<TValue,TEnum>.Description') | The description for the instance. This should be unique. |
-| [Name](Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedRichEnum_TValue,TEnum_.Name.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedRichEnum<TValue,TEnum>.Name')                      | The name for the instance. This should be unique.        |
+| [Name](Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedRichEnum_TValue,TEnum_.Name.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedRichEnum<TValue,TEnum>.Name') | The name for the instance. This should be unique. |

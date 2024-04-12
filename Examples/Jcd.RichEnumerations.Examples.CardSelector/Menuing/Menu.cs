@@ -7,7 +7,7 @@
 
 namespace Jcd.RichEnumerations.Examples.CardSelector.Menuing;
 
-public abstract class Menu<TMenu, TMenuItem, TProcessingResult>
+public class Menu<TMenu, TMenuItem, TProcessingResult>
    where TMenu : Menu<TMenu, TMenuItem, TProcessingResult>
    where TMenuItem : MenuItem<TMenuItem>, IMenuItemProvider<CaseInsensitiveString, TMenuItem>
    where TProcessingResult : IEquatable<TProcessingResult>, IMenuProcessingResult<TProcessingResult>

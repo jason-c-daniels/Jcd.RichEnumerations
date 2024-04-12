@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Classes](Jcd.RichEnumerations.Classes.md 'Jcd.RichEnumerations.Classes')
 
 ## SortableRichEnum<TEnum> Class
@@ -8,10 +7,9 @@ A base for sortable rich enumerations. This type provides a hook to sort the [Ri
 `.Sort()` should be called once and only once during application startup.
 
 ```csharp
-public abstract class SortableRichEnum<TEnum> : Jcd.RichEnumerations.Classes.SortableRichEnum<int, TEnum>
-    where TEnum : Jcd.RichEnumerations.Classes.SortableRichEnum<TEnum>
+public class SortableRichEnum<TEnum> : Jcd.RichEnumerations.Classes.SortableRichEnum<int, TEnum>
+    where TEnum : Jcd.RichEnumerations.Classes.SortableRichEnum<TEnum>, Jcd.RichEnumerations.Classes.ISortableRichEnumValueProvider<int>
 ```
-
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Classes.SortableRichEnum_TEnum_.TEnum'></a>
@@ -49,6 +47,6 @@ class Program
 }
 ```
 
-| Constructors                                                                                                                                                                        |                                                                                                                                                                                                                                                                                                                           |
-|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Constructors | |
+| :--- | :--- |
 | [SortableRichEnum(int)](Jcd.RichEnumerations.Classes.SortableRichEnum_TEnum_.SortableRichEnum(int).md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TEnum>.SortableRichEnum(int)') | A base for sortable rich enumerations. This type provides a hook to sort the [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>')`.All` collection. `.Sort()` should be called once and only once during application startup. |

@@ -15,8 +15,8 @@ namespace Jcd.RichEnumerations.Records;
 /// </summary>
 /// <typeparam name="TEnum">The type deriving from SortableEnum{TEnum}</typeparam>
 /// <typeparam name="TValue">The type of the .Value property.</typeparam>
-public abstract record SortableRichEnum<TValue, TEnum>
-   : SortableRichEnumBase<TValue, TEnum, TEnum>
+public record SortableRichEnum<TValue, TEnum>
+   : SortableRichEnumBase<TValue, TEnum, TEnum>, ISortableRichEnumValueProvider<TValue>
    , IComparable<TEnum>
    , IComparable<SortableRichEnum<TValue, TEnum>>
    where TValue : IEquatable<TValue>, IComparable<TValue>
@@ -27,9 +27,12 @@ public abstract record SortableRichEnum<TValue, TEnum>
    /// </summary>
    /// <param name="value">The value of the instance. This must be unique.</param>
    protected SortableRichEnum(TValue value)
-      : base(value)
    {
+      Value = value;
    }
+
+   /// <inheritdoc />
+   public TValue Value { get; }
 
    #region Equality and Relational Operations
 

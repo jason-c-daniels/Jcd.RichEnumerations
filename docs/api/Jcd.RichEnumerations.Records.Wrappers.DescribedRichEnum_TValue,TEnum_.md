@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Records.Wrappers](Jcd.RichEnumerations.Records.Wrappers.md 'Jcd.RichEnumerations.Records.Wrappers')
 
 ## DescribedRichEnum<TValue,TEnum> Class
@@ -7,12 +6,11 @@
 A [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>') with a Description property.
 
 ```csharp
-public abstract class DescribedRichEnum<TValue,TEnum> : Jcd.RichEnumerations.Records.RichEnum<TValue, TEnum>,
+public class DescribedRichEnum<TValue,TEnum> : Jcd.RichEnumerations.Records.RichEnum<TValue, TEnum>,
 System.IEquatable<Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum<TValue, TEnum>>
     where TValue : System.IEquatable<TValue>
     where TEnum : Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum<TValue, TEnum>
 ```
-
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum_TValue,TEnum_.TValue'></a>
@@ -30,10 +28,10 @@ Derived
 
 Implements [System.IEquatable&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1 'System.IEquatable`1')[Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum&lt;](Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum<TValue,TEnum>')[TValue](Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum_TValue,TEnum_.TValue 'Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum<TValue,TEnum>.TValue')[,](Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum<TValue,TEnum>')[TEnum](Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum_TValue,TEnum_.TEnum 'Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum<TValue,TEnum>.TEnum')[&gt;](Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum<TValue,TEnum>')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1 'System.IEquatable`1')
 
-| Constructors                                                                                                                                                                                                                                             |                                                                                                                                                                                                        |
-|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Constructors | |
+| :--- | :--- |
 | [DescribedRichEnum(TValue, string)](Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum_TValue,TEnum_.DescribedRichEnum(TValue,string).md 'Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum<TValue,TEnum>.DescribedRichEnum(TValue, string)') | Constructs a [DescribedRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum<TValue,TEnum>') |
 
-| Properties                                                                                                                                                                              |                                                           |
-|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------|
+| Properties | |
+| :--- | :--- |
 | [Description](Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum_TValue,TEnum_.Description.md 'Jcd.RichEnumerations.Records.Wrappers.DescribedRichEnum<TValue,TEnum>.Description') | The description for the instance. These should be unique. |

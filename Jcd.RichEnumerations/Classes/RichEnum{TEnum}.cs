@@ -22,5 +22,5 @@ namespace Jcd.RichEnumerations.Classes;
 /// }
 /// </code>
 /// </example>
-public abstract class RichEnum<TEnum>(int value) : RichEnum<int, TEnum>(value)
+public class RichEnum<TEnum>(int value) : RichEnum<int, TEnum>(value)
    where TEnum : RichEnum<TEnum>;

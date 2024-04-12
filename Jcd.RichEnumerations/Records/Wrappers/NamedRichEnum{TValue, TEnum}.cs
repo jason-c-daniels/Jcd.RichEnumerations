@@ -15,7 +15,7 @@ namespace Jcd.RichEnumerations.Records.Wrappers;
 /// </summary>
 /// <typeparam name="TEnum">The type deriving from NdEnumeration</typeparam>
 /// <typeparam name="TValue">The type of the .Value property.</typeparam>
-public abstract record NamedRichEnum<TValue, TEnum> : RichEnum<TValue, TEnum>
+public record NamedRichEnum<TValue, TEnum> : RichEnum<TValue, TEnum>
    where TValue : IEquatable<TValue>
    where TEnum : NamedRichEnum<TValue, TEnum>, IEquatable<TEnum>
 {

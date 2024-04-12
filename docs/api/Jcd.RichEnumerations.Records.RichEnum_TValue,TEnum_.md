@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Records](Jcd.RichEnumerations.Records.md 'Jcd.RichEnumerations.Records')
 
 ## RichEnum<TValue,TEnum> Class
@@ -7,13 +6,12 @@
 A [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>') with .Value as a user defined type.
 
 ```csharp
-public abstract class RichEnum<TValue,TEnum> : Jcd.RichEnumerations.Records.RichEnumBase<TValue, TEnum, TEnum>,
+public class RichEnum<TValue,TEnum> : Jcd.RichEnumerations.Records.RichEnumBase<TValue, TEnum, TEnum>,
 Jcd.RichEnumerations.Records.IRichEnumValueProvider<TValue>,
 System.IEquatable<Jcd.RichEnumerations.Records.RichEnum<TValue, TEnum>>
     where TValue : System.IEquatable<TValue>
     where TEnum : Jcd.RichEnumerations.Records.RichEnum<TValue, TEnum>
 ```
-
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.TValue'></a>
@@ -39,7 +37,11 @@ Derived
 
 Implements [Jcd.RichEnumerations.Records.IRichEnumValueProvider&lt;](Jcd.RichEnumerations.Records.IRichEnumValueProvider_TValue_.md 'Jcd.RichEnumerations.Records.IRichEnumValueProvider<TValue>')[TValue](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.TValue 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>.TValue')[&gt;](Jcd.RichEnumerations.Records.IRichEnumValueProvider_TValue_.md 'Jcd.RichEnumerations.Records.IRichEnumValueProvider<TValue>'), [System.IEquatable&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1 'System.IEquatable`1')[Jcd.RichEnumerations.Records.RichEnum&lt;](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>')[TValue](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.TValue 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>.TValue')[,](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>')[TEnum](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.TEnum 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>.TEnum')[&gt;](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1 'System.IEquatable`1')
 
-| Operators                                                                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                |
-|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Properties | |
+| :--- | :--- |
+| [Value](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.Value.md 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>.Value') | The underlying value. |
+
+| Operators | |
+| :--- | :--- |
 | [explicit operator RichEnum&lt;TValue,TEnum&gt;(TValue)](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.op_ExplicitJcd.RichEnumerations.Records.RichEnum_TValue,TEnum_(TValue).md 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>.op_Explicit Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>(TValue)') | Explicit conversion from the underlying data type to an [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>') instance. This performs a lookup on the known values. |
-| [explicit operator TValue(RichEnum&lt;TValue,TEnum&gt;)](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.op_ExplicitTValue(Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_).md 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>.op_Explicit TValue(Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>)') | Explicit conversion to the underlying data type.                                                                                                                                                                                                               |
+| [explicit operator TValue(RichEnum&lt;TValue,TEnum&gt;)](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.op_ExplicitTValue(Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_).md 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>.op_Explicit TValue(Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>)') | Explicit conversion to the underlying data type. |

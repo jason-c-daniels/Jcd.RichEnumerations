@@ -31,8 +31,8 @@
 ///
 /// </code>
 /// </example>
-public abstract record SortableRichEnum<TEnum> : SortableRichEnum<int, TEnum>
-   where TEnum : SortableRichEnum<TEnum>
+public record SortableRichEnum<TEnum> : SortableRichEnum<int, TEnum>
+   where TEnum : SortableRichEnum<TEnum>, ISortableRichEnumValueProvider<int>
 {
    /// <inheritdoc />
    protected SortableRichEnum(int value)

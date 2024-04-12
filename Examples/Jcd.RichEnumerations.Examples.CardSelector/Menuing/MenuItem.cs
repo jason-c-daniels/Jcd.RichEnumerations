@@ -11,7 +11,7 @@ using Jcd.RichEnumerations.Classes.Wrappers;
 
 namespace Jcd.RichEnumerations.Examples.CardSelector.Menuing;
 
-public abstract class MenuItem<TMenuItem>(string value, int order, string name) : NamedSortableRichEnum<CaseInsensitiveString, TMenuItem>(value, name)
+public class MenuItem<TMenuItem>(string value, int order, string name) : NamedSortableRichEnum<CaseInsensitiveString, TMenuItem>(value, name)
                                                                                 , IMenuItemProvider<CaseInsensitiveString, TMenuItem>
    where TMenuItem : MenuItem<TMenuItem>
 {

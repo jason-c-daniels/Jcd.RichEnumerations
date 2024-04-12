@@ -14,7 +14,7 @@ namespace Jcd.RichEnumerations.Records.Wrappers;
 /// A <see cref="SortableRichEnum{TValue,TEnum}" /> with a Description property.
 /// </summary>
 /// <typeparam name="TEnum">The type being derived from <see cref="DescribedSortableRichEnum{TEnum}" /></typeparam>
-public abstract record DescribedSortableRichEnum<TEnum> : DescribedSortableRichEnum<int, TEnum>
+public record DescribedSortableRichEnum<TEnum> : DescribedSortableRichEnum<int, TEnum>
    where TEnum : DescribedSortableRichEnum<TEnum>, IComparable<TEnum>, ISortableRichEnumValueProvider<int>
 {
    /// <summary>

@@ -13,7 +13,7 @@ namespace Jcd.RichEnumerations.Records.Wrappers;
 /// <summary>
 /// A <see cref="SortableRichEnum{TValue,TEnum}" /> with a Name property.
 /// </summary>
-public abstract record NamedSortableRichEnum<TValue, TEnum> : SortableRichEnum<TValue, TEnum>
+public record NamedSortableRichEnum<TValue, TEnum> : SortableRichEnum<TValue, TEnum>
    where TValue : IEquatable<TValue>, IComparable<TValue>
    where TEnum : NamedSortableRichEnum<TValue, TEnum>, ISortableRichEnumValueProvider<TValue>
 {

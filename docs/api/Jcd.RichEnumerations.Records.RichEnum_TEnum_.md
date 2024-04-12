@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Records](Jcd.RichEnumerations.Records.md 'Jcd.RichEnumerations.Records')
 
 ## RichEnum<TEnum> Class
@@ -7,11 +6,10 @@
 A [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Records.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.RichEnum<TValue,TEnum>') with TValue set to int.
 
 ```csharp
-public abstract class RichEnum<TEnum> : Jcd.RichEnumerations.Records.RichEnum<int, TEnum>,
+public class RichEnum<TEnum> : Jcd.RichEnumerations.Records.RichEnum<int, TEnum>,
 System.IEquatable<Jcd.RichEnumerations.Records.RichEnum<TEnum>>
     where TEnum : Jcd.RichEnumerations.Records.RichEnum<TEnum>
 ```
-
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Records.RichEnum_TEnum_.TEnum'></a>

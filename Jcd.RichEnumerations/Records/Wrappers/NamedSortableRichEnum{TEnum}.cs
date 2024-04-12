@@ -4,7 +4,7 @@
 /// A <see cref="SortableRichEnum{TValue,TEnum}" /> with a Name property.
 /// </summary>
 /// <typeparam name="TEnum">The type being derived from <see cref="NamedSortableRichEnum{TEnum}" /></typeparam>
-public abstract record NamedSortableRichEnum<TEnum> : NamedSortableRichEnum<int, TEnum>
+public record NamedSortableRichEnum<TEnum> : NamedSortableRichEnum<int, TEnum>
    where TEnum : NamedSortableRichEnum<TEnum>, ISortableRichEnumValueProvider<int>
 {
    /// <summary>

@@ -18,7 +18,7 @@ namespace Jcd.RichEnumerations.Records;
 /// entries as public static readonly fields.
 /// </typeparam>
 /// <typeparam name="TValue">The data type for .Value</typeparam>
-public abstract record RichEnum<TValue, TEnum>
+public record RichEnum<TValue, TEnum>
    : RichEnumBase<TValue, TEnum, TEnum>
    , IRichEnumValueProvider<TValue>
    where TEnum : RichEnum<TValue, TEnum>
@@ -26,9 +26,14 @@ public abstract record RichEnum<TValue, TEnum>
 {
    /// <inheritdoc />
    protected RichEnum(TValue value)
-      : base(value)
    {
+      Value = value;
    }
+
+   /// <summary>
+   /// The underlying value.
+   /// </summary>
+   public TValue Value { get; }
 
    #region conversion operators
 

@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Classes](Jcd.RichEnumerations.Classes.md 'Jcd.RichEnumerations.Classes')
 
 ## IRichEnumValueProvider<TValue> Interface
@@ -11,7 +10,6 @@ types. This helps minimize boilerplate code.
 public interface IRichEnumValueProvider<out TValue>
     where TValue : System.IEquatable<TValue>
 ```
-
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Classes.IRichEnumValueProvider_TValue_.TValue'></a>
@@ -23,8 +21,8 @@ The type of the value
 Derived
 &#8627; [ISortableRichEnumValueProvider&lt;TValue&gt;](Jcd.RichEnumerations.Classes.ISortableRichEnumValueProvider_TValue_.md 'Jcd.RichEnumerations.Classes.ISortableRichEnumValueProvider<TValue>')
 &#8627; [RichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>')
-&#8627; [SortableRichEnumBase&lt;TValue,TEnumeration,TEnumeratedItem&gt;](Jcd.RichEnumerations.Classes.SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.Classes.SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>')
+&#8627; [SortableRichEnum&lt;TValue,TEnum&gt;](Jcd.RichEnumerations.Classes.SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>')
 
-| Properties                                                                                                                                        |                      |
-|:--------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------|
+| Properties | |
+| :--- | :--- |
 | [Value](Jcd.RichEnumerations.Classes.IRichEnumValueProvider_TValue_.Value.md 'Jcd.RichEnumerations.Classes.IRichEnumValueProvider<TValue>.Value') | The underlying value |
