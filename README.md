@@ -40,3 +40,4 @@ if (ev == MyRichEnum.Item1) {
 [![Nuget](https://img.shields.io/nuget/v/Jcd.RichEnumerations?logo=nuget)](https://www.nuget.org/packages/Jcd.RichEnumerations)
 
 [![API Docs](https://img.shields.io/badge/Read-The%20API%20Documentation-blue?style=for-the-badge)](https://github.com/jason-c-daniels/Jcd.RichEnumerations/blob/main/docs/api/index.md)
+[![User Guide](https://img.shields.io/badge/Read-The%20User%20Guide-green?style=for-the-badge)](https://github.com/jason-c-daniels/Jcd.RichEnumerations/blob/main/docs/user/index.md)
