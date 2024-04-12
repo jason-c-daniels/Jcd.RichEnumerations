@@ -39,7 +39,7 @@ public class RichEnum<TValue, TEnum>(TValue value) : RichEnumBase<TValue, TEnum,
    /// The underlying value.
    /// </summary>
    public TValue Value { get; } = value;
-   
+
    #region Equals,  GetHashCode, and ToString
 
    /// <inheritdoc />

@@ -220,14 +220,14 @@ public class SortableRichEnum<TValue, TEnum>(TValue value) : SortableRichEnumBas
    }
 
    #endregion
-   
+
    #region ISortableRichEnumValueProvider<TValue> Members
-   
+
    /// <inheritdoc />
    public TValue Value { get; } = value;
-   
+
    #endregion
-   
+
    #region conversion operators
 
    /// <summary>

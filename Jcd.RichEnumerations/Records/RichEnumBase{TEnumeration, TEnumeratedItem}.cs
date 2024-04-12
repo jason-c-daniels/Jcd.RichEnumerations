@@ -31,7 +31,7 @@ public record RichEnumBase<TEnumeration, TEnumeratedItem>
    public static IReadOnlyList<TEnumeratedItem> All => all ??= GetAll();
 
    /// <summary>
-   /// 
+   ///
    /// </summary>
    protected RichEnumBase()
    {

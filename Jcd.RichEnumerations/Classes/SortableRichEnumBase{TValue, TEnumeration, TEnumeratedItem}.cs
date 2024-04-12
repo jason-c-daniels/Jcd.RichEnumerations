@@ -34,7 +34,7 @@ public class SortableRichEnumBase<TValue, TEnumeration, TEnumeratedItem> : Sorta
    where TEnumeratedItem : IEquatable<TEnumeratedItem>, IComparable<TEnumeratedItem>, ISortableRichEnumValueProvider<TValue>
 {
    protected SortableRichEnumBase(){}
-   
+
    private static Dictionary<TValue, TEnumeratedItem>? byValue;
 
    /// <summary>

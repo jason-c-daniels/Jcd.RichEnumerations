@@ -26,7 +26,7 @@ public class SortableRichEnumBase<TEnumeration, TEnumeratedItem> : RichEnumBase<
    where TEnumeratedItem : IEquatable<TEnumeratedItem>, IComparable<TEnumeratedItem>
 {
    protected SortableRichEnumBase(){}
-   
+
    /// <summary>
    /// Sorts the .All collection. This should be called once and only once during application startup.
    /// </summary>
