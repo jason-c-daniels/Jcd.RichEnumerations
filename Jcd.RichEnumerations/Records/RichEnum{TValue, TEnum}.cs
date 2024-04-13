@@ -1,6 +1,7 @@
 #region
 
 using System;
+using System.Runtime.CompilerServices;
 
 // ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
@@ -25,6 +26,7 @@ public record RichEnum<TValue, TEnum>
    where TValue : IEquatable<TValue>
 {
    /// <inheritdoc />
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    protected RichEnum(TValue value)
    {
       Value = value;
@@ -35,7 +37,11 @@ public record RichEnum<TValue, TEnum>
    /// <summary>
    /// The underlying value.
    /// </summary>
-   public TValue Value { get; }
+   public TValue Value
+   {
+      [MethodImpl(MethodImplOptions.AggressiveInlining)]
+      get;
+   }
 
    #endregion
 
@@ -46,6 +52,7 @@ public record RichEnum<TValue, TEnum>
    /// </summary>
    /// <param name="e">The <see cref="RichEnum{TValue,TEnum}" /> instance.</param>
    /// <returns>The .Value of the <see cref="RichEnum{TValue,TEnum}" /> instance</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static explicit operator TValue(RichEnum<TValue, TEnum> e)
    {
       return e.Value;
@@ -61,6 +68,7 @@ public record RichEnum<TValue, TEnum>
    /// otherwise.
    /// </returns>
    /// <exception cref="ArgumentException">If a value not present in the enum is provided.</exception>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static explicit operator RichEnum<TValue, TEnum>(TValue value)
    {
       if (ByValue.TryGetValue(value, out var result))

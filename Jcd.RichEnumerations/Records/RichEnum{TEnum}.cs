@@ -1,3 +1,5 @@
+using System.Runtime.CompilerServices;
+
 namespace Jcd.RichEnumerations.Records;
 
 /// <summary>
@@ -11,6 +13,7 @@ public record RichEnum<TEnum> : RichEnum<int, TEnum>
    where TEnum : RichEnum<TEnum>
 {
    /// <inheritdoc />
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    protected RichEnum(int value)
       : base(value)
    {

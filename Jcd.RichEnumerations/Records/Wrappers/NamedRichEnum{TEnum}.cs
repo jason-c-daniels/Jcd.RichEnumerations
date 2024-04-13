@@ -1,6 +1,7 @@
 ﻿#region
 
 using System;
+using System.Runtime.CompilerServices;
 
 // ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
@@ -22,6 +23,7 @@ public record NamedRichEnum<TEnum> : NamedRichEnum<int, TEnum>
    /// </summary>
    /// <param name="value">The value for the instance. This must be unique.</param>
    /// <param name="name">The name for the instance. This should be unique.</param>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    protected NamedRichEnum(int value, string name)
       : base(value, name)
    {

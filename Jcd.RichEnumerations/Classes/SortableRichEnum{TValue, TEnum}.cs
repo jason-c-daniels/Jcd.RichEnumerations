@@ -1,6 +1,7 @@
 ﻿#region
 
 using System;
+using System.Runtime.CompilerServices;
 
 // ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
@@ -54,25 +55,32 @@ public class SortableRichEnum<TValue, TEnum>(TValue value) : SortableRichEnumBas
    #region ISortableRichEnumValueProvider<TValue> Members
 
    /// <inheritdoc />
-   public TValue Value { get; } = value;
+   public TValue Value
+   {
+      [MethodImpl(MethodImplOptions.AggressiveInlining)]
+      get;
+   } = value;
 
    #endregion
 
    #region Equality, Relational, GetHashCode, and ToString
 
    /// <inheritdoc />
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public override string ToString()
    {
       return Value.ToString();
    }
 
    /// <inheritdoc />
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public override int GetHashCode()
    {
       return Value.GetHashCode() ^ GetType().GetHashCode();
    }
 
    /// <inheritdoc />
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public override bool Equals(object? obj)
    {
       return obj is not null && obj.GetType() == GetType() && Equals((TEnum) obj);
@@ -84,18 +92,21 @@ public class SortableRichEnum<TValue, TEnum>(TValue value) : SortableRichEnumBas
    /// </summary>
    /// <param name="other">The other instance to compare to</param>
    /// <returns>True if equivalent.</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public virtual bool Equals(TEnum? other)
    {
       return other is not null && Value.Equals(other.Value);
    }
 
    /// <inheritdoc />
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public virtual int CompareTo(TEnum other)
    {
       return CompareTo((SortableRichEnum<TValue, TEnum>) other);
    }
 
    /// <inheritdoc />
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public int CompareTo(SortableRichEnum<TValue, TEnum>? other)
    {
       if (other == null)
@@ -117,6 +128,7 @@ public class SortableRichEnum<TValue, TEnum>(TValue value) : SortableRichEnumBas
    /// <param name="l">the left hand side of the comparison.</param>
    /// <param name="r">the right hand side of the comparison.</param>
    /// <returns>True if equivalent.</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static bool operator ==(SortableRichEnum<TValue, TEnum>? l, SortableRichEnum<TValue, TEnum>? r)
    {
       if (l is null && r is null)
@@ -138,6 +150,7 @@ public class SortableRichEnum<TValue, TEnum>(TValue value) : SortableRichEnumBas
    /// <param name="l">the left hand side of the comparison.</param>
    /// <param name="r">the right hand side of the comparison.</param>
    /// <returns>True if not equivalent.</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static bool operator !=(SortableRichEnum<TValue, TEnum>? l, SortableRichEnum<TValue, TEnum>? r)
    {
       return !(l == r);
@@ -150,6 +163,7 @@ public class SortableRichEnum<TValue, TEnum>(TValue value) : SortableRichEnumBas
    /// <param name="l">the left hand side of the comparison.</param>
    /// <param name="r">the right hand side of the comparison.</param>
    /// <returns>True if the left hand side is less than the right hand side.</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static bool operator <(SortableRichEnum<TValue, TEnum>? l, SortableRichEnum<TValue, TEnum>? r)
    {
       if (l is null)
@@ -167,6 +181,7 @@ public class SortableRichEnum<TValue, TEnum>(TValue value) : SortableRichEnumBas
    /// <param name="l">the left hand side of the comparison.</param>
    /// <param name="r">the right hand side of the comparison.</param>
    /// <returns>True if the left hand side is greater than the right hand side.</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static bool operator >(SortableRichEnum<TValue, TEnum>? l, SortableRichEnum<TValue, TEnum>? r)
    {
       if (l is null && r is null)
@@ -189,6 +204,7 @@ public class SortableRichEnum<TValue, TEnum>(TValue value) : SortableRichEnumBas
    /// <param name="l">the left hand side of the comparison.</param>
    /// <param name="r">the right hand side of the comparison.</param>
    /// <returns>True if the left hand side is less than or equal to the right hand side.</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static bool operator <=(SortableRichEnum<TValue, TEnum>? l, SortableRichEnum<TValue, TEnum>? r)
    {
       if (l is null && r is null)
@@ -211,6 +227,7 @@ public class SortableRichEnum<TValue, TEnum>(TValue value) : SortableRichEnumBas
    /// <param name="l">the left hand side of the comparison.</param>
    /// <param name="r">the right hand side of the comparison.</param>
    /// <returns>True if the left hand side is greater than or equal to the right hand side.</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static bool operator >=(SortableRichEnum<TValue, TEnum>? l, SortableRichEnum<TValue, TEnum>? r)
    {
       if (l is null && r is null)
@@ -235,6 +252,7 @@ public class SortableRichEnum<TValue, TEnum>(TValue value) : SortableRichEnumBas
    /// </summary>
    /// <param name="e">The <see cref="SortableRichEnum{TValue,TEnum}" /> instance.</param>
    /// <returns>The .Value of the <see cref="SortableRichEnum{TValue,TEnum}" /> instance</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static explicit operator TValue(SortableRichEnum<TValue, TEnum> e)
    {
       return e.Value;
@@ -250,6 +268,7 @@ public class SortableRichEnum<TValue, TEnum>(TValue value) : SortableRichEnumBas
    /// Throws an exception, otherwise.
    /// </returns>
    /// <exception cref="ArgumentException">If a value not present in the enum is provided.</exception>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static explicit operator SortableRichEnum<TValue, TEnum>(TValue value)
    {
       if (ByValue.TryGetValue(value, out var result))

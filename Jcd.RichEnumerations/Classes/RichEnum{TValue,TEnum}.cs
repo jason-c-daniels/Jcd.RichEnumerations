@@ -1,6 +1,7 @@
 ﻿#region
 
 using System;
+using System.Runtime.CompilerServices;
 
 // ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
@@ -40,25 +41,32 @@ public class RichEnum<TValue, TEnum>(TValue value) : RichEnumBase<TValue, TEnum,
    /// <summary>
    /// The underlying value.
    /// </summary>
-   public TValue Value { get; } = value;
+   public TValue Value
+   {
+      [MethodImpl(MethodImplOptions.AggressiveInlining)]
+      get;
+   } = value;
 
    #endregion
 
    #region Equals,  GetHashCode, and ToString
 
    /// <inheritdoc />
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public override string ToString()
    {
       return Value.ToString();
    }
 
    /// <inheritdoc />
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public override int GetHashCode()
    {
       return Value.GetHashCode() ^ GetType().GetHashCode();
    }
 
    /// <inheritdoc />
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public override bool Equals(object? obj)
    {
       return obj is not null && obj.GetType() == GetType() && Equals((TEnum) obj);
@@ -70,6 +78,7 @@ public class RichEnum<TValue, TEnum>(TValue value) : RichEnumBase<TValue, TEnum,
    /// </summary>
    /// <param name="other">The other instance to compare to</param>
    /// <returns>True if equivalent.</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public virtual bool Equals(TEnum? other)
    {
       return other is not null && Value.Equals(other.Value);
@@ -81,6 +90,7 @@ public class RichEnum<TValue, TEnum>(TValue value) : RichEnumBase<TValue, TEnum,
    /// <param name="l">the left hand side of the comparison.</param>
    /// <param name="r">the right hand side of the comparison.</param>
    /// <returns>True if equivalent.</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static bool operator ==(RichEnum<TValue, TEnum>? l, RichEnum<TValue, TEnum>? r)
    {
       if (l is null && r is null)
@@ -102,6 +112,7 @@ public class RichEnum<TValue, TEnum>(TValue value) : RichEnumBase<TValue, TEnum,
    /// <param name="l">the left hand side of the comparison.</param>
    /// <param name="r">the right hand side of the comparison.</param>
    /// <returns>True if not equivalent.</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static bool operator !=(RichEnum<TValue, TEnum> l, RichEnum<TValue, TEnum> r)
    {
       return !(l == r);
@@ -116,6 +127,7 @@ public class RichEnum<TValue, TEnum>(TValue value) : RichEnumBase<TValue, TEnum,
    /// </summary>
    /// <param name="e">The <see cref="RichEnum{TValue,TEnum}" /> instance.</param>
    /// <returns>The .Value of the <see cref="RichEnum{TValue,TEnum}" /> instance</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static explicit operator TValue(RichEnum<TValue, TEnum> e)
    {
       return e.Value;
@@ -128,6 +140,7 @@ public class RichEnum<TValue, TEnum>(TValue value) : RichEnumBase<TValue, TEnum,
    /// <param name="value">The value to convert.</param>
    /// <returns>The instance of the <see cref="RichEnum{TValue,TEnum}" />, if it exists. Throws an exception, otherwise.</returns>
    /// <exception cref="ArgumentException">If a value not present in the enum is provided.</exception>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static explicit operator RichEnum<TValue, TEnum>(TValue value)
    {
       if (ByValue.TryGetValue(value, out var result))

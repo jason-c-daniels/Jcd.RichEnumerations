@@ -1,6 +1,7 @@
 ﻿#region
 
 using System;
+using System.Runtime.CompilerServices;
 
 // ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
@@ -22,9 +23,14 @@ public class DescribedRichEnum<TValue, TEnum>(TValue value, string description) 
    /// <summary>
    /// The description for the instance. These should be unique.
    /// </summary>
-   public string Description { get; } = description;
+   public string Description
+   {
+      [MethodImpl(MethodImplOptions.AggressiveInlining)]
+      get;
+   } = description;
 
    /// <inheritdoc />
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public override string ToString()
    {
       return $"[{Value}] {Description}";

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 
 // ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
@@ -27,6 +28,10 @@ public class RichEnumBase<TEnumeration, TEnumeratedItem>
 {
    private static List<TEnumeratedItem>? all;
 
+   /// <summary>
+   /// Constructs an instance of the type.
+   /// </summary>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    protected RichEnumBase()
    {
    }
@@ -34,8 +39,13 @@ public class RichEnumBase<TEnumeration, TEnumeratedItem>
    /// <summary>
    /// All enumerated elements. Populated on first call to <see cref="All" />.
    /// </summary>
-   public static IReadOnlyList<TEnumeratedItem> All => all ??= GetAll();
+   public static IReadOnlyList<TEnumeratedItem> All
+   {
+      [MethodImpl(MethodImplOptions.AggressiveInlining)]
+      get { return all ??= GetAll(); }
+   }
 
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    private static List<TEnumeratedItem> GetAll()
    {
       var fields = typeof(TEnumeration).GetFields(BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly);

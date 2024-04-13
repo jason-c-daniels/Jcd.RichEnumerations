@@ -1,6 +1,7 @@
 ﻿#region
 
 using System;
+using System.Runtime.CompilerServices;
 
 // ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
@@ -25,14 +26,23 @@ public class NamedAndDescribedSortableRichEnum<TValue, TEnum>(TValue value, stri
    /// <summary>
    /// The name of the instance. This should be unique.
    /// </summary>
-   public string Name { get; } = name;
+   public string Name
+   {
+      [MethodImpl(MethodImplOptions.AggressiveInlining)]
+      get;
+   } = name;
 
    /// <summary>
    /// The description of the instance. This should be unique.
    /// </summary>
-   public string Description { get; } = description;
+   public string Description
+   {
+      [MethodImpl(MethodImplOptions.AggressiveInlining)]
+      get;
+   } = description;
 
    /// <inheritdoc />
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public override string ToString()
    {
       return $"[{Value}] {Name} - {Description}";
