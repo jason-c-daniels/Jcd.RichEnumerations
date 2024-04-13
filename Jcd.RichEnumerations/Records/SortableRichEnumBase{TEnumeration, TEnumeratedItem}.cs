@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 
 #endregion
 
@@ -23,6 +24,8 @@ namespace Jcd.RichEnumerations.Records;
 public record SortableRichEnumBase<TEnumeration, TEnumeratedItem> : RichEnumBase<TEnumeration, TEnumeratedItem>
    where TEnumeratedItem : IComparable<TEnumeratedItem>
 {
+   /// <inheritdoc />
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    protected SortableRichEnumBase()
    {
    }
@@ -31,6 +34,7 @@ public record SortableRichEnumBase<TEnumeration, TEnumeratedItem> : RichEnumBase
    /// Sorts the .All collection. This should be called once and only once during application startup.
    /// </summary>
    /// <param name="comparison">An optional custom comparer</param>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static void Sort(Comparison<TEnumeratedItem>? comparison = null)
    {
       var all = (List<TEnumeratedItem>) All;

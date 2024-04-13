@@ -68,6 +68,11 @@
          <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
          <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
       </member>
+      <member name="M:Jcd.RichEnumerations.Classes.RichEnumBase`2.#ctor">
+         <summary>
+            Constructs an instance of the type.
+         </summary>
+      </member>
       <member name="P:Jcd.RichEnumerations.Classes.RichEnumBase`2.All">
          <summary>
             All enumerated elements. Populated on first call to<see
@@ -97,6 +102,9 @@
          </typeparam>
          <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
          <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
+      </member>
+      <member name="M:Jcd.RichEnumerations.Classes.RichEnumBase`3.#ctor">
+         <inheritdoc/>
       </member>
       <member name="P:Jcd.RichEnumerations.Classes.RichEnumBase`3.ByValue">
          <summary>
@@ -287,6 +295,9 @@
          <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
          <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
       </member>
+      <member name="M:Jcd.RichEnumerations.Classes.SortableRichEnumBase`2.#ctor">
+         <inheritdoc/>
+      </member>
       <member name="M:Jcd.RichEnumerations.Classes.SortableRichEnumBase`2.Sort(System.Comparison{`1})">
          <summary>
             Sorts the .All collection. This should be called once and only once during application startup.
@@ -313,6 +324,9 @@
          </typeparam>
          <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
          <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
+      </member>
+      <member name="M:Jcd.RichEnumerations.Classes.SortableRichEnumBase`3.#ctor">
+         <inheritdoc/>
       </member>
       <member name="P:Jcd.RichEnumerations.Classes.SortableRichEnumBase`3.ByValue">
          <summary>
@@ -1092,6 +1106,9 @@
          <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
          <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
       </member>
+      <member name="M:Jcd.RichEnumerations.Records.SortableRichEnumBase`2.#ctor">
+         <inheritdoc/>
+      </member>
       <member name="M:Jcd.RichEnumerations.Records.SortableRichEnumBase`2.Sort(System.Comparison{`1})">
          <summary>
             Sorts the .All collection. This should be called once and only once during application startup.
@@ -1118,6 +1135,9 @@
          </typeparam>
          <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
          <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
+      </member>
+      <member name="M:Jcd.RichEnumerations.Records.SortableRichEnumBase`3.#ctor">
+         <inheritdoc/>
       </member>
       <member name="P:Jcd.RichEnumerations.Records.SortableRichEnumBase`3.ByValue">
          <summary>

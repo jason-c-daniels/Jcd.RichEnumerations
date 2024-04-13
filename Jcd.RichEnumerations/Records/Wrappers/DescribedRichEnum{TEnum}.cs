@@ -1,4 +1,6 @@
-﻿namespace Jcd.RichEnumerations.Records.Wrappers;
+﻿using System.Runtime.CompilerServices;
+
+namespace Jcd.RichEnumerations.Records.Wrappers;
 
 /// <summary>
 /// A <see cref="RichEnum{TEnum}" /> with a Description property.
@@ -12,6 +14,7 @@ public record DescribedRichEnum<TEnum> : DescribedRichEnum<int, TEnum>
    /// </summary>
    /// <param name="value">the value for this instance. These must be unique.</param>
    /// <param name="description">The description for the instance. These should be unique.</param>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    protected DescribedRichEnum(int value, string description)
       : base(value, description)
    {

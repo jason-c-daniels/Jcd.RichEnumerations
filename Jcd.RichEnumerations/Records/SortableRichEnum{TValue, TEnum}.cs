@@ -1,6 +1,7 @@
 ﻿#region
 
 using System;
+using System.Runtime.CompilerServices;
 
 // ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
@@ -27,6 +28,7 @@ public record SortableRichEnum<TValue, TEnum>
    /// creates an instance of <see cref="SortableRichEnum{TValue,TEnum}" />
    /// </summary>
    /// <param name="value">The value of the instance. This must be unique.</param>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    protected SortableRichEnum(TValue value)
    {
       Value = value;
@@ -35,19 +37,25 @@ public record SortableRichEnum<TValue, TEnum>
    #region ISortableRichEnumValueProvider<TValue> Members
 
    /// <inheritdoc />
-   public TValue Value { get; }
+   public TValue Value
+   {
+      [MethodImpl(MethodImplOptions.AggressiveInlining)]
+      get;
+   }
 
    #endregion
 
    #region Equality and Relational Operations
 
    /// <inheritdoc />
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public virtual int CompareTo(TEnum other)
    {
       return CompareTo((SortableRichEnum<TValue, TEnum>) other);
    }
 
    /// <inheritdoc />
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public int CompareTo(SortableRichEnum<TValue, TEnum>? other)
    {
       if (other == null)
@@ -70,6 +78,7 @@ public record SortableRichEnum<TValue, TEnum>
    /// <param name="l">the left hand side of the comparison.</param>
    /// <param name="r">the right hand side of the comparison.</param>
    /// <returns>True if the left hand side is less than the right hand side.</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static bool operator <(SortableRichEnum<TValue, TEnum>? l, SortableRichEnum<TValue, TEnum>? r)
    {
       if (l is null)
@@ -87,6 +96,7 @@ public record SortableRichEnum<TValue, TEnum>
    /// <param name="l">the left hand side of the comparison.</param>
    /// <param name="r">the right hand side of the comparison.</param>
    /// <returns>True if the left hand side is greater than the right hand side.</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static bool operator >(SortableRichEnum<TValue, TEnum>? l, SortableRichEnum<TValue, TEnum>? r)
    {
       if (l is null && r is null)
@@ -109,6 +119,7 @@ public record SortableRichEnum<TValue, TEnum>
    /// <param name="l">the left hand side of the comparison.</param>
    /// <param name="r">the right hand side of the comparison.</param>
    /// <returns>True if the left hand side is less than or equal to the right hand side.</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static bool operator <=(SortableRichEnum<TValue, TEnum>? l, SortableRichEnum<TValue, TEnum>? r)
    {
       if (l is null && r is null)
@@ -131,6 +142,7 @@ public record SortableRichEnum<TValue, TEnum>
    /// <param name="l">the left hand side of the comparison.</param>
    /// <param name="r">the right hand side of the comparison.</param>
    /// <returns>True if the left hand side is greater than or equal to the right hand side.</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static bool operator >=(SortableRichEnum<TValue, TEnum>? l, SortableRichEnum<TValue, TEnum>? r)
    {
       if (l is null && r is null)
@@ -155,6 +167,7 @@ public record SortableRichEnum<TValue, TEnum>
    /// </summary>
    /// <param name="e">The <see cref="SortableRichEnum{TValue,TEnum}" /> instance.</param>
    /// <returns>The .Value of the <see cref="SortableRichEnum{TValue,TEnum}" /> instance</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static explicit operator TValue(SortableRichEnum<TValue, TEnum> e)
    {
       return e.Value;
@@ -170,6 +183,7 @@ public record SortableRichEnum<TValue, TEnum>
    /// Throws an exception, otherwise.
    /// </returns>
    /// <exception cref="ArgumentException">If a value not present in the enum is provided.</exception>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static explicit operator SortableRichEnum<TValue, TEnum>(TValue value)
    {
       if (ByValue.TryGetValue(value, out var result))

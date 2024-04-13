@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 
 // ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
@@ -37,6 +38,7 @@ public record RichEnumBase<TValue, TEnumeration, TEnumeratedItem> : RichEnumBase
    private static Dictionary<TValue, TEnumeratedItem>? byValue;
 
    /// <inheritdoc />
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    protected RichEnumBase()
    {
    }
@@ -45,5 +47,9 @@ public record RichEnumBase<TValue, TEnumeration, TEnumeratedItem> : RichEnumBase
    /// A lookup of enumerated elements by their Value property.
    /// Useful for implementing conversion operators.
    /// </summary>
-   public static IReadOnlyDictionary<TValue, TEnumeratedItem> ByValue => byValue ??= All.ToDictionary(e => e.Value);
+   public static IReadOnlyDictionary<TValue, TEnumeratedItem> ByValue
+   {
+      [MethodImpl(MethodImplOptions.AggressiveInlining)]
+      get { return byValue ??= All.ToDictionary(e => e.Value); }
+   }
 }

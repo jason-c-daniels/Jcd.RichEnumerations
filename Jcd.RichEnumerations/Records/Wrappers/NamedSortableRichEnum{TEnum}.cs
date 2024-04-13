@@ -1,4 +1,6 @@
-﻿namespace Jcd.RichEnumerations.Records.Wrappers;
+﻿using System.Runtime.CompilerServices;
+
+namespace Jcd.RichEnumerations.Records.Wrappers;
 
 /// <summary>
 /// A <see cref="SortableRichEnum{TValue,TEnum}" /> with a Name property.
@@ -12,6 +14,7 @@ public record NamedSortableRichEnum<TEnum> : NamedSortableRichEnum<int, TEnum>
    /// </summary>
    /// <param name="value">The value for this instance. These must be unique.</param>
    /// <param name="name">The name of this instance. These should be unique.</param>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    protected NamedSortableRichEnum(int value, string name)
       : base(value, name)
    {

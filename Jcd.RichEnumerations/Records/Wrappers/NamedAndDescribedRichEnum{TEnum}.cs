@@ -1,4 +1,6 @@
-﻿namespace Jcd.RichEnumerations.Records.Wrappers;
+﻿using System.Runtime.CompilerServices;
+
+namespace Jcd.RichEnumerations.Records.Wrappers;
 
 /// <summary>
 /// A rich enumeration containing Description, Name and Value properties with int as the underlying Value data type.
@@ -13,6 +15,7 @@ public record NamedAndDescribedRichEnum<TEnum> : NamedAndDescribedRichEnum<int, 
    /// <param name="value">The value for the instance. This must be unique.</param>
    /// <param name="name">The name for the instance. This should be unique.</param>
    /// <param name="description">The description for the instance. This should be unique.</param>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    protected NamedAndDescribedRichEnum(int value, string name, string description)
       : base(value, name, description)
    {

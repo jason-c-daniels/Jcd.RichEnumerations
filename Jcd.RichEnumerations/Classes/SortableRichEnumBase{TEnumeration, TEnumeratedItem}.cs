@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 
 // ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
@@ -25,6 +26,8 @@ namespace Jcd.RichEnumerations.Classes;
 public class SortableRichEnumBase<TEnumeration, TEnumeratedItem> : RichEnumBase<TEnumeration, TEnumeratedItem>
    where TEnumeratedItem : IEquatable<TEnumeratedItem>, IComparable<TEnumeratedItem>
 {
+   /// <inheritdoc />
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    protected SortableRichEnumBase()
    {
    }
@@ -33,6 +36,7 @@ public class SortableRichEnumBase<TEnumeration, TEnumeratedItem> : RichEnumBase<
    /// Sorts the .All collection. This should be called once and only once during application startup.
    /// </summary>
    /// <param name="comparison">An optional custom comparer</param>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static void Sort(Comparison<TEnumeratedItem>? comparison = null)
    {
       var all = (List<TEnumeratedItem>) All;

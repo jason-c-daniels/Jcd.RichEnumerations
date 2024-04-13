@@ -1,6 +1,7 @@
 ﻿#region
 
 using System;
+using System.Runtime.CompilerServices;
 
 // ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
@@ -22,6 +23,7 @@ public record DescribedSortableRichEnum<TEnum> : DescribedSortableRichEnum<int, 
    /// </summary>
    /// <param name="value">The value of the instance. This must be unique.</param>
    /// <param name="description">The description of the instance. This should be unique.</param>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    protected DescribedSortableRichEnum(int value, string description)
       : base(value, description)
    {

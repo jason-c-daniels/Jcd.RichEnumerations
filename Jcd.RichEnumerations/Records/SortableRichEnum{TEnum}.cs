@@ -1,4 +1,6 @@
-﻿namespace Jcd.RichEnumerations.Records;
+﻿using System.Runtime.CompilerServices;
+
+namespace Jcd.RichEnumerations.Records;
 
 /// <summary>
 /// A rich enum that can be sorted with a call to <c>.Sort()</c>.
@@ -35,6 +37,7 @@ public record SortableRichEnum<TEnum> : SortableRichEnum<int, TEnum>
    where TEnum : SortableRichEnum<TEnum>, ISortableRichEnumValueProvider<int>
 {
    /// <inheritdoc />
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    protected SortableRichEnum(int value)
       : base(value)
    {
