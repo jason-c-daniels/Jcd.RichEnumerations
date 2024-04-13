@@ -25,7 +25,6 @@ public class DescribedSortableRichEnum<TValue, TEnum>(TValue value, string descr
    /// <summary>
    /// The description of the instance.
    /// </summary>
-
    public string Description
    {
       [MethodImpl(MethodImplOptions.AggressiveInlining)]
