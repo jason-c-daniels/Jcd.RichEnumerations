@@ -199,7 +199,7 @@ public class FlagEnum<TEnum> : RichEnumValue<ulong, TEnum>
          return validFlags;
       }
    }
-   
+
    [MethodImpl(MethodImplOptions.AggressiveInlining)]
    private static void SetValidFlags()
    {
