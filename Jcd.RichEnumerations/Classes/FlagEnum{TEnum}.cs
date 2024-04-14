@@ -8,6 +8,7 @@ using System.Text;
 
 using Jcd.BitManipulation;
 using Jcd.BitManipulation.Algorithms;
+
 // ReSharper disable MemberCanBePrivate.Global
 // ReSharper disable StaticMemberInGenericType
 // ReSharper disable UnusedAutoPropertyAccessor.Global
@@ -22,17 +23,27 @@ namespace Jcd.RichEnumerations.Classes;
 /// A rich enumeration type that supports setting individual flags for up to 64 flags.
 /// </summary>
 /// <typeparam name="TEnum">The flag type being defined.</typeparam>
-public class FlagEnum<TEnum>
-   : RichEnumValue<ulong, TEnum>
+public class FlagEnum<TEnum> : RichEnumValue<ulong, TEnum>
    where TEnum : FlagEnum<TEnum>, IEquatable<TEnum>, IRichEnumValueProvider<ulong>, new()
 {
+   #region Object overrides
+
+   /// <inheritdoc />
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
+   public override string ToString()
+   {
+      return Name;
+   }
+
+   #endregion
+
    #region constructor and properties
 
    private static List<TEnum>? baseFlags;
 
    // ReSharper disable once GrammarMistakeInComment -- "a flag" is the correct grammatical construction. ReSharper is smoking something.
    /// <summary>
-   /// Constructs a <see cref="FlagEnum{TEnum}"/> instance.
+   /// Constructs a <see cref="FlagEnum{TEnum}" /> instance.
    /// </summary>
    /// <param name="value">The single or compound flag value</param>
    /// <param name="name">The name of the flag value</param>
@@ -90,17 +101,6 @@ public class FlagEnum<TEnum>
 
    #endregion
 
-   #region Object overrides
-
-   /// <inheritdoc />
-   [MethodImpl(MethodImplOptions.AggressiveInlining)]
-   public override string ToString()
-   {
-      return Name;
-   }
-
-   #endregion
-
    #region conversion operators and helpers
 
    /// <summary>
@@ -125,7 +125,6 @@ public class FlagEnum<TEnum>
 
       return SynthesizeResult(value);
    }
-
 
    /// <summary>
    /// Creates a new instance of the derived type.
@@ -176,6 +175,7 @@ public class FlagEnum<TEnum>
       sb.Append("]");
 
       var name = sb.ToString();
+
       return name;
    }
 
@@ -192,6 +192,7 @@ public class FlagEnum<TEnum>
          }
 
          SetValidFlags();
+
          return validFlags;
       }
    }
@@ -207,7 +208,7 @@ public class FlagEnum<TEnum>
    #region Bit Manipulation Operators
 
    /// <summary>
-   /// Perform a bitwise OR on the operands and convert to a <see cref="ulong"/>
+   /// Perform a bitwise OR on the operands and convert to a <see cref="ulong" />
    /// </summary>
    /// <param name="left">The left hand operand.</param>
    /// <param name="right">The right hand operand.</param>
@@ -219,7 +220,7 @@ public class FlagEnum<TEnum>
    }
 
    /// <summary>
-   /// Perform a bitwise OR on the operands and convert to a <see cref="ulong"/>
+   /// Perform a bitwise OR on the operands and convert to a <see cref="ulong" />
    /// </summary>
    /// <param name="left">The left hand operand.</param>
    /// <param name="right">The right hand operand.</param>
@@ -231,7 +232,7 @@ public class FlagEnum<TEnum>
    }
 
    /// <summary>
-   /// Perform a bitwise OR on the operands and convert to a <see cref="ulong"/>
+   /// Perform a bitwise OR on the operands and convert to a <see cref="ulong" />
    /// </summary>
    /// <param name="left">The left hand operand.</param>
    /// <param name="right">The right hand operand.</param>

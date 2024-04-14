@@ -36,7 +36,6 @@ public class RichEnum<TValue, TEnum>(TValue value) : RichEnumValue<TValue, TEnum
 {
    #region conversion operators
 
-
    /// <summary>
    /// Explicit conversion from the underlying data type to an <see cref="RichEnum{TValue,TEnum}" /> instance. This
    /// performs a lookup on the known values.

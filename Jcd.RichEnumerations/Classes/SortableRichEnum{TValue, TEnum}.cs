@@ -45,12 +45,10 @@ namespace Jcd.RichEnumerations.Classes;
 /// </code>
 /// </example>
 public class SortableRichEnum<TValue, TEnum>(TValue value) : SortableRichEnumValue<TValue, TEnum>(value)
-
    where TValue : IEquatable<TValue>, IComparable<TValue>
    where TEnum : SortableRichEnum<TValue, TEnum>, ISortableRichEnumValueProvider<TValue>
 {
    #region conversion operators
-
 
    /// <summary>
    /// Explicit conversion from the underlying data type to an <see cref="SortableRichEnum{TValue,TEnum}" />
@@ -75,4 +73,3 @@ public class SortableRichEnum<TValue, TEnum>(TValue value) : SortableRichEnumVal
 
    #endregion
 }
-

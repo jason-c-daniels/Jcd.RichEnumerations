@@ -19,19 +19,18 @@ namespace Jcd.RichEnumerations.Records;
 /// entries as public static readonly fields.
 /// </typeparam>
 /// <typeparam name="TValue">The data type for .Value</typeparam>
-public record RichEnum<TValue, TEnum>
-   : RichEnumValue<TValue, TEnum>
+public record RichEnum<TValue, TEnum> : RichEnumValue<TValue, TEnum>
    where TEnum : RichEnum<TValue, TEnum>
    where TValue : IEquatable<TValue>
 {
    /// <inheritdoc />
    [MethodImpl(MethodImplOptions.AggressiveInlining)]
-   protected RichEnum(TValue value) : base(value)
+   protected RichEnum(TValue value)
+      : base(value)
    {
    }
 
    #region conversion operators
-
 
    /// <summary>
    /// Explicit conversion from the underlying data type to an <see cref="RichEnum{TValue,TEnum}" /> instance. This

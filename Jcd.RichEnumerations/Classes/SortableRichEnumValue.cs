@@ -45,10 +45,10 @@ namespace Jcd.RichEnumerations.Classes;
 /// </code>
 /// </example>
 public class SortableRichEnumValue<TValue, TEnum>(TValue value) : SortableRichEnumBase<TValue, TEnum, TEnum>
-                                                           , IEquatable<TEnum>
-                                                           , IComparable<TEnum>
-                                                           , IComparable<SortableRichEnumValue<TValue, TEnum>>
-                                                           , ISortableRichEnumValueProvider<TValue>
+                                                                , IEquatable<TEnum>
+                                                                , IComparable<TEnum>
+                                                                , IComparable<SortableRichEnumValue<TValue, TEnum>>
+                                                                , ISortableRichEnumValueProvider<TValue>
    where TValue : IEquatable<TValue>, IComparable<TValue>
    where TEnum : SortableRichEnumValue<TValue, TEnum>, ISortableRichEnumValueProvider<TValue>
 {
@@ -62,6 +62,17 @@ public class SortableRichEnumValue<TValue, TEnum>(TValue value) : SortableRichEn
    } = value;
 
    #endregion
+
+   /// <summary>
+   /// Explicit conversion to the underlying data type.
+   /// </summary>
+   /// <param name="e">The <see cref="SortableRichEnum{TValue,TEnum}" /> instance.</param>
+   /// <returns>The .Value of the <see cref="SortableRichEnum{TValue,TEnum}" /> instance</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
+   public static explicit operator TValue(SortableRichEnumValue<TValue, TEnum> e)
+   {
+      return e.Value;
+   }
 
    #region Equality, Relational, GetHashCode, and ToString
 
@@ -157,7 +168,8 @@ public class SortableRichEnumValue<TValue, TEnum>(TValue value) : SortableRichEn
    }
 
    /// <summary>
-   /// Compares two <see cref="SortableRichEnumValue{TValue,TEnum}" /> instances to determine if the left hand side is less than
+   /// Compares two <see cref="SortableRichEnumValue{TValue,TEnum}" /> instances to determine if the left hand side is less
+   /// than
    /// the right hand side.
    /// </summary>
    /// <param name="l">the left hand side of the comparison.</param>
@@ -198,7 +210,8 @@ public class SortableRichEnumValue<TValue, TEnum>(TValue value) : SortableRichEn
    }
 
    /// <summary>
-   /// Compares two <see cref="SortableRichEnumValue{TValue,TEnum}" /> instances to determine if the left hand side is less than
+   /// Compares two <see cref="SortableRichEnumValue{TValue,TEnum}" /> instances to determine if the left hand side is less
+   /// than
    /// or equal to the right hand side.
    /// </summary>
    /// <param name="l">the left hand side of the comparison.</param>
@@ -244,16 +257,4 @@ public class SortableRichEnumValue<TValue, TEnum>(TValue value) : SortableRichEn
    }
 
    #endregion
-
-
-   /// <summary>
-   /// Explicit conversion to the underlying data type.
-   /// </summary>
-   /// <param name="e">The <see cref="SortableRichEnum{TValue,TEnum}" /> instance.</param>
-   /// <returns>The .Value of the <see cref="SortableRichEnum{TValue,TEnum}" /> instance</returns>
-   [MethodImpl(MethodImplOptions.AggressiveInlining)]
-   public static explicit operator TValue(SortableRichEnumValue<TValue, TEnum> e)
-   {
-      return e.Value;
-   }
 }

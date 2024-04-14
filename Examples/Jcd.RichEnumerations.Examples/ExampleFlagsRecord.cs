@@ -1,4 +1,8 @@
+#region
+
 using Jcd.RichEnumerations.Records;
+
+#endregion
 
 namespace Jcd.RichEnumerations.Examples;
 
@@ -20,6 +24,7 @@ public record ExampleFlagsRecord : FlagEnum<ExampleFlagsRecord>
    }
 
    public override string ToString()
-      => Name;
-
+   {
+      return Name;
+   }
 }

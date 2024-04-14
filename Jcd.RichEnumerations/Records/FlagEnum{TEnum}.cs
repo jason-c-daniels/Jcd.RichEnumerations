@@ -8,6 +8,7 @@ using System.Text;
 
 using Jcd.BitManipulation;
 using Jcd.BitManipulation.Algorithms;
+
 // ReSharper disable MemberCanBePrivate.Global
 // ReSharper disable MemberCanBeProtected.Global
 // ReSharper disable StaticMemberInGenericType
@@ -33,11 +34,12 @@ public record FlagEnum<TEnum>
 
    // ReSharper disable once GrammarMistakeInComment
    /// <summary>
-   /// Constructs a <see cref="FlagEnum{TEnum}"/> instance.
+   /// Constructs a <see cref="FlagEnum{TEnum}" /> instance.
    /// </summary>
    /// <param name="value">The single or compound flag value</param>
    /// <param name="name">The name of the flag value</param>
-   protected FlagEnum(ulong value, string name) : base(value)
+   protected FlagEnum(ulong value, string name)
+      : base(value)
    {
       Name = name;
       IsBaseFlag = value.IsPowerOfTwo();
@@ -65,6 +67,17 @@ public record FlagEnum<TEnum>
       init;
    }
 
+   /// <summary>
+   /// Indicates if the instance was synthesized from the individual set bits.
+   /// </summary>
+   public bool IsSynthesized
+   {
+      [MethodImpl(MethodImplOptions.AggressiveInlining)]
+      get;
+
+      protected init;
+   }
+
    private static List<TEnum> BaseFlags
    {
       [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -80,13 +93,6 @@ public record FlagEnum<TEnum>
    #endregion
 
    #region Equals,  GetHashCode, and ToString
-
-   /// <inheritdoc />
-   [MethodImpl(MethodImplOptions.AggressiveInlining)]
-   public override string ToString()
-   {
-      return Name;
-   }
 
    /// <inheritdoc />
    [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -134,7 +140,6 @@ public record FlagEnum<TEnum>
       return SynthesizeResult(value);
    }
 
-
    /// <summary>
    /// Creates a new instance of the derived type.
    /// </summary>
@@ -142,7 +147,7 @@ public record FlagEnum<TEnum>
    /// <returns>The synthesized result.</returns>
    private static TEnum SynthesizeResult(ulong value)
    {
-      return new TEnum { Value = value, Name = SynthesizeName(value), IsBaseFlag = GetIsBaseFlag(value) };
+      return new TEnum { Value = value, Name = SynthesizeName(value), IsBaseFlag = GetIsBaseFlag(value), IsSynthesized = true };
    }
 
    private static bool GetIsBaseFlag(ulong value)
@@ -184,6 +189,7 @@ public record FlagEnum<TEnum>
       sb.Append("]");
 
       var name = sb.ToString();
+
       return name;
    }
 
@@ -209,7 +215,7 @@ public record FlagEnum<TEnum>
    #region Bit Manipulation Operators
 
    /// <summary>
-   /// Perform a bitwise OR on the operands and convert to a <see cref="ulong"/>
+   /// Perform a bitwise OR on the operands and convert to a <see cref="ulong" />
    /// </summary>
    /// <param name="left">The left hand operand.</param>
    /// <param name="right">The right hand operand.</param>
@@ -221,7 +227,7 @@ public record FlagEnum<TEnum>
    }
 
    /// <summary>
-   /// Perform a bitwise OR on the operands and convert to a <see cref="ulong"/>
+   /// Perform a bitwise OR on the operands and convert to a <see cref="ulong" />
    /// </summary>
    /// <param name="left">The left hand operand.</param>
    /// <param name="right">The right hand operand.</param>
@@ -233,7 +239,7 @@ public record FlagEnum<TEnum>
    }
 
    /// <summary>
-   /// Perform a bitwise OR on the operands and convert to a <see cref="ulong"/>
+   /// Perform a bitwise OR on the operands and convert to a <see cref="ulong" />
    /// </summary>
    /// <param name="left">The left hand operand.</param>
    /// <param name="right">The right hand operand.</param>

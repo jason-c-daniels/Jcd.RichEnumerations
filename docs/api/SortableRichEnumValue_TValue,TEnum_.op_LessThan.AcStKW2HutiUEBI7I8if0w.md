@@ -4,7 +4,8 @@
 
 ## SortableRichEnumValue<TValue,TEnum>.operator <(SortableRichEnumValue<TValue,TEnum>, SortableRichEnumValue<TValue,TEnum>) Operator
 
-Compares two [SortableRichEnumValue&lt;TValue,TEnum&gt;](SortableRichEnumValue_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnumValue<TValue,TEnum>') instances to determine if the left hand side is less than
+Compares two [SortableRichEnumValue&lt;TValue,TEnum&gt;](SortableRichEnumValue_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnumValue<TValue,TEnum>') instances to determine if the left hand side is less
+than
 the right hand side.
 
 ```csharp

@@ -1,5 +1,9 @@
+#region
+
 using System;
 using System.Runtime.CompilerServices;
+
+#endregion
 
 namespace Jcd.RichEnumerations.Classes;
 
@@ -23,8 +27,8 @@ namespace Jcd.RichEnumerations.Classes;
 /// </code>
 /// </example>
 public class RichEnumValue<TValue, TEnum>(TValue value) : RichEnumBase<TValue, TEnum, TEnum>
-                                                       , IEquatable<TEnum>
-                                                       , IRichEnumValueProvider<TValue>
+                                                        , IEquatable<TEnum>
+                                                        , IRichEnumValueProvider<TValue>
    where TEnum : RichEnumValue<TValue, TEnum>
    where TValue : IEquatable<TValue>
 {
@@ -42,6 +46,17 @@ public class RichEnumValue<TValue, TEnum>(TValue value) : RichEnumBase<TValue, T
    } = value;
 
    #endregion
+
+   /// <summary>
+   /// Explicit conversion to the underlying data type.
+   /// </summary>
+   /// <param name="e">The <see cref="RichEnum{TValue,TEnum}" /> instance.</param>
+   /// <returns>The .Value of the <see cref="RichEnum{TValue,TEnum}" /> instance</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
+   public static explicit operator TValue(RichEnumValue<TValue, TEnum> e)
+   {
+      return e.Value;
+   }
 
    #region Equals,  GetHashCode, and ToString
 
@@ -113,15 +128,4 @@ public class RichEnumValue<TValue, TEnum>(TValue value) : RichEnumBase<TValue, T
    }
 
    #endregion
-
-   /// <summary>
-   /// Explicit conversion to the underlying data type.
-   /// </summary>
-   /// <param name="e">The <see cref="RichEnum{TValue,TEnum}" /> instance.</param>
-   /// <returns>The .Value of the <see cref="RichEnum{TValue,TEnum}" /> instance</returns>
-   [MethodImpl(MethodImplOptions.AggressiveInlining)]
-   public static explicit operator TValue(RichEnumValue<TValue, TEnum> e)
-   {
-      return e.Value;
-   }
 }
