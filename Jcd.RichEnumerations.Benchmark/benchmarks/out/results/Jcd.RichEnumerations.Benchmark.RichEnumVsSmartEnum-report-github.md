@@ -10,8 +10,9 @@ Runtime=.NET 8.0  Toolchain=net8.0  IterationTime=250.0000 ms
 MaxIterationCount=15  MinIterationCount=10  WarmupCount=10
 
 ```
-| Method                    | Mean     | Error     | StdDev    | Ratio |
-|-------------------------- |---------:|----------:|----------:|------:|
+
+| Method                    |     Mean |     Error |    StdDev | Ratio |
+|---------------------------|---------:|----------:|----------:|------:|
 | RichEnumClassImplFromInt  | 4.729 ns | 0.0669 ns | 0.0442 ns |  1.00 |
 | RichEnumRecordImplFromInt | 5.168 ns | 0.0369 ns | 0.0193 ns |  1.09 |
 | SmartEnumFromInt          | 4.409 ns | 0.0546 ns | 0.0325 ns |  0.93 |

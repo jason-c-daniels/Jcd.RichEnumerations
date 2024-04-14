@@ -1,7 +1,7 @@
-﻿using BenchmarkDotNet.Running;
+﻿#region
 
-using Jcd.RichEnumerations.Benchmark;
+using BenchmarkDotNet.Running;
 
-BenchmarkSwitcher
-  .FromAssembly(typeof(Program).Assembly)
-  .Run(args);
+#endregion
+
+BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run(args);
