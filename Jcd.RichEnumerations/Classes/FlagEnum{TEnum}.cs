@@ -131,11 +131,13 @@ public class FlagEnum<TEnum> : RichEnumValue<ulong, TEnum>
    /// </summary>
    /// <param name="value">The value to create the result for.</param>
    /// <returns>The synthesized result.</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    private static TEnum SynthesizeResult(ulong value)
    {
       return new TEnum { Value = value, Name = SynthesizeName(value), IsBaseFlag = GetIsBaseFlag(value), IsSynthesized = true };
    }
 
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    private static bool GetIsBaseFlag(ulong value)
    {
       return value.IsPowerOfTwo();
@@ -146,6 +148,7 @@ public class FlagEnum<TEnum> : RichEnumValue<ulong, TEnum>
    /// </summary>
    /// <param name="value">The value to create the name for.</param>
    /// <returns>The name of the synthesized instance.</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    private static string SynthesizeName(ulong value)
    {
       var sb = new StringBuilder();
@@ -197,6 +200,7 @@ public class FlagEnum<TEnum> : RichEnumValue<ulong, TEnum>
       }
    }
 
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    private static void SetValidFlags()
    {
       validFlags = All.Aggregate(0ul, (x, y) => x | y.Value);
