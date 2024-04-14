@@ -20,43 +20,18 @@ namespace Jcd.RichEnumerations.Records;
 /// </typeparam>
 /// <typeparam name="TValue">The data type for .Value</typeparam>
 public record RichEnum<TValue, TEnum>
-   : RichEnumBase<TValue, TEnum, TEnum>
-   , IRichEnumValueProvider<TValue>
+   : RichEnumValue<TValue, TEnum>
    where TEnum : RichEnum<TValue, TEnum>
    where TValue : IEquatable<TValue>
 {
    /// <inheritdoc />
    [MethodImpl(MethodImplOptions.AggressiveInlining)]
-   protected RichEnum(TValue value)
+   protected RichEnum(TValue value) : base(value)
    {
-      Value = value;
    }
-
-   #region IRichEnumValueProvider<TValue> Members
-
-   /// <summary>
-   /// The underlying value.
-   /// </summary>
-   public TValue Value
-   {
-      [MethodImpl(MethodImplOptions.AggressiveInlining)]
-      get;
-   }
-
-   #endregion
 
    #region conversion operators
 
-   /// <summary>
-   /// Explicit conversion to the underlying data type.
-   /// </summary>
-   /// <param name="e">The <see cref="RichEnum{TValue,TEnum}" /> instance.</param>
-   /// <returns>The .Value of the <see cref="RichEnum{TValue,TEnum}" /> instance</returns>
-   [MethodImpl(MethodImplOptions.AggressiveInlining)]
-   public static explicit operator TValue(RichEnum<TValue, TEnum> e)
-   {
-      return e.Value;
-   }
 
    /// <summary>
    /// Explicit conversion from the underlying data type to an <see cref="RichEnum{TValue,TEnum}" /> instance. This

@@ -24,6 +24,7 @@
       <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
       <PackageReadmeFile>README.md</PackageReadmeFile>
       <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+      <DefaultDocumentationFileNameFactory>NameAndMd5Mix</DefaultDocumentationFileNameFactory>
    </PropertyGroup>
 
    <ItemGroup>
@@ -49,6 +50,7 @@
          <PrivateAssets>all</PrivateAssets>
          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
+      <PackageReference Include="Jcd.BitManipulation" Version="3.0.108-alpha"/>
       <PackageReference Include="SonarAnalyzer.CSharp" Version="9.23.1.88495">
          <PrivateAssets>all</PrivateAssets>
          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

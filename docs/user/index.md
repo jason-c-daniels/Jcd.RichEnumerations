@@ -32,7 +32,9 @@ After all, enum values comprise a **closed set**. (i.e. no other values are allo
 Yet the underlying implementation of the integral `enum` in C# allows casting an integer
 to any `enum`. This is in violation of the concept of a _closed set._
 
-**NB: This behavior can be overridden by providing your own conversion operators on your `RichEnum` derived types.**
+**NB:** This behavior can be overridden by deriving from `RichEnumValue` or `SortableRichEnumValue`
+and providing your own conversion operators. This is how `FlagEnum` is implemented. (it still throws
+when given bits for which no flags, or compound value, have been defined).
 
 ### Downsides to Rich Enumerations
 
