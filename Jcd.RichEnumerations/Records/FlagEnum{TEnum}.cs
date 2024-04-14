@@ -9,8 +9,9 @@ using System.Text;
 using Jcd.BitManipulation;
 using Jcd.BitManipulation.Algorithms;
 // ReSharper disable MemberCanBePrivate.Global
-
+// ReSharper disable MemberCanBeProtected.Global
 // ReSharper disable StaticMemberInGenericType
+
 #pragma warning disable S2743
 
 #endregion
@@ -30,6 +31,7 @@ public record FlagEnum<TEnum>
 
    private static List<TEnum>? baseFlags;
 
+   // ReSharper disable once GrammarMistakeInComment
    /// <summary>
    /// Constructs a <see cref="FlagEnum{TEnum}"/> instance.
    /// </summary>

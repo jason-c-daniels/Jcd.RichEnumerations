@@ -113,7 +113,7 @@ public class RichEnumValue<TValue, TEnum>(TValue value) : RichEnumBase<TValue, T
    }
 
    #endregion
-   
+
    /// <summary>
    /// Explicit conversion to the underlying data type.
    /// </summary>

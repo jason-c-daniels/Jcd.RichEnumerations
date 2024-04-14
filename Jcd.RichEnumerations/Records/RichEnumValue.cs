@@ -46,7 +46,7 @@ public record RichEnumValue<TValue, TEnum>
    }
 
    #endregion
-   
+
    /// <summary>
    /// Explicit conversion to the underlying data type.
    /// </summary>

@@ -3,8 +3,6 @@
 using System;
 using System.Runtime.CompilerServices;
 
-using Jcd.RichEnumerations.Records.Jcd.RichEnumerations.Records;
-
 // ReSharper disable UnusedType.Global
 // ReSharper disable HeapView.PossibleBoxingAllocation
 // ReSharper disable HeapView.ObjectAllocation

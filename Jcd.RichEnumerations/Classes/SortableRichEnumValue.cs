@@ -244,8 +244,8 @@ public class SortableRichEnumValue<TValue, TEnum>(TValue value) : SortableRichEn
    }
 
    #endregion
-   
-   
+
+
    /// <summary>
    /// Explicit conversion to the underlying data type.
    /// </summary>
