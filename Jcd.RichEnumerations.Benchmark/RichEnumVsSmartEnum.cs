@@ -2,8 +2,6 @@
 
 using BenchmarkDotNet.Attributes;
 
-using Jcd.RichEnumerations.Records;
-
 #endregion
 
 namespace Jcd.RichEnumerations.Benchmark;
