@@ -4,7 +4,7 @@ using Jcd.RichEnumerations.Classes;
 
 #endregion
 
-namespace Jcd.RichEnumerations.Tests.Classes;
+namespace Jcd.RichEnumerations.Tests.Classes.Harnesses.Enums;
 
 public class MySortableEnum2(long value) : SortableRichEnum<long, MySortableEnum2>(value)
 {

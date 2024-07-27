@@ -1,3 +1,9 @@
+#region
+
+using Jcd.RichEnumerations.Tests.Classes.Harnesses.Enums;
+
+#endregion
+
 namespace Jcd.RichEnumerations.Tests.Classes;
 
 public class RichEnumTests

@@ -23,7 +23,7 @@ namespace Jcd.RichEnumerations.Classes;
 /// </remarks>
 /// <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
 /// <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
-public class SortableRichEnumBase<TEnumeration, TEnumeratedItem> : RichEnumBase<TEnumeration, TEnumeratedItem>
+public abstract class SortableRichEnumBase<TEnumeration, TEnumeratedItem> : RichEnumBase<TEnumeration, TEnumeratedItem>
    where TEnumeratedItem : IEquatable<TEnumeratedItem>, IComparable<TEnumeratedItem>
 {
    /// <inheritdoc />

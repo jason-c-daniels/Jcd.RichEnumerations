@@ -3,11 +3,11 @@
 
 ## NamedAndDescribedSortableRichEnum<TEnum> Class
 
-A [SortableRichEnum&lt;TValue,TEnum&gt;](SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>')  with Name and Description properties. The type of the Value
+A [SortableRichEnum&lt;TValue,TEnum&gt;](SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>')  with Name and Description properties. The type of the Value  
 property is [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32').
 
 ```csharp
-public class NamedAndDescribedSortableRichEnum<TEnum> : Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedSortableRichEnum<int, TEnum>
+public abstract class NamedAndDescribedSortableRichEnum<TEnum> : Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedSortableRichEnum<int, TEnum>
     where TEnum : Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedSortableRichEnum<TEnum>, System.IComparable<TEnum>, Jcd.RichEnumerations.ISortableValueProvider<int>
 ```
 #### Type parameters
@@ -22,4 +22,4 @@ Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.O
 
 | Constructors | |
 | :--- | :--- |
-| [NamedAndDescribedSortableRichEnum(int, string, string)](NamedAndDescribedSortableRichEnum_TEnum_..ctor.u8kqdTABpqUrkUZri3iBZQ.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedSortableRichEnum<TEnum>.NamedAndDescribedSortableRichEnum(int, string, string)') | A [SortableRichEnum&lt;TValue,TEnum&gt;](SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>')  with Name and Description properties. The type of the Value property is [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32'). |
+| [NamedAndDescribedSortableRichEnum(int, string, string)](NamedAndDescribedSortableRichEnum_TEnum_..ctor.u8kqdTABpqUrkUZri3iBZQ.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedSortableRichEnum<TEnum>.NamedAndDescribedSortableRichEnum(int, string, string)') | A [SortableRichEnum&lt;TValue,TEnum&gt;](SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>')  with Name and Description properties. The type of the Value<br/>property is [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32'). |

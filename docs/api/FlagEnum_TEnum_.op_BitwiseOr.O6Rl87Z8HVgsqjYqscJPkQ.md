@@ -23,5 +23,5 @@ The left hand operand.
 The right hand operand.
 
 #### Returns
-[System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64')
+[System.UInt64](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64 'System.UInt64')  
 The result of the OR

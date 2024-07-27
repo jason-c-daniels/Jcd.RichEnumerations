@@ -6,7 +6,7 @@
 A rich enumeration containing Description, Name and Value properties.
 
 ```csharp
-public NamedAndDescribedRichEnum(TValue value, string name, string description);
+protected NamedAndDescribedRichEnum(TValue value, string name, string description);
 ```
 #### Parameters
 

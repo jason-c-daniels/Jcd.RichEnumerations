@@ -3,7 +3,7 @@
 
 ## FlagEnum<TEnum>.Equals(TEnum) Method
 
-Compares the Value of the current [FlagEnum&lt;TEnum&gt;](FlagEnum_TEnum_.md 'Jcd.RichEnumerations.Records.FlagEnum<TEnum>') instance to the target instance for
+Compares the Value of the current [FlagEnum&lt;TEnum&gt;](FlagEnum_TEnum_.md 'Jcd.RichEnumerations.Records.FlagEnum<TEnum>') instance to the target instance for  
 equality.
 
 ```csharp
@@ -20,5 +20,5 @@ The other instance to compare to
 Implements [Equals(T)](https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1.Equals#System_IEquatable_1_Equals__0_ 'System.IEquatable`1.Equals(`0)')
 
 #### Returns
-[System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean')
+[System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean')  
 True if equivalent.

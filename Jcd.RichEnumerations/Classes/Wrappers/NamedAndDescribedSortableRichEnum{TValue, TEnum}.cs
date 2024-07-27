@@ -19,7 +19,7 @@ namespace Jcd.RichEnumerations.Classes.Wrappers;
 /// <param name="description">The description of the instance. These should be unique.</param>
 /// <typeparam name="TEnum">The type being derived from SortableNdEnumeration</typeparam>
 /// <typeparam name="TValue">The type of the value property.</typeparam>
-public class NamedAndDescribedSortableRichEnum<TValue, TEnum>(TValue value, string name, string description) : SortableRichEnum<TValue, TEnum>(value)
+public abstract class NamedAndDescribedSortableRichEnum<TValue, TEnum>(TValue value, string name, string description) : SortableRichEnum<TValue, TEnum>(value)
    where TValue : IEquatable<TValue>, IComparable<TValue>
    where TEnum : NamedAndDescribedSortableRichEnum<TValue, TEnum>, IComparable<TEnum>, ISortableValueProvider<TValue>
 {

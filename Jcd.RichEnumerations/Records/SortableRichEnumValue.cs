@@ -12,7 +12,7 @@ namespace Jcd.RichEnumerations.Records;
 /// </summary>
 /// <typeparam name="TEnum">The type deriving from SortableEnum{TEnum}</typeparam>
 /// <typeparam name="TValue">The type of the .Value property.</typeparam>
-public record SortableRichEnumValue<TValue, TEnum>
+public abstract record SortableRichEnumValue<TValue, TEnum>
    : SortableRichEnumBase<TValue, TEnum, TEnum>
    , ISortableValueProvider<TValue>
    , IComparable<TEnum>

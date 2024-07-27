@@ -19,7 +19,7 @@ namespace Jcd.RichEnumerations.Classes.Wrappers;
 /// <param name="description">The description for the instance. This should be unique.</param>
 /// <typeparam name="TEnum">The type deriving from NdEnumeration</typeparam>
 /// <typeparam name="TValue">The type of the .Value property.</typeparam>
-public class NamedAndDescribedRichEnum<TValue, TEnum>(TValue value, string name, string description) : RichEnum<TValue, TEnum>(value)
+public abstract class NamedAndDescribedRichEnum<TValue, TEnum>(TValue value, string name, string description) : RichEnum<TValue, TEnum>(value)
    where TValue : IEquatable<TValue>
    where TEnum : NamedAndDescribedRichEnum<TValue, TEnum>
 {

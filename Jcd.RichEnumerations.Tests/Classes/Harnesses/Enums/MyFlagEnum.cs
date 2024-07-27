@@ -4,7 +4,7 @@ using Jcd.RichEnumerations.Classes;
 
 #endregion
 
-namespace Jcd.RichEnumerations.Tests.Classes;
+namespace Jcd.RichEnumerations.Tests.Classes.Harnesses.Enums;
 
 public class MyFlagEnum(ulong value, string name) : FlagEnum<MyFlagEnum>(value, name)
 {

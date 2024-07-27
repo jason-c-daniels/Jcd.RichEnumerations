@@ -10,7 +10,7 @@ namespace Jcd.RichEnumerations.Records.Wrappers;
 /// A <see cref="RichEnum{TEnum}" /> with a Description property.
 /// </summary>
 /// <typeparam name="TEnum">The type deriving from DEnumeration</typeparam>
-public record DescribedRichEnum<TEnum> : DescribedRichEnum<int, TEnum>
+public abstract record DescribedRichEnum<TEnum> : DescribedRichEnum<int, TEnum>
    where TEnum : DescribedRichEnum<TEnum>
 {
    /// <summary>

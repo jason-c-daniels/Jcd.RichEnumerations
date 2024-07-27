@@ -10,7 +10,7 @@ namespace Jcd.RichEnumerations.Records.Wrappers;
 /// A rich enumeration containing Description, Name and Value properties with int as the underlying Value data type.
 /// </summary>
 /// <typeparam name="TEnum">The type deriving from NdEnumeration</typeparam>
-public record NamedAndDescribedRichEnum<TEnum> : NamedAndDescribedRichEnum<int, TEnum>
+public abstract record NamedAndDescribedRichEnum<TEnum> : NamedAndDescribedRichEnum<int, TEnum>
    where TEnum : NamedAndDescribedRichEnum<TEnum>
 {
    /// <summary>

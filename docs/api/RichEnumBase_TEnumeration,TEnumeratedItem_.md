@@ -6,7 +6,7 @@
 Provides access to all instances on the enumeration container by way of the [All](RichEnumBase_TEnumeration,TEnumeratedItem_.All.md 'Jcd.RichEnumerations.Classes.RichEnumBase<TEnumeration,TEnumeratedItem>.All') property.
 
 ```csharp
-public class RichEnumBase<TEnumeration,TEnumeratedItem>
+public abstract class RichEnumBase<TEnumeration,TEnumeratedItem>
     where TEnumeratedItem : System.IEquatable<TEnumeratedItem>
 ```
 #### Type parameters
@@ -25,12 +25,12 @@ The type of the enumerated data.
 
 Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.Object 'System.Object') &#129106; RichEnumBase<TEnumeration,TEnumeratedItem>
 
-Derived
-&#8627; [RichEnumBase&lt;TValue,TEnumeration,TEnumeratedItem&gt;](RichEnumBase_TValue,TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.Classes.RichEnumBase<TValue,TEnumeration,TEnumeratedItem>')
+Derived  
+&#8627; [RichEnumBase&lt;TValue,TEnumeration,TEnumeratedItem&gt;](RichEnumBase_TValue,TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.Classes.RichEnumBase<TValue,TEnumeration,TEnumeratedItem>')  
 &#8627; [SortableRichEnumBase&lt;TEnumeration,TEnumeratedItem&gt;](SortableRichEnumBase_TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.Classes.SortableRichEnumBase<TEnumeration,TEnumeratedItem>')
 
 ### Remarks
-NOTE: This is intended as a supporting class. Consumers should prefer [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') or
+NOTE: This is intended as a supporting class. Consumers should prefer [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') or  
 [RichEnum&lt;TEnum&gt;](RichEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TEnum>') instead.
 
 | Constructors | |

@@ -1,4 +1,10 @@
-﻿namespace Jcd.RichEnumerations.Tests.Records;
+﻿#region
+
+using Jcd.RichEnumerations.Tests.Records.Harnesses.Enums;
+
+#endregion
+
+namespace Jcd.RichEnumerations.Tests.Records;
 
 public class FlagEnumTests
 {
