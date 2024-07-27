@@ -20,7 +20,7 @@ namespace Jcd.RichEnumerations.Classes.Wrappers;
 /// <typeparam name="TValue">The type of the .Value property</typeparam>
 public class DescribedSortableRichEnum<TValue, TEnum>(TValue value, string description) : SortableRichEnum<TValue, TEnum>(value)
    where TValue : IEquatable<TValue>, IComparable<TValue>
-   where TEnum : DescribedSortableRichEnum<TValue, TEnum>, IComparable<TEnum>, ISortableRichEnumValueProvider<TValue>
+   where TEnum : DescribedSortableRichEnum<TValue, TEnum>, IComparable<TEnum>, ISortableValueProvider<TValue>
 {
    /// <summary>
    /// The description of the instance.

@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Classes](Jcd.RichEnumerations.Classes.md 'Jcd.RichEnumerations.Classes')
 
 ## SortableRichEnum<TValue,TEnum> Class
@@ -10,9 +9,8 @@ A base for sortable rich enumerations. This type provides a hook to sort the [Ri
 ```csharp
 public class SortableRichEnum<TValue,TEnum> : Jcd.RichEnumerations.Classes.SortableRichEnumValue<TValue, TEnum>
     where TValue : System.IEquatable<TValue>, System.IComparable<TValue>
-    where TEnum : Jcd.RichEnumerations.Classes.SortableRichEnum<TValue, TEnum>, Jcd.RichEnumerations.Classes.ISortableRichEnumValueProvider<TValue>
+    where TEnum : Jcd.RichEnumerations.Classes.SortableRichEnum<TValue, TEnum>, Jcd.RichEnumerations.ISortableValueProvider<TValue>
 ```
-
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Classes.SortableRichEnum_TValue,TEnum_.TValue'></a>
@@ -61,10 +59,10 @@ class Program
 }
 ```
 
-| Constructors                                                                                                                                                                      |                                                                                                                                                                                                                                                                                          |
-|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Constructors                                                                                                                                                                      |                                                                                                                                                                                                                                                                                              |
+|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [SortableRichEnum(TValue)](SortableRichEnum_TValue,TEnum_..ctor.DSiZtknaTqsto3Dp8CdHdQ.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>.SortableRichEnum(TValue)') | A base for sortable rich enumerations. This type provides a hook to sort the [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>')`.All` collection. `.Sort()` should be called once and only once during application startup. |
 
-| Operators                                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                                       |
-|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Operators                                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                                           |
+|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [explicit operator SortableRichEnum&lt;TValue,TEnum&gt;(TValue)](SortableRichEnum_TValue,TEnum_.op_Explicit.h2n1/li9RKJiqDsSg9qS6A.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>.op_Explicit Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>(TValue)') | Explicit conversion from the underlying data type to an [SortableRichEnum&lt;TValue,TEnum&gt;](SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>') instance. This performs a lookup on the known values. |

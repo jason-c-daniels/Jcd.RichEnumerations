@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Classes](Jcd.RichEnumerations.Classes.md 'Jcd.RichEnumerations.Classes').[SortableRichEnumValue&lt;TValue,TEnum&gt;](SortableRichEnumValue_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnumValue<TValue,TEnum>')
 
 ## SortableRichEnumValue<TValue,TEnum>.operator ==(SortableRichEnumValue<TValue,TEnum>, SortableRichEnumValue<TValue,TEnum>) Operator
@@ -9,7 +8,6 @@ Compares two [SortableRichEnumValue&lt;TValue,TEnum&gt;](SortableRichEnumValue_T
 ```csharp
 public static bool operator ==(Jcd.RichEnumerations.Classes.SortableRichEnumValue<TValue,TEnum>? l, Jcd.RichEnumerations.Classes.SortableRichEnumValue<TValue,TEnum>? r);
 ```
-
 #### Parameters
 
 <a name='Jcd.RichEnumerations.Classes.SortableRichEnumValue_TValue,TEnum_.op_Equality(Jcd.RichEnumerations.Classes.SortableRichEnumValue_TValue,TEnum_,Jcd.RichEnumerations.Classes.SortableRichEnumValue_TValue,TEnum_).l'></a>

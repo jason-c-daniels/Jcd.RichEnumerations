@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Records](Jcd.RichEnumerations.Records.md 'Jcd.RichEnumerations.Records').[FlagEnum&lt;TEnum&gt;](FlagEnum_TEnum_.md 'Jcd.RichEnumerations.Records.FlagEnum<TEnum>')
 
 ## FlagEnum(ulong, string) Constructor
@@ -9,7 +8,6 @@ Constructs a [FlagEnum&lt;TEnum&gt;](FlagEnum_TEnum_.md 'Jcd.RichEnumerations.Re
 ```csharp
 protected FlagEnum(ulong value, string name);
 ```
-
 #### Parameters
 
 <a name='Jcd.RichEnumerations.Records.FlagEnum_TEnum_.FlagEnum(ulong,string).value'></a>

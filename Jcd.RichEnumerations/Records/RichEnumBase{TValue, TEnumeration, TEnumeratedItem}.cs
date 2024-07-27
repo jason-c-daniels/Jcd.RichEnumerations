@@ -32,7 +32,7 @@ namespace Jcd.RichEnumerations.Records;
 /// <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
 /// <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
 public record RichEnumBase<TValue, TEnumeration, TEnumeratedItem> : RichEnumBase<TEnumeration, TEnumeratedItem>
-   where TEnumeratedItem : IRichEnumValueProvider<TValue>
+   where TEnumeratedItem : IValueProvider<TValue>
    where TValue : IEquatable<TValue>
 {
    private static Dictionary<TValue, TEnumeratedItem>? byValue;

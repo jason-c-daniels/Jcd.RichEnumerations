@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Classes](Jcd.RichEnumerations.Classes.md 'Jcd.RichEnumerations.Classes')
 
 ## RichEnumValue<TValue,TEnum> Class
@@ -9,11 +8,10 @@ A [RichEnumValue&lt;TValue,TEnum&gt;](RichEnumValue_TValue,TEnum_.md 'Jcd.RichEn
 ```csharp
 public class RichEnumValue<TValue,TEnum> : Jcd.RichEnumerations.Classes.RichEnumBase<TValue, TEnum, TEnum>,
 System.IEquatable<TEnum>,
-Jcd.RichEnumerations.Classes.IRichEnumValueProvider<TValue>
+Jcd.RichEnumerations.IValueProvider<TValue>
     where TValue : System.IEquatable<TValue>
     where TEnum : Jcd.RichEnumerations.Classes.RichEnumValue<TValue, TEnum>
 ```
-
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Classes.RichEnumValue_TValue,TEnum_.TValue'></a>
@@ -35,7 +33,7 @@ Derived
 &#8627; [FlagEnum&lt;TEnum&gt;](FlagEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.FlagEnum<TEnum>')
 &#8627; [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>')
 
-Implements [System.IEquatable&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1 'System.IEquatable`1')[TEnum](RichEnumValue_TValue,TEnum_.md#Jcd.RichEnumerations.Classes.RichEnumValue_TValue,TEnum_.TEnum 'Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>.TEnum')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1 'System.IEquatable`1'), [Jcd.RichEnumerations.Classes.IRichEnumValueProvider&lt;](IRichEnumValueProvider_TValue_.md 'Jcd.RichEnumerations.Classes.IRichEnumValueProvider<TValue>')[TValue](RichEnumValue_TValue,TEnum_.md#Jcd.RichEnumerations.Classes.RichEnumValue_TValue,TEnum_.TValue 'Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>.TValue')[&gt;](IRichEnumValueProvider_TValue_.md 'Jcd.RichEnumerations.Classes.IRichEnumValueProvider<TValue>')
+Implements [System.IEquatable&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1 'System.IEquatable`1')[TEnum](RichEnumValue_TValue,TEnum_.md#Jcd.RichEnumerations.Classes.RichEnumValue_TValue,TEnum_.TEnum 'Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>.TEnum')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1 'System.IEquatable`1'), [Jcd.RichEnumerations.IValueProvider&lt;](IValueProvider_TValue_.md 'Jcd.RichEnumerations.IValueProvider<TValue>')[TValue](RichEnumValue_TValue,TEnum_.md#Jcd.RichEnumerations.Classes.RichEnumValue_TValue,TEnum_.TValue 'Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>.TValue')[&gt;](IValueProvider_TValue_.md 'Jcd.RichEnumerations.IValueProvider<TValue>')
 
 ### Example
 
@@ -57,8 +55,8 @@ public class MyRichEnum(float value, string customText) : RichEnum<float,MyRichE
 |:---------------------------------------------------------------------------------------------------------------|:----------------------|
 | [Value](RichEnumValue_TValue,TEnum_.Value.md 'Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>.Value') | The underlying value. |
 
-| Methods                                                                                                                                                |                                                                                                                                                                                                 |
-|:-------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Methods                                                                                                                                                |                                                                                                                                                                                                     |
+|:-------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Equals(TEnum)](RichEnumValue_TValue,TEnum_.Equals.FN+24sqSfwuOH7zHM+FGzg.md 'Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>.Equals(TEnum)') | Compares the Value of the current [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') instance to the target instance for equality. |
 
 | Operators                                                                                                                                                                                                                                                                                                                                             |                                                                                                                                                        |

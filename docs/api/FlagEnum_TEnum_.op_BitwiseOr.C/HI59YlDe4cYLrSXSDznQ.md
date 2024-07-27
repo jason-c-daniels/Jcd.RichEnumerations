@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Classes](Jcd.RichEnumerations.Classes.md 'Jcd.RichEnumerations.Classes').[FlagEnum&lt;TEnum&gt;](FlagEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.FlagEnum<TEnum>')
 
 ## FlagEnum<TEnum>.operator |(FlagEnum<TEnum>, ulong) Operator
@@ -9,7 +8,6 @@ Perform a bitwise OR on the operands and convert to a [System.UInt64](https://do
 ```csharp
 public static ulong operator |(Jcd.RichEnumerations.Classes.FlagEnum<TEnum> left, ulong right);
 ```
-
 #### Parameters
 
 <a name='Jcd.RichEnumerations.Classes.FlagEnum_TEnum_.op_BitwiseOr(Jcd.RichEnumerations.Classes.FlagEnum_TEnum_,ulong).left'></a>

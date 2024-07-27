@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Classes.Wrappers](Jcd.RichEnumerations.Classes.Wrappers.md 'Jcd.RichEnumerations.Classes.Wrappers').[NamedAndDescribedRichEnum&lt;TValue,TEnum&gt;](NamedAndDescribedRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedRichEnum<TValue,TEnum>')
 
 ## NamedAndDescribedRichEnum(TValue, string, string) Constructor
@@ -9,7 +8,6 @@ A rich enumeration containing Description, Name and Value properties.
 ```csharp
 public NamedAndDescribedRichEnum(TValue value, string name, string description);
 ```
-
 #### Parameters
 
 <a name='Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedRichEnum_TValue,TEnum_.NamedAndDescribedRichEnum(TValue,string,string).value'></a>

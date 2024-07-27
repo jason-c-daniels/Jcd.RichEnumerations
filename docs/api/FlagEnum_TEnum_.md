@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Classes](Jcd.RichEnumerations.Classes.md 'Jcd.RichEnumerations.Classes')
 
 ## FlagEnum<TEnum> Class
@@ -8,9 +7,8 @@ A rich enumeration type that supports setting individual flags for up to 64 flag
 
 ```csharp
 public class FlagEnum<TEnum> : Jcd.RichEnumerations.Classes.RichEnumValue<ulong, TEnum>
-    where TEnum : Jcd.RichEnumerations.Classes.FlagEnum<TEnum>, System.IEquatable<TEnum>, Jcd.RichEnumerations.Classes.IRichEnumValueProvider<ulong>, new()
+    where TEnum : Jcd.RichEnumerations.Classes.FlagEnum<TEnum>, System.IEquatable<TEnum>, Jcd.RichEnumerations.IValueProvider<ulong>, new()
 ```
-
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Classes.FlagEnum_TEnum_.TEnum'></a>

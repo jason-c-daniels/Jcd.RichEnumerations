@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Classes](Jcd.RichEnumerations.Classes.md 'Jcd.RichEnumerations.Classes').[RichEnum&lt;TEnum&gt;](RichEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TEnum>')
 
 ## RichEnum(int) Constructor
@@ -9,7 +8,6 @@ A [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations
 ```csharp
 public RichEnum(int value);
 ```
-
 #### Parameters
 
 <a name='Jcd.RichEnumerations.Classes.RichEnum_TEnum_.RichEnum(int).value'></a>

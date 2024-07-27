@@ -1,6 +1,7 @@
 ﻿#region
 
 using Jcd.RichEnumerations.Records;
+
 #pragma warning disable CS8851 // Record defines 'Equals' but not 'GetHashCode'.
 
 #endregion

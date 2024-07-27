@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Records](Jcd.RichEnumerations.Records.md 'Jcd.RichEnumerations.Records').[SortableRichEnum&lt;TValue,TEnum&gt;](SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.SortableRichEnum<TValue,TEnum>')
 
 ## SortableRichEnum<TValue,TEnum>.explicit operator SortableRichEnum<TValue,TEnum>(TValue) Operator
@@ -10,7 +9,6 @@ instance. This performs a lookup on the known values.
 ```csharp
 public static Jcd.RichEnumerations.Records.SortableRichEnum<TValue,TEnum> explicit operator SortableRichEnum<TValue,TEnum>(TValue value);
 ```
-
 #### Parameters
 
 <a name='Jcd.RichEnumerations.Records.SortableRichEnum_TValue,TEnum_.op_ExplicitJcd.RichEnumerations.Records.SortableRichEnum_TValue,TEnum_(TValue).value'></a>

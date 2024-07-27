@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Classes](Jcd.RichEnumerations.Classes.md 'Jcd.RichEnumerations.Classes').[FlagEnum&lt;TEnum&gt;](FlagEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.FlagEnum<TEnum>')
 
 ## FlagEnum<TEnum>.SynthesizeName(ulong) Method
@@ -9,7 +8,6 @@ Creates the name for a synthesized instance.
 ```csharp
 private static string SynthesizeName(ulong value);
 ```
-
 #### Parameters
 
 <a name='Jcd.RichEnumerations.Classes.FlagEnum_TEnum_.SynthesizeName(ulong).value'></a>

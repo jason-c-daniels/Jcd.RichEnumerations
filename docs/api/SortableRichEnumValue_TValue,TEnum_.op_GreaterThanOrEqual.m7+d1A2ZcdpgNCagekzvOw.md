@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Records](Jcd.RichEnumerations.Records.md 'Jcd.RichEnumerations.Records').[SortableRichEnumValue&lt;TValue,TEnum&gt;](SortableRichEnumValue_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.SortableRichEnumValue<TValue,TEnum>')
 
 ## SortableRichEnumValue<TValue,TEnum>.operator >=(SortableRichEnumValue<TValue,TEnum>, SortableRichEnumValue<TValue,TEnum>) Operator
@@ -10,7 +9,6 @@ than or equal to the right hand side.
 ```csharp
 public static bool operator >=(Jcd.RichEnumerations.Records.SortableRichEnumValue<TValue,TEnum>? l, Jcd.RichEnumerations.Records.SortableRichEnumValue<TValue,TEnum>? r);
 ```
-
 #### Parameters
 
 <a name='Jcd.RichEnumerations.Records.SortableRichEnumValue_TValue,TEnum_.op_GreaterThanOrEqual(Jcd.RichEnumerations.Records.SortableRichEnumValue_TValue,TEnum_,Jcd.RichEnumerations.Records.SortableRichEnumValue_TValue,TEnum_).l'></a>

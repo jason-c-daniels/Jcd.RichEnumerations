@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Classes](Jcd.RichEnumerations.Classes.md 'Jcd.RichEnumerations.Classes')
 
 ## RichEnumBase<TValue,TEnumeration,TEnumeratedItem> Class
@@ -12,9 +11,8 @@ operators.
 ```csharp
 public class RichEnumBase<TValue,TEnumeration,TEnumeratedItem> : Jcd.RichEnumerations.Classes.RichEnumBase<TEnumeration, TEnumeratedItem>
     where TValue : System.IEquatable<TValue>
-    where TEnumeratedItem : System.IEquatable<TEnumeratedItem>, Jcd.RichEnumerations.Classes.IRichEnumValueProvider<TValue>
+    where TEnumeratedItem : System.IEquatable<TEnumeratedItem>, Jcd.RichEnumerations.IValueProvider<TValue>
 ```
-
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Classes.RichEnumBase_TValue,TEnumeration,TEnumeratedItem_.TValue'></a>
@@ -50,6 +48,6 @@ NOTE: This is intended as a supporting class. Consumers should prefer [RichEnum&
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------|
 | [RichEnumBase()](RichEnumBase_TValue,TEnumeration,TEnumeratedItem_.RichEnumBase().md 'Jcd.RichEnumerations.Classes.RichEnumBase<TValue,TEnumeration,TEnumeratedItem>.RichEnumBase()') | Constructs an instance of the type. |
 
-| Properties                                                                                                                                                       |                                                                                                        |
-|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------|
+| Properties                                                                                                                                                       |                                                                                                            |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
 | [ByValue](RichEnumBase_TValue,TEnumeration,TEnumeratedItem_.ByValue.md 'Jcd.RichEnumerations.Classes.RichEnumBase<TValue,TEnumeration,TEnumeratedItem>.ByValue') | A lookup of enumerated elements by their Value property. Useful for implementing conversion operators. |
