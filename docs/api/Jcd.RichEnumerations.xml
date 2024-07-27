@@ -106,27 +106,6 @@
          <param name="right">The right hand operand.</param>
          <returns>The result of the OR</returns>
       </member>
-      <member name="T:Jcd.RichEnumerations.Classes.IRichEnumValueProvider`1">
-         <summary>
-            A helper interface to enable building auto casting into the data type aware
-            <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2"/>
-            types. This helps minimize boilerplate code.
-         </summary>
-         <typeparam name="TValue">The type of the value</typeparam>
-      </member>
-      <member name="P:Jcd.RichEnumerations.Classes.IRichEnumValueProvider`1.Value">
-         <summary>
-            The underlying value
-         </summary>
-      </member>
-      <member name="T:Jcd.RichEnumerations.Classes.ISortableRichEnumValueProvider`1">
-         <summary>
-            A helper interface to enable building auto casting into the data type aware
-            <see cref="T:Jcd.RichEnumerations.Classes.SortableRichEnum`2"/>
-            types. This helps minimize boilerplate code.
-         </summary>
-         <typeparam name="TValue">The type of the value</typeparam>
-      </member>
       <member name="T:Jcd.RichEnumerations.Classes.NamespaceDoc">
          <summary>
             Provides plain old classes to simplify creating and using DDD-style Rich Enumerations.
@@ -1146,6 +1125,27 @@
             Provides simplifying wrappers for common Rich Enumeration use cases: Sorted, Named, Described...etc.
          </summary>
       </member>
+      <member name="T:Jcd.RichEnumerations.IValueProvider`1">
+         <summary>
+            A helper interface to enable building auto casting into the data type aware
+            <see cref="!:RichEnum&lt;TValue,TEnum&gt;"/>
+            types. This helps minimize boilerplate code.
+         </summary>
+         <typeparam name="TValue">The type of the value</typeparam>
+      </member>
+      <member name="P:Jcd.RichEnumerations.IValueProvider`1.Value">
+         <summary>
+            The underlying value
+         </summary>
+      </member>
+      <member name="T:Jcd.RichEnumerations.ISortableValueProvider`1">
+         <summary>
+            A helper interface to enable building auto casting into the data type aware
+            <see cref="!:SortableRichEnum&lt;TValue,TEnum&gt;"/>
+            types. This helps minimize boilerplate code.
+         </summary>
+         <typeparam name="TValue">The type of the value</typeparam>
+      </member>
       <member name="T:Jcd.RichEnumerations.NamespaceDoc">
          <summary>
             Provides plain old classes and <c>record types</c> to simplify creating and using DDD-style Rich
@@ -1252,32 +1252,6 @@
          <param name="left">The left hand operand.</param>
          <param name="right">The right hand operand.</param>
          <returns>The result of the OR</returns>
-      </member>
-      <member name="T:Jcd.RichEnumerations.Records.IRichEnumValueProvider`1">
-         <summary>
-            A helper interface to enable building auto casting into the data type aware
-            <see cref="T:Jcd.RichEnumerations.Records.RichEnum`2"/>
-            types. This helps minimize boilerplate code.
-         </summary>
-         <typeparam name="TValue">The type of the value</typeparam>
-      </member>
-      <member name="P:Jcd.RichEnumerations.Records.IRichEnumValueProvider`1.Value">
-         <summary>
-            The underlying value
-         </summary>
-      </member>
-      <member name="T:Jcd.RichEnumerations.Records.ISortableRichEnumValueProvider`1">
-         <summary>
-            A helper interface to enable building auto casting into the data type aware
-            <see cref="T:Jcd.RichEnumerations.Records.SortableRichEnum`2"/>
-            types. This helps minimize boilerplate code.
-         </summary>
-         <typeparam name="TValue">The type of the value</typeparam>
-      </member>
-      <member name="P:Jcd.RichEnumerations.Records.ISortableRichEnumValueProvider`1.Value">
-         <summary>
-            The underlying value
-         </summary>
       </member>
       <member name="T:Jcd.RichEnumerations.Records.NamespaceDoc">
          <summary>

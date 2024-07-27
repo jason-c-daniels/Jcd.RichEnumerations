@@ -21,7 +21,7 @@ namespace Jcd.RichEnumerations.Records;
 /// <typeparam name="TValue">The data type for .Value</typeparam>
 public record RichEnumValue<TValue, TEnum>
    : RichEnumBase<TValue, TEnum, TEnum>
-   , IRichEnumValueProvider<TValue>
+   , IValueProvider<TValue>
    where TEnum : RichEnumValue<TValue, TEnum>
    where TValue : IEquatable<TValue>
 {
@@ -32,7 +32,7 @@ public record RichEnumValue<TValue, TEnum>
       Value = value;
    }
 
-   #region IRichEnumValueProvider<TValue> Members
+   #region IValueProvider<TValue> Members
 
    /// <summary>
    /// The underlying value.

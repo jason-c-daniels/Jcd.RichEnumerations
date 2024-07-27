@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Records](Jcd.RichEnumerations.Records.md 'Jcd.RichEnumerations.Records').[FlagEnum&lt;TEnum&gt;](FlagEnum_TEnum_.md 'Jcd.RichEnumerations.Records.FlagEnum<TEnum>')
 
 ## FlagEnum<TEnum>.explicit operator FlagEnum<TEnum>(ulong) Operator
@@ -9,7 +8,6 @@ Converts a value to a [FlagEnum&lt;TEnum&gt;](FlagEnum_TEnum_.md 'Jcd.RichEnumer
 ```csharp
 public static Jcd.RichEnumerations.Records.FlagEnum<TEnum> explicit operator FlagEnum<TEnum>(ulong value);
 ```
-
 #### Parameters
 
 <a name='Jcd.RichEnumerations.Records.FlagEnum_TEnum_.op_ExplicitJcd.RichEnumerations.Records.FlagEnum_TEnum_(ulong).value'></a>

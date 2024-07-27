@@ -7,4 +7,4 @@
 /// <param name="name">The name of this instance. These should be unique.</param>
 /// <typeparam name="TEnum">The type being derived from SortableNEnumeration</typeparam>
 public class NamedSortableRichEnum<TEnum>(int value, string name) : NamedSortableRichEnum<int, TEnum>(value, name)
-   where TEnum : NamedSortableRichEnum<TEnum>, ISortableRichEnumValueProvider<int>;
+   where TEnum : NamedSortableRichEnum<TEnum>, ISortableValueProvider<int>;

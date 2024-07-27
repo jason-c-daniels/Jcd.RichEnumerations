@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Classes](Jcd.RichEnumerations.Classes.md 'Jcd.RichEnumerations.Classes')
 
 ## RichEnumBase<TEnumeration,TEnumeratedItem> Class
@@ -10,7 +9,6 @@ Provides access to all instances on the enumeration container by way of the [All
 public class RichEnumBase<TEnumeration,TEnumeratedItem>
     where TEnumeratedItem : System.IEquatable<TEnumeratedItem>
 ```
-
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Classes.RichEnumBase_TEnumeration,TEnumeratedItem_.TEnumeration'></a>

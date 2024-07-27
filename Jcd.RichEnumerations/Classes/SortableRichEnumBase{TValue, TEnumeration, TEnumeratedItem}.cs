@@ -32,7 +32,7 @@ namespace Jcd.RichEnumerations.Classes;
 /// <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
 public class SortableRichEnumBase<TValue, TEnumeration, TEnumeratedItem> : SortableRichEnumBase<TEnumeration, TEnumeratedItem>
    where TValue : IEquatable<TValue>, IComparable<TValue>
-   where TEnumeratedItem : IEquatable<TEnumeratedItem>, IComparable<TEnumeratedItem>, ISortableRichEnumValueProvider<TValue>
+   where TEnumeratedItem : IEquatable<TEnumeratedItem>, IComparable<TEnumeratedItem>, ISortableValueProvider<TValue>
 {
    private static Dictionary<TValue, TEnumeratedItem>? byValue;
 

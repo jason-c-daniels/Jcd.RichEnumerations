@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Classes.Wrappers](Jcd.RichEnumerations.Classes.Wrappers.md 'Jcd.RichEnumerations.Classes.Wrappers')
 
 ## NamedRichEnum<TValue,TEnum> Class
@@ -11,7 +10,6 @@ public class NamedRichEnum<TValue,TEnum> : Jcd.RichEnumerations.Classes.RichEnum
     where TValue : System.IEquatable<TValue>
     where TEnum : Jcd.RichEnumerations.Classes.Wrappers.NamedRichEnum<TValue, TEnum>, System.IEquatable<TEnum>
 ```
-
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Classes.Wrappers.NamedRichEnum_TValue,TEnum_.TValue'></a>

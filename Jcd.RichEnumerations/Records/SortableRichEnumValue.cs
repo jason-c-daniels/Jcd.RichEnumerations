@@ -14,11 +14,11 @@ namespace Jcd.RichEnumerations.Records;
 /// <typeparam name="TValue">The type of the .Value property.</typeparam>
 public record SortableRichEnumValue<TValue, TEnum>
    : SortableRichEnumBase<TValue, TEnum, TEnum>
-   , ISortableRichEnumValueProvider<TValue>
+   , ISortableValueProvider<TValue>
    , IComparable<TEnum>
    , IComparable<SortableRichEnumValue<TValue, TEnum>>
    where TValue : IEquatable<TValue>, IComparable<TValue>
-   where TEnum : SortableRichEnumValue<TValue, TEnum>, ISortableRichEnumValueProvider<TValue>
+   where TEnum : SortableRichEnumValue<TValue, TEnum>, ISortableValueProvider<TValue>
 {
    /// <summary>
    /// creates an instance of <see cref="SortableRichEnumValue{TValue,TEnum}" />
@@ -30,7 +30,7 @@ public record SortableRichEnumValue<TValue, TEnum>
       Value = value;
    }
 
-   #region ISortableRichEnumValueProvider<TValue> Members
+   #region ISortableValueProvider<TValue> Members
 
    /// <inheritdoc />
    public TValue Value

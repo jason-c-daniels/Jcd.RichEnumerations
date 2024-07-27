@@ -24,7 +24,7 @@ namespace Jcd.RichEnumerations.Classes;
 /// </summary>
 /// <typeparam name="TEnum">The flag type being defined.</typeparam>
 public class FlagEnum<TEnum> : RichEnumValue<ulong, TEnum>
-   where TEnum : FlagEnum<TEnum>, IEquatable<TEnum>, IRichEnumValueProvider<ulong>, new()
+   where TEnum : FlagEnum<TEnum>, IEquatable<TEnum>, IValueProvider<ulong>, new()
 {
    #region Object overrides
 

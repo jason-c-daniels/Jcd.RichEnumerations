@@ -26,7 +26,7 @@ namespace Jcd.RichEnumerations.Records;
 public record FlagEnum<TEnum>
    : RichEnumValue<ulong, TEnum>
    , IEquatable<TEnum>
-   where TEnum : FlagEnum<TEnum>, IEquatable<TEnum>, IRichEnumValueProvider<ulong>, new()
+   where TEnum : FlagEnum<TEnum>, IEquatable<TEnum>, IValueProvider<ulong>, new()
 {
    #region constructor and properties
 

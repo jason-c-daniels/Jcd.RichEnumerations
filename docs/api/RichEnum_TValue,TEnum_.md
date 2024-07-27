@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Classes](Jcd.RichEnumerations.Classes.md 'Jcd.RichEnumerations.Classes')
 
 ## RichEnum<TValue,TEnum> Class
@@ -11,7 +10,6 @@ public class RichEnum<TValue,TEnum> : Jcd.RichEnumerations.Classes.RichEnumValue
     where TValue : System.IEquatable<TValue>
     where TEnum : Jcd.RichEnumerations.Classes.RichEnum<TValue, TEnum>
 ```
-
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Classes.RichEnum_TValue,TEnum_.TValue'></a>
@@ -51,6 +49,6 @@ public class MyRichEnum(float value, string customText) : RichEnum<float,MyRichE
 |:--------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | [RichEnum(TValue)](RichEnum_TValue,TEnum_..ctor.6BAIJGugMp0/up/vAE8psw.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>.RichEnum(TValue)') | A [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') with Value as a user defined type. |
 
-| Operators                                                                                                                                                                                                                                            |                                                                                                                                                                                                                               |
-|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Operators                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                   |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [explicit operator RichEnum&lt;TValue,TEnum&gt;(TValue)](RichEnum_TValue,TEnum_.op_Explicit.IFnKmSHAaFXJmvoFR/Uocw.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>.op_Explicit Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>(TValue)') | Explicit conversion from the underlying data type to an [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') instance. This performs a lookup on the known values. |

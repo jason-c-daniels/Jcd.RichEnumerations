@@ -18,7 +18,7 @@ namespace Jcd.RichEnumerations.Records.Wrappers;
 /// <typeparam name="TValue">The type of the value property.</typeparam>
 public record NamedAndDescribedSortableRichEnum<TValue, TEnum> : SortableRichEnum<TValue, TEnum>
    where TValue : IEquatable<TValue>, IComparable<TValue>
-   where TEnum : NamedAndDescribedSortableRichEnum<TValue, TEnum>, IComparable<TEnum>, ISortableRichEnumValueProvider<TValue>
+   where TEnum : NamedAndDescribedSortableRichEnum<TValue, TEnum>, IComparable<TEnum>, ISortableValueProvider<TValue>
 {
    /// <summary>
    /// Constructs a <see cref="NamedAndDescribedSortableRichEnum{TValue,TEnum}" />

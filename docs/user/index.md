@@ -374,20 +374,20 @@ you can enumerate values of that type, contained in any other type.
 ```csharp
 // the required contract for RichEnumBase
     where TEnumeratedItem : IEquatable<TEnumeratedItem>
-                          , IRichEnumValueProvider<TValue>
+                          , IValueProvider<TValue>
 
 // the required contract for SortableRichEnumBase
     where TEnumeratedItem : IEquatable<TEnumeratedItem>
                           , IComparable<TEnumeratedItem>
-                          , ISortableRichEnumValueProvider<TValue>
+                          , ISortableValueProvider<TValue>
 
-public interface IRichEnumValueProvider<out TValue>
+public interface IValueProvider<out TValue>
    where TValue : IEquatable<TValue>
 {
    TValue Value { get; }
 }
 
-public interface ISortableRichEnumValueProvider<out TValue> : IRichEnumValueProvider<TValue>
+public interface ISortableValueProvider<out TValue> : IValueProvider<TValue>
    where TValue : IEquatable<TValue>, IComparable<TValue>;
 
 ```
@@ -418,7 +418,7 @@ public class MyItemSetTwo : RichEnumBase<MyItemSetTwo,MyItem>
 }
 
 public class MyItem(int value,string description) : IEquatable<MyItem>
-                                                  , IRichEnumValueProvider<int>
+                                                  , IValueProvider<int>
 {
    public int Value { get; } = value;
    public string Description { get; } = description;

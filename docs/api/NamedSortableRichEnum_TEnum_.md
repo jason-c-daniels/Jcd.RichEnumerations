@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Classes.Wrappers](Jcd.RichEnumerations.Classes.Wrappers.md 'Jcd.RichEnumerations.Classes.Wrappers')
 
 ## NamedSortableRichEnum<TEnum> Class
@@ -8,9 +7,8 @@ A [SortableRichEnum&lt;TValue,TEnum&gt;](SortableRichEnum_TValue,TEnum_.md 'Jcd.
 
 ```csharp
 public class NamedSortableRichEnum<TEnum> : Jcd.RichEnumerations.Classes.Wrappers.NamedSortableRichEnum<int, TEnum>
-    where TEnum : Jcd.RichEnumerations.Classes.Wrappers.NamedSortableRichEnum<TEnum>, Jcd.RichEnumerations.Classes.ISortableRichEnumValueProvider<int>
+    where TEnum : Jcd.RichEnumerations.Classes.Wrappers.NamedSortableRichEnum<TEnum>, Jcd.RichEnumerations.ISortableValueProvider<int>
 ```
-
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Classes.Wrappers.NamedSortableRichEnum_TEnum_.TEnum'></a>

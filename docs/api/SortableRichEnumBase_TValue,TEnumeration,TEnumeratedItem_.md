@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Classes](Jcd.RichEnumerations.Classes.md 'Jcd.RichEnumerations.Classes')
 
 ## SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem> Class
@@ -11,9 +10,8 @@ application startup.
 ```csharp
 public class SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem> : Jcd.RichEnumerations.Classes.SortableRichEnumBase<TEnumeration, TEnumeratedItem>
     where TValue : System.IEquatable<TValue>, System.IComparable<TValue>
-    where TEnumeratedItem : System.IEquatable<TEnumeratedItem>, System.IComparable<TEnumeratedItem>, Jcd.RichEnumerations.Classes.ISortableRichEnumValueProvider<TValue>
+    where TEnumeratedItem : System.IEquatable<TEnumeratedItem>, System.IComparable<TEnumeratedItem>, Jcd.RichEnumerations.ISortableValueProvider<TValue>
 ```
-
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.Classes.SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.TValue'></a>
@@ -49,6 +47,6 @@ NOTE: This is intended as a supporting class. Consumers should prefer [SortableR
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------|
 | [SortableRichEnumBase()](SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.SortableRichEnumBase().md 'Jcd.RichEnumerations.Classes.SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>.SortableRichEnumBase()') | Constructs an instance of the type. |
 
-| Properties                                                                                                                                                                       |                                                                                                        |
-|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------|
+| Properties                                                                                                                                                                       |                                                                                                            |
+|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
 | [ByValue](SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.ByValue.md 'Jcd.RichEnumerations.Classes.SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>.ByValue') | A lookup of enumerated elements by their Value property. Useful for implementing conversion operators. |

@@ -18,7 +18,7 @@ namespace Jcd.RichEnumerations.Classes.Wrappers;
 /// <param name="name">The name of this instance. These should be unique.</param>
 public class NamedSortableRichEnum<TValue, TEnum>(TValue value, string name) : SortableRichEnum<TValue, TEnum>(value)
    where TValue : IEquatable<TValue>, IComparable<TValue>
-   where TEnum : NamedSortableRichEnum<TValue, TEnum>, ISortableRichEnumValueProvider<TValue>
+   where TEnum : NamedSortableRichEnum<TValue, TEnum>, ISortableValueProvider<TValue>
 {
    /// <summary>
    /// The name of the instance. This should be unique.

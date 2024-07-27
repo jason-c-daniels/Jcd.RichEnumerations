@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Classes](Jcd.RichEnumerations.Classes.md 'Jcd.RichEnumerations.Classes').[SortableRichEnum&lt;TValue,TEnum&gt;](SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>')
 
 ## SortableRichEnum(TValue) Constructor
@@ -10,7 +9,6 @@ A base for sortable rich enumerations. This type provides a hook to sort the [Ri
 ```csharp
 public SortableRichEnum(TValue value);
 ```
-
 #### Parameters
 
 <a name='Jcd.RichEnumerations.Classes.SortableRichEnum_TValue,TEnum_.SortableRichEnum(TValue).value'></a>

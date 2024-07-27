@@ -1,5 +1,4 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations.Records.Wrappers](Jcd.RichEnumerations.Records.Wrappers.md 'Jcd.RichEnumerations.Records.Wrappers').[NamedAndDescribedRichEnum&lt;TEnum&gt;](NamedAndDescribedRichEnum_TEnum_.md 'Jcd.RichEnumerations.Records.Wrappers.NamedAndDescribedRichEnum<TEnum>')
 
 ## NamedAndDescribedRichEnum(int, string, string) Constructor
@@ -9,7 +8,6 @@ Constructs a [NamedAndDescribedRichEnum&lt;TEnum&gt;](NamedAndDescribedRichEnum_
 ```csharp
 protected NamedAndDescribedRichEnum(int value, string name, string description);
 ```
-
 #### Parameters
 
 <a name='Jcd.RichEnumerations.Records.Wrappers.NamedAndDescribedRichEnum_TEnum_.NamedAndDescribedRichEnum(int,string,string).value'></a>

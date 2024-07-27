@@ -19,4 +19,4 @@ namespace Jcd.RichEnumerations.Classes.Wrappers;
 /// <typeparam name="TEnum">The type being derived from SortableNdEnumeration</typeparam>
 public class NamedAndDescribedSortableRichEnum<TEnum>
    (int value, string name, string description) : NamedAndDescribedSortableRichEnum<int, TEnum>(value, name, description)
-   where TEnum : NamedAndDescribedSortableRichEnum<TEnum>, IComparable<TEnum>, ISortableRichEnumValueProvider<int>;
+   where TEnum : NamedAndDescribedSortableRichEnum<TEnum>, IComparable<TEnum>, ISortableValueProvider<int>;

@@ -21,7 +21,7 @@ namespace Jcd.RichEnumerations.Classes.Wrappers;
 /// <typeparam name="TValue">The type of the value property.</typeparam>
 public class NamedAndDescribedSortableRichEnum<TValue, TEnum>(TValue value, string name, string description) : SortableRichEnum<TValue, TEnum>(value)
    where TValue : IEquatable<TValue>, IComparable<TValue>
-   where TEnum : NamedAndDescribedSortableRichEnum<TValue, TEnum>, IComparable<TEnum>, ISortableRichEnumValueProvider<TValue>
+   where TEnum : NamedAndDescribedSortableRichEnum<TValue, TEnum>, IComparable<TEnum>, ISortableValueProvider<TValue>
 {
    /// <summary>
    /// The name of the instance. This should be unique.
