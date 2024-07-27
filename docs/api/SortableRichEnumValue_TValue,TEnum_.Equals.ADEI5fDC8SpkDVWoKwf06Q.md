@@ -3,7 +3,7 @@
 
 ## SortableRichEnumValue<TValue,TEnum>.Equals(TEnum) Method
 
-Compares the Value of the current [SortableRichEnumValue&lt;TValue,TEnum&gt;](SortableRichEnumValue_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnumValue<TValue,TEnum>') instance to the
+Compares the Value of the current [SortableRichEnumValue&lt;TValue,TEnum&gt;](SortableRichEnumValue_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnumValue<TValue,TEnum>') instance to the  
 target instance for equality.
 
 ```csharp
@@ -18,5 +18,5 @@ public virtual bool Equals(TEnum? other);
 The other instance to compare to
 
 #### Returns
-[System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean')
+[System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean')  
 True if equivalent.

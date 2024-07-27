@@ -6,7 +6,7 @@
 A rich enumeration containing Description, Name and Value properties with int as the underlying Value data type.
 
 ```csharp
-public class NamedAndDescribedRichEnum<TEnum> : Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedRichEnum<int, TEnum>
+public abstract class NamedAndDescribedRichEnum<TEnum> : Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedRichEnum<int, TEnum>
     where TEnum : Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedRichEnum<TEnum>
 ```
 #### Type parameters

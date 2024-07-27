@@ -3,7 +3,7 @@
 
 ## SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>.ByValue Property
 
-A lookup of enumerated elements by their Value property.
+A lookup of enumerated elements by their Value property.  
 Useful for implementing conversion operators.
 
 ```csharp

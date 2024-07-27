@@ -25,12 +25,12 @@ namespace Jcd.RichEnumerations.Classes;
 /// {
 ///      public static readonly MyRichEnum Item1 = new (1.0f, "First Item");
 ///      public static readonly MyRichEnum Item2 = new (2.1f, "Second Item");
-///
+/// 
 ///      public string CustomText => customText;
 /// }
 /// </code>
 /// </example>
-public class RichEnum<TValue, TEnum>(TValue value) : RichEnumValue<TValue, TEnum>(value)
+public abstract class RichEnum<TValue, TEnum>(TValue value) : RichEnumValue<TValue, TEnum>(value)
    where TEnum : RichEnum<TValue, TEnum>
    where TValue : IEquatable<TValue>
 {

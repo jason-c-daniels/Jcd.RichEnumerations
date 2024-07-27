@@ -4,7 +4,7 @@ using Jcd.RichEnumerations.Classes;
 
 #endregion
 
-namespace Jcd.RichEnumerations.Tests.Classes;
+namespace Jcd.RichEnumerations.Tests.Classes.Harnesses.Enums;
 
 public class MySimpleEnum(int value) : RichEnum<MySimpleEnum>(value)
 {

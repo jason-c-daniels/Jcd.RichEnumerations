@@ -19,7 +19,7 @@ namespace Jcd.RichEnumerations.Records;
 /// entries as public static readonly fields.
 /// </typeparam>
 /// <typeparam name="TValue">The data type for .Value</typeparam>
-public record RichEnumValue<TValue, TEnum>
+public abstract record RichEnumValue<TValue, TEnum>
    : RichEnumBase<TValue, TEnum, TEnum>
    , IValueProvider<TValue>
    where TEnum : RichEnumValue<TValue, TEnum>

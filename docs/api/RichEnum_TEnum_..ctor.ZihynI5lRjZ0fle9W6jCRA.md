@@ -6,7 +6,7 @@
 A [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') with TValue set to int.
 
 ```csharp
-public RichEnum(int value);
+protected RichEnum(int value);
 ```
 #### Parameters
 
@@ -15,13 +15,13 @@ public RichEnum(int value);
 `value` [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32')
 
 ### Example
-
-```csharp
-public class MyRichEnum(int value, string customText) : RichEnum<MyRichEnum>(value)
-{
-     public static readonly MyRichEnum Item1 = new (1, "First Item");
-     public static readonly MyRichEnum Item2 = new (2, "Second Item");
-
-     public string CustomText => customText;
-}
+  
+```csharp  
+public class MyRichEnum(int value, string customText) : RichEnum<MyRichEnum>(value)  
+{  
+     public static readonly MyRichEnum Item1 = new (1, "First Item");  
+     public static readonly MyRichEnum Item2 = new (2, "Second Item");  
+  
+     public string CustomText => customText;  
+}  
 ```

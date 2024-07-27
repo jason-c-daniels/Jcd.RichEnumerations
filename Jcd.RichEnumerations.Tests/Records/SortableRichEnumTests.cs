@@ -1,4 +1,10 @@
-﻿namespace Jcd.RichEnumerations.Tests.Records;
+﻿#region
+
+using Jcd.RichEnumerations.Tests.Records.Harnesses.Enums;
+
+#endregion
+
+namespace Jcd.RichEnumerations.Tests.Records;
 
 public class SortableRichEnumTests
 {
@@ -26,7 +32,7 @@ public class SortableRichEnumTests
    [Fact]
    public void Default_ValueType_All_Contains_Expected_Values()
    {
-      Assert.Equal(3, MySortableEnum.All.Count);
+      Assert.Equal(4, MySortableEnum.All.Count);
       Assert.Contains(MySortableEnum.ValueOne, MySortableEnum.All);
       Assert.Contains(MySortableEnum.ValueTwo, MySortableEnum.All);
       Assert.Contains(MySortableEnum.ValueTen, MySortableEnum.All);
@@ -52,7 +58,7 @@ public class SortableRichEnumTests
    }
 
    [Theory]
-   [InlineData(1,  "1")]
+   [InlineData(3,  "3")]
    [InlineData(2,  "2")]
    [InlineData(10, "10")]
    public void ToString_Returns_Expected_String(int value, string expected)
@@ -187,7 +193,7 @@ public class SortableRichEnumTests
    }
 
    [Theory]
-   [InlineData(3)]
+   [InlineData(6)]
    [InlineData(5)]
    [InlineData(7)]
    [InlineData(111)]

@@ -6,7 +6,7 @@ using Jcd.RichEnumerations.Records;
 
 #endregion
 
-namespace Jcd.RichEnumerations.Tests.Records;
+namespace Jcd.RichEnumerations.Tests.Records.Harnesses.Enums;
 
 public record MyFlagEnum : FlagEnum<MyFlagEnum>
 {

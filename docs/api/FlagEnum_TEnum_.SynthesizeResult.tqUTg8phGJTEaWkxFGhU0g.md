@@ -17,5 +17,5 @@ private static TEnum SynthesizeResult(ulong value);
 The value to create the result for.
 
 #### Returns
-[TEnum](FlagEnum_TEnum_.md#Jcd.RichEnumerations.Classes.FlagEnum_TEnum_.TEnum 'Jcd.RichEnumerations.Classes.FlagEnum<TEnum>.TEnum')
+[TEnum](FlagEnum_TEnum_.md#Jcd.RichEnumerations.Classes.FlagEnum_TEnum_.TEnum 'Jcd.RichEnumerations.Classes.FlagEnum<TEnum>.TEnum')  
 The synthesized result.

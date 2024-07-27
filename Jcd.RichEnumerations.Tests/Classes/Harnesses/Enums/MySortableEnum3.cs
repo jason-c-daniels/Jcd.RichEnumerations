@@ -1,4 +1,4 @@
-namespace Jcd.RichEnumerations.Tests.Classes;
+namespace Jcd.RichEnumerations.Tests.Classes.Harnesses.Enums;
 
 public class MySortableEnum3(long value) : MySortableEnum2(value)
 {

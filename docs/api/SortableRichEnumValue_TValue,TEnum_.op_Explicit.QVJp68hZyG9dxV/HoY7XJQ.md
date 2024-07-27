@@ -17,5 +17,5 @@ public static TValue explicit operator TValue(Jcd.RichEnumerations.Records.Sorta
 The [SortableRichEnum&lt;TValue,TEnum&gt;](SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.SortableRichEnum<TValue,TEnum>') instance.
 
 #### Returns
-[TValue](SortableRichEnumValue_TValue,TEnum_.md#Jcd.RichEnumerations.Records.SortableRichEnumValue_TValue,TEnum_.TValue 'Jcd.RichEnumerations.Records.SortableRichEnumValue<TValue,TEnum>.TValue')
+[TValue](SortableRichEnumValue_TValue,TEnum_.md#Jcd.RichEnumerations.Records.SortableRichEnumValue_TValue,TEnum_.TValue 'Jcd.RichEnumerations.Records.SortableRichEnumValue<TValue,TEnum>.TValue')  
 The .Value of the [SortableRichEnum&lt;TValue,TEnum&gt;](SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.SortableRichEnum<TValue,TEnum>') instance

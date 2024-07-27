@@ -7,5 +7,5 @@
 /// <param name="name">The name for the instance. This should be unique.</param>
 /// <param name="description">The description for the instance. This should be unique.</param>
 /// <typeparam name="TEnum">The type deriving from NdEnumeration</typeparam>
-public class NamedAndDescribedRichEnum<TEnum>(int value, string name, string description) : NamedAndDescribedRichEnum<int, TEnum>(value, name, description)
+public abstract class NamedAndDescribedRichEnum<TEnum>(int value, string name, string description) : NamedAndDescribedRichEnum<int, TEnum>(value, name, description)
    where TEnum : NamedAndDescribedRichEnum<TEnum>;

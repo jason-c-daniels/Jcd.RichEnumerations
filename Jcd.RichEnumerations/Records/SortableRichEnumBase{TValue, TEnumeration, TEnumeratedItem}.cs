@@ -29,7 +29,7 @@ namespace Jcd.RichEnumerations.Records;
 /// </typeparam>
 /// <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
 /// <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
-public record SortableRichEnumBase<TValue, TEnumeration, TEnumeratedItem> : SortableRichEnumBase<TEnumeration, TEnumeratedItem>
+public abstract record SortableRichEnumBase<TValue, TEnumeration, TEnumeratedItem> : SortableRichEnumBase<TEnumeration, TEnumeratedItem>
    where TValue : IComparable<TValue>, IEquatable<TValue>
    where TEnumeratedItem : IComparable<TEnumeratedItem>, ISortableValueProvider<TValue>
 {

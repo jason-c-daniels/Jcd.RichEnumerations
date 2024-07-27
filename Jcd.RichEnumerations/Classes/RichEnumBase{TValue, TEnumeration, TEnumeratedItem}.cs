@@ -31,7 +31,7 @@ namespace Jcd.RichEnumerations.Classes;
 /// </typeparam>
 /// <typeparam name="TEnumeration">The type of the enumeration containing the enumerated items</typeparam>
 /// <typeparam name="TEnumeratedItem">The type of the enumerated data.</typeparam>
-public class RichEnumBase<TValue, TEnumeration, TEnumeratedItem> : RichEnumBase<TEnumeration, TEnumeratedItem>
+public abstract class RichEnumBase<TValue, TEnumeration, TEnumeratedItem> : RichEnumBase<TEnumeration, TEnumeratedItem>
    where TEnumeratedItem : IEquatable<TEnumeratedItem>, IValueProvider<TValue>
    where TValue : IEquatable<TValue>
 {

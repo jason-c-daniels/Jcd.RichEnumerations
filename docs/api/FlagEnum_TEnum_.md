@@ -6,7 +6,7 @@
 A rich enumeration type that supports setting individual flags for up to 64 flags.
 
 ```csharp
-public class FlagEnum<TEnum> : Jcd.RichEnumerations.Classes.RichEnumValue<ulong, TEnum>
+public abstract class FlagEnum<TEnum> : Jcd.RichEnumerations.Classes.RichEnumValue<ulong, TEnum>
     where TEnum : Jcd.RichEnumerations.Classes.FlagEnum<TEnum>, System.IEquatable<TEnum>, Jcd.RichEnumerations.IValueProvider<ulong>, new()
 ```
 #### Type parameters
