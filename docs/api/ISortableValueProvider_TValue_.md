@@ -1,11 +1,9 @@
 #### [Jcd.RichEnumerations](index.md 'index')
-
 ### [Jcd.RichEnumerations](Jcd.RichEnumerations.md 'Jcd.RichEnumerations')
 
 ## ISortableValueProvider<TValue> Interface
 
-A helper interface to enable building auto casting into the data type aware
-[SortableRichEnum&lt;TValue,TEnum&gt;](https://docs.microsoft.com/en-us/dotnet/api/SortableRichEnum<TValue,TEnum> 'SortableRichEnum<TValue,TEnum>')
+A helper interface to enable building auto casting into the data type aware `SortableRichEnum{TValue,TEnum}`
 types. This helps minimize boilerplate code.
 
 ```csharp
@@ -13,7 +11,6 @@ public interface ISortableValueProvider<out TValue> :
 Jcd.RichEnumerations.IValueProvider<TValue>
     where TValue : System.IEquatable<TValue>, System.IComparable<TValue>
 ```
-
 #### Type parameters
 
 <a name='Jcd.RichEnumerations.ISortableValueProvider_TValue_.TValue'></a>

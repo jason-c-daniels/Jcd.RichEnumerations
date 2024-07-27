@@ -20,6 +20,5 @@ The other instance to compare to
 Implements [Equals(T)](https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1.Equals#System_IEquatable_1_Equals__0_ 'System.IEquatable`1.Equals(`0)')
 
 #### Returns
-
 [System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean')
 True if equivalent.

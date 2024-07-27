@@ -30,14 +30,13 @@ Derived
 &#8627; [SortableRichEnumBase&lt;TEnumeration,TEnumeratedItem&gt;](SortableRichEnumBase_TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.Classes.SortableRichEnumBase<TEnumeration,TEnumeratedItem>')
 
 ### Remarks
-
 NOTE: This is intended as a supporting class. Consumers should prefer [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') or
 [RichEnum&lt;TEnum&gt;](RichEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TEnum>') instead.
 
-| Constructors                                                                                                                                                            |                                     |
-|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------|
+| Constructors | |
+| :--- | :--- |
 | [RichEnumBase()](RichEnumBase_TEnumeration,TEnumeratedItem_.RichEnumBase().md 'Jcd.RichEnumerations.Classes.RichEnumBase<TEnumeration,TEnumeratedItem>.RichEnumBase()') | Constructs an instance of the type. |
 
-| Properties                                                                                                                             |                                                                                                                                                                                             |
-|:---------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Properties | |
+| :--- | :--- |
 | [All](RichEnumBase_TEnumeration,TEnumeratedItem_.All.md 'Jcd.RichEnumerations.Classes.RichEnumBase<TEnumeration,TEnumeratedItem>.All') | All enumerated elements. Populated on first call to [All](RichEnumBase_TEnumeration,TEnumeratedItem_.All.md 'Jcd.RichEnumerations.Classes.RichEnumBase<TEnumeration,TEnumeratedItem>.All'). |

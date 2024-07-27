@@ -17,6 +17,5 @@ public static TValue explicit operator TValue(Jcd.RichEnumerations.Classes.Sorta
 The [SortableRichEnum&lt;TValue,TEnum&gt;](SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>') instance.
 
 #### Returns
-
 [TValue](SortableRichEnumValue_TValue,TEnum_.md#Jcd.RichEnumerations.Classes.SortableRichEnumValue_TValue,TEnum_.TValue 'Jcd.RichEnumerations.Classes.SortableRichEnumValue<TValue,TEnum>.TValue')
 The .Value of the [SortableRichEnum&lt;TValue,TEnum&gt;](SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>') instance

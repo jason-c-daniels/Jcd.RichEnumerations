@@ -30,14 +30,13 @@ Derived
 &#8627; [SortableRichEnumBase&lt;TValue,TEnumeration,TEnumeratedItem&gt;](SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.md 'Jcd.RichEnumerations.Classes.SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>')
 
 ### Remarks
-
 NOTE: This is intended as a supporting class. Consumers should prefer [SortableRichEnum&lt;TValue,TEnum&gt;](SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>')
 or [SortableRichEnum&lt;TEnum&gt;](SortableRichEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TEnum>') instead.
 
-| Constructors                                                                                                                                                                                                    |                                     |
-|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------|
+| Constructors | |
+| :--- | :--- |
 | [SortableRichEnumBase()](SortableRichEnumBase_TEnumeration,TEnumeratedItem_.SortableRichEnumBase().md 'Jcd.RichEnumerations.Classes.SortableRichEnumBase<TEnumeration,TEnumeratedItem>.SortableRichEnumBase()') | Constructs an instance of the type. |
 
-| Methods                                                                                                                                                                                                                                                 |                                                                                                 |
-|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------|
+| Methods | |
+| :--- | :--- |
 | [Sort(Comparison&lt;TEnumeratedItem&gt;)](SortableRichEnumBase_TEnumeration,TEnumeratedItem_.Sort.TOzF27BY8iszV8hdMOLrmA.md 'Jcd.RichEnumerations.Classes.SortableRichEnumBase<TEnumeration,TEnumeratedItem>.Sort(System.Comparison<TEnumeratedItem>)') | Sorts the .All collection. This should be called once and only once during application startup. |

@@ -21,7 +21,7 @@ namespace Jcd.RichEnumerations.Classes;
 /// {
 ///      public static readonly MyRichEnum Item1 = new (1.0f, "First Item");
 ///      public static readonly MyRichEnum Item2 = new (2.1f, "Second Item");
-/// 
+///
 ///      public string CustomText => customText;
 /// }
 /// </code>

@@ -13,6 +13,5 @@ internal static class IsExternalInit
 Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.Object 'System.Object') &#129106; IsExternalInit
 
 ### Remarks
-
 This definition is provided by the <i>IsExternalInit</i> NuGet package (https://www.nuget.org/packages/IsExternalInit).
 Please see https://github.com/manuelroemer/IsExternalInit for more information.

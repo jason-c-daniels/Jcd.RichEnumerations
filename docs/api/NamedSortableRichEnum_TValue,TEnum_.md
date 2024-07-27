@@ -25,10 +25,10 @@ Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.O
 Derived
 &#8627; [NamedSortableRichEnum&lt;TEnum&gt;](NamedSortableRichEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedSortableRichEnum<TEnum>')
 
-| Constructors                                                                                                                                                                                                                   |                                                                                                                                                                 |
-|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Constructors | |
+| :--- | :--- |
 | [NamedSortableRichEnum(TValue, string)](NamedSortableRichEnum_TValue,TEnum_..ctor.dtM+6NDaqgW/eyZC9peFMw.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedSortableRichEnum<TValue,TEnum>.NamedSortableRichEnum(TValue, string)') | A [SortableRichEnum&lt;TValue,TEnum&gt;](SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>') with a Name property. |
 
-| Properties                                                                                                                           |                                                  |
-|:-------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------|
+| Properties | |
+| :--- | :--- |
 | [Name](NamedSortableRichEnum_TValue,TEnum_.Name.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedSortableRichEnum<TValue,TEnum>.Name') | The name of the instance. This should be unique. |
