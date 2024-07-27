@@ -29,10 +29,10 @@ Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.O
 Derived
 &#8627; [NamedRichEnum&lt;TEnum&gt;](NamedRichEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedRichEnum<TEnum>')
 
-| Constructors                                                                                                                                                                                   |                                                                                                                                                         |
-|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Constructors | |
+| :--- | :--- |
 | [NamedRichEnum(TValue, string)](NamedRichEnum_TValue,TEnum_..ctor.OqigQ+GvCpmkCnlZNGFCqg.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedRichEnum<TValue,TEnum>.NamedRichEnum(TValue, string)') | A [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') containing Name and Value properties. |
 
-| Properties                                                                                                           |                                                   |
-|:---------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------|
+| Properties | |
+| :--- | :--- |
 | [Name](NamedRichEnum_TValue,TEnum_.Name.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedRichEnum<TValue,TEnum>.Name') | The name for the instance. This should be unique. |

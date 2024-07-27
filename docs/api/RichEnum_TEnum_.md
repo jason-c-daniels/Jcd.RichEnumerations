@@ -32,6 +32,6 @@ public class MyRichEnum(int value, string customText) : RichEnum<MyRichEnum>(val
 }
 ```
 
-| Constructors                                                                                                                  |                                                                                                                                           |
-|:------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|
+| Constructors | |
+| :--- | :--- |
 | [RichEnum(int)](RichEnum_TEnum_..ctor.ZihynI5lRjZ0fle9W6jCRA.md 'Jcd.RichEnumerations.Classes.RichEnum<TEnum>.RichEnum(int)') | A [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') with TValue set to int. |

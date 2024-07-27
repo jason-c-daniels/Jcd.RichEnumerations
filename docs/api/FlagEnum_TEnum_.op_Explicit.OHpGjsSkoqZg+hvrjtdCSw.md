@@ -17,7 +17,6 @@ public static Jcd.RichEnumerations.Classes.FlagEnum<TEnum> explicit operator Fla
 The value to convert
 
 #### Returns
-
 [Jcd.RichEnumerations.Classes.FlagEnum&lt;](FlagEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.FlagEnum<TEnum>')[TEnum](FlagEnum_TEnum_.md#Jcd.RichEnumerations.Classes.FlagEnum_TEnum_.TEnum 'Jcd.RichEnumerations.Classes.FlagEnum<TEnum>.TEnum')[&gt;](FlagEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.FlagEnum<TEnum>')
 The [FlagEnum&lt;TEnum&gt;](FlagEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.FlagEnum<TEnum>') instance.
 

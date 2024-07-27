@@ -25,10 +25,10 @@ Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.O
 Derived
 &#8627; [DescribedRichEnum&lt;TEnum&gt;](DescribedRichEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.Wrappers.DescribedRichEnum<TEnum>')
 
-| Constructors                                                                                                                                                                                                   |                                                                                                                                                |
-|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
+| Constructors | |
+| :--- | :--- |
 | [DescribedRichEnum(TValue, string)](DescribedRichEnum_TValue,TEnum_..ctor.C0d2c03K8xfyBZ4RJnweeg.md 'Jcd.RichEnumerations.Classes.Wrappers.DescribedRichEnum<TValue,TEnum>.DescribedRichEnum(TValue, string)') | A [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') with a Description property. |
 
-| Properties                                                                                                                                        |                                                           |
-|:--------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------|
+| Properties | |
+| :--- | :--- |
 | [Description](DescribedRichEnum_TValue,TEnum_.Description.md 'Jcd.RichEnumerations.Classes.Wrappers.DescribedRichEnum<TValue,TEnum>.Description') | The description for the instance. These should be unique. |

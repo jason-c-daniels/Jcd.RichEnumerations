@@ -29,10 +29,10 @@ Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.O
 Derived
 &#8627; [DescribedSortableRichEnum&lt;TEnum&gt;](DescribedSortableRichEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.Wrappers.DescribedSortableRichEnum<TEnum>')
 
-| Constructors                                                                                                                                                                                                                                   |                                                                                                                                                                        |
-|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Constructors | |
+| :--- | :--- |
 | [DescribedSortableRichEnum(TValue, string)](DescribedSortableRichEnum_TValue,TEnum_..ctor.cBIt+q5nKN0oQ+XkxOu7pg.md 'Jcd.RichEnumerations.Classes.Wrappers.DescribedSortableRichEnum<TValue,TEnum>.DescribedSortableRichEnum(TValue, string)') | A [SortableRichEnum&lt;TValue,TEnum&gt;](SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>') with a Description property. |
 
-| Properties                                                                                                                                                        |                                  |
-|:------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------|
+| Properties | |
+| :--- | :--- |
 | [Description](DescribedSortableRichEnum_TValue,TEnum_.Description.md 'Jcd.RichEnumerations.Classes.Wrappers.DescribedSortableRichEnum<TValue,TEnum>.Description') | The description of the instance. |

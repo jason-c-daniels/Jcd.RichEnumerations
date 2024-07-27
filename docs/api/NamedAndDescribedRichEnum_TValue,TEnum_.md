@@ -29,11 +29,11 @@ Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.O
 Derived
 &#8627; [NamedAndDescribedRichEnum&lt;TEnum&gt;](NamedAndDescribedRichEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedRichEnum<TEnum>')
 
-| Constructors                                                                                                                                                                                                                                                   |                                                                       |
-|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------|
+| Constructors | |
+| :--- | :--- |
 | [NamedAndDescribedRichEnum(TValue, string, string)](NamedAndDescribedRichEnum_TValue,TEnum_..ctor.Eh2yB8ATQgMMwQfWtDKvPg.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedRichEnum<TValue,TEnum>.NamedAndDescribedRichEnum(TValue, string, string)') | A rich enumeration containing Description, Name and Value properties. |
 
-| Properties                                                                                                                                                        |                                                          |
-|:------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------|
+| Properties | |
+| :--- | :--- |
 | [Description](NamedAndDescribedRichEnum_TValue,TEnum_.Description.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedRichEnum<TValue,TEnum>.Description') | The description for the instance. This should be unique. |
-| [Name](NamedAndDescribedRichEnum_TValue,TEnum_.Name.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedRichEnum<TValue,TEnum>.Name')                      | The name for the instance. This should be unique.        |
+| [Name](NamedAndDescribedRichEnum_TValue,TEnum_.Name.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedAndDescribedRichEnum<TValue,TEnum>.Name') | The name for the instance. This should be unique. |

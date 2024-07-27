@@ -47,20 +47,20 @@ public class MyRichEnum(float value, string customText) : RichEnum<float,MyRichE
 }
 ```
 
-| Constructors                                                                                                                                                          |                                                                                                                                                                     |
-|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Constructors | |
+| :--- | :--- |
 | [RichEnumValue(TValue)](RichEnumValue_TValue,TEnum_..ctor.DsRqcckkj1hwxIngaH8vWw.md 'Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>.RichEnumValue(TValue)') | A [RichEnumValue&lt;TValue,TEnum&gt;](RichEnumValue_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>') with Value as a user defined type. |
 
-| Properties                                                                                                     |                       |
-|:---------------------------------------------------------------------------------------------------------------|:----------------------|
+| Properties | |
+| :--- | :--- |
 | [Value](RichEnumValue_TValue,TEnum_.Value.md 'Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>.Value') | The underlying value. |
 
-| Methods                                                                                                                                                |                                                                                                                                                                                                     |
-|:-------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Methods | |
+| :--- | :--- |
 | [Equals(TEnum)](RichEnumValue_TValue,TEnum_.Equals.FN+24sqSfwuOH7zHM+FGzg.md 'Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>.Equals(TEnum)') | Compares the Value of the current [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') instance to the target instance for equality. |
 
-| Operators                                                                                                                                                                                                                                                                                                                                             |                                                                                                                                                        |
-|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [operator ==(RichEnumValue&lt;TValue,TEnum&gt;, RichEnumValue&lt;TValue,TEnum&gt;)](RichEnumValue_TValue,TEnum_.op_Equality.zzvor8hQK2RMOH2Cs98i2g.md 'Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>.op_Equality(Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>, Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>)')     | Compares two [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') instances for equality.   |
-| [explicit operator TValue(RichEnumValue&lt;TValue,TEnum&gt;)](RichEnumValue_TValue,TEnum_.op_Explicit.zW3H3/kMLqpvqDAZIHbVVg.md 'Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>.op_Explicit TValue(Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>)')                                                                              | Explicit conversion to the underlying data type.                                                                                                       |
+| Operators | |
+| :--- | :--- |
+| [operator ==(RichEnumValue&lt;TValue,TEnum&gt;, RichEnumValue&lt;TValue,TEnum&gt;)](RichEnumValue_TValue,TEnum_.op_Equality.zzvor8hQK2RMOH2Cs98i2g.md 'Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>.op_Equality(Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>, Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>)') | Compares two [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') instances for equality. |
+| [explicit operator TValue(RichEnumValue&lt;TValue,TEnum&gt;)](RichEnumValue_TValue,TEnum_.op_Explicit.zW3H3/kMLqpvqDAZIHbVVg.md 'Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>.op_Explicit TValue(Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>)') | Explicit conversion to the underlying data type. |
 | [operator !=(RichEnumValue&lt;TValue,TEnum&gt;, RichEnumValue&lt;TValue,TEnum&gt;)](RichEnumValue_TValue,TEnum_.op_Inequality.mLWVA5iB0w+BsyewWTZ0jA.md 'Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>.op_Inequality(Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>, Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>)') | Compares two [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') instances for inequality. |
