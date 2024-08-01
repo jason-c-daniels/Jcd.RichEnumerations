@@ -49,3 +49,7 @@ NOTE: This is intended as a supporting class. Consumers should prefer [SortableR
 | Properties | |
 | :--- | :--- |
 | [ByValue](SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.ByValue.md 'Jcd.RichEnumerations.Classes.SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>.ByValue') | A lookup of enumerated elements by their Value property. Useful for implementing conversion operators. |
+
+| Methods | |
+| :--- | :--- |
+| [IsValid(TValue)](SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.IsValid.dyQ+VVANSFhCIqjkAT7kWw.md 'Jcd.RichEnumerations.Classes.SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>.IsValid(TValue)') | Determines if the passed in value can be converted into the enumerated type. |

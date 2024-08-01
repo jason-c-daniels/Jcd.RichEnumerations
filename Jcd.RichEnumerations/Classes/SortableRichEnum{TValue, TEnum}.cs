@@ -63,9 +63,9 @@ public class SortableRichEnum<TValue, TEnum>(TValue value) : SortableRichEnumVal
    [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static explicit operator SortableRichEnum<TValue, TEnum>(TValue value)
    {
-      if (ByValue.TryGetValue(value, out var result))
+      if (IsValid(value))
       {
-         return result;
+         return ByValue[value];
       }
 
       throw new ArgumentException($"Cannot convert to {typeof(TEnum)}. Invalid value.", nameof(value));

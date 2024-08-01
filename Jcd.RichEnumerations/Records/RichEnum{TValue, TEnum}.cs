@@ -45,9 +45,9 @@ public record RichEnum<TValue, TEnum> : RichEnumValue<TValue, TEnum>
    [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static explicit operator RichEnum<TValue, TEnum>(TValue value)
    {
-      if (ByValue.TryGetValue(value, out var result))
+      if (IsValid(value))
       {
-         return result;
+         return ByValue[value];
       }
 
       throw new ArgumentException($"Cannot convert to {typeof(TEnum)}. Invalid value.", nameof(value));

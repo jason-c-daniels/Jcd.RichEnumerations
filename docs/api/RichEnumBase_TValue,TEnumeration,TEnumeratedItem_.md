@@ -50,3 +50,7 @@ NOTE: This is intended as a supporting class. Consumers should prefer [RichEnum&
 | Properties | |
 | :--- | :--- |
 | [ByValue](RichEnumBase_TValue,TEnumeration,TEnumeratedItem_.ByValue.md 'Jcd.RichEnumerations.Classes.RichEnumBase<TValue,TEnumeration,TEnumeratedItem>.ByValue') | A lookup of enumerated elements by their Value property. Useful for implementing conversion operators. |
+
+| Methods | |
+| :--- | :--- |
+| [IsValid(TValue)](RichEnumBase_TValue,TEnumeration,TEnumeratedItem_.IsValid.JVXM85mhnq/Ue9izoGUz+A.md 'Jcd.RichEnumerations.Classes.RichEnumBase<TValue,TEnumeration,TEnumeratedItem>.IsValid(TValue)') | Determines if the passed in value can be converted into the enumerated type. |
