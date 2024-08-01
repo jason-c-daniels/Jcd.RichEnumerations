@@ -6,7 +6,7 @@
 A [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') with Value as a user defined type.
 
 ```csharp
-public RichEnum(TValue value);
+protected RichEnum(TValue value);
 ```
 #### Parameters
 

@@ -6,7 +6,7 @@
 A [RichEnumValue&lt;TValue,TEnum&gt;](RichEnumValue_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>') with Value as a user defined type.
 
 ```csharp
-public class RichEnumValue<TValue,TEnum> : Jcd.RichEnumerations.Classes.RichEnumBase<TValue, TEnum, TEnum>,
+public abstract class RichEnumValue<TValue,TEnum> : Jcd.RichEnumerations.Classes.RichEnumBase<TValue, TEnum, TEnum>,
 System.IEquatable<TEnum>,
 Jcd.RichEnumerations.IValueProvider<TValue>
     where TValue : System.IEquatable<TValue>

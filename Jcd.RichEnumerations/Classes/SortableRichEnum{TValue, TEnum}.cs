@@ -25,26 +25,26 @@ namespace Jcd.RichEnumerations.Classes;
 /// {
 ///      public static readonly MySortableRichEnum Item1 = new (0.1f, "First Item");
 ///      public static readonly MySortableRichEnum Item2 = new (-0.1f, "Second Item");
-///
+/// 
 ///      public string CustomText => customText;
 /// }
-///
+/// 
 /// class Program
 /// {
 ///    public void Main()
 ///    {
 ///       // Call Sort() during app startup.
-///
+/// 
 ///       // This sorts numerically, ascending.
 ///       MySortableRichEnum.Sort();
-///
+/// 
 ///       // This sorts numerically, descending.
 ///       MySortableRichEnum.Sort((x,y) => y.Value.CompareTo(x.Value));
 ///    }
 /// }
 /// </code>
 /// </example>
-public class SortableRichEnum<TValue, TEnum>(TValue value) : SortableRichEnumValue<TValue, TEnum>(value)
+public abstract class SortableRichEnum<TValue, TEnum>(TValue value) : SortableRichEnumValue<TValue, TEnum>(value)
    where TValue : IEquatable<TValue>, IComparable<TValue>
    where TEnum : SortableRichEnum<TValue, TEnum>, ISortableValueProvider<TValue>
 {

@@ -6,7 +6,7 @@
 A [RichEnum&lt;TEnum&gt;](RichEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TEnum>') containing Name and Value properties with int as the underlying Value data type.
 
 ```csharp
-public class NamedRichEnum<TEnum> : Jcd.RichEnumerations.Classes.Wrappers.NamedRichEnum<int, TEnum>
+public abstract class NamedRichEnum<TEnum> : Jcd.RichEnumerations.Classes.Wrappers.NamedRichEnum<int, TEnum>
     where TEnum : Jcd.RichEnumerations.Classes.Wrappers.NamedRichEnum<TEnum>, System.IEquatable<TEnum>
 ```
 #### Type parameters

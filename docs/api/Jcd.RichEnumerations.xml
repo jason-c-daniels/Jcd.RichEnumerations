@@ -14,6 +14,77 @@
                 Please see https://github.com/manuelroemer/IsExternalInit for more information.
             </remarks>
         </member>
+        <member name="T:Jcd.RichEnumerations.Classes.DomainValue`1">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.DomainValue`1.#ctor(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:Jcd.RichEnumerations.Classes.DomainValue`2">
+            <summary>
+            A <see cref="T:Jcd.RichEnumerations.Classes.DomainValue`2" /> is an open set of values which may
+            share an underlying integral data type with others, but need semantic separation,
+            such as database row identifier columns. Using these prevents accidentally using
+            one in place of another.
+            </summary>
+            <typeparam name="TType">The domain specific type.</typeparam>
+            <typeparam name="TValue">The data type for underlying value.</typeparam>
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.DomainValue`2.#ctor(`0)">
+            <summary>
+            A <see cref="T:Jcd.RichEnumerations.Classes.DomainValue`2" /> is an open set of values which may
+            share an underlying integral data type with others, but need semantic separation,
+            such as database row identifier columns. Using these prevents accidentally using
+            one in place of another.
+            </summary>
+            <typeparam name="TType">The domain specific type.</typeparam>
+            <typeparam name="TValue">The data type for underlying value.</typeparam>
+        </member>
+        <member name="P:Jcd.RichEnumerations.Classes.DomainValue`2.Value">
+            <summary>
+            The underlying value.
+            </summary>
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.DomainValue`2.op_Explicit(Jcd.RichEnumerations.Classes.DomainValue{`0,`1})~`0">
+            <summary>
+            Explicit conversion to the underlying data type.
+            </summary>
+            <param name="e">The <see cref="T:Jcd.RichEnumerations.Classes.DomainValue`2" /> instance.</param>
+            <returns>The .Value of the <see cref="T:Jcd.RichEnumerations.Classes.DomainValue`2" /> instance</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.DomainValue`2.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.DomainValue`2.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.DomainValue`2.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.DomainValue`2.Equals(`1)">
+            <summary>
+            Compares the Value of the current <see cref="T:Jcd.RichEnumerations.Classes.DomainValue`2" /> instance to the target instance for
+            equality.
+            </summary>
+            <param name="other">The other instance to compare to</param>
+            <returns>True if equivalent.</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.DomainValue`2.op_Equality(Jcd.RichEnumerations.Classes.DomainValue{`0,`1},Jcd.RichEnumerations.Classes.DomainValue{`0,`1})">
+            <summary>
+            Compares two <see cref="T:Jcd.RichEnumerations.Classes.DomainValue`2" /> instances for equality.
+            </summary>
+            <param name="l">the left hand side of the comparison.</param>
+            <param name="r">the right hand side of the comparison.</param>
+            <returns>True if equivalent.</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.DomainValue`2.op_Inequality(Jcd.RichEnumerations.Classes.DomainValue{`0,`1},Jcd.RichEnumerations.Classes.DomainValue{`0,`1})">
+            <summary>
+            Compares two <see cref="T:Jcd.RichEnumerations.Classes.DomainValue`2" /> instances for inequality.
+            </summary>
+            <param name="l">the left hand side of the comparison.</param>
+            <param name="r">the right hand side of the comparison.</param>
+            <returns>True if not equivalent.</returns>
+        </member>
         <member name="T:Jcd.RichEnumerations.Classes.FlagEnum`1">
             <summary>
             A rich enumeration type that supports setting individual flags for up to 64 flags.
@@ -346,6 +417,87 @@
             <param name="value">The value to convert.</param>
             <returns>The instance of the <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2" />, if it exists. Throws an exception, otherwise.</returns>
             <exception cref="T:System.ArgumentException">If a value not present in the enum is provided.</exception>
+        </member>
+        <member name="T:Jcd.RichEnumerations.Classes.SortableDomainValue`1">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.SortableDomainValue`1.#ctor(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:Jcd.RichEnumerations.Classes.SortableDomainValue`2">
+            <inheritdoc  />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.SortableDomainValue`2.#ctor(`0)">
+            <inheritdoc  />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.SortableDomainValue`2.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.SortableDomainValue`2.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.SortableDomainValue`2.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.SortableDomainValue`2.CompareTo(`1)">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.SortableDomainValue`2.CompareTo(Jcd.RichEnumerations.Classes.SortableDomainValue{`0,`1})">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.SortableDomainValue`2.op_Equality(Jcd.RichEnumerations.Classes.SortableDomainValue{`0,`1},Jcd.RichEnumerations.Classes.SortableDomainValue{`0,`1})">
+            <summary>
+            Compares two <see cref="T:Jcd.RichEnumerations.Classes.SortableDomainValue`2" /> instances for equality.
+            </summary>
+            <param name="l">the left hand side of the comparison.</param>
+            <param name="r">the right hand side of the comparison.</param>
+            <returns>True if equivalent.</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.SortableDomainValue`2.op_Inequality(Jcd.RichEnumerations.Classes.SortableDomainValue{`0,`1},Jcd.RichEnumerations.Classes.SortableDomainValue{`0,`1})">
+            <summary>
+            Compares two <see cref="T:Jcd.RichEnumerations.Classes.SortableDomainValue`2" /> instances for inequality.
+            </summary>
+            <param name="l">the left hand side of the comparison.</param>
+            <param name="r">the right hand side of the comparison.</param>
+            <returns>True if not equivalent.</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.SortableDomainValue`2.op_LessThan(Jcd.RichEnumerations.Classes.SortableDomainValue{`0,`1},Jcd.RichEnumerations.Classes.SortableDomainValue{`0,`1})">
+            <summary>
+            Compares two <see cref="T:Jcd.RichEnumerations.Classes.SortableDomainValue`2" /> instances to determine if the left hand side is less
+            than
+            the right hand side.
+            </summary>
+            <param name="l">the left hand side of the comparison.</param>
+            <param name="r">the right hand side of the comparison.</param>
+            <returns>True if the left hand side is less than the right hand side.</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.SortableDomainValue`2.op_GreaterThan(Jcd.RichEnumerations.Classes.SortableDomainValue{`0,`1},Jcd.RichEnumerations.Classes.SortableDomainValue{`0,`1})">
+            <summary>
+            Compares two <see cref="T:Jcd.RichEnumerations.Classes.SortableDomainValue`2" /> instances to determine if the left hand side is greater
+            than the right hand side.
+            </summary>
+            <param name="l">the left hand side of the comparison.</param>
+            <param name="r">the right hand side of the comparison.</param>
+            <returns>True if the left hand side is greater than the right hand side.</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.SortableDomainValue`2.op_LessThanOrEqual(Jcd.RichEnumerations.Classes.SortableDomainValue{`0,`1},Jcd.RichEnumerations.Classes.SortableDomainValue{`0,`1})">
+            <summary>
+            Compares two <see cref="T:Jcd.RichEnumerations.Classes.SortableDomainValue`2" /> instances to determine if the left hand side is less
+            than
+            or equal to the right hand side.
+            </summary>
+            <param name="l">the left hand side of the comparison.</param>
+            <param name="r">the right hand side of the comparison.</param>
+            <returns>True if the left hand side is less than or equal to the right hand side.</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.SortableDomainValue`2.op_GreaterThanOrEqual(Jcd.RichEnumerations.Classes.SortableDomainValue{`0,`1},Jcd.RichEnumerations.Classes.SortableDomainValue{`0,`1})">
+            <summary>
+            Compares two <see cref="T:Jcd.RichEnumerations.Classes.SortableDomainValue`2" /> instances to determine if the left hand side is greater
+            than or equal to the right hand side.
+            </summary>
+            <param name="l">the left hand side of the comparison.</param>
+            <param name="r">the right hand side of the comparison.</param>
+            <returns>True if the left hand side is greater than or equal to the right hand side.</returns>
         </member>
         <member name="T:Jcd.RichEnumerations.Classes.SortableRichEnumBase`2">
             <summary>
@@ -1006,6 +1158,64 @@
             Provides plain old classes and <c>record types</c> to simplify creating and using DDD-style Rich Enumerations.
             </summary>
         </member>
+        <member name="T:Jcd.RichEnumerations.Records.DomainValue`1">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Records.DomainValue`1.#ctor(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Records.DomainValue`1.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Records.DomainValue`1.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="T:Jcd.RichEnumerations.Records.DomainValue`2">
+            <summary>
+            A <see cref="T:Jcd.RichEnumerations.Records.DomainValue`2" /> is an open set of values which may
+            share an underlying integral data type with others, but need semantic separation,
+            such as database row identifier columns. Using these prevents accidentally using
+            one in place of another.
+            </summary>
+            <typeparam name="TType">The domain specific type.</typeparam>
+            <typeparam name="TValue">The data type for underlying value.</typeparam>
+        </member>
+        <member name="M:Jcd.RichEnumerations.Records.DomainValue`2.#ctor(`0)">
+            <summary>
+            A <see cref="T:Jcd.RichEnumerations.Records.DomainValue`2" /> is an open set of values which may
+            share an underlying integral data type with others, but need semantic separation,
+            such as database row identifier columns. Using these prevents accidentally using
+            one in place of another.
+            </summary>
+            <typeparam name="TType">The domain specific type.</typeparam>
+            <typeparam name="TValue">The data type for underlying value.</typeparam>
+        </member>
+        <member name="P:Jcd.RichEnumerations.Records.DomainValue`2.Value">
+            <summary>
+            The underlying value.
+            </summary>
+        </member>
+        <member name="M:Jcd.RichEnumerations.Records.DomainValue`2.op_Explicit(Jcd.RichEnumerations.Records.DomainValue{`0,`1})~`0">
+            <summary>
+            Explicit conversion to the underlying data type.
+            </summary>
+            <param name="e">The <see cref="T:Jcd.RichEnumerations.Records.DomainValue`2" /> instance.</param>
+            <returns>The .Value of the <see cref="T:Jcd.RichEnumerations.Records.DomainValue`2" /> instance</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.Records.DomainValue`2.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Records.DomainValue`2.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Records.DomainValue`2.Equals(`1)">
+            <summary>
+            Compares the Value of the current <see cref="T:Jcd.RichEnumerations.Records.DomainValue`2" /> instance to the target instance for
+            equality.
+            </summary>
+            <param name="other">The other instance to compare to</param>
+            <returns>True if equivalent.</returns>
+        </member>
         <member name="T:Jcd.RichEnumerations.Records.FlagEnum`1">
             <summary>
             A rich enumeration type that supports setting individual flags for up to 64 flags.
@@ -1218,6 +1428,74 @@
             otherwise.
             </returns>
             <exception cref="T:System.ArgumentException">If a value not present in the enum is provided.</exception>
+        </member>
+        <member name="T:Jcd.RichEnumerations.Records.SortableDomainValue`1">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`1.#ctor(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`1.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`1.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="T:Jcd.RichEnumerations.Records.SortableDomainValue`2">
+            <inheritdoc  />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`2.#ctor(`0)">
+            <inheritdoc  />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`2.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`2.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`2.CompareTo(`1)">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`2.CompareTo(Jcd.RichEnumerations.Records.SortableDomainValue{`0,`1})">
+            <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`2.op_LessThan(Jcd.RichEnumerations.Records.SortableDomainValue{`0,`1},Jcd.RichEnumerations.Records.SortableDomainValue{`0,`1})">
+            <summary>
+            Compares two <see cref="T:Jcd.RichEnumerations.Records.SortableDomainValue`2" /> instances to determine if the left hand side is less
+            than
+            the right hand side.
+            </summary>
+            <param name="l">the left hand side of the comparison.</param>
+            <param name="r">the right hand side of the comparison.</param>
+            <returns>True if the left hand side is less than the right hand side.</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`2.op_GreaterThan(Jcd.RichEnumerations.Records.SortableDomainValue{`0,`1},Jcd.RichEnumerations.Records.SortableDomainValue{`0,`1})">
+            <summary>
+            Compares two <see cref="T:Jcd.RichEnumerations.Records.SortableDomainValue`2" /> instances to determine if the left hand side is greater
+            than the right hand side.
+            </summary>
+            <param name="l">the left hand side of the comparison.</param>
+            <param name="r">the right hand side of the comparison.</param>
+            <returns>True if the left hand side is greater than the right hand side.</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`2.op_LessThanOrEqual(Jcd.RichEnumerations.Records.SortableDomainValue{`0,`1},Jcd.RichEnumerations.Records.SortableDomainValue{`0,`1})">
+            <summary>
+            Compares two <see cref="T:Jcd.RichEnumerations.Records.SortableDomainValue`2" /> instances to determine if the left hand side is less
+            than
+            or equal to the right hand side.
+            </summary>
+            <param name="l">the left hand side of the comparison.</param>
+            <param name="r">the right hand side of the comparison.</param>
+            <returns>True if the left hand side is less than or equal to the right hand side.</returns>
+        </member>
+        <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`2.op_GreaterThanOrEqual(Jcd.RichEnumerations.Records.SortableDomainValue{`0,`1},Jcd.RichEnumerations.Records.SortableDomainValue{`0,`1})">
+            <summary>
+            Compares two <see cref="T:Jcd.RichEnumerations.Records.SortableDomainValue`2" /> instances to determine if the left hand side is greater
+            than or equal to the right hand side.
+            </summary>
+            <param name="l">the left hand side of the comparison.</param>
+            <param name="r">the right hand side of the comparison.</param>
+            <returns>True if the left hand side is greater than or equal to the right hand side.</returns>
         </member>
         <member name="T:Jcd.RichEnumerations.Records.SortableRichEnumBase`2">
             <summary>

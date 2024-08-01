@@ -1,3 +1,9 @@
+#region
+
+using Jcd.RichEnumerations.Tests.Records.Harnesses.Enums;
+
+#endregion
+
 namespace Jcd.RichEnumerations.Tests.Records;
 
 public class RichEnumTests
@@ -26,7 +32,7 @@ public class RichEnumTests
    [Fact]
    public void With_Default_Value_Type_All_Contains_Expected_Values()
    {
-      Assert.Equal(3, MySimpleEnum.All.Count);
+      Assert.Equal(4, MySimpleEnum.All.Count);
       Assert.Contains(MySimpleEnum.ValueOne, MySimpleEnum.All);
       Assert.Contains(MySimpleEnum.ValueTwo, MySimpleEnum.All);
       Assert.Contains(MySimpleEnum.ValueTen, MySimpleEnum.All);
@@ -52,7 +58,7 @@ public class RichEnumTests
    }
 
    [Theory]
-   [InlineData(1,  "1")]
+   [InlineData(3,  "3")]
    [InlineData(2,  "2")]
    [InlineData(10, "10")]
    public void ToString_Returns_Expected_String(int value, string expected)
@@ -101,7 +107,7 @@ public class RichEnumTests
    }
 
    [Theory]
-   [InlineData(3)]
+   [InlineData(6)]
    [InlineData(5)]
    [InlineData(7)]
    [InlineData(111)]

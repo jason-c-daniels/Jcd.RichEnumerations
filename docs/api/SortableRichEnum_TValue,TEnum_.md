@@ -7,7 +7,7 @@ A base for sortable rich enumerations. This type provides a hook to sort the [Ri
 `.Sort()` should be called once and only once during application startup.
 
 ```csharp
-public class SortableRichEnum<TValue,TEnum> : Jcd.RichEnumerations.Classes.SortableRichEnumValue<TValue, TEnum>
+public abstract class SortableRichEnum<TValue,TEnum> : Jcd.RichEnumerations.Classes.SortableRichEnumValue<TValue, TEnum>
     where TValue : System.IEquatable<TValue>, System.IComparable<TValue>
     where TEnum : Jcd.RichEnumerations.Classes.SortableRichEnum<TValue, TEnum>, Jcd.RichEnumerations.ISortableValueProvider<TValue>
 ```

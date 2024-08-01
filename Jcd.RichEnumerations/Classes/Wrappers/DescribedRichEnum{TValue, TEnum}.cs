@@ -16,7 +16,7 @@ namespace Jcd.RichEnumerations.Classes.Wrappers;
 /// </summary>
 /// <param name="value">the value for this instance. These must be unique.</param>
 /// <param name="description">The description for the instance. These should be unique.</param>
-public class DescribedRichEnum<TValue, TEnum>(TValue value, string description) : RichEnum<TValue, TEnum>(value)
+public abstract class DescribedRichEnum<TValue, TEnum>(TValue value, string description) : RichEnum<TValue, TEnum>(value)
    where TValue : IEquatable<TValue>
    where TEnum : DescribedRichEnum<TValue, TEnum>
 {

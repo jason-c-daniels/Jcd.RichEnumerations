@@ -6,7 +6,7 @@
 Provides access to all instances on the enumeration container by way of the [All](RichEnumBase_TEnumeration,TEnumeratedItem_.All.md 'Jcd.RichEnumerations.Classes.RichEnumBase<TEnumeration,TEnumeratedItem>.All') property.
 
 ```csharp
-public class RichEnumBase<TEnumeration,TEnumeratedItem>
+public abstract class RichEnumBase<TEnumeration,TEnumeratedItem>
     where TEnumeratedItem : System.IEquatable<TEnumeratedItem>
 ```
 #### Type parameters

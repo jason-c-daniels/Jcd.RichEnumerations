@@ -9,6 +9,8 @@ using System.Text;
 using Jcd.BitManipulation;
 using Jcd.BitManipulation.Algorithms;
 
+// ReSharper disable HeapView.ObjectAllocation.Evident
+
 // ReSharper disable MemberCanBePrivate.Global
 // ReSharper disable MemberCanBeProtected.Global
 // ReSharper disable StaticMemberInGenericType
@@ -23,7 +25,7 @@ namespace Jcd.RichEnumerations.Records;
 /// A rich enumeration type that supports setting individual flags for up to 64 flags.
 /// </summary>
 /// <typeparam name="TEnum">The flag type being defined.</typeparam>
-public record FlagEnum<TEnum>
+public abstract record FlagEnum<TEnum>
    : RichEnumValue<ulong, TEnum>
    , IEquatable<TEnum>
    where TEnum : FlagEnum<TEnum>, IEquatable<TEnum>, IValueProvider<ulong>, new()

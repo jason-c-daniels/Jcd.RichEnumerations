@@ -13,7 +13,7 @@ namespace Jcd.RichEnumerations.Records;
 /// The enumeration type. This will contain both the structure definition and the enumeration
 /// entries as public static readonly fields.
 /// </typeparam>
-public record RichEnum<TEnum> : RichEnum<int, TEnum>
+public abstract record RichEnum<TEnum> : RichEnum<int, TEnum>
    where TEnum : RichEnum<TEnum>
 {
    /// <inheritdoc />

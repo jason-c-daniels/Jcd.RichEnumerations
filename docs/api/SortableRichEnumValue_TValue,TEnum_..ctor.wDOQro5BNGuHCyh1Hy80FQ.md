@@ -7,7 +7,7 @@ A base for sortable rich enumerations. This type provides a hook to sort the [Ri
 `.Sort()` should be called once and only once during application startup.
 
 ```csharp
-public SortableRichEnumValue(TValue value);
+protected SortableRichEnumValue(TValue value);
 ```
 #### Parameters
 

@@ -6,7 +6,7 @@
 A [SortableRichEnum&lt;TValue,TEnum&gt;](SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>') with a Name property.
 
 ```csharp
-public class NamedSortableRichEnum<TEnum> : Jcd.RichEnumerations.Classes.Wrappers.NamedSortableRichEnum<int, TEnum>
+public abstract class NamedSortableRichEnum<TEnum> : Jcd.RichEnumerations.Classes.Wrappers.NamedSortableRichEnum<int, TEnum>
     where TEnum : Jcd.RichEnumerations.Classes.Wrappers.NamedSortableRichEnum<TEnum>, Jcd.RichEnumerations.ISortableValueProvider<int>
 ```
 #### Type parameters

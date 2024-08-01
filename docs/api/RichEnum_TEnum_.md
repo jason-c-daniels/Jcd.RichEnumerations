@@ -6,7 +6,7 @@
 A [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') with TValue set to int.
 
 ```csharp
-public class RichEnum<TEnum> : Jcd.RichEnumerations.Classes.RichEnum<int, TEnum>
+public abstract class RichEnum<TEnum> : Jcd.RichEnumerations.Classes.RichEnum<int, TEnum>
     where TEnum : Jcd.RichEnumerations.Classes.RichEnum<TEnum>
 ```
 #### Type parameters
