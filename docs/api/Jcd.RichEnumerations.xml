@@ -425,10 +425,10 @@
             <inheritdoc />
         </member>
         <member name="T:Jcd.RichEnumerations.Classes.SortableDomainValue`2">
-            <inheritdoc  />
+            <inheritdoc />
         </member>
         <member name="M:Jcd.RichEnumerations.Classes.SortableDomainValue`2.#ctor(`0)">
-            <inheritdoc  />
+            <inheritdoc />
         </member>
         <member name="M:Jcd.RichEnumerations.Classes.SortableDomainValue`2.ToString">
             <inheritdoc />
@@ -1442,10 +1442,10 @@
             <inheritdoc />
         </member>
         <member name="T:Jcd.RichEnumerations.Records.SortableDomainValue`2">
-            <inheritdoc  />
+            <inheritdoc />
         </member>
         <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`2.#ctor(`0)">
-            <inheritdoc  />
+            <inheritdoc />
         </member>
         <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`2.ToString">
             <inheritdoc />

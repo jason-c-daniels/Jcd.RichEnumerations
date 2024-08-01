@@ -118,7 +118,7 @@ public abstract record FlagEnum<TEnum>
    #endregion
 
    #region conversion operators and helpers
-   
+
    /// <summary>
    /// Determines if the passed in value can be converted into the enumerated type.
    /// </summary>
@@ -129,7 +129,7 @@ public abstract record FlagEnum<TEnum>
    {
       return ByValue.ContainsKey(value) || (value & ValidFlags) == value;
    }
-   
+
    /// <summary>
    /// Converts a value to a <see cref="FlagEnum{TEnum}" /> instance.
    /// </summary>

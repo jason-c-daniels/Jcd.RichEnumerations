@@ -9,7 +9,7 @@ And allows lookup of items by value. This is used in [RichEnum&lt;TValue,TEnum&g
 operators.
 
 ```csharp
-public class RichEnumBase<TValue,TEnumeration,TEnumeratedItem> : Jcd.RichEnumerations.Classes.RichEnumBase<TEnumeration, TEnumeratedItem>
+public abstract class RichEnumBase<TValue,TEnumeration,TEnumeratedItem> : Jcd.RichEnumerations.Classes.RichEnumBase<TEnumeration, TEnumeratedItem>
     where TValue : System.IEquatable<TValue>
     where TEnumeratedItem : System.IEquatable<TEnumeratedItem>, Jcd.RichEnumerations.IValueProvider<TValue>
 ```

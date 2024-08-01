@@ -8,7 +8,7 @@ This type provides a hook to sort the .All collection. `.Sort()` should be calle
 application startup.
 
 ```csharp
-public class SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem> : Jcd.RichEnumerations.Classes.SortableRichEnumBase<TEnumeration, TEnumeratedItem>
+public abstract class SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem> : Jcd.RichEnumerations.Classes.SortableRichEnumBase<TEnumeration, TEnumeratedItem>
     where TValue : System.IEquatable<TValue>, System.IComparable<TValue>
     where TEnumeratedItem : System.IEquatable<TEnumeratedItem>, System.IComparable<TEnumeratedItem>, Jcd.RichEnumerations.ISortableValueProvider<TValue>
 ```

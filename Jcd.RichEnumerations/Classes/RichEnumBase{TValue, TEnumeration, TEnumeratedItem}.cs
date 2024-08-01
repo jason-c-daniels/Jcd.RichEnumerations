@@ -50,7 +50,7 @@ public abstract class RichEnumBase<TValue, TEnumeration, TEnumeratedItem> : Rich
    [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static bool IsValid(TValue value)
       => ByValue.ContainsKey(value);
-   
+
    /// <summary>
    /// A lookup of enumerated elements by their Value property.
    /// Useful for implementing conversion operators.

@@ -42,7 +42,7 @@ public abstract record RichEnumBase<TValue, TEnumeration, TEnumeratedItem> : Ric
    protected RichEnumBase()
    {
    }
-   
+
    /// <summary>
    /// Determines if the passed in value can be converted into the enumerated type.
    /// </summary>
