@@ -3,8 +3,8 @@
 
 ## SortableDomainValue<TValue,TType>.operator <=(SortableDomainValue<TValue,TType>, SortableDomainValue<TValue,TType>) Operator
 
-Compares two [SortableDomainValue&lt;TValue,TType&gt;](SortableDomainValue_TValue,TType_.md 'Jcd.RichEnumerations.Classes.SortableDomainValue<TValue,TType>') instances to determine if the left hand side is less  
-than  
+Compares two [SortableDomainValue&lt;TValue,TType&gt;](SortableDomainValue_TValue,TType_.md 'Jcd.RichEnumerations.Classes.SortableDomainValue<TValue,TType>') instances to determine if the left hand side is less
+than
 or equal to the right hand side.
 
 ```csharp
@@ -25,5 +25,5 @@ the left hand side of the comparison.
 the right hand side of the comparison.
 
 #### Returns
-[System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean')  
+[System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean')
 True if the left hand side is less than or equal to the right hand side.

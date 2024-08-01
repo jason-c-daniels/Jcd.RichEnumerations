@@ -3,7 +3,7 @@
 
 ## SortableRichEnumValue<TValue,TEnum>.operator >(SortableRichEnumValue<TValue,TEnum>, SortableRichEnumValue<TValue,TEnum>) Operator
 
-Compares two [SortableRichEnumValue&lt;TValue,TEnum&gt;](SortableRichEnumValue_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.SortableRichEnumValue<TValue,TEnum>') instances to determine if the left hand side is greater  
+Compares two [SortableRichEnumValue&lt;TValue,TEnum&gt;](SortableRichEnumValue_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.SortableRichEnumValue<TValue,TEnum>') instances to determine if the left hand side is greater
 than the right hand side.
 
 ```csharp
@@ -24,5 +24,5 @@ the left hand side of the comparison.
 the right hand side of the comparison.
 
 #### Returns
-[System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean')  
+[System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean')
 True if the left hand side is greater than the right hand side.

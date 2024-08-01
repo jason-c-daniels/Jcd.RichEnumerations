@@ -120,6 +120,17 @@ public abstract record FlagEnum<TEnum>
    #region conversion operators and helpers
 
    /// <summary>
+   /// Determines if the passed in value can be converted into the enumerated type.
+   /// </summary>
+   /// <param name="value"></param>
+   /// <returns></returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
+   public new static bool IsValid(ulong value)
+   {
+      return ByValue.ContainsKey(value) || (value & ValidFlags) == value;
+   }
+
+   /// <summary>
    /// Converts a value to a <see cref="FlagEnum{TEnum}" /> instance.
    /// </summary>
    /// <param name="value">The value to convert</param>
@@ -128,16 +139,13 @@ public abstract record FlagEnum<TEnum>
    [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static explicit operator FlagEnum<TEnum>(ulong value)
    {
-      if (ByValue.TryGetValue(value, out var result))
-      {
-         return result;
-      }
-
       // verify that only defined flags are set.
-      if ((value & ValidFlags) != value)
+      if (!IsValid(value))
       {
          throw new ArgumentException($"Cannot convert to {typeof(TEnum)}. Undefined flags in use.", nameof(value));
       }
+
+      return ByValue.TryGetValue(value, out var result) ? result : SynthesizeResult(value);
 
       return SynthesizeResult(value);
    }

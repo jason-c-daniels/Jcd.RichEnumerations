@@ -50,8 +50,8 @@
          <PrivateAssets>all</PrivateAssets>
          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
-      <PackageReference Include="Jcd.BitManipulation" Version="3.0.121"/>
-      <PackageReference Include="SonarAnalyzer.CSharp" Version="9.23.2.88755">
+      <PackageReference Include="Jcd.BitManipulation" Version="3.0.124" />
+      <PackageReference Include="SonarAnalyzer.CSharp" Version="9.30.0.95878">
          <PrivateAssets>all</PrivateAssets>
          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>

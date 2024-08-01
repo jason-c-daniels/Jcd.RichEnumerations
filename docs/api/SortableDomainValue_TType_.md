@@ -3,7 +3,7 @@
 
 ## SortableDomainValue<TType> Class
 
-A helper interface to enable building auto casting into the data type aware `SortableRichEnum{TValue,TEnum}`  
+A helper interface to enable building auto casting into the data type aware `SortableRichEnum{TValue,TEnum}`
 types. This helps minimize boilerplate code.
 
 ```csharp

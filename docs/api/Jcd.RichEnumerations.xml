@@ -116,6 +116,13 @@
             Indicates if the instance was synthesized from the individual set bits.
             </summary>
         </member>
+        <member name="M:Jcd.RichEnumerations.Classes.FlagEnum`1.IsValid(System.UInt64)">
+            <summary>
+            Determines if the passed in value can be converted into the enumerated type.
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
         <member name="M:Jcd.RichEnumerations.Classes.FlagEnum`1.op_Explicit(System.UInt64)~Jcd.RichEnumerations.Classes.FlagEnum{`0}">
             <summary>
             Converts a value to a <see cref="T:Jcd.RichEnumerations.Classes.FlagEnum`1" /> instance.
@@ -219,6 +226,13 @@
         </member>
         <member name="M:Jcd.RichEnumerations.Classes.RichEnumBase`3.#ctor">
             <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.RichEnumBase`3.IsValid(`0)">
+            <summary>
+            Determines if the passed in value can be converted into the enumerated type.
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
         </member>
         <member name="P:Jcd.RichEnumerations.Classes.RichEnumBase`3.ByValue">
             <summary>
@@ -411,10 +425,10 @@
             <inheritdoc />
         </member>
         <member name="T:Jcd.RichEnumerations.Classes.SortableDomainValue`2">
-            <inheritdoc  />
+            <inheritdoc />
         </member>
         <member name="M:Jcd.RichEnumerations.Classes.SortableDomainValue`2.#ctor(`0)">
-            <inheritdoc  />
+            <inheritdoc />
         </member>
         <member name="M:Jcd.RichEnumerations.Classes.SortableDomainValue`2.ToString">
             <inheritdoc />
@@ -526,6 +540,13 @@
         </member>
         <member name="M:Jcd.RichEnumerations.Classes.SortableRichEnumBase`3.#ctor">
             <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Classes.SortableRichEnumBase`3.IsValid(`0)">
+            <summary>
+            Determines if the passed in value can be converted into the enumerated type.
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
         </member>
         <member name="P:Jcd.RichEnumerations.Classes.SortableRichEnumBase`3.ByValue">
             <summary>
@@ -1234,6 +1255,13 @@
             <param name="other">The other instance to compare to</param>
             <returns>True if equivalent.</returns>
         </member>
+        <member name="M:Jcd.RichEnumerations.Records.FlagEnum`1.IsValid(System.UInt64)">
+            <summary>
+            Determines if the passed in value can be converted into the enumerated type.
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
         <member name="M:Jcd.RichEnumerations.Records.FlagEnum`1.op_Explicit(System.UInt64)~Jcd.RichEnumerations.Records.FlagEnum{`0}">
             <summary>
             Converts a value to a <see cref="T:Jcd.RichEnumerations.Records.FlagEnum`1" /> instance.
@@ -1326,6 +1354,13 @@
         <member name="M:Jcd.RichEnumerations.Records.RichEnumBase`3.#ctor">
             <inheritdoc />
         </member>
+        <member name="M:Jcd.RichEnumerations.Records.RichEnumBase`3.IsValid(`0)">
+            <summary>
+            Determines if the passed in value can be converted into the enumerated type.
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
         <member name="P:Jcd.RichEnumerations.Records.RichEnumBase`3.ByValue">
             <summary>
             A lookup of enumerated elements by their Value property.
@@ -1407,10 +1442,10 @@
             <inheritdoc />
         </member>
         <member name="T:Jcd.RichEnumerations.Records.SortableDomainValue`2">
-            <inheritdoc  />
+            <inheritdoc />
         </member>
         <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`2.#ctor(`0)">
-            <inheritdoc  />
+            <inheritdoc />
         </member>
         <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`2.ToString">
             <inheritdoc />
@@ -1502,6 +1537,13 @@
         </member>
         <member name="M:Jcd.RichEnumerations.Records.SortableRichEnumBase`3.#ctor">
             <inheritdoc />
+        </member>
+        <member name="M:Jcd.RichEnumerations.Records.SortableRichEnumBase`3.IsValid(`0)">
+            <summary>
+            Determines if the passed in value can be converted into the enumerated type.
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
         </member>
         <member name="P:Jcd.RichEnumerations.Records.SortableRichEnumBase`3.ByValue">
             <summary>

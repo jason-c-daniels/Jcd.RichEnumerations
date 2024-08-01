@@ -3,9 +3,9 @@
 
 ## DomainValue<TValue,TType> Class
 
-A [DomainValue&lt;TValue,TType&gt;](DomainValue_TValue,TType_.md 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>') is an open set of values which may  
-share an underlying integral data type with others, but need semantic separation,  
-such as database row identifier columns. Using these prevents accidentally using  
+A [DomainValue&lt;TValue,TType&gt;](DomainValue_TValue,TType_.md 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>') is an open set of values which may
+share an underlying integral data type with others, but need semantic separation,
+such as database row identifier columns. Using these prevents accidentally using
 one in place of another.
 
 ```csharp
@@ -31,15 +31,15 @@ The domain specific type.
 
 Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.Object 'System.Object') &#129106; DomainValue<TValue,TType>
 
-Derived  
-&#8627; [DomainValue&lt;TType&gt;](DomainValue_TType_.md 'Jcd.RichEnumerations.Classes.DomainValue<TType>')  
+Derived
+&#8627; [DomainValue&lt;TType&gt;](DomainValue_TType_.md 'Jcd.RichEnumerations.Classes.DomainValue<TType>')
 &#8627; [SortableDomainValue&lt;TValue,TType&gt;](SortableDomainValue_TValue,TType_.md 'Jcd.RichEnumerations.Classes.SortableDomainValue<TValue,TType>')
 
 Implements [System.IEquatable&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1 'System.IEquatable`1')[TType](DomainValue_TValue,TType_.md#Jcd.RichEnumerations.Classes.DomainValue_TValue,TType_.TType 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>.TType')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1 'System.IEquatable`1'), [Jcd.RichEnumerations.IValueProvider&lt;](IValueProvider_TValue_.md 'Jcd.RichEnumerations.IValueProvider<TValue>')[TValue](DomainValue_TValue,TType_.md#Jcd.RichEnumerations.Classes.DomainValue_TValue,TType_.TValue 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>.TValue')[&gt;](IValueProvider_TValue_.md 'Jcd.RichEnumerations.IValueProvider<TValue>')
 
 | Constructors | |
 | :--- | :--- |
-| [DomainValue(TValue)](DomainValue_TValue,TType_..ctor.pdD4bGVOjqBWvmsG6jik6w.md 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>.DomainValue(TValue)') | A [DomainValue&lt;TValue,TType&gt;](DomainValue_TValue,TType_.md 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>') is an open set of values which may<br/>share an underlying integral data type with others, but need semantic separation,<br/>such as database row identifier columns. Using these prevents accidentally using<br/>one in place of another. |
+| [DomainValue(TValue)](DomainValue_TValue,TType_..ctor.pdD4bGVOjqBWvmsG6jik6w.md 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>.DomainValue(TValue)') | A [DomainValue&lt;TValue,TType&gt;](DomainValue_TValue,TType_.md 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>') is an open set of values which may share an underlying integral data type with others, but need semantic separation, such as database row identifier columns. Using these prevents accidentally using one in place of another. |
 
 | Properties | |
 | :--- | :--- |
@@ -47,7 +47,7 @@ Implements [System.IEquatable&lt;](https://docs.microsoft.com/en-us/dotnet/api/S
 
 | Methods | |
 | :--- | :--- |
-| [Equals(TType)](DomainValue_TValue,TType_.Equals.5RfNM7UGeXDCjRoptYHSlQ.md 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>.Equals(TType)') | Compares the Value of the current [DomainValue&lt;TValue,TType&gt;](DomainValue_TValue,TType_.md 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>') instance to the target instance for<br/>equality. |
+| [Equals(TType)](DomainValue_TValue,TType_.Equals.5RfNM7UGeXDCjRoptYHSlQ.md 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>.Equals(TType)') | Compares the Value of the current [DomainValue&lt;TValue,TType&gt;](DomainValue_TValue,TType_.md 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>') instance to the target instance for equality. |
 
 | Operators | |
 | :--- | :--- |

@@ -3,7 +3,7 @@
 
 ## NamedAndDescribedSortableRichEnum(int, string, string) Constructor
 
-A [SortableRichEnum&lt;TValue,TEnum&gt;](SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>')  with Name and Description properties. The type of the Value  
+A [SortableRichEnum&lt;TValue,TEnum&gt;](SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TValue,TEnum>')  with Name and Description properties. The type of the Value
 property is [System.Int32](https://docs.microsoft.com/en-us/dotnet/api/System.Int32 'System.Int32').
 
 ```csharp

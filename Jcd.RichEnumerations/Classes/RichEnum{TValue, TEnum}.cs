@@ -25,7 +25,7 @@ namespace Jcd.RichEnumerations.Classes;
 /// {
 ///      public static readonly MyRichEnum Item1 = new (1.0f, "First Item");
 ///      public static readonly MyRichEnum Item2 = new (2.1f, "Second Item");
-/// 
+///
 ///      public string CustomText => customText;
 /// }
 /// </code>
@@ -46,9 +46,9 @@ public abstract class RichEnum<TValue, TEnum>(TValue value) : RichEnumValue<TVal
    [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static explicit operator RichEnum<TValue, TEnum>(TValue value)
    {
-      if (ByValue.TryGetValue(value, out var result))
+      if (IsValid(value))
       {
-         return result;
+         return ByValue[value];
       }
 
       throw new ArgumentException($"Cannot convert to {typeof(TEnum)}. Invalid value.", nameof(value));

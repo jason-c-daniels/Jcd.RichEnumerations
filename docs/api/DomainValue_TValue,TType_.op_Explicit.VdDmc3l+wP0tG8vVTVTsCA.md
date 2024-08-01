@@ -17,5 +17,5 @@ public static TValue explicit operator TValue(Jcd.RichEnumerations.Classes.Domai
 The [DomainValue&lt;TValue,TType&gt;](DomainValue_TValue,TType_.md 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>') instance.
 
 #### Returns
-[TValue](DomainValue_TValue,TType_.md#Jcd.RichEnumerations.Classes.DomainValue_TValue,TType_.TValue 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>.TValue')  
+[TValue](DomainValue_TValue,TType_.md#Jcd.RichEnumerations.Classes.DomainValue_TValue,TType_.TValue 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>.TValue')
 The .Value of the [DomainValue&lt;TValue,TType&gt;](DomainValue_TValue,TType_.md 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>') instance

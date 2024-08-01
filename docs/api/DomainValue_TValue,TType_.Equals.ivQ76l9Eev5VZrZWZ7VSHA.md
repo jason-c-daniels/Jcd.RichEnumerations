@@ -3,7 +3,7 @@
 
 ## DomainValue<TValue,TType>.Equals(TType) Method
 
-Compares the Value of the current [DomainValue&lt;TValue,TType&gt;](DomainValue_TValue,TType_.md 'Jcd.RichEnumerations.Records.DomainValue<TValue,TType>') instance to the target instance for  
+Compares the Value of the current [DomainValue&lt;TValue,TType&gt;](DomainValue_TValue,TType_.md 'Jcd.RichEnumerations.Records.DomainValue<TValue,TType>') instance to the target instance for
 equality.
 
 ```csharp
@@ -18,5 +18,5 @@ public virtual bool Equals(TType? other);
 The other instance to compare to
 
 #### Returns
-[System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean')  
+[System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean')
 True if equivalent.

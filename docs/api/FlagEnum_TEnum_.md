@@ -31,6 +31,7 @@ Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.O
 
 | Methods | |
 | :--- | :--- |
+| [IsValid(ulong)](FlagEnum_TEnum_.IsValid.qUYVl2ySSFHz/qsipsQXcA.md 'Jcd.RichEnumerations.Classes.FlagEnum<TEnum>.IsValid(ulong)') | Determines if the passed in value can be converted into the enumerated type. |
 | [SynthesizeName(ulong)](FlagEnum_TEnum_.SynthesizeName.TqJh0YeF2TizdJMs5fvqdw.md 'Jcd.RichEnumerations.Classes.FlagEnum<TEnum>.SynthesizeName(ulong)') | Creates the name for a synthesized instance. |
 | [SynthesizeResult(ulong)](FlagEnum_TEnum_.SynthesizeResult.tqUTg8phGJTEaWkxFGhU0g.md 'Jcd.RichEnumerations.Classes.FlagEnum<TEnum>.SynthesizeResult(ulong)') | Creates a new instance of the derived type. |
 

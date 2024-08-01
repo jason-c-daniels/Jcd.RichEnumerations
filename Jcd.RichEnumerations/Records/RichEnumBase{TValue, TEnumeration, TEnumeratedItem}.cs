@@ -44,6 +44,15 @@ public abstract record RichEnumBase<TValue, TEnumeration, TEnumeratedItem> : Ric
    }
 
    /// <summary>
+   /// Determines if the passed in value can be converted into the enumerated type.
+   /// </summary>
+   /// <param name="value"></param>
+   /// <returns></returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
+   public static bool IsValid(TValue value)
+      => ByValue.ContainsKey(value);
+
+   /// <summary>
    /// A lookup of enumerated elements by their Value property.
    /// Useful for implementing conversion operators.
    /// </summary>
