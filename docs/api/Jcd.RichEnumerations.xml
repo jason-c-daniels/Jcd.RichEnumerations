@@ -1170,6 +1170,9 @@
         <member name="M:Jcd.RichEnumerations.Records.DomainValue`1.GetHashCode">
             <inheritdoc />
         </member>
+        <member name="M:Jcd.RichEnumerations.Records.DomainValue`1.Equals(`0)">
+            <inheritdoc />
+        </member>
         <member name="T:Jcd.RichEnumerations.Records.DomainValue`2">
             <summary>
             A <see cref="T:Jcd.RichEnumerations.Records.DomainValue`2" /> is an open set of values which may
@@ -1201,9 +1204,6 @@
             </summary>
             <param name="e">The <see cref="T:Jcd.RichEnumerations.Records.DomainValue`2" /> instance.</param>
             <returns>The .Value of the <see cref="T:Jcd.RichEnumerations.Records.DomainValue`2" /> instance</returns>
-        </member>
-        <member name="M:Jcd.RichEnumerations.Records.DomainValue`2.ToString">
-            <inheritdoc />
         </member>
         <member name="M:Jcd.RichEnumerations.Records.DomainValue`2.GetHashCode">
             <inheritdoc />
@@ -1435,19 +1435,16 @@
         <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`1.#ctor(System.Int32)">
             <inheritdoc />
         </member>
-        <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`1.ToString">
-            <inheritdoc />
-        </member>
         <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`1.GetHashCode">
             <inheritdoc />
         </member>
-        <member name="T:Jcd.RichEnumerations.Records.SortableDomainValue`2">
+        <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`1.Equals(`0)">
             <inheritdoc />
+        </member>
+        <member name="T:Jcd.RichEnumerations.Records.SortableDomainValue`2">
+            <inheritdoc cref="T:Jcd.RichEnumerations.Records.DomainValue`2" />
         </member>
         <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`2.#ctor(`0)">
-            <inheritdoc />
-        </member>
-        <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`2.ToString">
             <inheritdoc />
         </member>
         <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`2.GetHashCode">
@@ -1457,7 +1454,7 @@
             <inheritdoc />
         </member>
         <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`2.CompareTo(Jcd.RichEnumerations.Records.SortableDomainValue{`0,`1})">
-            <inheritdoc />
+            <inheritdoc cref="T:Jcd.RichEnumerations.Records.SortableDomainValue`2" />
         </member>
         <member name="M:Jcd.RichEnumerations.Records.SortableDomainValue`2.op_LessThan(Jcd.RichEnumerations.Records.SortableDomainValue{`0,`1},Jcd.RichEnumerations.Records.SortableDomainValue{`0,`1})">
             <summary>

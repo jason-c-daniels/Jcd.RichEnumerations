@@ -16,25 +16,25 @@ namespace Jcd.RichEnumerations.Records;
 /// {
 ///      public static readonly MySortableRichEnum Item1 = new (1, "First Item");
 ///      public static readonly MySortableRichEnum Item2 = new (-1, "Second Item");
-///
+/// 
 ///      public string CustomText => customText;
 /// }
-///
+/// 
 /// // ...
 /// class Program
 /// {
 ///    public void Main()
 ///    {
 ///       // Call .Sort during app startup.
-///
+/// 
 ///       // This sorts numerically, ascending.
 ///       MySortableRichEnum.Sort();
-///
+/// 
 ///       // This sorts numerically, descending.
 ///       MySortableRichEnum.Sort((x,y) => y.Value.CompareTo(x.Value));
 ///    }
 /// }
-///
+/// 
 /// </code>
 /// </example>
 public abstract record SortableRichEnum<TEnum> : SortableRichEnum<int, TEnum>

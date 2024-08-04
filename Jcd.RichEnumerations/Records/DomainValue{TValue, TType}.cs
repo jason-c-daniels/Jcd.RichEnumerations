@@ -62,13 +62,6 @@ public record DomainValue<TValue, TType>
 
    /// <inheritdoc />
    [MethodImpl(MethodImplOptions.AggressiveInlining)]
-   public override string ToString()
-   {
-      return Value.ToString();
-   }
-
-   /// <inheritdoc />
-   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public override int GetHashCode()
    {
       return Value.GetHashCode() ^ GetType().GetHashCode();

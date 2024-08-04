@@ -18,15 +18,15 @@ public abstract record SortableDomainValue<TType> : SortableDomainValue<int, TTy
 
    /// <inheritdoc />
    [MethodImpl(MethodImplOptions.AggressiveInlining)]
-   public override string ToString()
+   public override int GetHashCode()
    {
-      return Value.ToString();
+      return Value.GetHashCode() ^ GetType().GetHashCode();
    }
 
    /// <inheritdoc />
    [MethodImpl(MethodImplOptions.AggressiveInlining)]
-   public override int GetHashCode()
+   public override bool Equals(TType? other)
    {
-      return Value.GetHashCode() ^ GetType().GetHashCode();
+      return base.Equals(other);
    }
 }

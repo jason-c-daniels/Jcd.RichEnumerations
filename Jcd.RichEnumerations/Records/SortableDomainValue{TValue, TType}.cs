@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 
 namespace Jcd.RichEnumerations.Records;
 
-/// <inheritdoc />
+/// <inheritdoc cref="Jcd.RichEnumerations.Records.DomainValue{TValue,TType}" />
 public abstract record SortableDomainValue<TValue, TType>
    : DomainValue<TValue, TType>
    , ISortableValueProvider<TValue>
@@ -25,13 +25,6 @@ public abstract record SortableDomainValue<TValue, TType>
 
    /// <inheritdoc />
    [MethodImpl(MethodImplOptions.AggressiveInlining)]
-   public override string ToString()
-   {
-      return Value.ToString();
-   }
-
-   /// <inheritdoc />
-   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public override int GetHashCode()
    {
       return Value.GetHashCode() ^ GetType().GetHashCode();
@@ -44,7 +37,7 @@ public abstract record SortableDomainValue<TValue, TType>
       return CompareTo((SortableDomainValue<TValue, TType>) other);
    }
 
-   /// <inheritdoc />
+   /// <inheritdoc cref="SortableDomainValue{TValue, TType}" />
    [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public int CompareTo(SortableDomainValue<TValue, TType>? other)
    {

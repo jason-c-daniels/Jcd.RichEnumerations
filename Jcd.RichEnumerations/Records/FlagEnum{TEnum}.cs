@@ -145,7 +145,9 @@ public abstract record FlagEnum<TEnum>
          throw new ArgumentException($"Cannot convert to {typeof(TEnum)}. Undefined flags in use.", nameof(value));
       }
 
-      return ByValue.TryGetValue(value, out var result) ? result : SynthesizeResult(value);
+      return ByValue.TryGetValue(value, out var result)
+                ? result
+                : SynthesizeResult(value);
 
       return SynthesizeResult(value);
    }

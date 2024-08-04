@@ -58,6 +58,17 @@ public class RichEnumTests
    }
 
    [Theory]
+   [InlineData(1,  true)]
+   [InlineData(2,  true)]
+   [InlineData(4,  false)]
+   [InlineData(5,  false)]
+   [InlineData(10, true)]
+   public void IsValid_Returns_The_Expected_Result(int value, bool expected)
+   {
+      Assert.Equal(expected, MySimpleEnum.IsValid(value));
+   }
+
+   [Theory]
    [InlineData(3,  "3")]
    [InlineData(2,  "2")]
    [InlineData(10, "10")]

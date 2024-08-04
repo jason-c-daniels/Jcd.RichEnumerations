@@ -131,7 +131,9 @@ public abstract class FlagEnum<TEnum> : RichEnumValue<ulong, TEnum>
          throw new ArgumentException($"Cannot convert to {typeof(TEnum)}. Undefined flags in use.", nameof(value));
       }
 
-      return ByValue.TryGetValue(value, out var result) ? result : SynthesizeResult(value);
+      return ByValue.TryGetValue(value, out var result)
+                ? result
+                : SynthesizeResult(value);
    }
 
    /// <summary>

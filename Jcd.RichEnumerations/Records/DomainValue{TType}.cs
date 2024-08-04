@@ -29,4 +29,11 @@ public abstract record DomainValue<TType> : DomainValue<int, TType>
    {
       return base.GetHashCode();
    }
+
+   /// <inheritdoc />
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
+   public override bool Equals(TType? other)
+   {
+      return base.Equals(other);
+   }
 }
