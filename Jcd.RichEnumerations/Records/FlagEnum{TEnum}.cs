@@ -206,21 +206,33 @@ public abstract record FlagEnum<TEnum>
       return name;
    }
 
-   private static bool validFlagsSet;
+   private static bool areValidFlagsSet;
    private static ulong validFlags;
 
    private static ulong ValidFlags
    {
       get
       {
-         if (!validFlagsSet)
+         if (!areValidFlagsSet)
          {
-            validFlags = All.Aggregate(0ul, (x, y) => x | y.Value);
-            validFlagsSet = true;
+            SetValidFlags();
          }
 
          return validFlags;
       }
+   }
+
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
+   private static void SetValidFlags()
+   {
+      validFlags = 0;
+
+      for (var i = 0; i < All.Count; i++)
+      {
+         validFlags |= All[i];
+      }
+
+      areValidFlagsSet = true;
    }
 
    #endregion

@@ -170,20 +170,20 @@
             <returns>The result of the OR</returns>
         </member>
         <member name="T:Jcd.RichEnumerations.Classes.NamespaceDoc">
-             <summary>
-             Provides plain old classes to simplify creating and using DDD-style Rich Enumerations.
-             </summary>
-             <example>
-             <code>
-             public class MyRichEnum(int value, string customText) : RichEnum&lt;MyRichEnum&gt;(value)
-             {
-                  public static readonly MyRichEnum Item1 = new (1, "First Item");
-                  public static readonly MyRichEnum Item2 = new (2, "Second Item");
+            <summary>
+            Provides plain old classes to simplify creating and using DDD-style Rich Enumerations.
+            </summary>
+            <example>
+            <code>
+            public class MyRichEnum(int value, string customText) : RichEnum&lt;MyRichEnum&gt;(value)
+            {
+                 public static readonly MyRichEnum Item1 = new (1, "First Item");
+                 public static readonly MyRichEnum Item2 = new (2, "Second Item");
             
-                  public string CustomText => customText;
-             }
-             </code>
-             </example>
+                 public string CustomText => customText;
+            }
+            </code>
+            </example>
         </member>
         <member name="T:Jcd.RichEnumerations.Classes.RichEnumBase`2">
             <summary>
@@ -241,46 +241,46 @@
             <returns></returns>
         </member>
         <member name="T:Jcd.RichEnumerations.Classes.RichEnumValue`2">
-             <summary>
-             A <see cref="T:Jcd.RichEnumerations.Classes.RichEnumValue`2" /> with Value as a user defined type.
-             </summary>
-             <typeparam name="TEnum">
-             The enumeration type. This will contain both the structure definition and the enumeration
-             entries as public static readonly fields.
-             </typeparam>
-             <typeparam name="TValue">The data type for .Value</typeparam>
-             <example>
-             <code>
-             public class MyRichEnum(float value, string customText) : RichEnum&lt;float,MyRichEnum&gt;(value)
-             {
-                  public static readonly MyRichEnum Item1 = new (1.0f, "First Item");
-                  public static readonly MyRichEnum Item2 = new (2.1f, "Second Item");
+            <summary>
+            A <see cref="T:Jcd.RichEnumerations.Classes.RichEnumValue`2" /> with Value as a user defined type.
+            </summary>
+            <typeparam name="TEnum">
+            The enumeration type. This will contain both the structure definition and the enumeration
+            entries as public static readonly fields.
+            </typeparam>
+            <typeparam name="TValue">The data type for .Value</typeparam>
+            <example>
+            <code>
+            public class MyRichEnum(float value, string customText) : RichEnum&lt;float,MyRichEnum&gt;(value)
+            {
+                 public static readonly MyRichEnum Item1 = new (1.0f, "First Item");
+                 public static readonly MyRichEnum Item2 = new (2.1f, "Second Item");
             
-                  public string CustomText => customText;
-             }
-             </code>
-             </example>
+                 public string CustomText => customText;
+            }
+            </code>
+            </example>
         </member>
         <member name="M:Jcd.RichEnumerations.Classes.RichEnumValue`2.#ctor(`0)">
-             <summary>
-             A <see cref="T:Jcd.RichEnumerations.Classes.RichEnumValue`2" /> with Value as a user defined type.
-             </summary>
-             <typeparam name="TEnum">
-             The enumeration type. This will contain both the structure definition and the enumeration
-             entries as public static readonly fields.
-             </typeparam>
-             <typeparam name="TValue">The data type for .Value</typeparam>
-             <example>
-             <code>
-             public class MyRichEnum(float value, string customText) : RichEnum&lt;float,MyRichEnum&gt;(value)
-             {
-                  public static readonly MyRichEnum Item1 = new (1.0f, "First Item");
-                  public static readonly MyRichEnum Item2 = new (2.1f, "Second Item");
+            <summary>
+            A <see cref="T:Jcd.RichEnumerations.Classes.RichEnumValue`2" /> with Value as a user defined type.
+            </summary>
+            <typeparam name="TEnum">
+            The enumeration type. This will contain both the structure definition and the enumeration
+            entries as public static readonly fields.
+            </typeparam>
+            <typeparam name="TValue">The data type for .Value</typeparam>
+            <example>
+            <code>
+            public class MyRichEnum(float value, string customText) : RichEnum&lt;float,MyRichEnum&gt;(value)
+            {
+                 public static readonly MyRichEnum Item1 = new (1.0f, "First Item");
+                 public static readonly MyRichEnum Item2 = new (2.1f, "Second Item");
             
-                  public string CustomText => customText;
-             }
-             </code>
-             </example>
+                 public string CustomText => customText;
+            }
+            </code>
+            </example>
         </member>
         <member name="P:Jcd.RichEnumerations.Classes.RichEnumValue`2.Value">
             <summary>
@@ -328,86 +328,86 @@
             <returns>True if not equivalent.</returns>
         </member>
         <member name="T:Jcd.RichEnumerations.Classes.RichEnum`1">
-             <summary>
-             A <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2" /> with TValue set to int.
-             </summary>
-             <typeparam name="TEnum">
-             The enumeration type. This will contain both the structure definition and the enumeration
-             entries as public static readonly fields.
-             </typeparam>
-             <example>
-             <code>
-             public class MyRichEnum(int value, string customText) : RichEnum&lt;MyRichEnum&gt;(value)
-             {
-                  public static readonly MyRichEnum Item1 = new (1, "First Item");
-                  public static readonly MyRichEnum Item2 = new (2, "Second Item");
+            <summary>
+            A <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2" /> with TValue set to int.
+            </summary>
+            <typeparam name="TEnum">
+            The enumeration type. This will contain both the structure definition and the enumeration
+            entries as public static readonly fields.
+            </typeparam>
+            <example>
+            <code>
+            public class MyRichEnum(int value, string customText) : RichEnum&lt;MyRichEnum&gt;(value)
+            {
+                 public static readonly MyRichEnum Item1 = new (1, "First Item");
+                 public static readonly MyRichEnum Item2 = new (2, "Second Item");
             
-                  public string CustomText => customText;
-             }
-             </code>
-             </example>
+                 public string CustomText => customText;
+            }
+            </code>
+            </example>
         </member>
         <member name="M:Jcd.RichEnumerations.Classes.RichEnum`1.#ctor(System.Int32)">
-             <summary>
-             A <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2" /> with TValue set to int.
-             </summary>
-             <typeparam name="TEnum">
-             The enumeration type. This will contain both the structure definition and the enumeration
-             entries as public static readonly fields.
-             </typeparam>
-             <example>
-             <code>
-             public class MyRichEnum(int value, string customText) : RichEnum&lt;MyRichEnum&gt;(value)
-             {
-                  public static readonly MyRichEnum Item1 = new (1, "First Item");
-                  public static readonly MyRichEnum Item2 = new (2, "Second Item");
+            <summary>
+            A <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2" /> with TValue set to int.
+            </summary>
+            <typeparam name="TEnum">
+            The enumeration type. This will contain both the structure definition and the enumeration
+            entries as public static readonly fields.
+            </typeparam>
+            <example>
+            <code>
+            public class MyRichEnum(int value, string customText) : RichEnum&lt;MyRichEnum&gt;(value)
+            {
+                 public static readonly MyRichEnum Item1 = new (1, "First Item");
+                 public static readonly MyRichEnum Item2 = new (2, "Second Item");
             
-                  public string CustomText => customText;
-             }
-             </code>
-             </example>
+                 public string CustomText => customText;
+            }
+            </code>
+            </example>
         </member>
         <member name="T:Jcd.RichEnumerations.Classes.RichEnum`2">
-             <summary>
-             A <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2" /> with Value as a user defined type.
-             </summary>
-             <typeparam name="TEnum">
-             The enumeration type. This will contain both the structure definition and the enumeration
-             entries as public static readonly fields.
-             </typeparam>
-             <typeparam name="TValue">The data type for .Value</typeparam>
-             <example>
-             <code>
-             public class MyRichEnum(float value, string customText) : RichEnum&lt;float,MyRichEnum&gt;(value)
-             {
-                  public static readonly MyRichEnum Item1 = new (1.0f, "First Item");
-                  public static readonly MyRichEnum Item2 = new (2.1f, "Second Item");
+            <summary>
+            A <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2" /> with Value as a user defined type.
+            </summary>
+            <typeparam name="TEnum">
+            The enumeration type. This will contain both the structure definition and the enumeration
+            entries as public static readonly fields.
+            </typeparam>
+            <typeparam name="TValue">The data type for .Value</typeparam>
+            <example>
+            <code>
+            public class MyRichEnum(float value, string customText) : RichEnum&lt;float,MyRichEnum&gt;(value)
+            {
+                 public static readonly MyRichEnum Item1 = new (1.0f, "First Item");
+                 public static readonly MyRichEnum Item2 = new (2.1f, "Second Item");
             
-                  public string CustomText => customText;
-             }
-             </code>
-             </example>
+                 public string CustomText => customText;
+            }
+            </code>
+            </example>
         </member>
         <member name="M:Jcd.RichEnumerations.Classes.RichEnum`2.#ctor(`0)">
-             <summary>
-             A <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2" /> with Value as a user defined type.
-             </summary>
-             <typeparam name="TEnum">
-             The enumeration type. This will contain both the structure definition and the enumeration
-             entries as public static readonly fields.
-             </typeparam>
-             <typeparam name="TValue">The data type for .Value</typeparam>
-             <example>
-             <code>
-             public class MyRichEnum(float value, string customText) : RichEnum&lt;float,MyRichEnum&gt;(value)
-             {
-                  public static readonly MyRichEnum Item1 = new (1.0f, "First Item");
-                  public static readonly MyRichEnum Item2 = new (2.1f, "Second Item");
+            <summary>
+            A <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2" /> with Value as a user defined type.
+            </summary>
+            <typeparam name="TEnum">
+            The enumeration type. This will contain both the structure definition and the enumeration
+            entries as public static readonly fields.
+            </typeparam>
+            <typeparam name="TValue">The data type for .Value</typeparam>
+            <example>
+            <code>
+            public class MyRichEnum(float value, string customText) : RichEnum&lt;float,MyRichEnum&gt;(value)
+            {
+                 public static readonly MyRichEnum Item1 = new (1.0f, "First Item");
+                 public static readonly MyRichEnum Item2 = new (2.1f, "Second Item");
             
-                  public string CustomText => customText;
-             }
-             </code>
-             </example>
+                 public string CustomText => customText;
+            }
+            </code>
+            </example>
         </member>
         <member name="M:Jcd.RichEnumerations.Classes.RichEnum`2.op_Explicit(`0)~Jcd.RichEnumerations.Classes.RichEnum{`0,`1}">
             <summary>
@@ -555,74 +555,74 @@
             <returns></returns>
         </member>
         <member name="T:Jcd.RichEnumerations.Classes.SortableRichEnumValue`2">
-             <summary>
-             A base for sortable rich enumerations. This type provides a hook to sort the <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2" />
-             <c>.All</c> collection.
-             <c>.Sort()</c> should be called once and only once during application startup.
-             </summary>
-             <param name="value">The value of the instance. This must be unique.</param>
-             <typeparam name="TEnum">The type deriving from SortableEnum{TEnum}</typeparam>
-             <typeparam name="TValue">The type of the .Value property.</typeparam>
-             <example>
-             <code>
-             public class MySortableRichEnum(float value, string customText) : SortableRichEnumValue&lt;float,MySortableRichEnum&gt;(value)
-             {
-                  public static readonly MySortableRichEnum Item1 = new (0.1f, "First Item");
-                  public static readonly MySortableRichEnum Item2 = new (-0.1f, "Second Item");
+            <summary>
+            A base for sortable rich enumerations. This type provides a hook to sort the <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2" />
+            <c>.All</c> collection.
+            <c>.Sort()</c> should be called once and only once during application startup.
+            </summary>
+            <param name="value">The value of the instance. This must be unique.</param>
+            <typeparam name="TEnum">The type deriving from SortableEnum{TEnum}</typeparam>
+            <typeparam name="TValue">The type of the .Value property.</typeparam>
+            <example>
+            <code>
+            public class MySortableRichEnum(float value, string customText) : SortableRichEnumValue&lt;float,MySortableRichEnum&gt;(value)
+            {
+                 public static readonly MySortableRichEnum Item1 = new (0.1f, "First Item");
+                 public static readonly MySortableRichEnum Item2 = new (-0.1f, "Second Item");
             
-                  public string CustomText => customText;
-             }
+                 public string CustomText => customText;
+            }
             
-             class Program
-             {
-                public void Main()
-                {
-                   // Call Sort() during app startup.
+            class Program
+            {
+               public void Main()
+               {
+                  // Call Sort() during app startup.
             
-                   // This sorts numerically, ascending.
-                   MySortableRichEnum.Sort();
+                  // This sorts numerically, ascending.
+                  MySortableRichEnum.Sort();
             
-                   // This sorts numerically, descending.
-                   MySortableRichEnum.Sort((x,y) => y.Value.CompareTo(x.Value));
-                }
-             }
-             </code>
-             </example>
+                  // This sorts numerically, descending.
+                  MySortableRichEnum.Sort((x,y) => y.Value.CompareTo(x.Value));
+               }
+            }
+            </code>
+            </example>
         </member>
         <member name="M:Jcd.RichEnumerations.Classes.SortableRichEnumValue`2.#ctor(`0)">
-             <summary>
-             A base for sortable rich enumerations. This type provides a hook to sort the <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2" />
-             <c>.All</c> collection.
-             <c>.Sort()</c> should be called once and only once during application startup.
-             </summary>
-             <param name="value">The value of the instance. This must be unique.</param>
-             <typeparam name="TEnum">The type deriving from SortableEnum{TEnum}</typeparam>
-             <typeparam name="TValue">The type of the .Value property.</typeparam>
-             <example>
-             <code>
-             public class MySortableRichEnum(float value, string customText) : SortableRichEnumValue&lt;float,MySortableRichEnum&gt;(value)
-             {
-                  public static readonly MySortableRichEnum Item1 = new (0.1f, "First Item");
-                  public static readonly MySortableRichEnum Item2 = new (-0.1f, "Second Item");
+            <summary>
+            A base for sortable rich enumerations. This type provides a hook to sort the <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2" />
+            <c>.All</c> collection.
+            <c>.Sort()</c> should be called once and only once during application startup.
+            </summary>
+            <param name="value">The value of the instance. This must be unique.</param>
+            <typeparam name="TEnum">The type deriving from SortableEnum{TEnum}</typeparam>
+            <typeparam name="TValue">The type of the .Value property.</typeparam>
+            <example>
+            <code>
+            public class MySortableRichEnum(float value, string customText) : SortableRichEnumValue&lt;float,MySortableRichEnum&gt;(value)
+            {
+                 public static readonly MySortableRichEnum Item1 = new (0.1f, "First Item");
+                 public static readonly MySortableRichEnum Item2 = new (-0.1f, "Second Item");
             
-                  public string CustomText => customText;
-             }
+                 public string CustomText => customText;
+            }
             
-             class Program
-             {
-                public void Main()
-                {
-                   // Call Sort() during app startup.
+            class Program
+            {
+               public void Main()
+               {
+                  // Call Sort() during app startup.
             
-                   // This sorts numerically, ascending.
-                   MySortableRichEnum.Sort();
+                  // This sorts numerically, ascending.
+                  MySortableRichEnum.Sort();
             
-                   // This sorts numerically, descending.
-                   MySortableRichEnum.Sort((x,y) => y.Value.CompareTo(x.Value));
-                }
-             }
-             </code>
-             </example>
+                  // This sorts numerically, descending.
+                  MySortableRichEnum.Sort((x,y) => y.Value.CompareTo(x.Value));
+               }
+            }
+            </code>
+            </example>
         </member>
         <member name="P:Jcd.RichEnumerations.Classes.SortableRichEnumValue`2.Value">
             <inheritdoc />
@@ -712,146 +712,146 @@
             <returns>True if the left hand side is greater than or equal to the right hand side.</returns>
         </member>
         <member name="T:Jcd.RichEnumerations.Classes.SortableRichEnum`1">
-             <summary>
-             A base for sortable rich enumerations. This type provides a hook to sort the <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2" />
-             <c>.All</c> collection.
-             <c>.Sort()</c> should be called once and only once during application startup.
-             </summary>
-             <param name="value">The value of the instance. This must be unique.</param>
-             <typeparam name="TEnum">The type deriving from SortableEnum{TEnum}</typeparam>
-             <example>
-             <code>
-             public class MySortableRichEnum(int value, string customText) : SortableRichEnum&lt;MySortableRichEnum&gt;(value)
-             {
-                  public static readonly MySortableRichEnum Item1 = new (1, "First Item");
-                  public static readonly MySortableRichEnum Item2 = new (-1, "Second Item");
+            <summary>
+            A base for sortable rich enumerations. This type provides a hook to sort the <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2" />
+            <c>.All</c> collection.
+            <c>.Sort()</c> should be called once and only once during application startup.
+            </summary>
+            <param name="value">The value of the instance. This must be unique.</param>
+            <typeparam name="TEnum">The type deriving from SortableEnum{TEnum}</typeparam>
+            <example>
+            <code>
+            public class MySortableRichEnum(int value, string customText) : SortableRichEnum&lt;MySortableRichEnum&gt;(value)
+            {
+                 public static readonly MySortableRichEnum Item1 = new (1, "First Item");
+                 public static readonly MySortableRichEnum Item2 = new (-1, "Second Item");
             
-                  public string CustomText => customText;
-             }
+                 public string CustomText => customText;
+            }
             
-             // ...
-             class Program
-             {
-                public void Main()
-                {
-                   // Call .Sort during app startup.
+            // ...
+            class Program
+            {
+               public void Main()
+               {
+                  // Call .Sort during app startup.
             
-                   // This sorts numerically, ascending.
-                   MySortableRichEnum.Sort();
+                  // This sorts numerically, ascending.
+                  MySortableRichEnum.Sort();
             
-                   // This sorts numerically, descending.
-                   MySortableRichEnum.Sort((x,y) => y.Value.CompareTo(x.Value));
-                }
-             }
+                  // This sorts numerically, descending.
+                  MySortableRichEnum.Sort((x,y) => y.Value.CompareTo(x.Value));
+               }
+            }
             
-             </code>
-             </example>
+            </code>
+            </example>
         </member>
         <member name="M:Jcd.RichEnumerations.Classes.SortableRichEnum`1.#ctor(System.Int32)">
-             <summary>
-             A base for sortable rich enumerations. This type provides a hook to sort the <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2" />
-             <c>.All</c> collection.
-             <c>.Sort()</c> should be called once and only once during application startup.
-             </summary>
-             <param name="value">The value of the instance. This must be unique.</param>
-             <typeparam name="TEnum">The type deriving from SortableEnum{TEnum}</typeparam>
-             <example>
-             <code>
-             public class MySortableRichEnum(int value, string customText) : SortableRichEnum&lt;MySortableRichEnum&gt;(value)
-             {
-                  public static readonly MySortableRichEnum Item1 = new (1, "First Item");
-                  public static readonly MySortableRichEnum Item2 = new (-1, "Second Item");
+            <summary>
+            A base for sortable rich enumerations. This type provides a hook to sort the <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2" />
+            <c>.All</c> collection.
+            <c>.Sort()</c> should be called once and only once during application startup.
+            </summary>
+            <param name="value">The value of the instance. This must be unique.</param>
+            <typeparam name="TEnum">The type deriving from SortableEnum{TEnum}</typeparam>
+            <example>
+            <code>
+            public class MySortableRichEnum(int value, string customText) : SortableRichEnum&lt;MySortableRichEnum&gt;(value)
+            {
+                 public static readonly MySortableRichEnum Item1 = new (1, "First Item");
+                 public static readonly MySortableRichEnum Item2 = new (-1, "Second Item");
             
-                  public string CustomText => customText;
-             }
+                 public string CustomText => customText;
+            }
             
-             // ...
-             class Program
-             {
-                public void Main()
-                {
-                   // Call .Sort during app startup.
+            // ...
+            class Program
+            {
+               public void Main()
+               {
+                  // Call .Sort during app startup.
             
-                   // This sorts numerically, ascending.
-                   MySortableRichEnum.Sort();
+                  // This sorts numerically, ascending.
+                  MySortableRichEnum.Sort();
             
-                   // This sorts numerically, descending.
-                   MySortableRichEnum.Sort((x,y) => y.Value.CompareTo(x.Value));
-                }
-             }
+                  // This sorts numerically, descending.
+                  MySortableRichEnum.Sort((x,y) => y.Value.CompareTo(x.Value));
+               }
+            }
             
-             </code>
-             </example>
+            </code>
+            </example>
         </member>
         <member name="T:Jcd.RichEnumerations.Classes.SortableRichEnum`2">
-             <summary>
-             A base for sortable rich enumerations. This type provides a hook to sort the <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2" />
-             <c>.All</c> collection.
-             <c>.Sort()</c> should be called once and only once during application startup.
-             </summary>
-             <param name="value">The value of the instance. This must be unique.</param>
-             <typeparam name="TEnum">The type deriving from SortableEnum{TEnum}</typeparam>
-             <typeparam name="TValue">The type of the .Value property.</typeparam>
-             <example>
-             <code>
-             public class MySortableRichEnum(float value, string customText) : SortableRichEnum&lt;float,MySortableRichEnum&gt;(value)
-             {
-                  public static readonly MySortableRichEnum Item1 = new (0.1f, "First Item");
-                  public static readonly MySortableRichEnum Item2 = new (-0.1f, "Second Item");
+            <summary>
+            A base for sortable rich enumerations. This type provides a hook to sort the <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2" />
+            <c>.All</c> collection.
+            <c>.Sort()</c> should be called once and only once during application startup.
+            </summary>
+            <param name="value">The value of the instance. This must be unique.</param>
+            <typeparam name="TEnum">The type deriving from SortableEnum{TEnum}</typeparam>
+            <typeparam name="TValue">The type of the .Value property.</typeparam>
+            <example>
+            <code>
+            public class MySortableRichEnum(float value, string customText) : SortableRichEnum&lt;float,MySortableRichEnum&gt;(value)
+            {
+                 public static readonly MySortableRichEnum Item1 = new (0.1f, "First Item");
+                 public static readonly MySortableRichEnum Item2 = new (-0.1f, "Second Item");
             
-                  public string CustomText => customText;
-             }
+                 public string CustomText => customText;
+            }
             
-             class Program
-             {
-                public void Main()
-                {
-                   // Call Sort() during app startup.
+            class Program
+            {
+               public void Main()
+               {
+                  // Call Sort() during app startup.
             
-                   // This sorts numerically, ascending.
-                   MySortableRichEnum.Sort();
+                  // This sorts numerically, ascending.
+                  MySortableRichEnum.Sort();
             
-                   // This sorts numerically, descending.
-                   MySortableRichEnum.Sort((x,y) => y.Value.CompareTo(x.Value));
-                }
-             }
-             </code>
-             </example>
+                  // This sorts numerically, descending.
+                  MySortableRichEnum.Sort((x,y) => y.Value.CompareTo(x.Value));
+               }
+            }
+            </code>
+            </example>
         </member>
         <member name="M:Jcd.RichEnumerations.Classes.SortableRichEnum`2.#ctor(`0)">
-             <summary>
-             A base for sortable rich enumerations. This type provides a hook to sort the <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2" />
-             <c>.All</c> collection.
-             <c>.Sort()</c> should be called once and only once during application startup.
-             </summary>
-             <param name="value">The value of the instance. This must be unique.</param>
-             <typeparam name="TEnum">The type deriving from SortableEnum{TEnum}</typeparam>
-             <typeparam name="TValue">The type of the .Value property.</typeparam>
-             <example>
-             <code>
-             public class MySortableRichEnum(float value, string customText) : SortableRichEnum&lt;float,MySortableRichEnum&gt;(value)
-             {
-                  public static readonly MySortableRichEnum Item1 = new (0.1f, "First Item");
-                  public static readonly MySortableRichEnum Item2 = new (-0.1f, "Second Item");
+            <summary>
+            A base for sortable rich enumerations. This type provides a hook to sort the <see cref="T:Jcd.RichEnumerations.Classes.RichEnum`2" />
+            <c>.All</c> collection.
+            <c>.Sort()</c> should be called once and only once during application startup.
+            </summary>
+            <param name="value">The value of the instance. This must be unique.</param>
+            <typeparam name="TEnum">The type deriving from SortableEnum{TEnum}</typeparam>
+            <typeparam name="TValue">The type of the .Value property.</typeparam>
+            <example>
+            <code>
+            public class MySortableRichEnum(float value, string customText) : SortableRichEnum&lt;float,MySortableRichEnum&gt;(value)
+            {
+                 public static readonly MySortableRichEnum Item1 = new (0.1f, "First Item");
+                 public static readonly MySortableRichEnum Item2 = new (-0.1f, "Second Item");
             
-                  public string CustomText => customText;
-             }
+                 public string CustomText => customText;
+            }
             
-             class Program
-             {
-                public void Main()
-                {
-                   // Call Sort() during app startup.
+            class Program
+            {
+               public void Main()
+               {
+                  // Call Sort() during app startup.
             
-                   // This sorts numerically, ascending.
-                   MySortableRichEnum.Sort();
+                  // This sorts numerically, ascending.
+                  MySortableRichEnum.Sort();
             
-                   // This sorts numerically, descending.
-                   MySortableRichEnum.Sort((x,y) => y.Value.CompareTo(x.Value));
-                }
-             }
-             </code>
-             </example>
+                  // This sorts numerically, descending.
+                  MySortableRichEnum.Sort((x,y) => y.Value.CompareTo(x.Value));
+               }
+            }
+            </code>
+            </example>
         </member>
         <member name="M:Jcd.RichEnumerations.Classes.SortableRichEnum`2.op_Explicit(`0)~Jcd.RichEnumerations.Classes.SortableRichEnum{`0,`1}">
             <summary>
@@ -1621,37 +1621,37 @@
             <returns>True if the left hand side is greater than or equal to the right hand side.</returns>
         </member>
         <member name="T:Jcd.RichEnumerations.Records.SortableRichEnum`1">
-             <summary>
-             A rich enum that can be sorted with a call to <c>.Sort()</c>.
-             </summary>
-             <typeparam name="TEnum">The type deriving from SortableEnum{TEnum}</typeparam>
-             <example>
-             <code>
-             public class MySortableRichEnum(int value, string customText) : SortableRichEnum&lt;MySortableRichEnum&gt;(value)
-             {
-                  public static readonly MySortableRichEnum Item1 = new (1, "First Item");
-                  public static readonly MySortableRichEnum Item2 = new (-1, "Second Item");
+            <summary>
+            A rich enum that can be sorted with a call to <c>.Sort()</c>.
+            </summary>
+            <typeparam name="TEnum">The type deriving from SortableEnum{TEnum}</typeparam>
+            <example>
+            <code>
+            public class MySortableRichEnum(int value, string customText) : SortableRichEnum&lt;MySortableRichEnum&gt;(value)
+            {
+                 public static readonly MySortableRichEnum Item1 = new (1, "First Item");
+                 public static readonly MySortableRichEnum Item2 = new (-1, "Second Item");
             
-                  public string CustomText => customText;
-             }
+                 public string CustomText => customText;
+            }
             
-             // ...
-             class Program
-             {
-                public void Main()
-                {
-                   // Call .Sort during app startup.
+            // ...
+            class Program
+            {
+               public void Main()
+               {
+                  // Call .Sort during app startup.
             
-                   // This sorts numerically, ascending.
-                   MySortableRichEnum.Sort();
+                  // This sorts numerically, ascending.
+                  MySortableRichEnum.Sort();
             
-                   // This sorts numerically, descending.
-                   MySortableRichEnum.Sort((x,y) => y.Value.CompareTo(x.Value));
-                }
-             }
+                  // This sorts numerically, descending.
+                  MySortableRichEnum.Sort((x,y) => y.Value.CompareTo(x.Value));
+               }
+            }
             
-             </code>
-             </example>
+            </code>
+            </example>
         </member>
         <member name="M:Jcd.RichEnumerations.Records.SortableRichEnum`1.#ctor(System.Int32)">
             <inheritdoc />

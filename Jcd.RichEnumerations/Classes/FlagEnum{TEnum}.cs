@@ -202,12 +202,10 @@ public abstract class FlagEnum<TEnum> : RichEnumValue<ulong, TEnum>
    {
       get
       {
-         if (areValidFlagsSet)
+         if (!areValidFlagsSet)
          {
-            return validFlags;
+            SetValidFlags();
          }
-
-         SetValidFlags();
 
          return validFlags;
       }
@@ -216,7 +214,13 @@ public abstract class FlagEnum<TEnum> : RichEnumValue<ulong, TEnum>
    [MethodImpl(MethodImplOptions.AggressiveInlining)]
    private static void SetValidFlags()
    {
-      validFlags = All.Aggregate(0ul, (x, y) => x | y.Value);
+      validFlags = 0;
+
+      for (var i = 0; i < All.Count; i++)
+      {
+         validFlags |= All[i];
+      }
+
       areValidFlagsSet = true;
    }
 

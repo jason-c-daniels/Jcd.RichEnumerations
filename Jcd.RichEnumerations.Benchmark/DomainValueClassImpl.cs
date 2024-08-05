@@ -1,4 +1,8 @@
-﻿using Jcd.RichEnumerations.Classes;
+﻿#region
+
+using Jcd.RichEnumerations.Classes;
+
+#endregion
 
 namespace Jcd.RichEnumerations.Benchmark;
 

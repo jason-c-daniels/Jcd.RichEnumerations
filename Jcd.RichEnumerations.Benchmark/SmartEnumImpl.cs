@@ -2,8 +2,6 @@
 
 using Ardalis.SmartEnum;
 
-using Jcd.RichEnumerations.Records;
-
 #endregion
 
 namespace Jcd.RichEnumerations.Benchmark;
