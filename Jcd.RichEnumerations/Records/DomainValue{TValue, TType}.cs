@@ -74,6 +74,18 @@ public record DomainValue<TValue, TType>
    /// <param name="other">The other instance to compare to</param>
    /// <returns>True if equivalent.</returns>
    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+   public virtual bool Equals(DomainValue<TValue, TType>? other)
+   {
+      return other is not null && Value.Equals(other.Value);
+   }
+
+   /// <summary>
+   /// Compares the Value of the current <see cref="DomainValue{TValue,TType}" /> instance to the target instance for
+   /// equality.
+   /// </summary>
+   /// <param name="other">The other instance to compare to</param>
+   /// <returns>True if equivalent.</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public virtual bool Equals(TType? other)
    {
       return other is not null && Value.Equals(other.Value);

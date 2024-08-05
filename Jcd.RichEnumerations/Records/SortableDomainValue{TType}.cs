@@ -22,11 +22,4 @@ public abstract record SortableDomainValue<TType> : SortableDomainValue<int, TTy
    {
       return Value.GetHashCode() ^ GetType().GetHashCode();
    }
-
-   /// <inheritdoc />
-   [MethodImpl(MethodImplOptions.AggressiveInlining)]
-   public override bool Equals(TType? other)
-   {
-      return base.Equals(other);
-   }
 }

@@ -139,15 +139,16 @@ public abstract record FlagEnum<TEnum>
    [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static explicit operator FlagEnum<TEnum>(ulong value)
    {
+      if (ByValue.TryGetValue(value, out var result))
+      {
+         return result;
+      }
+
       // verify that only defined flags are set.
-      if (!IsValid(value))
+      if ((value & ValidFlags) != value)
       {
          throw new ArgumentException($"Cannot convert to {typeof(TEnum)}. Undefined flags in use.", nameof(value));
       }
-
-      return ByValue.TryGetValue(value, out var result)
-                ? result
-                : SynthesizeResult(value);
 
       return SynthesizeResult(value);
    }

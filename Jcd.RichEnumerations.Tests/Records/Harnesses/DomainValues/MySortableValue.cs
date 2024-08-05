@@ -1,7 +1,5 @@
 ﻿#region
 
-using System.Runtime.CompilerServices;
-
 using Jcd.RichEnumerations.Records;
 
 #endregion
