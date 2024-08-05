@@ -139,13 +139,16 @@ public abstract record FlagEnum<TEnum>
    [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public static explicit operator FlagEnum<TEnum>(ulong value)
    {
+      if (ByValue.TryGetValue(value, out var result))
+      {
+         return result;
+      }
+
       // verify that only defined flags are set.
-      if (!IsValid(value))
+      if ((value & ValidFlags) != value)
       {
          throw new ArgumentException($"Cannot convert to {typeof(TEnum)}. Undefined flags in use.", nameof(value));
       }
-
-      return ByValue.TryGetValue(value, out var result) ? result : SynthesizeResult(value);
 
       return SynthesizeResult(value);
    }
@@ -203,21 +206,33 @@ public abstract record FlagEnum<TEnum>
       return name;
    }
 
-   private static bool validFlagsSet;
+   private static bool areValidFlagsSet;
    private static ulong validFlags;
 
    private static ulong ValidFlags
    {
       get
       {
-         if (!validFlagsSet)
+         if (!areValidFlagsSet)
          {
-            validFlags = All.Aggregate(0ul, (x, y) => x | y.Value);
-            validFlagsSet = true;
+            SetValidFlags();
          }
 
          return validFlags;
       }
+   }
+
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
+   private static void SetValidFlags()
+   {
+      validFlags = 0;
+
+      for (var i = 0; i < All.Count; i++)
+      {
+         validFlags |= All[i];
+      }
+
+      areValidFlagsSet = true;
    }
 
    #endregion

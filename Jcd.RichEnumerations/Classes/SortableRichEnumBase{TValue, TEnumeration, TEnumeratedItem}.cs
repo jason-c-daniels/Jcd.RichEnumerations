@@ -43,15 +43,6 @@ public abstract class SortableRichEnumBase<TValue, TEnumeration, TEnumeratedItem
    }
 
    /// <summary>
-   /// Determines if the passed in value can be converted into the enumerated type.
-   /// </summary>
-   /// <param name="value"></param>
-   /// <returns></returns>
-   [MethodImpl(MethodImplOptions.AggressiveInlining)]
-   public static bool IsValid(TValue value)
-      => ByValue.ContainsKey(value);
-
-   /// <summary>
    /// A lookup of enumerated elements by their Value property.
    /// Useful for implementing conversion operators.
    /// </summary>
@@ -59,5 +50,16 @@ public abstract class SortableRichEnumBase<TValue, TEnumeration, TEnumeratedItem
    {
       [MethodImpl(MethodImplOptions.AggressiveInlining)]
       get { return byValue ??= All.ToDictionary(e => e.Value); }
+   }
+
+   /// <summary>
+   /// Determines if the passed in value can be converted into the enumerated type.
+   /// </summary>
+   /// <param name="value"></param>
+   /// <returns></returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
+   public static bool IsValid(TValue value)
+   {
+      return ByValue.ContainsKey(value);
    }
 }

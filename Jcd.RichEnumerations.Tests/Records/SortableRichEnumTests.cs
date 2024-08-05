@@ -193,6 +193,17 @@ public class SortableRichEnumTests
    }
 
    [Theory]
+   [InlineData(1,  true)]
+   [InlineData(2,  true)]
+   [InlineData(4,  false)]
+   [InlineData(5,  false)]
+   [InlineData(10, true)]
+   public void IsValid_Returns_The_Expected_Result(int value, bool expected)
+   {
+      Assert.Equal(expected, MySimpleEnum.IsValid(value));
+   }
+
+   [Theory]
    [InlineData(6)]
    [InlineData(5)]
    [InlineData(7)]

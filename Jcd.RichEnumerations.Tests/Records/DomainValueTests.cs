@@ -73,6 +73,7 @@ public class DomainValueTests
       var ev1 = (MySimpleValue) value1;
       var ev2 = (MySimpleValue) value2;
       Assert.Equal(expectedValue, ev1 == ev2);
+      Assert.Equal(expectedValue, ((IEquatable<MySimpleValue>) ev1).Equals(ev2));
    }
 
    [Theory]
@@ -85,6 +86,7 @@ public class DomainValueTests
    {
       var ev1 = (MySimpleValue) value1;
       var ev2 = (MySimpleValue) value2;
-      Assert.Equal(expectedValue, ev1 != ev2);
+      Assert.Equal(expectedValue,  ev1 != ev2);
+      Assert.Equal(!expectedValue, ev1.Equals(ev2));
    }
 }

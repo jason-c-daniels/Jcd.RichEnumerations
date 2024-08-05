@@ -90,6 +90,19 @@ public class FlagEnumTests
    }
 
    [Theory]
+   [InlineData(1,                   true)]
+   [InlineData(2,                   true)]
+   [InlineData(3,                   true)]
+   [InlineData(4,                   true)]
+   [InlineData(0b10001000100010001, false)]
+   [InlineData(0b10001010100010001, false)]
+   [InlineData(0b10101010100010001, false)]
+   public void IsValid_Returns_Expected_Result(ulong value, bool expected)
+   {
+      Assert.Equal(expected, MyFlagEnum.IsValid(value));
+   }
+
+   [Theory]
    [InlineData(1, 2, 1 | 2)]
    [InlineData(2, 4, 2 | 4)]
    [InlineData(4, 8, 4 | 8)]

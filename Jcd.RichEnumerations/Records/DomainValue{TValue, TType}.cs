@@ -62,16 +62,21 @@ public record DomainValue<TValue, TType>
 
    /// <inheritdoc />
    [MethodImpl(MethodImplOptions.AggressiveInlining)]
-   public override string ToString()
-   {
-      return Value.ToString();
-   }
-
-   /// <inheritdoc />
-   [MethodImpl(MethodImplOptions.AggressiveInlining)]
    public override int GetHashCode()
    {
       return Value.GetHashCode() ^ GetType().GetHashCode();
+   }
+
+   /// <summary>
+   /// Compares the Value of the current <see cref="DomainValue{TValue,TType}" /> instance to the target instance for
+   /// equality.
+   /// </summary>
+   /// <param name="other">The other instance to compare to</param>
+   /// <returns>True if equivalent.</returns>
+   [MethodImpl(MethodImplOptions.AggressiveInlining)]
+   public virtual bool Equals(DomainValue<TValue, TType>? other)
+   {
+      return other is not null && Value.Equals(other.Value);
    }
 
    /// <summary>
