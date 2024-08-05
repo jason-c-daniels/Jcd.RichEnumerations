@@ -9,6 +9,18 @@ namespace Jcd.RichEnumerations.Benchmark;
 public class RichEnumVsSmartEnum
 {
    [Benchmark]
+   public DomainValueClassImpl DomainValueClassImpl_Constructor()
+   {
+      return new DomainValueClassImpl(10);
+   }
+
+   [Benchmark]
+   public DomainValueRecordImpl DomainValueRecordImpl_Constructor()
+   {
+      return new DomainValueRecordImpl(10);
+   }
+
+   [Benchmark]
    public bool RichEnumClassImpl_IsValidOnValidInt()
    {
       return RichEnumClassImpl.IsValid(1);
