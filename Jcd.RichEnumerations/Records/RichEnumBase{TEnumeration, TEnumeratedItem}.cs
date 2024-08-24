@@ -1,8 +1,6 @@
 ﻿#region
 
 using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 
 // ReSharper disable UnusedType.Global
@@ -38,16 +36,6 @@ public abstract record RichEnumBase<TEnumeration, TEnumeratedItem>
    /// </summary>
    public static IReadOnlyList<TEnumeratedItem> All
    {
-      get { return all ??= GetAll(); }
-   }
-
-   [MethodImpl(MethodImplOptions.AggressiveInlining)]
-   private static List<TEnumeratedItem> GetAll()
-   {
-      var fields = typeof(TEnumeration).GetFields(BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly);
-
-      var allItems = fields.Where(f => f.FieldType == typeof(TEnumeratedItem)).Select(f => f.GetValue(null)).Cast<TEnumeratedItem>().ToList();
-
-      return allItems;
+      get { return all ??= typeof(TEnumeration).GetPublicStaticFieldValues<TEnumeratedItem>(); }
    }
 }

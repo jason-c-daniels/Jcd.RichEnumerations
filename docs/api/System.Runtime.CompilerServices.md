@@ -2,6 +2,6 @@
 
 ## System.Runtime.CompilerServices Namespace
 
-| Classes | |
-| :--- | :--- |
+| Classes                                                                              |                                                                                                                            |
+|:-------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------|
 | [IsExternalInit](IsExternalInit.md 'System.Runtime.CompilerServices.IsExternalInit') | Reserved to be used by the compiler for tracking metadata. This class should not be used by developers in source code. |

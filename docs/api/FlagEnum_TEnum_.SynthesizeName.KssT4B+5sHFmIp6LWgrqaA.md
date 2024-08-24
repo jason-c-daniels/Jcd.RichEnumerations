@@ -17,5 +17,6 @@ private static string SynthesizeName(ulong value);
 The value to create the name for.
 
 #### Returns
+
 [System.String](https://docs.microsoft.com/en-us/dotnet/api/System.String 'System.String')
 The name of the synthesized instance.

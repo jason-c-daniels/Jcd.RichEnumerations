@@ -39,6 +39,7 @@ Derived
 &#8627; [SortableRichEnumValue&lt;TValue,TEnum&gt;](SortableRichEnumValue_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnumValue<TValue,TEnum>')
 
 ### Remarks
+
 NOTE: This is intended as a supporting class. Consumers should prefer [SortableRichEnum&lt;TEnum&gt;](SortableRichEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TEnum>') or
 [SortableRichEnum&lt;TEnum&gt;](SortableRichEnum_TEnum_.md 'Jcd.RichEnumerations.Classes.SortableRichEnum<TEnum>') instead.
 
@@ -46,8 +47,8 @@ NOTE: This is intended as a supporting class. Consumers should prefer [SortableR
 | :--- | :--- |
 | [SortableRichEnumBase()](SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.SortableRichEnumBase().md 'Jcd.RichEnumerations.Classes.SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>.SortableRichEnumBase()') | Constructs an instance of the type. |
 
-| Properties | |
-| :--- | :--- |
+| Properties                                                                                                                                                                       |                                                                                                            |
+|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
 | [ByValue](SortableRichEnumBase_TValue,TEnumeration,TEnumeratedItem_.ByValue.md 'Jcd.RichEnumerations.Classes.SortableRichEnumBase<TValue,TEnumeration,TEnumeratedItem>.ByValue') | A lookup of enumerated elements by their Value property. Useful for implementing conversion operators. |
 
 | Methods | |

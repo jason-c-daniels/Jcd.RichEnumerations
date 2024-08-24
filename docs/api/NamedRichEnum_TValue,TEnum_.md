@@ -36,3 +36,7 @@ Derived
 | Properties | |
 | :--- | :--- |
 | [Name](NamedRichEnum_TValue,TEnum_.Name.md 'Jcd.RichEnumerations.Classes.Wrappers.NamedRichEnum<TValue,TEnum>.Name') | The name for the instance. This should be unique. |
+
+| Methods                                                                                                                                |                                                      |
+|:---------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------|
+| [ToString()](NamedRichEnum_TValue,TEnum_.ToString().md 'Jcd.RichEnumerations.Classes.Wrappers.NamedRichEnum<TValue,TEnum>.ToString()') | Returns a string that represents the current object. |
