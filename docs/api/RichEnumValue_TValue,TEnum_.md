@@ -55,9 +55,12 @@ public class MyRichEnum(float value, string customText) : RichEnum<float,MyRichE
 | :--- | :--- |
 | [Value](RichEnumValue_TValue,TEnum_.Value.md 'Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>.Value') | The underlying value. |
 
-| Methods | |
-| :--- | :--- |
-| [Equals(TEnum)](RichEnumValue_TValue,TEnum_.Equals.FN+24sqSfwuOH7zHM+FGzg.md 'Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>.Equals(TEnum)') | Compares the Value of the current [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') instance to the target instance for equality. |
+| Methods                                                                                                                                                  |                                                                                                                                                                                                     |
+|:---------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Equals(object)](RichEnumValue_TValue,TEnum_.Equals.cPd3wTT/CReniO2+kGNm6g.md 'Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>.Equals(object)') | Determines whether the specified object is equal to the current object.                                                                                                                             |
+| [Equals(TEnum)](RichEnumValue_TValue,TEnum_.Equals.FN+24sqSfwuOH7zHM+FGzg.md 'Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>.Equals(TEnum)')   | Compares the Value of the current [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') instance to the target instance for equality. |
+| [GetHashCode()](RichEnumValue_TValue,TEnum_.GetHashCode().md 'Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>.GetHashCode()')                   | Serves as the default hash function.                                                                                                                                                                |
+| [ToString()](RichEnumValue_TValue,TEnum_.ToString().md 'Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>.ToString()')                            | Returns a string that represents the current object.                                                                                                                                                |
 
 | Operators | |
 | :--- | :--- |

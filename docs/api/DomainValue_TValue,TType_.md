@@ -37,17 +37,20 @@ Derived
 
 Implements [System.IEquatable&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1 'System.IEquatable`1')[TType](DomainValue_TValue,TType_.md#Jcd.RichEnumerations.Classes.DomainValue_TValue,TType_.TType 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>.TType')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1 'System.IEquatable`1'), [Jcd.RichEnumerations.IValueProvider&lt;](IValueProvider_TValue_.md 'Jcd.RichEnumerations.IValueProvider<TValue>')[TValue](DomainValue_TValue,TType_.md#Jcd.RichEnumerations.Classes.DomainValue_TValue,TType_.TValue 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>.TValue')[&gt;](IValueProvider_TValue_.md 'Jcd.RichEnumerations.IValueProvider<TValue>')
 
-| Constructors | |
-| :--- | :--- |
+| Constructors                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                       |
+|:--------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [DomainValue(TValue)](DomainValue_TValue,TType_..ctor.pdD4bGVOjqBWvmsG6jik6w.md 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>.DomainValue(TValue)') | A [DomainValue&lt;TValue,TType&gt;](DomainValue_TValue,TType_.md 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>') is an open set of values which may share an underlying integral data type with others, but need semantic separation, such as database row identifier columns. Using these prevents accidentally using one in place of another. |
 
 | Properties | |
 | :--- | :--- |
 | [Value](DomainValue_TValue,TType_.Value.md 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>.Value') | The underlying value. |
 
-| Methods | |
-| :--- | :--- |
-| [Equals(TType)](DomainValue_TValue,TType_.Equals.5RfNM7UGeXDCjRoptYHSlQ.md 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>.Equals(TType)') | Compares the Value of the current [DomainValue&lt;TValue,TType&gt;](DomainValue_TValue,TType_.md 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>') instance to the target instance for equality. |
+| Methods                                                                                                                                              |                                                                                                                                                                                                              |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Equals(object)](DomainValue_TValue,TType_.Equals.G7CFi8zfiV3PObmMUPo0og.md 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>.Equals(object)') | Determines whether the specified object is equal to the current object.                                                                                                                                      |
+| [Equals(TType)](DomainValue_TValue,TType_.Equals.5RfNM7UGeXDCjRoptYHSlQ.md 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>.Equals(TType)')   | Compares the Value of the current [DomainValue&lt;TValue,TType&gt;](DomainValue_TValue,TType_.md 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>') instance to the target instance for equality. |
+| [GetHashCode()](DomainValue_TValue,TType_.GetHashCode().md 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>.GetHashCode()')                   | Serves as the default hash function.                                                                                                                                                                         |
+| [ToString()](DomainValue_TValue,TType_.ToString().md 'Jcd.RichEnumerations.Classes.DomainValue<TValue,TType>.ToString()')                            | Returns a string that represents the current object.                                                                                                                                                         |
 
 | Operators | |
 | :--- | :--- |

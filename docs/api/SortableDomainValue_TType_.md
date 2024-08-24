@@ -3,8 +3,7 @@
 
 ## SortableDomainValue<TType> Class
 
-A helper interface to enable building auto casting into the data type aware `SortableRichEnum{TValue,TEnum}`
-types. This helps minimize boilerplate code.
+Defines a generalized comparison method that a value type or class implements to create a type-specific comparison method for ordering or sorting its instances.
 
 ```csharp
 public abstract class SortableDomainValue<TType> : Jcd.RichEnumerations.Classes.SortableDomainValue<int, TType>

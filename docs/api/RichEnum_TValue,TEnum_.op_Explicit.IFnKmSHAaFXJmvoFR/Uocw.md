@@ -18,6 +18,7 @@ public static Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum> explicit opera
 The value to convert.
 
 #### Returns
+
 [Jcd.RichEnumerations.Classes.RichEnum&lt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>')[TValue](RichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.Classes.RichEnum_TValue,TEnum_.TValue 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>.TValue')[,](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>')[TEnum](RichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.Classes.RichEnum_TValue,TEnum_.TEnum 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>.TEnum')[&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>')
 The instance of the [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>'), if it exists. Throws an exception, otherwise.
 

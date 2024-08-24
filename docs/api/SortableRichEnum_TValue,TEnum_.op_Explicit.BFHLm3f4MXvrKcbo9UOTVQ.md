@@ -18,6 +18,7 @@ public static Jcd.RichEnumerations.Records.SortableRichEnum<TValue,TEnum> explic
 The value to convert.
 
 #### Returns
+
 [Jcd.RichEnumerations.Records.SortableRichEnum&lt;](SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.SortableRichEnum<TValue,TEnum>')[TValue](SortableRichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.Records.SortableRichEnum_TValue,TEnum_.TValue 'Jcd.RichEnumerations.Records.SortableRichEnum<TValue,TEnum>.TValue')[,](SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.SortableRichEnum<TValue,TEnum>')[TEnum](SortableRichEnum_TValue,TEnum_.md#Jcd.RichEnumerations.Records.SortableRichEnum_TValue,TEnum_.TEnum 'Jcd.RichEnumerations.Records.SortableRichEnum<TValue,TEnum>.TEnum')[&gt;](SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.SortableRichEnum<TValue,TEnum>')
 The instance of the [SortableRichEnum&lt;TValue,TEnum&gt;](SortableRichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Records.SortableRichEnum<TValue,TEnum>'), if it exists.
 Throws an exception, otherwise.

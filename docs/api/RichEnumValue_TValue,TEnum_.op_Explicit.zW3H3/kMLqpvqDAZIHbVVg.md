@@ -17,5 +17,6 @@ public static TValue explicit operator TValue(Jcd.RichEnumerations.Classes.RichE
 The [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') instance.
 
 #### Returns
+
 [TValue](RichEnumValue_TValue,TEnum_.md#Jcd.RichEnumerations.Classes.RichEnumValue_TValue,TEnum_.TValue 'Jcd.RichEnumerations.Classes.RichEnumValue<TValue,TEnum>.TValue')
 The .Value of the [RichEnum&lt;TValue,TEnum&gt;](RichEnum_TValue,TEnum_.md 'Jcd.RichEnumerations.Classes.RichEnum<TValue,TEnum>') instance
